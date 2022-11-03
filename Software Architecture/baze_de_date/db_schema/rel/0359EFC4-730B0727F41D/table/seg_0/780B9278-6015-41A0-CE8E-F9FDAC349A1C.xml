@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="780B9278-6015-41A0-CE8E-F9FDAC349A1C" name="USERS">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:16:18 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="F490A484-CE1C-F652-EA38-584FB66BC00C">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:18:52 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="7B64C6EB-9903-2C7D-CAC4-6E4638A279BE">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:17:02 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="score" id="31C292BF-3033-F134-E82C-0FA864F175F7">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:18:12 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A7D8BF16-9137-0AE8-AC53-1BC3C12EF864" name="USERS_PK">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:19:02 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F490A484-CE1C-F652-EA38-584FB66BC00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

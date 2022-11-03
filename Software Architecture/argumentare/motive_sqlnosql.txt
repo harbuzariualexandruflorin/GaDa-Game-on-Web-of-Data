@@ -1,0 +1,4 @@
+Am dorit sa folosim o baza de date relationala datorita urmatoarelor motive:
+- datele sunt bine structurate intr-o baza de date relationala, iar datele utilizate de aplicatie au o schema fixa
+- fiecare entitate este bine definita ca un tabel cu multiple coloane fixate
+- experienta avuta in lucrul cu acest tip de baze de date

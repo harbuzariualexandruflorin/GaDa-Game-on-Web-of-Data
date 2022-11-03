@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1A4B0EA8-41FF-BFA5-CAE1-BE19ABBD0B00" name="CARDS">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:39:33 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="BA9B3F03-642F-34B8-7F4F-51CA576E18DC">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:41:11 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="character" id="2F0113B8-82E4-1272-02DB-37C686FC1C79">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:41:11 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="universe" id="2294F537-D4E9-93A0-8C11-E3B5C70D50C4">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:41:26 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="score" id="B07992F7-ADB3-683A-E834-442C6D09CBDE">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:50:02 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C61A912F-A7DA-24D6-23EF-6C395FC7ADAF" name="CARDS_PK">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:41:11 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA9B3F03-642F-34B8-7F4F-51CA576E18DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40E34DCB-6A81-E571-FA78-5413B06E9827" name="QUESTIONS">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:19:41 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="ABD5A692-6AFB-F9CC-65A2-979ADFBF07C0">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:32:52 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="content" id="9EACA4F0-56DF-18AB-5692-11494B25093A">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:39:26 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08B6DA6E-4FA2-1DCD-247F-8AD8747156C3" name="QUESTIONS_PK">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:39:26 UTC</createdTime>
+<ownerDesignName>db_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABD5A692-6AFB-F9CC-65A2-979ADFBF07C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

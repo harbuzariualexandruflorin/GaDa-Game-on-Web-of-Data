@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="db_schema" id="BF0309E5-FFF0-FBB5-6898-97C2C5F9B518" version="3.5">
+<createdBy>harbu</createdBy>
+<createdTime>2022-11-03 19:15:40 UTC</createdTime>
+<ownerDesignName>schema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>BF0309E5-FFF0-FBB5-6898-97C2C5F9B518</designId>
+</OSDM_Design>

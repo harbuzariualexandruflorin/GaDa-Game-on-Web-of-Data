@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> GaDa - Game on Web of Data</title>
+    <link rel="stylesheet" href="technical report.css">
+    <link rel="stylesheet"
+        href="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/themes/prism-coy.css">
+    <script src="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/prism.js"
+        defer></script>
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">GaDa</h1>
+            <p role="doc-subtitle" property="schema:alternateName">
+                Game on Web of Data
+            </p>
+        </header>
+        <section typeof="sa:AuthorsList">
+            <h2>Authors</h2>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Andrei">
+                        <meta property="schema:familyName" content="Condurache">
+                        <span property="schema:name">Andrei Condurache</span>
+                    </span>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Alexandru">
+                        <meta property="schema:additionalName" content="Florin">
+                        <meta property="schema:familyName" content="Harbuzariu">
+                        <span property="schema:name">Alexandru-Florin Harbuzariu</span>
+                    </span>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Stefan">
+                        <meta property="schema:familyName" content="Tiperciuc">
+                        <span property="schema:name">Stefan Tiperciuc</span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <section role="doc-introduction" id="introduction">
+            <h2><span>1. </span>Introduction</h2>
+            <p>
+                GaDa stands for Game on web of Data. It is a service-oriented game where the player is matched up
+                against the computer in a game of cards which requires strategic hand management and critical thinking.
+                At the start of the game, the player is asked to take a quiz that will determine the strength of the 10
+                cards he will be given. The cards represent various characters ranging from tiny pokemons to
+                well-established superheroes and the goal for the player is to amass more points than the opponent with
+                the cards he is dealt with. Then, both the player and the computer will take turns placing cards that
+                have a higher power level than the one previously placed until they have no card with a higher score in
+                hand
+            </p>
+            <p>
+                Each card will have a power level assigned to it before the game starts. The individual power levels of
+                the cards are stored in a database and are calculated based on the metadata received from various
+                superhero API available, such as Pokemon, Star Wars, Marvel. The quiz given at the start of the game
+                will also be based on the character’s metadata and will reward the user with better cards, provided he
+                answers correctly to the questions.
+            </p>
+        </section>
+        <section id="solution">
+            <h2><span>2. </span>Proposed solution</h2>
+            <p>GaDa will incorporate the following main functionalities:</p>
+            <ul>
+                <li>generation of the initial deck according to certain selected preferences</li>
+                <li>the possibility of playing one or more card-based games, 5 rounds each</li>
+                <li>answering the quiz questions to get better playing cards</li>
+                <li>recalculating the score of a card according to the characteristics of the opponent's current card
+                </li>
+            </ul>
+            <p>
+                On top of providing useful functionality to end users, GaDa will align itself to the latest software
+                engineering best practices and approaches by incorporating the following principles:
+            </p>
+            <ul>
+                <li>modular architecture based on services</li>
+                <li>performance and scalability</li>
+                <li>well-documented, developer-friendly API</li>
+                <li>respecting the open linked data principle in multiple formats</li>
+            </ul>
+        </section>
+        <section id="architecture">
+            <h2><span>3. </span>Architecture</h2>
+            <figure typeof="sa:Image">
+                <img src="images/use case diagram.png">
+                <figcaption>Use case diagram for GaDa</figcaption>
+            </figure>
+        </section>
+        <section id="data">
+            <h2><span>4. </span>Data modelling</h2>
+            <figure typeof="schema:SoftwareSourceCode">
+                <pre>
+                <code>
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "pokemon": "https://triplydb.com/academy/pokemon/vocab/",
+        "name": "pokemon:name",
+        "sameAs": "schema:sameAs",
+        "weight": "pokemon:weight",
+        "height": "schema:height",
+        "baseAttack": "pokemon:baseAttack",
+        "baseDefense": "pokemon:baseDefense",
+        "baseHP": "pokemon:baseHP",
+        "baseSpeed": "pokemon:baseSpeed",
+        "baseSpecialAttack": "pokemon:baseSpAtk",
+        "baseSpecialDefense": "pokemon:baseSpDef"
+    },
+    "@id": "pikachu",
+    "@type": "pokemon:Pokémon",
+    "name": {
+        "@language": "en",
+        "@value": "Pikachu"
+    },
+    "sameAs": "http://dbpedia.org/resource/Pikachu",
+    "weight": 60,
+    "height": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 4,
+        "schema:unitCode": "DMT"
+    },
+    "baseHP": 35,
+    "baseAttack": 55,
+    "baseDefense": 40,
+    "baseSpecialAttack": 50,
+    "baseSpecialDefense": 40,
+    "baseSpeed": 90
+}
+                </code>
+                </pre>
+                <figcaption>RDF model of a pokemon expressed in JSON-LD</figcaption>
+            </figure>
+        </section>
+        <section id="technologies">
+            <h2><span>5. </span>Technologies used</h2>
+        </section>
+        <section id="linked">
+            <h2><span>6. </span>Linked data principles</h2>
+        </section>
+        <section id="references">
+            <h2><span>7. </span>References</h2>
+        </section>
+    </article>
+</body>
+
+</html>

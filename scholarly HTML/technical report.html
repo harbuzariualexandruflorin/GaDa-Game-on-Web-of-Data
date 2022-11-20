@@ -99,11 +99,59 @@
             <h2><span>4. </span>Data modelling</h2>
             <figure typeof="schema:SoftwareSourceCode">
                 <pre>
+                    <code>
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "sameAs": "schema:sameAs",
+        "name": "schema:name",
+        "givenName": "schema:givenName",
+        "familyName": "schema:familyName",
+        "gender": "schema:gender"
+    },
+    "@id": "spiderman",
+    "@type": "schema:Person",
+    "sameAs": "https://dbpedia.org/page/Spider-Man",
+    "name": "Spider-Man",
+    "givenName": "Peter",
+    "familyName": "Parker",
+    "gender": {
+        "@id": "schema:Male"
+    },
+    "schema:height": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 178,
+        "schema:unitCode": "CMT"
+    },
+    "schema:weight": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 74,
+        "schema:unitCode": "KGM"
+    },
+    "schema:characterAttribute": [
+        { "@type": "schema:PropertyValue", "name": "intelligence", "schema:value": 90},
+        { "@type": "schema:PropertyValue", "name": "strength", "schema:value": 55},
+        { "@type": "schema:PropertyValue", "name": "speed", "schema:value": 67},
+        { "@type": "schema:PropertyValue", "name": "durability", "schema:value": 75},
+        { "@type": "schema:PropertyValue", "name": "power", "schema:value": 74},
+        { "@type": "schema:PropertyValue", "name": "combat", "schema:value": 85}
+    ],
+    "schema:publisher": {
+        "@type": "schema:Organization",
+        "schema:name": "Marvel Comics"
+    }
+}
+                    </code>
+                </pre>
+                <figcaption>RDF model of a Marvel character expressed in JSON-LD</figcaption>
+            </figure>
+
+            <figure typeof="schema:SoftwareSourceCode">
+                <pre>
                 <code>
 {
     "@context": {
         "schema": "http://schema.org/",
-        "dbo": "http://dbpedia.org/ontology/",
         "pokemon": "https://triplydb.com/academy/pokemon/vocab/",
         "name": "pokemon:name",
         "sameAs": "schema:sameAs",

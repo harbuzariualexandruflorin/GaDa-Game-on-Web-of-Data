@@ -1,0 +1,326 @@
+openapi: 3.0.3
+info:
+  title: Swagger Petstore - OpenAPI 3.0
+  description: |-
+    OpenAPI specification regarding the REST API used by GADA
+  license:
+    name: MIT
+    url: 'https://opensource.org/licenses/MIT'
+  version: 1.0.11
+
+servers:
+  - url: 'https://gadaAPI.com/latest'
+tags:
+  - name: questions
+    description: Questions related to the game quiz
+  - name: cards
+    description: Cards related to the game
+paths:
+  /questions:
+    get:
+      tags:
+        - questions
+      summary: Get all existing question
+      operationId: getQuestions
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  allOf:
+                    - $ref: '#/components/schemas/Question'
+        '204':
+          description: No questions
+        '500':
+          description: Internal server error
+    post:
+      tags:
+        - questions
+      summary: Add a new question
+      description: Add a new question
+      operationId: addQuestion
+      requestBody:
+        description: Create a new question
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Question'
+        required: true
+      responses:
+        '201':
+          description: Successful operation added question
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Question'          
+        '400':
+          description: Bad request
+          
+  /questions/{questionId}:
+    get:
+      tags:
+        - questions
+      summary: Get a specific question
+      operationId: getQuestionById
+      parameters:
+        - name: questionId
+          in: path
+          description: ID of question to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Question'
+        '400':
+          description: Invalid question id given
+        '404':
+          description: No question found
+        '500':
+          description: Internal server error
+    delete:
+      tags:
+        - questions
+      summary: Deletes a question
+      description: Delete a question
+      operationId: deleteQuestion
+      parameters:
+        - name: questionId
+          in: path
+          description: ID of question
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: Successful operation deleted question
+        '400':
+          description: Invalid question id
+        '404':
+          description: No question found
+  /cards/battle:
+    post:
+      tags:
+        - cards
+      summary: Battle two cards
+      operationId: battleCards
+      requestBody:
+        description: Create a new card
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Card'
+            example:
+              card1:
+                $ref: '#/components/schemas/Card'
+              card2:
+                $ref: '#/components/schemas/Card'
+        required: true
+      responses:
+        '200':
+          description: Successful operation battle
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  score:
+                    type: integer
+                    description: The difference score
+                    example: 299
+        '400':
+          description: Bad request
+      
+  /cards:
+    get:
+      tags:
+        - cards
+      summary: Get all existing cards
+      operationId: getCards
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+          description: The index of the page
+        - in: query
+          name: size
+          schema:
+            type: integer
+          description: The size of page
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  allOf:
+                    - $ref: '#/components/schemas/Card'
+        '204':
+          description: No cards
+        '500':
+          description: Internal server error
+    post:
+      tags:
+        - cards
+      summary: Add a new card
+      description: Add a new card
+      operationId: addCard
+      requestBody:
+        description: Create a new card
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Card'
+        required: true
+      responses:
+        '201':
+          description: Successful operation added card
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Card'          
+        '400':
+          description: Bad request
+  /cards/{cardId}:
+    get:
+      tags:
+        - cards
+      summary: Get a specific card
+      operationId: getCardById
+      parameters:
+        - name: cardId
+          in: path
+          description: ID of card to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Card'
+        '400':
+          description: Invalid card id given
+        '404':
+          description: No card found
+        '500':
+          description: Internal server error
+    delete:
+      tags:
+        - cards
+      summary: Deletes a card
+      description: Delete a card
+      operationId: deleteCard
+      parameters:
+        - name: cardId
+          in: path
+          description: ID of card
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: Successful operation deleted card
+        '400':
+          description: Invalid card id
+        '404':
+          description: No card found
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+  schemas:
+    Question:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        content:
+          type: string
+          example: Is Hulk from MCU?
+        answer:
+          type: string
+          example: 'Yes'
+    Card:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 11
+        character:
+          type: string
+          example: Hulk
+        universe:
+          type: string
+          example: Marvel
+        score:
+          type: integer
+          format: int64
+          example: 100
+        info:
+          type: object
+          additionalProperties:
+            type: string
+          example:
+            Marvel:
+              comics: "Hulk #01, Hulk #02"
+              description: "Green monster"
+              avatar: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
+              creator: "Stan Lee"
+              power: "Raw Strength"
+              age: "40"
+              powerstats:
+                intelligence: "81"
+                strength: "40"
+                speed: "29"
+                durability: "55"
+                power: "63"
+                combat: "90"
+            StarWars:
+              films: ["A New Hope"]
+              height: "172"
+              name: "Luke Skywalker"
+              mass: "77"
+              skin_color: "Fair"
+              species: "Human"
+            StarTrek:
+              name: "Q"
+              height: "55"
+              weight: "87"
+              mirror: true
+              alternateReality: false
+            Pokemon:
+              avatar: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+              nr_moves: "1"
+              height: "3"
+              weight: "40"
+              stats:
+                nr_stats: "1"
+                "1":
+                  name: "hp"
+                  base_value: "25"
+
+security:
+  - ApiKeyAuth: []
+  

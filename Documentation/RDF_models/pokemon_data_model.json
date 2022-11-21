@@ -1,0 +1,37 @@
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dbo": "http://dbpedia.org/ontology/",
+        "pokemon": "https://triplydb.com/academy/pokemon/vocab/",
+        "name": "pokemon:name",
+        "sameAs": "schema:sameAs",
+        "weight": "pokemon:weight",
+        "height": "schema:height",
+        "baseAttack": "pokemon:baseAttack",
+        "baseDefense": "pokemon:baseDefense",
+        "baseHP": "pokemon:baseHP",
+        "baseSpeed": "pokemon:baseSpeed",
+        "baseSpecialAttack": "pokemon:baseSpAtk",
+        "baseSpecialDefense": "pokemon:baseSpDef"
+    },
+    "@id": "pikachu",
+    "@type": "pokemon:Pokémon",
+    "name": {
+        "@language": "en",
+        "@value": "Pikachu"
+    },
+    "sameAs": "http://dbpedia.org/resource/Pikachu",
+    "weight": 60,
+    "height": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 4,
+        "schema:unitCode": "DMT"
+    },
+    "baseHP": 35,
+    "baseAttack": 55,
+    "baseDefense": 40,
+    "baseSpecialAttack": 50,
+    "baseSpecialDefense": 40,
+    "baseSpeed": 90
+}

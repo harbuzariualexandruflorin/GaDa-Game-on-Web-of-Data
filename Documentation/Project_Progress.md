@@ -4,7 +4,7 @@ Week 6(31st of October-6th of November)
  - Formed the group and discussed the topic of the project. (together)
  - Agreed on a high-level structure and flow of the APIs. (together)
  - Created a draft document for the project requirements. (together)
- - Discussed the Database structure and create Diagram about structure.
+ - Discussed the Database structure and create [Diagram about structure](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Software%20Architecture/baze_de_date).
    (Florin)
 
   

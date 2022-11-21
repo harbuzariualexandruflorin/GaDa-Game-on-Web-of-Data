@@ -1,8 +1,24 @@
 #Project progress
 
 Week 6(31st of October-6th of November)
-  Formed the group and discussed the topic of the project.
+  -Formed the group and discussed the topic of the project. (together)
+  -Agreed on a high-level structure and flow of the APIs. (together)
+  -Created a draft document for the project requirements. (together)
+  -Discussed the Database structure and create Diagram about structure. (Florin)
   
 Week 7(7th of November-13th of November)
+  -Describe the main modules (Stefan)
+  -UML Diagrams (Florin)
+  -Use-case Diagrams (Andrei)
+  -Formulated a potential RDF schema. (together)
+  
 Week 8(14th of November-20th of November)
+  -OpenAPI specification (Florin)
+  -RDF schema (Andrei)
+  -ScholarlyHTML introduction, proposed solution, architecture sections (Stefan)
+  
 Week 9(21st of November-29th of November)
+  -ScholarlyHTML UI section(Stefan)
+  -Architectural Diagram (Florin)
+  -ScholarlyHTML Data modelling section(Andrei)
+  -Project progress document(Stefan)

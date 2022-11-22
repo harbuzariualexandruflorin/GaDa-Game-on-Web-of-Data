@@ -97,6 +97,9 @@
         </section>
         <section id="data">
             <h2><span>4. </span>Data modelling</h2>
+            <p>An example of the description of cards (for a Marvel character and a Pokemon) in JSON-LD format can be
+                seen below, including the information of interest that will be taken from the Marvel, Pokemon, Star Trek
+                and Star Wars APIs.</p>
             <figure typeof="schema:SoftwareSourceCode">
                 <pre>
                     <code>
@@ -194,6 +197,35 @@
         </section>
         <section id="linked">
             <h2><span>6. </span>Linked data principles</h2>
+            <blockquote>
+                <p>
+                    The term <em>Linked Data</em> refers to a set of best practices for publishing and interlinking
+                    structured data
+                    on the Web. In order to contribute to an environment where information is easily accessible, data
+                    should
+                    first be made available in a standard format that can be reached and processed by Semantic Web
+                    tools.
+                    This is achieved by respecting the four principles of Linked Data:
+                </p>
+                <ol>
+                    <li>Use URIs as names for things.</li>
+                    <li>Use HTTP URIs so that people can look up those names.</li>
+                    <li>When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL).
+                    </li>
+                    <li>Include links to other URIs. so that they can discover more things.</li>
+                </ol>
+            </blockquote>
+            <p>
+                The project tries to conform to these principles through approaches such as:
+            </p>
+            <ul>
+                <li>Each card will be identified by a URI.</li>
+                <li>The data about de cards will be described using RDF. An early example can be observed in the
+                    previous chapter.</li>
+                <li>The entities will contain links to other data of interest or to other entities (e.g. card X is
+                    duelling with card Y)
+                </li>
+            </ul>
         </section>
         <section id="references">
             <h2><span>7. </span>References</h2>

@@ -88,12 +88,190 @@
                 <li>respecting the open linked data principle in multiple formats</li>
             </ul>
         </section>
+
         <section id="architecture">
             <h2><span>3. </span>Architecture</h2>
             <figure typeof="sa:Image">
-                <img src="images/use case diagram.png">
-                <figcaption>Use case diagram for GaDa</figcaption>
+                <img src="images/architecture.jpg">
+                <figcaption>The general architecture for GaDa</figcaption>
             </figure>
+            <p>
+                The project will have a modular architecture based on microservices. New microservices can be added in
+                the future and the only component responsible for managing this change is the API Gateway. The client is
+                not required to know such details.
+            </p>
+            <p>The project was carried out in 3 main steps:</p>
+            <ul>
+                <li>Step 1: generate the quiz questions and cards based on the given APIs.</li>
+                <li>Step 2: develop the quiz microservice and card service by creating the game logic using the
+                    previously generated elements</li>
+                <li>Step 3: create a user-friendly interface.</li>
+            </ul>
+            <p>Next, we explain each service:</p>
+            <ul>
+                <li>
+                    <code>Quiz Service</code> is responsible for managing the quiz part of the game. The microservice
+                    generates a
+                    question based on card data and checks the given answer by querying DBpedia.
+                </li>
+                <li>
+                    <code>Cards Service</code>: is responsible for the card game’s logic. The system admin will have the
+                    possibility
+                    to initialise the database or update it by querying data from the 4 established APIs (Marvel,
+                    Pokemon, Star Trek, Star Wars). The microservice will manage the battle between 2 selected cards to
+                    decide the winner and the resulting score.
+                </li>
+            </ul>
+
+            <section id="generation">
+                <h3><span>3.1 </span>Question and Card Generation</h3>
+                <p>Before making the game itself, we needed to create a power system based on the metadata given from
+                    various APIs. In order to achieve our goal, we acquired various metadata by calling the Marvel
+                    Comics, Star Wars, Star Trek and Pokemon APIs. Afterwards, we used that data to determine each
+                    individual character’s power level and to create connections in the ontology so we can later
+                    formulate the quiz questions. These questions will be made using various templates.The answer is
+                    verified by making SparkQL queries to retrieve information about various characters and thus, the
+                    user’s knowledge of the in-game universe is tested. The result of this quiz will determine what type
+                    of cards the user will obtain for the current round. If the result is good, then the average score
+                    of the given cards will be higher.
+                </p>
+                <p>The second part of this step required storing these items into a relational database and making a way
+                    to retrieve such data. For that, some of the endpoints provided are:
+                </p>
+                <ul>
+                    <li>An endpoint that returns a set of random cards with its corresponding character name, picture
+                        and power score.</li>
+                    <li>An endpoint that returns a set of random questions.</li>
+                </ul>
+            </section>
+
+            <section id="generation">
+                <h3><span>3.2 </span>Game logic</h3>
+                <p>
+                    As previously stated, at the start of the game the player will receive various quiz questions that
+                    will determine the average power of the cards he will receive. After the player has given his answer
+                    to the question, the program will make a SparkQL query to verify if the answers were correct and
+                    afterwards head to the card game phase.
+                </p>
+                <p>
+                    In the card game phase, both the player and the computer will receive a hand of 10 cards. While the
+                    cards given to the computer are random, the ones the player received are based on the results from
+                    the quiz phase. A random dice will decide who goes first. Whenever it is their turn, the
+                    computer/player will have to place down a card. If the card has a higher power than the previous
+                    one, the chain continues, but if it has a lower power level, the opposite side gains points equal to
+                    a proportion based on the chain length and the total score of the chain. In order to spice things
+                    up, the power of the cards will sometimes be dynamically modified based on the card currently placed
+                    on the table and its interactions with your cards in hand( for example: water card beats fire card,
+                    so the water card will have a slightly higher power level). The game ends when both players have run
+                    out of cards.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="images/use case diagram.png">
+                    <figcaption>Use case diagram for GaDa</figcaption>
+                </figure>
+            </section>
+
+            <section id="generation">
+                <h3><span>3.3 </span>UI</h3>
+                <p>
+                    The game contains 4 main UI components: the start menu, the questions menu, the card game menu and
+                    the end screen.
+                </p>
+                <p>
+                    Once the player starts the game, he will be greeted with the start menu. The start menu allows the
+                    player to set the username, the number of cards both him and the computer will be given, which has
+                    to be a multiple of 10, as well as a play button, which redirects him to the quiz section. Once the
+                    play button is pressed, the game itself will start.
+                </p>
+                <p>
+                    Every game will consist of multiple rounds which start with the quiz phase followed by the card
+                    phase. As previously stated, the strength of the cards for the current round will be determined
+                    based on how well the player answers the question. The quiz view will contain the question box
+                    located at the centre of the screen, as well as 4 possible answers to the questions, out of which
+                    only one is correct. After an answer is selected, the “Submit” button will be available at the
+                    bottom right side of the screen. A “Back” button will also be available at the top left side of the
+                    screen, which will let the player return to the main menu, should he choose to do so.
+                </p>
+                <p>
+                    After pressing the “Submit” button, the player is redirected to the card game phase. The view will
+                    consist of two rows(one at the bottom, one at the top), representing the hand of cards each
+                    contestant has. In the middle of the screen there will be a stack of cards representing the
+                    previously placed cards, with the last one used being placed on top and the visible one. The cards
+                    themselves will include the name of the character, an image of the character, as well as its power
+                    stat. Under certain conditions, the cards will also be bordered with a green/red glow, representing
+                    whether the power of the card has been increased/ lowered based on the card currently placed down.
+                    Just like the questions menu, a “Back” button placed on the top left will return the player to the
+                    main menu.
+                </p>
+                <p>
+                    After the required number of rounds have been finished, the player will be redirected to the end
+                    screen. The end screen will show whether the player has won or lost, the number of points he has
+                    acquired, as well as a leaderboard for the user to see how well he did compared to other players.
+                </p>
+            </section>
+
+            <section id="generation">
+                <h3><span>3.4 </span>OpenAPI</h3>
+                <figure typeof="sa:Image">
+                    <img src="images/openAPI.png">
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/openAPI_2.png">
+                </figure>
+            </section>
+
+            <section id="generation">
+                <h3><span>3.5 </span>Used External APIs</h3>
+                <p>
+                    The project uses 4 main APIs and an additional one used for obtaining power stats for marvel super
+                    heroes. Each API has a multitude of endpoints. Some may be relevant for our game and some may not
+                    be. Therefore, it will be explained in this chapter which endpoints will be used in the development
+                    of this project.
+                </p>
+                <ul>
+                    <li>
+                        <p><code>Marvel Comics API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/marvel API.png">
+                            <figcaption>Data received after making a call to Marvel API about a character</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p><code>Star Trek API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/star trek API.png">
+                            <figcaption>Data received after making a call to Star Trek API</figcaption>
+                        </figure>
+                        <p>For this API, a client will be used that will deal with the requests.</p>
+                    </li>
+                    <li>
+                        <p><code>Star Wars API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/star wars API.png" width="600" height="550">
+                            <figcaption>Data received after making a call to Star Wars API</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p><code>Pokemon API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/pokemon API.png">
+                            <figcaption>Data received after making a call to Pokemon API about a pokemon</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p>
+                    For each one of these four main APIs, the endpoints that were of interest to us were the endpoints
+                    that expose data for a specific character. Our application will generate a card for each character
+                    that will be used in the card game. A problem that arises for the Marvel API is that we couldn’t map
+                    a certain score to a superhero. The solution was to use an additional API, called SuperHero API.
+                    This API offers power stats for any marvel superhero.
+                    <figure typeof="sa:Image">
+                        <img src="images/superhero API.png">
+                        <figcaption>Data received after making a call to SuperHero API</figcaption>
+                    </figure>
+                </p>
+            </section>
+
         </section>
         <section id="data">
             <h2><span>4. </span>Data modelling</h2>

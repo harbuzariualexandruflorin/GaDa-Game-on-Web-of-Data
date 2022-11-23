@@ -187,8 +187,8 @@ a:active {
 }
 figure img {
   max-width: 100%;
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
 }
 
 pre, code, a[property="schema:citation"] {

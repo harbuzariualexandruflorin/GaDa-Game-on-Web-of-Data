@@ -47,6 +47,29 @@
                 </li>
             </ul>
         </section>
+        
+        <section id="contents">
+            <h2>Table of contents</h2>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#solution">Proposed solution</a></li>
+                <li>
+                    <a href="#architecture">Architecture</a>
+                    <ol>
+                        <li><a href="#generation"><span>3.1 </span>Question and Card Generation</a></li>
+                        <li><a href="#gameLogic"><span>3.2 </span>Game Logic</a></li>
+                        <li><a href="#ui"><span>3.3 </span>UI</a></li>
+                        <li><a href="#openAPI"><span>3.4 </span>OpenAPI</a></li>
+                        <li><a href="#externalAPIs"><span>3.5 </span>Used External APIs</a></li>
+                    </ol>
+                </li>
+                <li><a href="#data">Data modelling</a></li>
+                <li><a href="#technologies">Technologies used</a></li>
+                <li><a href="#linked">Linked data principles</a></li>
+                <li><a href="#references">References</a></li>
+            </ol>
+        </section>
+
         <section role="doc-introduction" id="introduction">
             <h2><span>1. </span>Introduction</h2>
             <p>
@@ -145,7 +168,7 @@
                 </ul>
             </section>
 
-            <section id="generation">
+            <section id="gameLogic">
                 <h3><span>3.2 </span>Game logic</h3>
                 <p>
                     As previously stated, at the start of the game the player will receive various quiz questions that
@@ -171,7 +194,7 @@
                 </figure>
             </section>
 
-            <section id="generation">
+            <section id="ui">
                 <h3><span>3.3 </span>UI</h3>
                 <p>
                     The game contains 4 main UI components: the start menu, the questions menu, the card game menu and
@@ -210,7 +233,7 @@
                 </p>
             </section>
 
-            <section id="generation">
+            <section id="openAPI">
                 <h3><span>3.4 </span>OpenAPI</h3>
                 <figure typeof="sa:Image">
                     <img src="images/openAPI.png">
@@ -220,7 +243,7 @@
                 </figure>
             </section>
 
-            <section id="generation">
+            <section id="externalAPIs">
                 <h3><span>3.5 </span>Used External APIs</h3>
                 <p>
                     The project uses 4 main APIs and an additional one used for obtaining power stats for marvel super
@@ -405,8 +428,70 @@
                 </li>
             </ul>
         </section>
-        <section id="references">
+        <section role="doc-bibliography" id="references">
             <h2><span>7. </span>References</h2>
+            <ol>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.superheroapi.com/index.html" id="superheroapi>
+                    <cite property="schema:name">
+                        <a href="https://www.superheroapi.com/index.html">The SuperHero API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://developer.marvel.com/" id="marvelapi">
+                    <cite property="schema:name">
+                        <a href="https://developer.marvel.com/">The Marvel Comics API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://swapi.dev/documentation" id="swapi">
+                    <cite property="schema:name">
+                        <a href="https://swapi.dev/documentation">The Star Wars API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://pokeapi.co/" id="pokeapi">
+                    <cite property="schema:name">
+                        <a href="https://pokeapi.co/">The Pokemon API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="http://stapi.co/" id="stapi">
+                    <cite property="schema:name">
+                        <a href="http://stapi.co/">Star Trek API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://triplydb.com/academy/pokemon/vocab/" id="pokeVocab">
+                    <cite property="schema:name">
+                        <a href="https://triplydb.com/academy/pokemon/vocab/">Pokemon vocabulary</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://schema.org/" id="schemaVocab">
+                    <cite property="schema:name">
+                        <a href="https://schema.org/">The schema.org vocabulary</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.w3.org/wiki/LinkedData" id="linkedData">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/wiki/LinkedData">Linked data</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.openapis.org/" id="openAPI">
+                    <cite property="schema:name">
+                        <a href="https://www.openapis.org/">OpenAPI Initiative</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://editor.swagger.io/" id="swagger">
+                    <cite property="schema:name">
+                        <a href="https://editor.swagger.io/">Swagger Editor</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.w3.org/TR/rdf-sparql-query/" id="sparql">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL Query Language for RDF</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.w3.org/TR/rdf-schema/" id="rdfs">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a>
+                    </cite>
+                </li>
+            </ol>
         </section>
     </article>
 </body>

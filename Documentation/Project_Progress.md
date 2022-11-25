@@ -28,3 +28,5 @@ Week 9(21st of November-29th of November)
  - [Architectural Diagram](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Software%20Architecture/architecture/architecture.jpg). (Florin)
  - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML) Data modelling section. (Andrei)
  - [Project progress document](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Project_Progress.md). (Stefan)
+
+#project #infoiasi #wade #web

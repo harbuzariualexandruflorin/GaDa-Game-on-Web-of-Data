@@ -25,7 +25,7 @@ Week 8(14th of November-20th of November)
   
 Week 9(21st of November-29th of November)
  - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML) UI section.(Stefan)
- - [Architectural Diagram](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Software%20Architecture/architecture/architecture.jpg). (Florin)
+ - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Software%20Architecture/architecture/architecture.jpg) Architecture diagram. (Florin)
  - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML) Data modelling section. (Andrei)
  - [Project progress document](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Project_Progress.md). (Stefan)
 

@@ -254,6 +254,8 @@ def marvel_get_types(all_characters):
 def marvel_get_score(all_characters):
     temp = marvel_get_types(all_characters)
     all_characters = {"characters": [c for c in temp["characters"] if ".gif" not in c["avatar"]]}
+    for character in all_characters["characters"]:
+        character["universe"] = "Marvel"
     return entities_get_score(MARVEL_VARS, all_characters)
 
 

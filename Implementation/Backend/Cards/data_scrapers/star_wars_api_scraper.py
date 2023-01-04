@@ -208,6 +208,8 @@ def star_wars_get_entities_api(url="https://swapi.dev/api/people/?page=%s"):
 
 
 def star_wars_get_score(all_people):
+    for person in all_people["people"]:
+        person["universe"] = "Star Wars"
     return entities_get_score(STAR_WARS_VARS, all_people)
 
 

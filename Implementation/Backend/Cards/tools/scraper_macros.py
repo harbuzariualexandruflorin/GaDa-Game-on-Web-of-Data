@@ -2,9 +2,13 @@ from enum import Enum
 
 from tools import load_json_file_to_dict
 
-KEYS = load_json_file_to_dict("data/keys/api_keys.json")
-MARVEL_API_KEYS = KEYS["MARVEL"]
-SUPERHERO_API_KEY = KEYS["SUPERHERO"]
+try:
+    KEYS = load_json_file_to_dict("data/keys/api_keys.json")
+    MARVEL_API_KEYS = KEYS["MARVEL"]
+    SUPERHERO_API_KEY = KEYS["SUPERHERO"]
+except:
+    MARVEL_API_KEYS = {"public": None, "private": None}
+    SUPERHERO_API_KEY = None
 
 CARD_TYPES = Enum('PowerType', [
     'grass', 'poison', 'fire', 'flying', 'water', 'bug', 'normal',

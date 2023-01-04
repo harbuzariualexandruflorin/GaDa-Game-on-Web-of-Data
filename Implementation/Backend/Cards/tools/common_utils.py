@@ -6,14 +6,14 @@ def dict_keys_filter(d, filters=None):
     if filters is None:
         filters = [None]
 
-    for k in d.copy().KEYS():
+    for k in d.copy().keys():
         if d[k] in filters:
             d.pop(k)
     return d
 
 
 def check_dict_all_bool(d):
-    for k in d.KEYS():
+    for k in d.keys():
         if type(d[k]) is bool and d[k] is True:
             return d
     return dict()
@@ -47,6 +47,8 @@ def get_endpoint_id(source):
 
 
 def get_first_element_list(ls):
+    if type(ls) is not list:
+        return ls
     if ls is None or len(ls) == 0:
         return None
     return ls[0]
@@ -61,3 +63,9 @@ def check_string_na(source, nas):
         if source == na:
             return None
     return source
+
+
+def to_list(source):
+    if type(source) is list:
+        return source
+    return [source]

@@ -1,0 +1,5871 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <https://gada.cards.game.namespace.com/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:card_abomasnow a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "abomasnow" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 344 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/460.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "snow-warning",
+        "soundproof" ;
+    poke:baseAttack 92 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 173 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 92 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 60 ;
+    poke:colour "white" ;
+    poke:species "abomasnow" ;
+    poke:type ex:type_grass,
+        ex:type_ice ;
+    poke:weight 1355 .
+
+ex:card_abomasnow-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "abomasnow-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 427 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10060.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 27 ;
+    poke:ability "snow-warning" ;
+    poke:baseAttack 132 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 208 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 132 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 30 ;
+    poke:colour "white" ;
+    poke:species "abomasnow" ;
+    poke:type ex:type_grass,
+        ex:type_ice ;
+    poke:weight 1850 .
+
+ex:card_accelgor a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "accelgor" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 270 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/617.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "hydration",
+        "sticky-hold",
+        "unburden" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 173 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 145 ;
+    poke:colour "red" ;
+    poke:species "accelgor" ;
+    poke:type ex:type_bug ;
+    poke:weight 253 .
+
+ex:card_aegislash-shield a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "aegislash-shield" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 309 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/681.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "stance-change" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 140 ;
+    poke:baseExp 250 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 140 ;
+    poke:baseSpeed 60 ;
+    poke:colour "brown" ;
+    poke:species "aegislash" ;
+    poke:type ex:type_ghost,
+        ex:type_steel ;
+    poke:weight 530 .
+
+ex:card_aerodactyl-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "aerodactyl-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 366 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10042.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 21 ;
+    poke:ability "tough-claws" ;
+    poke:baseAttack 135 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 215 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 150 ;
+    poke:colour "purple" ;
+    poke:species "aerodactyl" ;
+    poke:type ex:type_flying,
+        ex:type_rock ;
+    poke:weight 790 .
+
+ex:card_alcremie-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "alcremie-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 851 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10223.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 300 ;
+    poke:ability "aroma-veil",
+        "sweet-veil" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 173 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 110 ;
+    poke:baseSpDef 121 ;
+    poke:baseSpeed 64 ;
+    poke:colour "white" ;
+    poke:species "alcremie" ;
+    poke:type ex:type_fairy ;
+    poke:weight 10000 .
+
+ex:card_appletun-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "appletun-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 836 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10217.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "gluttony",
+        "ripen",
+        "thick-fat" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 170 ;
+    poke:baseHP 110 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 30 ;
+    poke:colour "green" ;
+    poke:species "appletun" ;
+    poke:type ex:type_dragon,
+        ex:type_grass ;
+    poke:weight 10000 .
+
+ex:card_araquanid a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "araquanid" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 289 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/752.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "water-absorb",
+        "water-bubble" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 92 ;
+    poke:baseExp 159 ;
+    poke:baseHP 68 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 132 ;
+    poke:baseSpeed 42 ;
+    poke:colour "green" ;
+    poke:species "araquanid" ;
+    poke:type ex:type_bug,
+        ex:type_water ;
+    poke:weight 820 .
+
+ex:card_araquanid-totem a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "araquanid-totem" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 365 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10153.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 31 ;
+    poke:ability "water-absorb",
+        "water-bubble" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 92 ;
+    poke:baseExp 159 ;
+    poke:baseHP 68 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 132 ;
+    poke:baseSpeed 42 ;
+    poke:colour "green" ;
+    poke:species "araquanid" ;
+    poke:type ex:type_bug,
+        ex:type_water ;
+    poke:weight 2175 .
+
+ex:card_articuno a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "articuno" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 359 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "pressure",
+        "snow-cloak" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 290 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 125 ;
+    poke:baseSpeed 85 ;
+    poke:colour "blue" ;
+    poke:species "articuno" ;
+    poke:type ex:type_flying,
+        ex:type_ice ;
+    poke:weight 554 .
+
+ex:card_audino a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "audino" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 318 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/531.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "healer",
+        "klutz",
+        "regenerator" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 86 ;
+    poke:baseExp 390 ;
+    poke:baseHP 103 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 86 ;
+    poke:baseSpeed 50 ;
+    poke:colour "pink" ;
+    poke:species "audino" ;
+    poke:type ex:type_normal ;
+    poke:weight 310 .
+
+ex:card_avalugg a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "avalugg" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 556 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/713.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 20 ;
+    poke:ability "ice-body",
+        "own-tempo",
+        "sturdy" ;
+    poke:baseAttack 117 ;
+    poke:baseDefense 184 ;
+    poke:baseExp 180 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 44 ;
+    poke:baseSpDef 46 ;
+    poke:baseSpeed 28 ;
+    poke:colour "blue" ;
+    poke:species "avalugg" ;
+    poke:type ex:type_ice ;
+    poke:weight 5050 .
+
+ex:card_azelf a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "azelf" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 333 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/482.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 290 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 125 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 115 ;
+    poke:colour "blue" ;
+    poke:species "azelf" ;
+    poke:type ex:type_psychic ;
+    poke:weight 3 .
+
+ex:card_azurill a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "azurill" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 104 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/298.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 2 ;
+    poke:ability "huge-power",
+        "sap-sipper",
+        "thick-fat" ;
+    poke:baseAttack 20 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 38 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 20 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 20 ;
+    poke:colour "blue" ;
+    poke:species "azurill" ;
+    poke:type ex:type_fairy,
+        ex:type_normal ;
+    poke:weight 20 .
+
+ex:card_banette a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "banette" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 256 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/354.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "cursed-body",
+        "frisk",
+        "insomnia" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 159 ;
+    poke:baseHP 64 ;
+    poke:baseSpAtk 83 ;
+    poke:baseSpDef 63 ;
+    poke:baseSpeed 65 ;
+    poke:colour "black" ;
+    poke:species "banette" ;
+    poke:type ex:type_ghost ;
+    poke:weight 125 .
+
+ex:card_barbaracle a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "barbaracle" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 326 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/689.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "pickpocket",
+        "sniper",
+        "tough-claws" ;
+    poke:baseAttack 105 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 175 ;
+    poke:baseHP 72 ;
+    poke:baseSpAtk 54 ;
+    poke:baseSpDef 86 ;
+    poke:baseSpeed 68 ;
+    poke:colour "brown" ;
+    poke:species "barbaracle" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 960 .
+
+ex:card_bayleef a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "bayleef" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 225 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/153.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "leaf-guard",
+        "overgrow" ;
+    poke:baseAttack 62 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 142 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 63 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 60 ;
+    poke:colour "green" ;
+    poke:species "bayleef" ;
+    poke:type ex:type_grass ;
+    poke:weight 158 .
+
+ex:card_beedrill a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "beedrill" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 240 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/15.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "sniper",
+        "swarm" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 178 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 75 ;
+    poke:colour "yellow" ;
+    poke:species "beedrill" ;
+    poke:type ex:type_bug,
+        ex:type_poison ;
+    poke:weight 295 .
+
+ex:card_beldum a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "beldum" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 191 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/374.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "clear-body",
+        "light-metal" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 60 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 30 ;
+    poke:colour "blue" ;
+    poke:species "beldum" ;
+    poke:type ex:type_psychic,
+        ex:type_steel ;
+    poke:weight 952 .
+
+ex:card_bergmite a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "bergmite" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 207 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/712.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "ice-body",
+        "own-tempo",
+        "sturdy" ;
+    poke:baseAttack 69 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 61 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 32 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 28 ;
+    poke:colour "blue" ;
+    poke:species "bergmite" ;
+    poke:type ex:type_ice ;
+    poke:weight 995 .
+
+ex:card_bewear a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "bewear" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 338 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/760.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 21 ;
+    poke:ability "fluffy",
+        "klutz",
+        "unnerve" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 175 ;
+    poke:baseHP 120 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 60 ;
+    poke:colour "pink" ;
+    poke:species "bewear" ;
+    poke:type ex:type_fighting,
+        ex:type_normal ;
+    poke:weight 1350 .
+
+ex:card_bibarel a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "bibarel" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 238 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/400.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "moody",
+        "simple",
+        "unaware" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 144 ;
+    poke:baseHP 79 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 71 ;
+    poke:colour "brown" ;
+    poke:species "bibarel" ;
+    poke:type ex:type_normal,
+        ex:type_water ;
+    poke:weight 315 .
+
+ex:card_blastoise-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "blastoise-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 868 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10197.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 250 ;
+    poke:ability "rain-dish",
+        "torrent" ;
+    poke:baseAttack 83 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 239 ;
+    poke:baseHP 79 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 78 ;
+    poke:colour "blue" ;
+    poke:species "blastoise" ;
+    poke:type ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_blastoise-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "blastoise-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 408 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10036.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "mega-launcher" ;
+    poke:baseAttack 103 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 284 ;
+    poke:baseHP 79 ;
+    poke:baseSpAtk 135 ;
+    poke:baseSpDef 115 ;
+    poke:baseSpeed 78 ;
+    poke:colour "blue" ;
+    poke:species "blastoise" ;
+    poke:type ex:type_water ;
+    poke:weight 1011 .
+
+ex:card_boldore a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "boldore" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 262 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/525.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 9 ;
+    poke:ability "sand-force",
+        "sturdy",
+        "weak-armor" ;
+    poke:baseAttack 105 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 137 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 20 ;
+    poke:colour "blue" ;
+    poke:species "boldore" ;
+    poke:type ex:type_rock ;
+    poke:weight 1020 .
+
+ex:card_boltund a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "boltund" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 271 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/836.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "competitive",
+        "strong-jaw" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 172 ;
+    poke:baseHP 69 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 121 ;
+    poke:colour "yellow" ;
+    poke:species "boltund" ;
+    poke:type ex:type_electric ;
+    poke:weight 340 .
+
+ex:card_bunnelby a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "bunnelby" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 124 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/659.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "cheek-pouch",
+        "huge-power",
+        "pickup" ;
+    poke:baseAttack 36 ;
+    poke:baseDefense 38 ;
+    poke:baseExp 47 ;
+    poke:baseHP 38 ;
+    poke:baseSpAtk 32 ;
+    poke:baseSpDef 36 ;
+    poke:baseSpeed 57 ;
+    poke:colour "brown" ;
+    poke:species "bunnelby" ;
+    poke:type ex:type_normal ;
+    poke:weight 50 .
+
+ex:card_butterfree-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "butterfree-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 791 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10198.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 170 ;
+    poke:ability "compound-eyes",
+        "tinted-lens" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 178 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 70 ;
+    poke:colour "white" ;
+    poke:species "butterfree" ;
+    poke:type ex:type_bug,
+        ex:type_flying ;
+    poke:weight 10000 .
+
+ex:card_cacnea a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cacnea" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 209 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/331.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "sand-veil",
+        "water-absorb" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 67 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 35 ;
+    poke:colour "green" ;
+    poke:species "cacnea" ;
+    poke:type ex:type_grass ;
+    poke:weight 513 .
+
+ex:card_calyrex-ice a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "calyrex-ice" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 853 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10193.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 24 ;
+    poke:ability "as-one-glastrier" ;
+    poke:baseAttack 165 ;
+    poke:baseDefense 150 ;
+    poke:baseExp 340 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 130 ;
+    poke:baseSpeed 50 ;
+    poke:colour "green" ;
+    poke:species "calyrex" ;
+    poke:type ex:type_ice,
+        ex:type_psychic ;
+    poke:weight 8091 .
+
+ex:card_calyrex-shadow a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "calyrex-shadow" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 417 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10194.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 24 ;
+    poke:ability "as-one-spectrier" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 340 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 165 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 150 ;
+    poke:colour "green" ;
+    poke:species "calyrex" ;
+    poke:type ex:type_ghost,
+        ex:type_psychic ;
+    poke:weight 536 .
+
+ex:card_carnivine a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "carnivine" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 262 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/455.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 14 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 72 ;
+    poke:baseExp 159 ;
+    poke:baseHP 74 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 72 ;
+    poke:baseSpeed 46 ;
+    poke:colour "green" ;
+    poke:species "carnivine" ;
+    poke:type ex:type_grass ;
+    poke:weight 270 .
+
+ex:card_celesteela a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "celesteela" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 897 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/797.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 92 ;
+    poke:ability "beast-boost" ;
+    poke:baseAttack 101 ;
+    poke:baseDefense 103 ;
+    poke:baseExp 285 ;
+    poke:baseHP 97 ;
+    poke:baseSpAtk 107 ;
+    poke:baseSpDef 101 ;
+    poke:baseSpeed 61 ;
+    poke:colour "green" ;
+    poke:species "celesteela" ;
+    poke:type ex:type_flying,
+        ex:type_steel ;
+    poke:weight 9999 .
+
+ex:card_centiskorch a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "centiskorch" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 344 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/851.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 30 ;
+    poke:ability "flame-body",
+        "flash-fire",
+        "white-smoke" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 184 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 65 ;
+    poke:colour "red" ;
+    poke:species "centiskorch" ;
+    poke:type ex:type_bug,
+        ex:type_fire ;
+    poke:weight 1200 .
+
+ex:card_centiskorch-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "centiskorch-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 913 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10220.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 750 ;
+    poke:ability "flame-body",
+        "flash-fire",
+        "white-smoke" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 184 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 65 ;
+    poke:colour "red" ;
+    poke:species "centiskorch" ;
+    poke:type ex:type_bug,
+        ex:type_fire ;
+    poke:weight 10000 .
+
+ex:card_charizard-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "charizard-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 875 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10196.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 280 ;
+    poke:ability "blaze",
+        "solar-power" ;
+    poke:baseAttack 84 ;
+    poke:baseDefense 78 ;
+    poke:baseExp 240 ;
+    poke:baseHP 78 ;
+    poke:baseSpAtk 109 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 100 ;
+    poke:colour "red" ;
+    poke:species "charizard" ;
+    poke:type ex:type_fire,
+        ex:type_flying ;
+    poke:weight 10000 .
+
+ex:card_charmeleon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "charmeleon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 236 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "blaze",
+        "solar-power" ;
+    poke:baseAttack 64 ;
+    poke:baseDefense 58 ;
+    poke:baseExp 142 ;
+    poke:baseHP 58 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 80 ;
+    poke:colour "red" ;
+    poke:species "charmeleon" ;
+    poke:type ex:type_fire ;
+    poke:weight 190 .
+
+ex:card_chatot a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "chatot" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 217 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/441.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "big-pecks",
+        "keen-eye",
+        "tangled-feet" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 144 ;
+    poke:baseHP 76 ;
+    poke:baseSpAtk 92 ;
+    poke:baseSpDef 42 ;
+    poke:baseSpeed 91 ;
+    poke:colour "black" ;
+    poke:species "chatot" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 19 .
+
+ex:card_chikorita a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "chikorita" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 168 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/152.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 9 ;
+    poke:ability "leaf-guard",
+        "overgrow" ;
+    poke:baseAttack 49 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 64 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 49 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 45 ;
+    poke:colour "green" ;
+    poke:species "chikorita" ;
+    poke:type ex:type_grass ;
+    poke:weight 64 .
+
+ex:card_cinderace-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cinderace-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 873 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10210.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 270 ;
+    poke:ability "blaze",
+        "libero" ;
+    poke:baseAttack 116 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 265 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 119 ;
+    poke:colour "white" ;
+    poke:species "cinderace" ;
+    poke:type ex:type_fire ;
+    poke:weight 10000 .
+
+ex:card_coalossal-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "coalossal-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 882 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10215.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 420 ;
+    poke:ability "flame-body",
+        "flash-fire",
+        "steam-engine" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 255 ;
+    poke:baseHP 110 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 30 ;
+    poke:colour "black" ;
+    poke:species "coalossal" ;
+    poke:type ex:type_fire,
+        ex:type_rock ;
+    poke:weight 10000 .
+
+ex:card_copperajah-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "copperajah-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 841 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10224.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 230 ;
+    poke:ability "heavy-metal",
+        "sheer-force" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 69 ;
+    poke:baseExp 175 ;
+    poke:baseHP 122 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 69 ;
+    poke:baseSpeed 30 ;
+    poke:colour "green" ;
+    poke:species "copperajah" ;
+    poke:type ex:type_steel ;
+    poke:weight 10000 .
+
+ex:card_corsola a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "corsola" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 231 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/222.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "hustle",
+        "natural-cure",
+        "regenerator" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 144 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 35 ;
+    poke:colour "pink" ;
+    poke:species "corsola" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 50 .
+
+ex:card_corviknight a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "corviknight" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 314 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/823.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "mirror-armor",
+        "pressure",
+        "unnerve" ;
+    poke:baseAttack 87 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 248 ;
+    poke:baseHP 98 ;
+    poke:baseSpAtk 53 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 67 ;
+    poke:colour "purple" ;
+    poke:species "corviknight" ;
+    poke:type ex:type_flying,
+        ex:type_steel ;
+    poke:weight 750 .
+
+ex:card_corviknight-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "corviknight-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 839 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10212.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 140 ;
+    poke:ability "mirror-armor",
+        "pressure",
+        "unnerve" ;
+    poke:baseAttack 87 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 248 ;
+    poke:baseHP 98 ;
+    poke:baseSpAtk 53 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 67 ;
+    poke:colour "purple" ;
+    poke:species "corviknight" ;
+    poke:type ex:type_flying,
+        ex:type_steel ;
+    poke:weight 10000 .
+
+ex:card_cosmoem a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cosmoem" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 763 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/790.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 1 ;
+    poke:ability "sturdy" ;
+    poke:baseAttack 29 ;
+    poke:baseDefense 131 ;
+    poke:baseExp 140 ;
+    poke:baseHP 43 ;
+    poke:baseSpAtk 29 ;
+    poke:baseSpDef 131 ;
+    poke:baseSpeed 37 ;
+    poke:colour "blue" ;
+    poke:species "cosmoem" ;
+    poke:type ex:type_psychic ;
+    poke:weight 9999 .
+
+ex:card_cottonee a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cottonee" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 139 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/546.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "chlorophyll",
+        "infiltrator",
+        "prankster" ;
+    poke:baseAttack 27 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 56 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 37 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 66 ;
+    poke:colour "green" ;
+    poke:species "cottonee" ;
+    poke:type ex:type_fairy,
+        ex:type_grass ;
+    poke:weight 6 .
+
+ex:card_cradily a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cradily" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 302 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/346.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "storm-drain",
+        "suction-cups" ;
+    poke:baseAttack 81 ;
+    poke:baseDefense 97 ;
+    poke:baseExp 173 ;
+    poke:baseHP 86 ;
+    poke:baseSpAtk 81 ;
+    poke:baseSpDef 107 ;
+    poke:baseSpeed 43 ;
+    poke:colour "green" ;
+    poke:species "cradily" ;
+    poke:type ex:type_grass,
+        ex:type_rock ;
+    poke:weight 604 .
+
+ex:card_cramorant-gorging a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cramorant-gorging" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 257 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/845-gorging.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "gulp-missile" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 166 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 85 ;
+    poke:colour "blue" ;
+    poke:species "cramorant" ;
+    poke:type ex:type_flying,
+        ex:type_water ;
+    poke:weight 180 .
+
+ex:card_cresselia a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cresselia" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 380 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/488.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 300 ;
+    poke:baseHP 120 ;
+    poke:baseSpAtk 75 ;
+    poke:baseSpDef 130 ;
+    poke:baseSpeed 85 ;
+    poke:colour "yellow" ;
+    poke:species "cresselia" ;
+    poke:type ex:type_psychic ;
+    poke:weight 856 .
+
+ex:card_croagunk a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "croagunk" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 178 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/453.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "anticipation",
+        "dry-skin",
+        "poison-touch" ;
+    poke:baseAttack 61 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 60 ;
+    poke:baseHP 48 ;
+    poke:baseSpAtk 61 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "croagunk" ;
+    poke:type ex:type_fighting,
+        ex:type_poison ;
+    poke:weight 230 .
+
+ex:card_cursola a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "cursola" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 285 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/864.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "perish-body",
+        "weak-armor" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 179 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 145 ;
+    poke:baseSpDef 130 ;
+    poke:baseSpeed 30 ;
+    poke:colour "white" ;
+    poke:species "cursola" ;
+    poke:type ex:type_ghost ;
+    poke:weight 4 .
+
+ex:card_darmanitan-galar-zen a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "darmanitan-galar-zen" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 343 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10178.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "gorilla-tactics",
+        "zen-mode" ;
+    poke:baseAttack 160 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 189 ;
+    poke:baseHP 105 ;
+    poke:baseSpAtk 30 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 135 ;
+    poke:colour "red" ;
+    poke:species "darmanitan" ;
+    poke:type ex:type_fire,
+        ex:type_ice ;
+    poke:weight 1200 .
+
+ex:card_darmanitan-zen a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "darmanitan-zen" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 345 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10017.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "sheer-force",
+        "zen-mode" ;
+    poke:baseAttack 30 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 189 ;
+    poke:baseHP 105 ;
+    poke:baseSpAtk 140 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 55 ;
+    poke:colour "red" ;
+    poke:species "darmanitan" ;
+    poke:type ex:type_fire,
+        ex:type_psychic ;
+    poke:weight 929 .
+
+ex:card_dhelmise a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dhelmise" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 402 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/781.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 39 ;
+    poke:ability "steelworker" ;
+    poke:baseAttack 131 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 181 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 86 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 40 ;
+    poke:colour "green" ;
+    poke:species "dhelmise" ;
+    poke:type ex:type_ghost,
+        ex:type_grass ;
+    poke:weight 2100 .
+
+ex:card_dialga a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dialga" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 781 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/483.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 54 ;
+    poke:ability "pressure",
+        "telepathy" ;
+    poke:baseAttack 120 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 340 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 150 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 90 ;
+    poke:colour "white" ;
+    poke:species "dialga" ;
+    poke:type ex:type_dragon,
+        ex:type_steel ;
+    poke:weight 6830 .
+
+ex:card_dialga-origin a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dialga-origin" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 775 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10245.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 70 ;
+    poke:ability "pressure",
+        "telepathy" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 120 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 150 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 90 ;
+    poke:colour "white" ;
+    poke:species "dialga" ;
+    poke:type ex:type_dragon,
+        ex:type_steel ;
+    poke:weight 8487 .
+
+ex:card_diggersby a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "diggersby" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 251 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/660.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "cheek-pouch",
+        "huge-power",
+        "pickup" ;
+    poke:baseAttack 56 ;
+    poke:baseDefense 77 ;
+    poke:baseExp 148 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 77 ;
+    poke:baseSpeed 78 ;
+    poke:colour "brown" ;
+    poke:species "diggersby" ;
+    poke:type ex:type_ground,
+        ex:type_normal ;
+    poke:weight 424 .
+
+ex:card_dodrio a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dodrio" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 297 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/85.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "early-bird",
+        "run-away",
+        "tangled-feet" ;
+    poke:baseAttack 110 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 165 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 110 ;
+    poke:colour "brown" ;
+    poke:species "dodrio" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 852 .
+
+ex:card_doduo a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "doduo" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 178 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/84.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 14 ;
+    poke:ability "early-bird",
+        "run-away",
+        "tangled-feet" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 62 ;
+    poke:baseHP 35 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 75 ;
+    poke:colour "brown" ;
+    poke:species "doduo" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 392 .
+
+ex:card_dracovish a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dracovish" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 383 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/882.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 23 ;
+    poke:ability "sand-rush",
+        "strong-jaw",
+        "water-absorb" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 177 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 75 ;
+    poke:colour "green" ;
+    poke:species "dracovish" ;
+    poke:type ex:type_dragon,
+        ex:type_water ;
+    poke:weight 2150 .
+
+ex:card_dracozolt a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "dracozolt" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 371 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/880.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "hustle",
+        "sand-rush",
+        "volt-absorb" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 177 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 75 ;
+    poke:colour "green" ;
+    poke:species "dracozolt" ;
+    poke:type ex:type_dragon,
+        ex:type_electric ;
+    poke:weight 1900 .
+
+ex:card_drednaw a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "drednaw" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 318 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/834.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "shell-armor",
+        "strong-jaw",
+        "swift-swim" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 170 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 48 ;
+    poke:baseSpDef 68 ;
+    poke:baseSpeed 74 ;
+    poke:colour "green" ;
+    poke:species "drednaw" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 1155 .
+
+ex:card_drednaw-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "drednaw-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 829 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10214.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "shell-armor",
+        "strong-jaw",
+        "swift-swim" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 170 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 48 ;
+    poke:baseSpDef 68 ;
+    poke:baseSpeed 74 ;
+    poke:colour "green" ;
+    poke:species "drednaw" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_duosion a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "duosion" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 212 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/578.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "magic-guard",
+        "overcoat",
+        "regenerator" ;
+    poke:baseAttack 40 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 130 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 125 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 30 ;
+    poke:colour "green" ;
+    poke:species "duosion" ;
+    poke:type ex:type_psychic ;
+    poke:weight 80 .
+
+ex:card_duraludon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "duraludon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 303 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/884.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "heavy-metal",
+        "light-metal",
+        "stalwart" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 187 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 85 ;
+    poke:colour "white" ;
+    poke:species "duraludon" ;
+    poke:type ex:type_dragon,
+        ex:type_steel ;
+    poke:weight 400 .
+
+ex:card_duraludon-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "duraludon-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 880 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10225.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 430 ;
+    poke:ability "heavy-metal",
+        "light-metal",
+        "stalwart" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 187 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 85 ;
+    poke:colour "white" ;
+    poke:species "duraludon" ;
+    poke:type ex:type_dragon,
+        ex:type_steel ;
+    poke:weight 10000 .
+
+ex:card_duskull a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "duskull" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 165 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/355.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "frisk",
+        "levitate" ;
+    poke:baseAttack 40 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 59 ;
+    poke:baseHP 20 ;
+    poke:baseSpAtk 30 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 25 ;
+    poke:colour "black" ;
+    poke:species "duskull" ;
+    poke:type ex:type_ghost ;
+    poke:weight 150 .
+
+ex:card_eelektross a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "eelektross" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 336 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/604.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 21 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 232 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 105 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "eelektross" ;
+    poke:type ex:type_electric ;
+    poke:weight 805 .
+
+ex:card_eevee-starter a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "eevee-starter" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 209 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10159.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "adaptability",
+        "anticipation",
+        "run-away" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 87 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 75 ;
+    poke:colour "brown" ;
+    poke:species "eevee" ;
+    poke:type ex:type_normal ;
+    poke:weight 65 .
+
+ex:card_eldegoss a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "eldegoss" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 238 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/830.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "cotton-down",
+        "effect-spore",
+        "regenerator" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 161 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 60 ;
+    poke:colour "green" ;
+    poke:species "eldegoss" ;
+    poke:type ex:type_grass ;
+    poke:weight 25 .
+
+ex:card_electrike a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "electrike" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 160 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/309.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "lightning-rod",
+        "minus",
+        "static" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 59 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 65 ;
+    poke:colour "green" ;
+    poke:species "electrike" ;
+    poke:type ex:type_electric ;
+    poke:weight 152 .
+
+ex:card_elekid a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "elekid" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 197 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/239.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "static",
+        "vital-spirit" ;
+    poke:baseAttack 63 ;
+    poke:baseDefense 37 ;
+    poke:baseExp 72 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 95 ;
+    poke:colour "yellow" ;
+    poke:species "elekid" ;
+    poke:type ex:type_electric ;
+    poke:weight 235 .
+
+ex:card_enamorus-therian a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "enamorus-therian" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 277 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10249.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "overcoat" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 110 ;
+    poke:baseHP 74 ;
+    poke:baseSpAtk 135 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 46 ;
+    poke:colour "pink" ;
+    poke:species "enamorus" ;
+    poke:type ex:type_fairy,
+        ex:type_flying ;
+    poke:weight 480 .
+
+ex:card_escavalier a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "escavalier" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 285 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/589.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "overcoat",
+        "shell-armor",
+        "swarm" ;
+    poke:baseAttack 135 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 173 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 20 ;
+    poke:colour "gray" ;
+    poke:species "escavalier" ;
+    poke:type ex:type_bug,
+        ex:type_steel ;
+    poke:weight 330 .
+
+ex:card_espeon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "espeon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 301 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/196.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 9 ;
+    poke:ability "magic-bounce",
+        "synchronize" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 184 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 130 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 110 ;
+    poke:colour "purple" ;
+    poke:species "espeon" ;
+    poke:type ex:type_psychic ;
+    poke:weight 265 .
+
+ex:card_eternatus a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "eternatus" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 934 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/890.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 200 ;
+    poke:ability "pressure" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 345 ;
+    poke:baseHP 140 ;
+    poke:baseSpAtk 145 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 130 ;
+    poke:colour "purple" ;
+    poke:species "eternatus" ;
+    poke:type ex:type_dragon,
+        ex:type_poison ;
+    poke:weight 9500 .
+
+ex:card_excadrill a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "excadrill" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 284 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/530.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "mold-breaker",
+        "sand-force",
+        "sand-rush" ;
+    poke:baseAttack 135 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 178 ;
+    poke:baseHP 110 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 88 ;
+    poke:colour "gray" ;
+    poke:species "excadrill" ;
+    poke:type ex:type_ground,
+        ex:type_steel ;
+    poke:weight 404 .
+
+ex:card_flapple-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "flapple-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 835 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10216.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "gluttony",
+        "hustle",
+        "ripen" ;
+    poke:baseAttack 110 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 170 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 70 ;
+    poke:colour "green" ;
+    poke:species "flapple" ;
+    poke:type ex:type_dragon,
+        ex:type_grass ;
+    poke:weight 10000 .
+
+ex:card_foongus a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "foongus" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 150 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/590.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 2 ;
+    poke:ability "effect-spore",
+        "regenerator" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 59 ;
+    poke:baseHP 69 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 15 ;
+    poke:colour "white" ;
+    poke:species "foongus" ;
+    poke:type ex:type_grass,
+        ex:type_poison ;
+    poke:weight 10 .
+
+ex:card_froakie a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "froakie" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 162 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/656.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "protean",
+        "torrent" ;
+    poke:baseAttack 56 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 63 ;
+    poke:baseHP 41 ;
+    poke:baseSpAtk 62 ;
+    poke:baseSpDef 44 ;
+    poke:baseSpeed 71 ;
+    poke:colour "blue" ;
+    poke:species "froakie" ;
+    poke:type ex:type_water ;
+    poke:weight 70 .
+
+ex:card_garbodor-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "garbodor-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 822 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10207.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 210 ;
+    poke:ability "aftermath",
+        "stench",
+        "weak-armor" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 82 ;
+    poke:baseExp 166 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 82 ;
+    poke:baseSpeed 75 ;
+    poke:colour "green" ;
+    poke:species "garbodor" ;
+    poke:type ex:type_poison ;
+    poke:weight 10000 .
+
+ex:card_gardevoir-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gardevoir-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 379 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10051.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "pixilate" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 278 ;
+    poke:baseHP 68 ;
+    poke:baseSpAtk 165 ;
+    poke:baseSpDef 135 ;
+    poke:baseSpeed 100 ;
+    poke:colour "white" ;
+    poke:species "gardevoir" ;
+    poke:type ex:type_fairy,
+        ex:type_psychic ;
+    poke:weight 484 .
+
+ex:card_gengar-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gengar-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 850 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10202.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 200 ;
+    poke:ability "cursed-body" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 225 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 130 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 110 ;
+    poke:colour "purple" ;
+    poke:species "gengar" ;
+    poke:type ex:type_ghost,
+        ex:type_poison ;
+    poke:weight 10000 .
+
+ex:card_gible a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gible" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 164 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/443.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "rough-skin",
+        "sand-veil" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 60 ;
+    poke:baseHP 58 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 42 ;
+    poke:colour "blue" ;
+    poke:species "gible" ;
+    poke:type ex:type_dragon,
+        ex:type_ground ;
+    poke:weight 205 .
+
+ex:card_giratina-altered a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "giratina-altered" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 811 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/487.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 45 ;
+    poke:ability "pressure",
+        "telepathy" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 340 ;
+    poke:baseHP 150 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 90 ;
+    poke:colour "black" ;
+    poke:species "giratina" ;
+    poke:type ex:type_dragon,
+        ex:type_ghost ;
+    poke:weight 7500 .
+
+ex:card_giratina-origin a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "giratina-origin" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 759 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10007.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 69 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 120 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 340 ;
+    poke:baseHP 150 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 90 ;
+    poke:colour "black" ;
+    poke:species "giratina" ;
+    poke:type ex:type_dragon,
+        ex:type_ghost ;
+    poke:weight 6500 .
+
+ex:card_glastrier a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "glastrier" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 777 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/896.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "chilling-neigh" ;
+    poke:baseAttack 145 ;
+    poke:baseDefense 130 ;
+    poke:baseExp 290 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 110 ;
+    poke:baseSpeed 30 ;
+    poke:colour "white" ;
+    poke:species "glastrier" ;
+    poke:type ex:type_ice ;
+    poke:weight 8000 .
+
+ex:card_goomy a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "goomy" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 152 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/704.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "gooey",
+        "hydration",
+        "sap-sipper" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 35 ;
+    poke:baseExp 60 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 40 ;
+    poke:colour "purple" ;
+    poke:species "goomy" ;
+    poke:type ex:type_dragon ;
+    poke:weight 28 .
+
+ex:card_gourgeist-super a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gourgeist-super" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 285 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10032.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "frisk",
+        "insomnia",
+        "pickup" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 122 ;
+    poke:baseExp 173 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 58 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 54 ;
+    poke:colour "brown" ;
+    poke:species "gourgeist" ;
+    poke:type ex:type_ghost,
+        ex:type_grass ;
+    poke:weight 390 .
+
+ex:card_graveler-alola a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "graveler-alola" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 272 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10110.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "galvanize",
+        "magnet-pull",
+        "sturdy" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 137 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 35 ;
+    poke:colour "brown" ;
+    poke:species "graveler" ;
+    poke:type ex:type_electric,
+        ex:type_rock ;
+    poke:weight 1100 .
+
+ex:card_greninja a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "greninja" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 314 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/658.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "protean",
+        "torrent" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 67 ;
+    poke:baseExp 239 ;
+    poke:baseHP 72 ;
+    poke:baseSpAtk 103 ;
+    poke:baseSpDef 71 ;
+    poke:baseSpeed 122 ;
+    poke:colour "blue" ;
+    poke:species "greninja" ;
+    poke:type ex:type_dark,
+        ex:type_water ;
+    poke:weight 400 .
+
+ex:card_grimmsnarl-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "grimmsnarl-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 874 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10222.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 320 ;
+    poke:ability "frisk",
+        "pickpocket",
+        "prankster" ;
+    poke:baseAttack 120 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 255 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 60 ;
+    poke:colour "purple" ;
+    poke:species "grimmsnarl" ;
+    poke:type ex:type_dark,
+        ex:type_fairy ;
+    poke:weight 10000 .
+
+ex:card_grookey a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "grookey" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 154 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/810.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "grassy-surge",
+        "overgrow" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 62 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 65 ;
+    poke:colour "green" ;
+    poke:species "grookey" ;
+    poke:type ex:type_grass ;
+    poke:weight 50 .
+
+ex:card_groudon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "groudon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 922 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/383.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 35 ;
+    poke:ability "drought" ;
+    poke:baseAttack 150 ;
+    poke:baseDefense 140 ;
+    poke:baseExp 335 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 90 ;
+    poke:colour "red" ;
+    poke:species "groudon" ;
+    poke:type ex:type_ground ;
+    poke:weight 9500 .
+
+ex:card_groudon-primal a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "groudon-primal" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 995 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10078.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 50 ;
+    poke:ability "desolate-land" ;
+    poke:baseAttack 180 ;
+    poke:baseDefense 160 ;
+    poke:baseExp 347 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 150 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 90 ;
+    poke:colour "red" ;
+    poke:species "groudon" ;
+    poke:type ex:type_fire,
+        ex:type_ground ;
+    poke:weight 9997 .
+
+ex:card_growlithe-hisui a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "growlithe-hisui" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 156 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10229.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "flash-fire",
+        "intimidate",
+        "justified" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 45 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 55 ;
+    poke:colour "brown" ;
+    poke:species "growlithe" ;
+    poke:type ex:type_fire,
+        ex:type_rock ;
+    poke:weight 227 .
+
+ex:card_grumpig a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "grumpig" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 297 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/326.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 9 ;
+    poke:ability "gluttony",
+        "own-tempo",
+        "thick-fat" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 165 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 110 ;
+    poke:baseSpeed 80 ;
+    poke:colour "purple" ;
+    poke:species "grumpig" ;
+    poke:type ex:type_psychic ;
+    poke:weight 715 .
+
+ex:card_gumshoos-totem a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gumshoos-totem" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 255 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10121.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 14 ;
+    poke:ability "adaptability",
+        "stakeout",
+        "strong-jaw" ;
+    poke:baseAttack 110 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 146 ;
+    poke:baseHP 88 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 45 ;
+    poke:colour "brown" ;
+    poke:species "gumshoos" ;
+    poke:type ex:type_normal ;
+    poke:weight 600 .
+
+ex:card_gurdurr a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gurdurr" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 237 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/533.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "guts",
+        "iron-fist",
+        "sheer-force" ;
+    poke:baseAttack 105 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 142 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 40 ;
+    poke:colour "gray" ;
+    poke:species "gurdurr" ;
+    poke:type ex:type_fighting ;
+    poke:weight 400 .
+
+ex:card_guzzlord a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "guzzlord" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 824 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/799.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 55 ;
+    poke:ability "beast-boost" ;
+    poke:baseAttack 101 ;
+    poke:baseDefense 53 ;
+    poke:baseExp 285 ;
+    poke:baseHP 223 ;
+    poke:baseSpAtk 97 ;
+    poke:baseSpDef 53 ;
+    poke:baseSpeed 43 ;
+    poke:colour "black" ;
+    poke:species "guzzlord" ;
+    poke:type ex:type_dark,
+        ex:type_dragon ;
+    poke:weight 8880 .
+
+ex:card_gyarados-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "gyarados-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 515 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10041.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 65 ;
+    poke:ability "mold-breaker" ;
+    poke:baseAttack 155 ;
+    poke:baseDefense 109 ;
+    poke:baseExp 224 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 130 ;
+    poke:baseSpeed 81 ;
+    poke:colour "blue" ;
+    poke:species "gyarados" ;
+    poke:type ex:type_dark,
+        ex:type_water ;
+    poke:weight 3050 .
+
+ex:card_hatterene-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "hatterene-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 874 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10221.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 260 ;
+    poke:ability "anticipation",
+        "healer",
+        "magic-bounce" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 255 ;
+    poke:baseHP 57 ;
+    poke:baseSpAtk 136 ;
+    poke:baseSpDef 103 ;
+    poke:baseSpeed 29 ;
+    poke:colour "pink" ;
+    poke:species "hatterene" ;
+    poke:type ex:type_fairy,
+        ex:type_psychic ;
+    poke:weight 10000 .
+
+ex:card_heliolisk a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "heliolisk" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 271 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/695.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "dry-skin",
+        "sand-veil",
+        "solar-power" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 52 ;
+    poke:baseExp 168 ;
+    poke:baseHP 62 ;
+    poke:baseSpAtk 109 ;
+    poke:baseSpDef 94 ;
+    poke:baseSpeed 109 ;
+    poke:colour "yellow" ;
+    poke:species "heliolisk" ;
+    poke:type ex:type_electric,
+        ex:type_normal ;
+    poke:weight 210 .
+
+ex:card_heracross-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "heracross-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 352 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10047.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "skill-link" ;
+    poke:baseAttack 185 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 210 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 75 ;
+    poke:colour "blue" ;
+    poke:species "heracross" ;
+    poke:type ex:type_bug,
+        ex:type_fighting ;
+    poke:weight 625 .
+
+ex:card_hitmontop a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "hitmontop" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 273 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/237.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 14 ;
+    poke:ability "intimidate",
+        "steadfast",
+        "technician" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 159 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 110 ;
+    poke:baseSpeed 70 ;
+    poke:colour "brown" ;
+    poke:species "hitmontop" ;
+    poke:type ex:type_fighting ;
+    poke:weight 480 .
+
+ex:card_honchkrow a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "honchkrow" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 284 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/430.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 9 ;
+    poke:ability "insomnia",
+        "moxie",
+        "super-luck" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 52 ;
+    poke:baseExp 177 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 105 ;
+    poke:baseSpDef 52 ;
+    poke:baseSpeed 71 ;
+    poke:colour "black" ;
+    poke:species "honchkrow" ;
+    poke:type ex:type_dark,
+        ex:type_flying ;
+    poke:weight 273 .
+
+ex:card_honedge a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "honedge" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 163 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/679.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "no-guard" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 65 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 37 ;
+    poke:baseSpeed 28 ;
+    poke:colour "brown" ;
+    poke:species "honedge" ;
+    poke:type ex:type_ghost,
+        ex:type_steel ;
+    poke:weight 20 .
+
+ex:card_hoppip a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "hoppip" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 130 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/187.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "chlorophyll",
+        "infiltrator",
+        "leaf-guard" ;
+    poke:baseAttack 35 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 50 ;
+    poke:baseHP 35 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 50 ;
+    poke:colour "pink" ;
+    poke:species "hoppip" ;
+    poke:type ex:type_flying,
+        ex:type_grass ;
+    poke:weight 5 .
+
+ex:card_inteleon-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "inteleon-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 891 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10211.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 400 ;
+    poke:ability "sniper",
+        "torrent" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 265 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 125 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 120 ;
+    poke:colour "blue" ;
+    poke:species "inteleon" ;
+    poke:type ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_ivysaur a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "ivysaur" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 230 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "chlorophyll",
+        "overgrow" ;
+    poke:baseAttack 62 ;
+    poke:baseDefense 63 ;
+    poke:baseExp 142 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 60 ;
+    poke:colour "green" ;
+    poke:species "ivysaur" ;
+    poke:type ex:type_grass,
+        ex:type_poison ;
+    poke:weight 130 .
+
+ex:card_jangmo-o a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "jangmo-o" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 169 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/782.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "bulletproof",
+        "overcoat",
+        "soundproof" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 60 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 45 ;
+    poke:colour "gray" ;
+    poke:species "jangmo-o" ;
+    poke:type ex:type_dragon ;
+    poke:weight 297 .
+
+ex:card_jellicent a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "jellicent" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 333 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/593.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "cursed-body",
+        "damp",
+        "water-absorb" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 168 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 60 ;
+    poke:colour "white" ;
+    poke:species "jellicent" ;
+    poke:type ex:type_ghost,
+        ex:type_water ;
+    poke:weight 1350 .
+
+ex:card_jirachi a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "jirachi" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 344 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/385.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "serene-grace" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 300 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 100 ;
+    poke:colour "yellow" ;
+    poke:species "jirachi" ;
+    poke:type ex:type_psychic,
+        ex:type_steel ;
+    poke:weight 11 .
+
+ex:card_kabutops a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kabutops" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 296 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/141.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "battle-armor",
+        "swift-swim",
+        "weak-armor" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 105 ;
+    poke:baseExp 173 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 80 ;
+    poke:colour "brown" ;
+    poke:species "kabutops" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 405 .
+
+ex:card_kangaskhan a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kangaskhan" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 315 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/115.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "early-bird",
+        "inner-focus",
+        "scrappy" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 172 ;
+    poke:baseHP 105 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 90 ;
+    poke:colour "brown" ;
+    poke:species "kangaskhan" ;
+    poke:type ex:type_normal ;
+    poke:weight 800 .
+
+ex:card_kingler-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kingler-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 820 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10203.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 190 ;
+    poke:ability "hyper-cutter",
+        "sheer-force",
+        "shell-armor" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 166 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 75 ;
+    poke:colour "red" ;
+    poke:species "kingler" ;
+    poke:type ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_klang a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "klang" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 261 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/600.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "clear-body",
+        "minus",
+        "plus" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 154 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 50 ;
+    poke:colour "gray" ;
+    poke:species "klang" ;
+    poke:type ex:type_steel ;
+    poke:weight 510 .
+
+ex:card_kyogre-primal a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kyogre-primal" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 680 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10077.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 98 ;
+    poke:ability "primordial-sea" ;
+    poke:baseAttack 150 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 347 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 180 ;
+    poke:baseSpDef 160 ;
+    poke:baseSpeed 90 ;
+    poke:colour "blue" ;
+    poke:species "kyogre" ;
+    poke:type ex:type_water ;
+    poke:weight 4300 .
+
+ex:card_kyurem a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kyurem" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 557 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/646.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 30 ;
+    poke:ability "pressure" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 330 ;
+    poke:baseHP 125 ;
+    poke:baseSpAtk 130 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 95 ;
+    poke:colour "gray" ;
+    poke:species "kyurem" ;
+    poke:type ex:type_dragon,
+        ex:type_ice ;
+    poke:weight 3250 .
+
+ex:card_lapras-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "lapras-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 856 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10204.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "hydration",
+        "shell-armor",
+        "water-absorb" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 187 ;
+    poke:baseHP 130 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 60 ;
+    poke:colour "blue" ;
+    poke:species "lapras" ;
+    poke:type ex:type_ice,
+        ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_latios-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "latios-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 432 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10063.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 23 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 315 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 160 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 110 ;
+    poke:colour "blue" ;
+    poke:species "latios" ;
+    poke:type ex:type_dragon,
+        ex:type_psychic ;
+    poke:weight 700 .
+
+ex:card_lilligant a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "lilligant" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 264 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/549.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "chlorophyll",
+        "leaf-guard",
+        "own-tempo" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 168 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 110 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 90 ;
+    poke:colour "green" ;
+    poke:species "lilligant" ;
+    poke:type ex:type_grass ;
+    poke:weight 163 .
+
+ex:card_litwick a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "litwick" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 147 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/607.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "flame-body",
+        "flash-fire",
+        "infiltrator" ;
+    poke:baseAttack 30 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 55 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 20 ;
+    poke:colour "white" ;
+    poke:species "litwick" ;
+    poke:type ex:type_fire,
+        ex:type_ghost ;
+    poke:weight 31 .
+
+ex:card_lopunny-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "lopunny-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 320 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10088.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "scrappy" ;
+    poke:baseAttack 136 ;
+    poke:baseDefense 94 ;
+    poke:baseExp 203 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 54 ;
+    poke:baseSpDef 96 ;
+    poke:baseSpeed 135 ;
+    poke:colour "brown" ;
+    poke:species "lopunny" ;
+    poke:type ex:type_fighting,
+        ex:type_normal ;
+    poke:weight 283 .
+
+ex:card_lucario a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "lucario" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 320 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "inner-focus",
+        "justified",
+        "steadfast" ;
+    poke:baseAttack 110 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 184 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 115 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 90 ;
+    poke:colour "blue" ;
+    poke:species "lucario" ;
+    poke:type ex:type_fighting,
+        ex:type_steel ;
+    poke:weight 540 .
+
+ex:card_lumineon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "lumineon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 254 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/457.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "storm-drain",
+        "swift-swim",
+        "water-veil" ;
+    poke:baseAttack 69 ;
+    poke:baseDefense 76 ;
+    poke:baseExp 161 ;
+    poke:baseHP 69 ;
+    poke:baseSpAtk 69 ;
+    poke:baseSpDef 86 ;
+    poke:baseSpeed 91 ;
+    poke:colour "blue" ;
+    poke:species "lumineon" ;
+    poke:type ex:type_water ;
+    poke:weight 240 .
+
+ex:card_machamp-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "machamp-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 856 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10201.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 250 ;
+    poke:ability "guts",
+        "no-guard",
+        "steadfast" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 227 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 55 ;
+    poke:colour "gray" ;
+    poke:species "machamp" ;
+    poke:type ex:type_fighting ;
+    poke:weight 10000 .
+
+ex:card_machop a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "machop" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 172 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/66.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "guts",
+        "no-guard",
+        "steadfast" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 61 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 35 ;
+    poke:colour "gray" ;
+    poke:species "machop" ;
+    poke:type ex:type_fighting ;
+    poke:weight 195 .
+
+ex:card_magby a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "magby" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 200 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/240.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "flame-body",
+        "vital-spirit" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 37 ;
+    poke:baseExp 73 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 83 ;
+    poke:colour "red" ;
+    poke:species "magby" ;
+    poke:type ex:type_fire ;
+    poke:weight 214 .
+
+ex:card_magcargo a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "magcargo" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 266 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/219.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "flame-body",
+        "magma-armor",
+        "weak-armor" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 151 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 30 ;
+    poke:colour "red" ;
+    poke:species "magcargo" ;
+    poke:type ex:type_fire,
+        ex:type_rock ;
+    poke:weight 550 .
+
+ex:card_magnemite a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "magnemite" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 173 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/81.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "analytic",
+        "magnet-pull",
+        "sturdy" ;
+    poke:baseAttack 35 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 65 ;
+    poke:baseHP 25 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 45 ;
+    poke:colour "gray" ;
+    poke:species "magnemite" ;
+    poke:type ex:type_electric,
+        ex:type_steel ;
+    poke:weight 60 .
+
+ex:card_magneton a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "magneton" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 287 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/82.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "analytic",
+        "magnet-pull",
+        "sturdy" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 163 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 70 ;
+    poke:colour "gray" ;
+    poke:species "magneton" ;
+    poke:type ex:type_electric,
+        ex:type_steel ;
+    poke:weight 600 .
+
+ex:card_maractus a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "maractus" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 264 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/556.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "chlorophyll",
+        "storm-drain",
+        "water-absorb" ;
+    poke:baseAttack 86 ;
+    poke:baseDefense 67 ;
+    poke:baseExp 161 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 106 ;
+    poke:baseSpDef 67 ;
+    poke:baseSpeed 60 ;
+    poke:colour "green" ;
+    poke:species "maractus" ;
+    poke:type ex:type_grass ;
+    poke:weight 280 .
+
+ex:card_marshtomp a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "marshtomp" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 236 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/259.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "damp",
+        "torrent" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 142 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "marshtomp" ;
+    poke:type ex:type_ground,
+        ex:type_water ;
+    poke:weight 280 .
+
+ex:card_masquerain a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "masquerain" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 245 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/284.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "intimidate",
+        "unnerve" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 62 ;
+    poke:baseExp 159 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 82 ;
+    poke:baseSpeed 80 ;
+    poke:colour "blue" ;
+    poke:species "masquerain" ;
+    poke:type ex:type_bug,
+        ex:type_flying ;
+    poke:weight 36 .
+
+ex:card_mawile a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "mawile" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 224 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/303.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "hyper-cutter",
+        "intimidate",
+        "sheer-force" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 133 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 50 ;
+    poke:colour "black" ;
+    poke:species "mawile" ;
+    poke:type ex:type_fairy,
+        ex:type_steel ;
+    poke:weight 115 .
+
+ex:card_medicham a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "medicham" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 242 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/308.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "pure-power",
+        "telepathy" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 144 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 80 ;
+    poke:colour "red" ;
+    poke:species "medicham" ;
+    poke:type ex:type_fighting,
+        ex:type_psychic ;
+    poke:weight 315 .
+
+ex:card_melmetal a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "melmetal" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 784 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/809.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 25 ;
+    poke:ability "iron-fist" ;
+    poke:baseAttack 143 ;
+    poke:baseDefense 143 ;
+    poke:baseExp 300 ;
+    poke:baseHP 135 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 34 ;
+    poke:colour "gray" ;
+    poke:species "melmetal" ;
+    poke:type ex:type_steel ;
+    poke:weight 8000 .
+
+ex:card_melmetal-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "melmetal-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 904 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10208.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 250 ;
+    poke:ability "iron-fist" ;
+    poke:baseAttack 143 ;
+    poke:baseDefense 143 ;
+    poke:baseExp 270 ;
+    poke:baseHP 135 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 34 ;
+    poke:colour "gray" ;
+    poke:species "melmetal" ;
+    poke:type ex:type_steel ;
+    poke:weight 10000 .
+
+ex:card_meltan a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "meltan" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 166 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 2 ;
+    poke:ability "magnet-pull" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 150 ;
+    poke:baseHP 46 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 34 ;
+    poke:colour "gray" ;
+    poke:species "meltan" ;
+    poke:type ex:type_steel ;
+    poke:weight 80 .
+
+ex:card_metagross-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "metagross-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 918 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10076.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 25 ;
+    poke:ability "tough-claws" ;
+    poke:baseAttack 145 ;
+    poke:baseDefense 150 ;
+    poke:baseExp 315 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 105 ;
+    poke:baseSpDef 110 ;
+    poke:baseSpeed 110 ;
+    poke:colour "blue" ;
+    poke:species "metagross" ;
+    poke:type ex:type_psychic,
+        ex:type_steel ;
+    poke:weight 9429 .
+
+ex:card_metang a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "metang" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 347 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/375.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "clear-body",
+        "light-metal" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 147 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "metang" ;
+    poke:type ex:type_psychic,
+        ex:type_steel ;
+    poke:weight 2025 .
+
+ex:card_mewtwo-mega-x a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "mewtwo-mega-x" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 513 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10043.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 23 ;
+    poke:ability "steadfast" ;
+    poke:baseAttack 190 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 351 ;
+    poke:baseHP 106 ;
+    poke:baseSpAtk 154 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 130 ;
+    poke:colour "purple" ;
+    poke:species "mewtwo" ;
+    poke:type ex:type_fighting,
+        ex:type_psychic ;
+    poke:weight 1270 .
+
+ex:card_mimikyu-disguised a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "mimikyu-disguised" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 252 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/778.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 2 ;
+    poke:ability "disguise" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 167 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 96 ;
+    poke:colour "yellow" ;
+    poke:species "mimikyu" ;
+    poke:type ex:type_fairy,
+        ex:type_ghost ;
+    poke:weight 7 .
+
+ex:card_minior-blue a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "minior-blue" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 261 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10140.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "shields-down" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 175 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 120 ;
+    poke:colour "brown" ;
+    poke:species "minior" ;
+    poke:type ex:type_flying,
+        ex:type_rock ;
+    poke:weight 3 .
+
+ex:card_minior-indigo a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "minior-indigo" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 261 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10141.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "shields-down" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 175 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 120 ;
+    poke:colour "brown" ;
+    poke:species "minior" ;
+    poke:type ex:type_flying,
+        ex:type_rock ;
+    poke:weight 3 .
+
+ex:card_minior-red a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "minior-red" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 261 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10136.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "shields-down" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 175 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 120 ;
+    poke:colour "brown" ;
+    poke:species "minior" ;
+    poke:type ex:type_flying,
+        ex:type_rock ;
+    poke:weight 3 .
+
+ex:card_mr-mime a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "mr-mime" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 296 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/122.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "filter",
+        "soundproof",
+        "technician" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 161 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 90 ;
+    poke:colour "pink" ;
+    poke:species "mr-mime" ;
+    poke:type ex:type_fairy,
+        ex:type_psychic ;
+    poke:weight 545 .
+
+ex:card_mudsdale a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "mudsdale" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 784 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/750.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 25 ;
+    poke:ability "inner-focus",
+        "own-tempo",
+        "stamina" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 175 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 35 ;
+    poke:colour "brown" ;
+    poke:species "mudsdale" ;
+    poke:type ex:type_ground ;
+    poke:weight 9200 .
+
+ex:card_muk a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "muk" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 286 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/89.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "poison-touch",
+        "stench",
+        "sticky-hold" ;
+    poke:baseAttack 105 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 175 ;
+    poke:baseHP 105 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 50 ;
+    poke:colour "purple" ;
+    poke:species "muk" ;
+    poke:type ex:type_poison ;
+    poke:weight 300 .
+
+ex:card_necrozma a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "necrozma" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 475 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/800.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 24 ;
+    poke:ability "prism-armor" ;
+    poke:baseAttack 107 ;
+    poke:baseDefense 101 ;
+    poke:baseExp 300 ;
+    poke:baseHP 97 ;
+    poke:baseSpAtk 127 ;
+    poke:baseSpDef 89 ;
+    poke:baseSpeed 79 ;
+    poke:colour "black" ;
+    poke:species "necrozma" ;
+    poke:type ex:type_psychic ;
+    poke:weight 2300 .
+
+ex:card_nidoran-m a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "nidoran-m" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 149 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/32.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "hustle",
+        "poison-point",
+        "rivalry" ;
+    poke:baseAttack 57 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 55 ;
+    poke:baseHP 46 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 50 ;
+    poke:colour "purple" ;
+    poke:species "nidoran-m" ;
+    poke:type ex:type_poison ;
+    poke:weight 90 .
+
+ex:card_ninetales-alola a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "ninetales-alola" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 280 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10104.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "snow-cloak",
+        "snow-warning" ;
+    poke:baseAttack 67 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 177 ;
+    poke:baseHP 73 ;
+    poke:baseSpAtk 81 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 109 ;
+    poke:colour "yellow" ;
+    poke:species "ninetales" ;
+    poke:type ex:type_fairy,
+        ex:type_ice ;
+    poke:weight 199 .
+
+ex:card_orbeetle-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "orbeetle-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 847 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10213.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 140 ;
+    poke:ability "frisk",
+        "swarm",
+        "telepathy" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 110 ;
+    poke:baseExp 253 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 90 ;
+    poke:colour "red" ;
+    poke:species "orbeetle" ;
+    poke:type ex:type_bug,
+        ex:type_psychic ;
+    poke:weight 10000 .
+
+ex:card_oricorio-baile a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "oricorio-baile" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 247 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/741.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "dancer" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 167 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 98 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 93 ;
+    poke:colour "red" ;
+    poke:species "oricorio" ;
+    poke:type ex:type_fire,
+        ex:type_flying ;
+    poke:weight 34 .
+
+ex:card_oshawott a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "oshawott" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 161 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/501.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "shell-armor",
+        "torrent" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 62 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 63 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 45 ;
+    poke:colour "blue" ;
+    poke:species "oshawott" ;
+    poke:type ex:type_water ;
+    poke:weight 59 .
+
+ex:card_overqwil a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "overqwil" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 243 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/904.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 25 ;
+    poke:ability "intimidate",
+        "poison-point",
+        "swift-swim" ;
+    poke:baseAttack 115 ;
+    poke:baseDefense 95 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 85 ;
+    poke:colour "black" ;
+    poke:species "overqwil" ;
+    poke:type ex:type_dark,
+        ex:type_poison ;
+    poke:weight 605 .
+
+ex:card_palossand a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "palossand" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 398 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/770.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "sand-veil",
+        "water-compaction" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 110 ;
+    poke:baseExp 168 ;
+    poke:baseHP 85 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 35 ;
+    poke:colour "brown" ;
+    poke:species "palossand" ;
+    poke:type ex:type_ghost,
+        ex:type_ground ;
+    poke:weight 2500 .
+
+ex:card_pawniard a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pawniard" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 180 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/624.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "defiant",
+        "inner-focus",
+        "pressure" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 68 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 60 ;
+    poke:colour "red" ;
+    poke:species "pawniard" ;
+    poke:type ex:type_dark,
+        ex:type_steel ;
+    poke:weight 102 .
+
+ex:card_phanpy a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "phanpy" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 183 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/231.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "pickup",
+        "sand-veil" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 66 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 40 ;
+    poke:colour "blue" ;
+    poke:species "phanpy" ;
+    poke:type ex:type_ground ;
+    poke:weight 335 .
+
+ex:card_pidgeot-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pidgeot-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 343 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10073.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "no-guard" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 261 ;
+    poke:baseHP 83 ;
+    poke:baseSpAtk 135 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 121 ;
+    poke:colour "brown" ;
+    poke:species "pidgeot" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 505 .
+
+ex:card_pikachu-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pikachu-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 744 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10199.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 210 ;
+    poke:ability "lightning-rod",
+        "static" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 112 ;
+    poke:baseHP 35 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 90 ;
+    poke:colour "yellow" ;
+    poke:species "pikachu" ;
+    poke:type ex:type_electric ;
+    poke:weight 10000 .
+
+ex:card_pikachu-world-cap a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pikachu-world-cap" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 171 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10160.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "lightning-rod",
+        "static" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 112 ;
+    poke:baseHP 35 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 90 ;
+    poke:colour "yellow" ;
+    poke:species "pikachu" ;
+    poke:type ex:type_electric ;
+    poke:weight 60 .
+
+ex:card_piloswine a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "piloswine" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 271 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/221.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "oblivious",
+        "snow-cloak",
+        "thick-fat" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 80 ;
+    poke:baseExp 158 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 50 ;
+    poke:colour "brown" ;
+    poke:species "piloswine" ;
+    poke:type ex:type_ground,
+        ex:type_ice ;
+    poke:weight 558 .
+
+ex:card_pinsir a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pinsir" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 299 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/127.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "hyper-cutter",
+        "mold-breaker",
+        "moxie" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 175 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 85 ;
+    poke:colour "brown" ;
+    poke:species "pinsir" ;
+    poke:type ex:type_bug ;
+    poke:weight 550 .
+
+ex:card_poipole a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "poipole" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 230 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/803.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "beast-boost" ;
+    poke:baseAttack 73 ;
+    poke:baseDefense 67 ;
+    poke:baseExp 210 ;
+    poke:baseHP 67 ;
+    poke:baseSpAtk 73 ;
+    poke:baseSpDef 67 ;
+    poke:baseSpeed 73 ;
+    poke:colour "purple" ;
+    poke:species "poipole" ;
+    poke:type ex:type_poison ;
+    poke:weight 18 .
+
+ex:card_poochyena a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "poochyena" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 126 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/261.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "quick-feet",
+        "rattled",
+        "run-away" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 35 ;
+    poke:baseExp 56 ;
+    poke:baseHP 35 ;
+    poke:baseSpAtk 30 ;
+    poke:baseSpDef 30 ;
+    poke:baseSpeed 35 ;
+    poke:colour "gray" ;
+    poke:species "poochyena" ;
+    poke:type ex:type_dark ;
+    poke:weight 136 .
+
+ex:card_pumpkaboo-large a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pumpkaboo-large" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 176 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10028.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "frisk",
+        "insomnia",
+        "pickup" ;
+    poke:baseAttack 66 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 67 ;
+    poke:baseHP 54 ;
+    poke:baseSpAtk 44 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 46 ;
+    poke:colour "brown" ;
+    poke:species "pumpkaboo" ;
+    poke:type ex:type_ghost,
+        ex:type_grass ;
+    poke:weight 75 .
+
+ex:card_pyroar a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "pyroar" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 310 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/668.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "moxie",
+        "rivalry",
+        "unnerve" ;
+    poke:baseAttack 68 ;
+    poke:baseDefense 72 ;
+    poke:baseExp 177 ;
+    poke:baseHP 86 ;
+    poke:baseSpAtk 109 ;
+    poke:baseSpDef 66 ;
+    poke:baseSpeed 106 ;
+    poke:colour "brown" ;
+    poke:species "pyroar" ;
+    poke:type ex:type_fire,
+        ex:type_normal ;
+    poke:weight 815 .
+
+ex:card_rayquaza-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rayquaza-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 667 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10079.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 108 ;
+    poke:ability "delta-stream" ;
+    poke:baseAttack 180 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 351 ;
+    poke:baseHP 105 ;
+    poke:baseSpAtk 180 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 115 ;
+    poke:colour "green" ;
+    poke:species "rayquaza" ;
+    poke:type ex:type_dragon,
+        ex:type_flying ;
+    poke:weight 3920 .
+
+ex:card_regice a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "regice" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 434 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/378.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "clear-body",
+        "ice-body" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 290 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 200 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "regice" ;
+    poke:type ex:type_ice ;
+    poke:weight 1750 .
+
+ex:card_rillaboom-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rillaboom-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 873 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10209.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 280 ;
+    poke:ability "grassy-surge",
+        "overgrow" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 265 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 60 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 85 ;
+    poke:colour "green" ;
+    poke:species "rillaboom" ;
+    poke:type ex:type_grass ;
+    poke:weight 10000 .
+
+ex:card_rookidee a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rookidee" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 120 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/821.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 2 ;
+    poke:ability "big-pecks",
+        "keen-eye",
+        "unnerve" ;
+    poke:baseAttack 47 ;
+    poke:baseDefense 35 ;
+    poke:baseExp 49 ;
+    poke:baseHP 38 ;
+    poke:baseSpAtk 33 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 57 ;
+    poke:colour "blue" ;
+    poke:species "rookidee" ;
+    poke:type ex:type_flying ;
+    poke:weight 18 .
+
+ex:card_roselia a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "roselia" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 223 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/315.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "leaf-guard",
+        "natural-cure",
+        "poison-point" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 140 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 65 ;
+    poke:colour "green" ;
+    poke:species "roselia" ;
+    poke:type ex:type_grass,
+        ex:type_poison ;
+    poke:weight 20 .
+
+ex:card_rotom a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rotom" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 236 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/479.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 77 ;
+    poke:baseExp 154 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 77 ;
+    poke:baseSpeed 91 ;
+    poke:colour "red" ;
+    poke:species "rotom" ;
+    poke:type ex:type_electric,
+        ex:type_ghost ;
+    poke:weight 3 .
+
+ex:card_rotom-frost a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rotom-frost" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 277 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10010.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 107 ;
+    poke:baseExp 182 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 105 ;
+    poke:baseSpDef 107 ;
+    poke:baseSpeed 86 ;
+    poke:colour "red" ;
+    poke:species "rotom" ;
+    poke:type ex:type_electric,
+        ex:type_ice ;
+    poke:weight 3 .
+
+ex:card_rufflet a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "rufflet" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 175 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/627.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "hustle",
+        "keen-eye",
+        "sheer-force" ;
+    poke:baseAttack 83 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 70 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 37 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 60 ;
+    poke:colour "white" ;
+    poke:species "rufflet" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 105 .
+
+ex:card_samurott a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "samurott" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 345 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/503.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "shell-armor",
+        "torrent" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 238 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 108 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 70 ;
+    poke:colour "blue" ;
+    poke:species "samurott" ;
+    poke:type ex:type_water ;
+    poke:weight 946 .
+
+ex:card_sandaconda-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "sandaconda-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 842 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10218.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 220 ;
+    poke:ability "sand-spit",
+        "sand-veil",
+        "shed-skin" ;
+    poke:baseAttack 107 ;
+    poke:baseDefense 125 ;
+    poke:baseExp 179 ;
+    poke:baseHP 72 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 71 ;
+    poke:colour "green" ;
+    poke:species "sandaconda" ;
+    poke:type ex:type_ground ;
+    poke:weight 10000 .
+
+ex:card_sandshrew a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "sandshrew" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 164 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/27.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "sand-rush",
+        "sand-veil" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 60 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 20 ;
+    poke:baseSpDef 30 ;
+    poke:baseSpeed 40 ;
+    poke:colour "yellow" ;
+    poke:species "sandshrew" ;
+    poke:type ex:type_ground ;
+    poke:weight 120 .
+
+ex:card_scizor a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "scizor" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 339 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/212.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 18 ;
+    poke:ability "light-metal",
+        "swarm",
+        "technician" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 175 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 65 ;
+    poke:colour "red" ;
+    poke:species "scizor" ;
+    poke:type ex:type_bug,
+        ex:type_steel ;
+    poke:weight 1180 .
+
+ex:card_seel a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "seel" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 219 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/86.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "hydration",
+        "ice-body",
+        "thick-fat" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 65 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 45 ;
+    poke:colour "white" ;
+    poke:species "seel" ;
+    poke:type ex:type_water ;
+    poke:weight 900 .
+
+ex:card_shellos a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "shellos" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 167 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/422.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "sand-force",
+        "sticky-hold",
+        "storm-drain" ;
+    poke:baseAttack 48 ;
+    poke:baseDefense 48 ;
+    poke:baseExp 65 ;
+    poke:baseHP 76 ;
+    poke:baseSpAtk 57 ;
+    poke:baseSpDef 62 ;
+    poke:baseSpeed 34 ;
+    poke:colour "purple" ;
+    poke:species "shellos" ;
+    poke:type ex:type_water ;
+    poke:weight 63 .
+
+ex:card_shieldon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "shieldon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 212 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/410.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "soundproof",
+        "sturdy" ;
+    poke:baseAttack 42 ;
+    poke:baseDefense 118 ;
+    poke:baseExp 70 ;
+    poke:baseHP 30 ;
+    poke:baseSpAtk 42 ;
+    poke:baseSpDef 88 ;
+    poke:baseSpeed 30 ;
+    poke:colour "gray" ;
+    poke:species "shieldon" ;
+    poke:type ex:type_rock,
+        ex:type_steel ;
+    poke:weight 570 .
+
+ex:card_shiftry a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "shiftry" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 317 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/275.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 13 ;
+    poke:ability "chlorophyll",
+        "early-bird",
+        "pickpocket" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 240 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 90 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 80 ;
+    poke:colour "brown" ;
+    poke:species "shiftry" ;
+    poke:type ex:type_dark,
+        ex:type_grass ;
+    poke:weight 596 .
+
+ex:card_shinx a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "shinx" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 142 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/403.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "guts",
+        "intimidate",
+        "rivalry" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 34 ;
+    poke:baseExp 53 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 34 ;
+    poke:baseSpeed 45 ;
+    poke:colour "blue" ;
+    poke:species "shinx" ;
+    poke:type ex:type_electric ;
+    poke:weight 95 .
+
+ex:card_silicobra a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "silicobra" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 154 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/843.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 22 ;
+    poke:ability "sand-spit",
+        "sand-veil",
+        "shed-skin" ;
+    poke:baseAttack 57 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 63 ;
+    poke:baseHP 52 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 46 ;
+    poke:colour "green" ;
+    poke:species "silicobra" ;
+    poke:type ex:type_ground ;
+    poke:weight 76 .
+
+ex:card_silvally a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "silvally" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 384 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/773.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 23 ;
+    poke:ability "rks-system" ;
+    poke:baseAttack 95 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 285 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 95 ;
+    poke:colour "gray" ;
+    poke:species "silvally" ;
+    poke:type ex:type_normal ;
+    poke:weight 1005 .
+
+ex:card_sinistea a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "sinistea" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 151 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/854.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 1 ;
+    poke:ability "cursed-body",
+        "weak-armor" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 45 ;
+    poke:baseExp 62 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 74 ;
+    poke:baseSpDef 54 ;
+    poke:baseSpeed 50 ;
+    poke:colour "purple" ;
+    poke:species "sinistea" ;
+    poke:type ex:type_ghost ;
+    poke:weight 2 .
+
+ex:card_skarmory a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "skarmory" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 276 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/227.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 17 ;
+    poke:ability "keen-eye",
+        "sturdy",
+        "weak-armor" ;
+    poke:baseAttack 80 ;
+    poke:baseDefense 140 ;
+    poke:baseExp 163 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 70 ;
+    poke:colour "gray" ;
+    poke:species "skarmory" ;
+    poke:type ex:type_flying,
+        ex:type_steel ;
+    poke:weight 505 .
+
+ex:card_skuntank a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "skuntank" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 276 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/435.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "aftermath",
+        "keen-eye",
+        "stench" ;
+    poke:baseAttack 93 ;
+    poke:baseDefense 67 ;
+    poke:baseExp 168 ;
+    poke:baseHP 103 ;
+    poke:baseSpAtk 71 ;
+    poke:baseSpDef 61 ;
+    poke:baseSpeed 84 ;
+    poke:colour "purple" ;
+    poke:species "skuntank" ;
+    poke:type ex:type_dark,
+        ex:type_poison ;
+    poke:weight 380 .
+
+ex:card_skwovet a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "skwovet" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 133 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/819.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "cheek-pouch",
+        "gluttony" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 55 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 35 ;
+    poke:baseSpDef 35 ;
+    poke:baseSpeed 25 ;
+    poke:colour "brown" ;
+    poke:species "skwovet" ;
+    poke:type ex:type_normal ;
+    poke:weight 25 .
+
+ex:card_sliggoo a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "sliggoo" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 247 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/705.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "gooey",
+        "hydration",
+        "sap-sipper" ;
+    poke:baseAttack 75 ;
+    poke:baseDefense 53 ;
+    poke:baseExp 158 ;
+    poke:baseHP 68 ;
+    poke:baseSpAtk 83 ;
+    poke:baseSpDef 113 ;
+    poke:baseSpeed 60 ;
+    poke:colour "purple" ;
+    poke:species "sliggoo" ;
+    poke:type ex:type_dragon ;
+    poke:weight 175 .
+
+ex:card_slowpoke a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "slowpoke" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 192 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/79.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 12 ;
+    poke:ability "oblivious",
+        "own-tempo",
+        "regenerator" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 63 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 15 ;
+    poke:colour "pink" ;
+    poke:species "slowpoke" ;
+    poke:type ex:type_psychic,
+        ex:type_water ;
+    poke:weight 360 .
+
+ex:card_snorlax-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "snorlax-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 871 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10206.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 350 ;
+    poke:ability "gluttony",
+        "immunity",
+        "thick-fat" ;
+    poke:baseAttack 110 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 189 ;
+    poke:baseHP 160 ;
+    poke:baseSpAtk 65 ;
+    poke:baseSpDef 110 ;
+    poke:baseSpeed 30 ;
+    poke:colour "black" ;
+    poke:species "snorlax" ;
+    poke:type ex:type_normal ;
+    poke:weight 10000 .
+
+ex:card_solosis a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "solosis" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 158 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/577.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "magic-guard",
+        "overcoat",
+        "regenerator" ;
+    poke:baseAttack 30 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 58 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 105 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 20 ;
+    poke:colour "green" ;
+    poke:species "solosis" ;
+    poke:type ex:type_psychic ;
+    poke:weight 10 .
+
+ex:card_spearow a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "spearow" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 134 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/21.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "keen-eye",
+        "sniper" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 30 ;
+    poke:baseExp 52 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 31 ;
+    poke:baseSpDef 31 ;
+    poke:baseSpeed 70 ;
+    poke:colour "brown" ;
+    poke:species "spearow" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 20 .
+
+ex:card_spewpa a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "spewpa" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 107 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/665.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "friend-guard",
+        "shed-skin" ;
+    poke:baseAttack 22 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 75 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 27 ;
+    poke:baseSpDef 30 ;
+    poke:baseSpeed 29 ;
+    poke:colour "black" ;
+    poke:species "spewpa" ;
+    poke:type ex:type_bug ;
+    poke:weight 84 .
+
+ex:card_spinarak a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "spinarak" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 137 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/167.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "insomnia",
+        "sniper",
+        "swarm" ;
+    poke:baseAttack 60 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 50 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 30 ;
+    poke:colour "green" ;
+    poke:species "spinarak" ;
+    poke:type ex:type_bug,
+        ex:type_poison ;
+    poke:weight 85 .
+
+ex:card_spoink a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "spoink" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 187 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/325.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "gluttony",
+        "own-tempo",
+        "thick-fat" ;
+    poke:baseAttack 25 ;
+    poke:baseDefense 35 ;
+    poke:baseExp 66 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 60 ;
+    poke:colour "black" ;
+    poke:species "spoink" ;
+    poke:type ex:type_psychic ;
+    poke:weight 306 .
+
+ex:card_squirtle a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "squirtle" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 175 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "rain-dish",
+        "torrent" ;
+    poke:baseAttack 48 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 63 ;
+    poke:baseHP 44 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 64 ;
+    poke:baseSpeed 43 ;
+    poke:colour "blue" ;
+    poke:species "squirtle" ;
+    poke:type ex:type_water ;
+    poke:weight 90 .
+
+ex:card_stakataka a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "stakataka" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 791 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/805.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 55 ;
+    poke:ability "beast-boost" ;
+    poke:baseAttack 131 ;
+    poke:baseDefense 211 ;
+    poke:baseExp 285 ;
+    poke:baseHP 61 ;
+    poke:baseSpAtk 53 ;
+    poke:baseSpDef 101 ;
+    poke:baseSpeed 13 ;
+    poke:colour "gray" ;
+    poke:species "stakataka" ;
+    poke:type ex:type_rock,
+        ex:type_steel ;
+    poke:weight 8200 .
+
+ex:card_starly a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "starly" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 125 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/396.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "keen-eye",
+        "reckless" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 30 ;
+    poke:baseExp 49 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 30 ;
+    poke:baseSpDef 30 ;
+    poke:baseSpeed 60 ;
+    poke:colour "brown" ;
+    poke:species "starly" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 20 .
+
+ex:card_staryu a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "staryu" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 195 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/120.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "analytic",
+        "illuminate",
+        "natural-cure" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 55 ;
+    poke:baseExp 68 ;
+    poke:baseHP 30 ;
+    poke:baseSpAtk 70 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 85 ;
+    poke:colour "brown" ;
+    poke:species "staryu" ;
+    poke:type ex:type_water ;
+    poke:weight 345 .
+
+ex:card_steelix a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "steelix" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 513 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/208.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 92 ;
+    poke:ability "rock-head",
+        "sheer-force",
+        "sturdy" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 200 ;
+    poke:baseExp 179 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 30 ;
+    poke:colour "gray" ;
+    poke:species "steelix" ;
+    poke:type ex:type_ground,
+        ex:type_steel ;
+    poke:weight 4000 .
+
+ex:card_steelix-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "steelix-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 751 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10072.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 105 ;
+    poke:ability "sand-force" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 230 ;
+    poke:baseExp 214 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 30 ;
+    poke:colour "gray" ;
+    poke:species "steelix" ;
+    poke:type ex:type_ground,
+        ex:type_steel ;
+    poke:weight 7400 .
+
+ex:card_swinub a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "swinub" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 132 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/220.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "oblivious",
+        "snow-cloak",
+        "thick-fat" ;
+    poke:baseAttack 50 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 50 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 30 ;
+    poke:baseSpDef 30 ;
+    poke:baseSpeed 50 ;
+    poke:colour "brown" ;
+    poke:species "swinub" ;
+    poke:type ex:type_ground,
+        ex:type_ice ;
+    poke:weight 65 .
+
+ex:card_sylveon a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "sylveon" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 296 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/700.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "cute-charm",
+        "pixilate" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 184 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 110 ;
+    poke:baseSpDef 130 ;
+    poke:baseSpeed 60 ;
+    poke:colour "pink" ;
+    poke:species "sylveon" ;
+    poke:type ex:type_fairy ;
+    poke:weight 235 .
+
+ex:card_tangela a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tangela" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 242 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/114.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "chlorophyll",
+        "leaf-guard",
+        "regenerator" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 87 ;
+    poke:baseHP 65 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 40 ;
+    poke:baseSpeed 60 ;
+    poke:colour "blue" ;
+    poke:species "tangela" ;
+    poke:type ex:type_grass ;
+    poke:weight 350 .
+
+ex:card_tangrowth a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tangrowth" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 363 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/465.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 20 ;
+    poke:ability "chlorophyll",
+        "leaf-guard",
+        "regenerator" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 125 ;
+    poke:baseExp 187 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 110 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 50 ;
+    poke:colour "blue" ;
+    poke:species "tangrowth" ;
+    poke:type ex:type_grass ;
+    poke:weight 1286 .
+
+ex:card_tapu-bulu a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tapu-bulu" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 352 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/787.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 19 ;
+    poke:ability "grassy-surge",
+        "telepathy" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 115 ;
+    poke:baseExp 285 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 95 ;
+    poke:baseSpeed 75 ;
+    poke:colour "red" ;
+    poke:species "tapu-bulu" ;
+    poke:type ex:type_fairy,
+        ex:type_grass ;
+    poke:weight 455 .
+
+ex:card_tirtouga a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tirtouga" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 191 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/564.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 7 ;
+    poke:ability "solid-rock",
+        "sturdy",
+        "swift-swim" ;
+    poke:baseAttack 78 ;
+    poke:baseDefense 103 ;
+    poke:baseExp 71 ;
+    poke:baseHP 54 ;
+    poke:baseSpAtk 53 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 22 ;
+    poke:colour "blue" ;
+    poke:species "tirtouga" ;
+    poke:type ex:type_rock,
+        ex:type_water ;
+    poke:weight 165 .
+
+ex:card_togetic a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "togetic" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 234 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/176.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "hustle",
+        "serene-grace",
+        "super-luck" ;
+    poke:baseAttack 40 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 142 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 105 ;
+    poke:baseSpeed 40 ;
+    poke:colour "white" ;
+    poke:species "togetic" ;
+    poke:type ex:type_fairy,
+        ex:type_flying ;
+    poke:weight 32 .
+
+ex:card_totodile a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "totodile" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 171 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "sheer-force",
+        "torrent" ;
+    poke:baseAttack 65 ;
+    poke:baseDefense 64 ;
+    poke:baseExp 63 ;
+    poke:baseHP 50 ;
+    poke:baseSpAtk 44 ;
+    poke:baseSpDef 48 ;
+    poke:baseSpeed 43 ;
+    poke:colour "blue" ;
+    poke:species "totodile" ;
+    poke:type ex:type_water ;
+    poke:weight 95 .
+
+ex:card_toxtricity-amped-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "toxtricity-amped-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 845 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10219.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "plus",
+        "punk-rock",
+        "technician" ;
+    poke:baseAttack 98 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 176 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 114 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 75 ;
+    poke:colour "purple" ;
+    poke:species "toxtricity" ;
+    poke:type ex:type_electric,
+        ex:type_poison ;
+    poke:weight 10000 .
+
+ex:card_toxtricity-low-key-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "toxtricity-low-key-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 845 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10228.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "minus",
+        "punk-rock",
+        "technician" ;
+    poke:baseAttack 98 ;
+    poke:baseDefense 70 ;
+    poke:baseExp 176 ;
+    poke:baseHP 75 ;
+    poke:baseSpAtk 114 ;
+    poke:baseSpDef 70 ;
+    poke:baseSpeed 75 ;
+    poke:colour "purple" ;
+    poke:species "toxtricity" ;
+    poke:type ex:type_electric,
+        ex:type_poison ;
+    poke:weight 10000 .
+
+ex:card_trumbeak a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "trumbeak" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 191 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/732.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "keen-eye",
+        "pickup",
+        "skill-link" ;
+    poke:baseAttack 85 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 124 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 75 ;
+    poke:colour "black" ;
+    poke:species "trumbeak" ;
+    poke:type ex:type_flying,
+        ex:type_normal ;
+    poke:weight 148 .
+
+ex:card_turtwig a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "turtwig" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 169 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/387.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 4 ;
+    poke:ability "overgrow",
+        "shell-armor" ;
+    poke:baseAttack 68 ;
+    poke:baseDefense 64 ;
+    poke:baseExp 64 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 31 ;
+    poke:colour "green" ;
+    poke:species "turtwig" ;
+    poke:type ex:type_grass ;
+    poke:weight 102 .
+
+ex:card_tyranitar-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tyranitar-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 535 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10049.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 25 ;
+    poke:ability "sand-stream" ;
+    poke:baseAttack 164 ;
+    poke:baseDefense 150 ;
+    poke:baseExp 315 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 95 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 71 ;
+    poke:colour "green" ;
+    poke:species "tyranitar" ;
+    poke:type ex:type_dark,
+        ex:type_rock ;
+    poke:weight 2550 .
+
+ex:card_tyrunt a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "tyrunt" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 199 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/696.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 8 ;
+    poke:ability "strong-jaw",
+        "sturdy" ;
+    poke:baseAttack 89 ;
+    poke:baseDefense 77 ;
+    poke:baseExp 72 ;
+    poke:baseHP 58 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 48 ;
+    poke:colour "brown" ;
+    poke:species "tyrunt" ;
+    poke:type ex:type_dragon,
+        ex:type_rock ;
+    poke:weight 260 .
+
+ex:card_urshifu-rapid-strike-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "urshifu-rapid-strike-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 883 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10227.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 260 ;
+    poke:ability "unseen-fist" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 275 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 63 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 97 ;
+    poke:colour "gray" ;
+    poke:species "urshifu" ;
+    poke:type ex:type_fighting,
+        ex:type_water ;
+    poke:weight 10000 .
+
+ex:card_urshifu-single-strike-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "urshifu-single-strike-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 886 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10226.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 290 ;
+    poke:ability "unseen-fist" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 100 ;
+    poke:baseExp 275 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 63 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 97 ;
+    poke:colour "gray" ;
+    poke:species "urshifu" ;
+    poke:type ex:type_dark,
+        ex:type_fighting ;
+    poke:weight 10000 .
+
+ex:card_venonat a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "venonat" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 172 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/48.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 10 ;
+    poke:ability "compound-eyes",
+        "run-away",
+        "tinted-lens" ;
+    poke:baseAttack 55 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 61 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 45 ;
+    poke:colour "purple" ;
+    poke:species "venonat" ;
+    poke:type ex:type_bug,
+        ex:type_poison ;
+    poke:weight 300 .
+
+ex:card_venusaur-gmax a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "venusaur-gmax" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 868 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10195.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 240 ;
+    poke:ability "chlorophyll",
+        "overgrow" ;
+    poke:baseAttack 82 ;
+    poke:baseDefense 83 ;
+    poke:baseExp 236 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 100 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 80 ;
+    poke:colour "green" ;
+    poke:species "venusaur" ;
+    poke:type ex:type_grass,
+        ex:type_poison ;
+    poke:weight 10000 .
+
+ex:card_venusaur-mega a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "venusaur-mega" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 434 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10033.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 24 ;
+    poke:ability "thick-fat" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 123 ;
+    poke:baseExp 281 ;
+    poke:baseHP 80 ;
+    poke:baseSpAtk 122 ;
+    poke:baseSpDef 120 ;
+    poke:baseSpeed 80 ;
+    poke:colour "green" ;
+    poke:species "venusaur" ;
+    poke:type ex:type_grass,
+        ex:type_poison ;
+    poke:weight 1555 .
+
+ex:card_vikavolt-totem a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "vikavolt-totem" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 364 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10122.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 26 ;
+    poke:ability "levitate" ;
+    poke:baseAttack 70 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 225 ;
+    poke:baseHP 77 ;
+    poke:baseSpAtk 145 ;
+    poke:baseSpDef 75 ;
+    poke:baseSpeed 43 ;
+    poke:colour "blue" ;
+    poke:species "vikavolt" ;
+    poke:type ex:type_bug,
+        ex:type_electric ;
+    poke:weight 1475 .
+
+ex:card_voltorb-hisui a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "voltorb-hisui" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 139 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10231.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "aftermath",
+        "soundproof",
+        "static" ;
+    poke:baseAttack 30 ;
+    poke:baseDefense 50 ;
+    poke:baseHP 40 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 55 ;
+    poke:baseSpeed 100 ;
+    poke:colour "red" ;
+    poke:species "voltorb" ;
+    poke:type ex:type_electric,
+        ex:type_grass ;
+    poke:weight 130 .
+
+ex:card_vulpix a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "vulpix" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 161 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/37.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "drought",
+        "flash-fire" ;
+    poke:baseAttack 41 ;
+    poke:baseDefense 40 ;
+    poke:baseExp 60 ;
+    poke:baseHP 38 ;
+    poke:baseSpAtk 50 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 65 ;
+    poke:colour "brown" ;
+    poke:species "vulpix" ;
+    poke:type ex:type_fire ;
+    poke:weight 99 .
+
+ex:card_weavile a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "weavile" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 292 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/461.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 11 ;
+    poke:ability "pickpocket",
+        "pressure" ;
+    poke:baseAttack 120 ;
+    poke:baseDefense 65 ;
+    poke:baseExp 179 ;
+    poke:baseHP 70 ;
+    poke:baseSpAtk 45 ;
+    poke:baseSpDef 85 ;
+    poke:baseSpeed 125 ;
+    poke:colour "black" ;
+    poke:species "weavile" ;
+    poke:type ex:type_dark,
+        ex:type_ice ;
+    poke:weight 340 .
+
+ex:card_wynaut a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "wynaut" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 120 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/360.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 6 ;
+    poke:ability "shadow-tag",
+        "telepathy" ;
+    poke:baseAttack 23 ;
+    poke:baseDefense 48 ;
+    poke:baseExp 52 ;
+    poke:baseHP 95 ;
+    poke:baseSpAtk 23 ;
+    poke:baseSpDef 48 ;
+    poke:baseSpeed 23 ;
+    poke:colour "blue" ;
+    poke:species "wynaut" ;
+    poke:type ex:type_psychic ;
+    poke:weight 140 .
+
+ex:card_xerneas a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "xerneas" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 502 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/716.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 30 ;
+    poke:ability "fairy-aura" ;
+    poke:baseAttack 131 ;
+    poke:baseDefense 95 ;
+    poke:baseExp 340 ;
+    poke:baseHP 126 ;
+    poke:baseSpAtk 131 ;
+    poke:baseSpDef 98 ;
+    poke:baseSpeed 99 ;
+    poke:colour "blue" ;
+    poke:species "xerneas" ;
+    poke:type ex:type_fairy ;
+    poke:weight 2150 .
+
+ex:card_yamask a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "yamask" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 157 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/562.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 5 ;
+    poke:ability "mummy" ;
+    poke:baseAttack 30 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 61 ;
+    poke:baseHP 38 ;
+    poke:baseSpAtk 55 ;
+    poke:baseSpDef 65 ;
+    poke:baseSpeed 30 ;
+    poke:colour "black" ;
+    poke:species "yamask" ;
+    poke:type ex:type_ghost ;
+    poke:weight 15 .
+
+ex:card_yamper a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "yamper" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 138 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/835.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 3 ;
+    poke:ability "ball-fetch",
+        "rattled" ;
+    poke:baseAttack 45 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 54 ;
+    poke:baseHP 59 ;
+    poke:baseSpAtk 40 ;
+    poke:baseSpDef 50 ;
+    poke:baseSpeed 26 ;
+    poke:colour "yellow" ;
+    poke:species "yamper" ;
+    poke:type ex:type_electric ;
+    poke:weight 135 .
+
+ex:card_zamazenta-crowned a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zamazenta-crowned" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 840 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10189.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 29 ;
+    poke:ability "dauntless-shield" ;
+    poke:baseAttack 130 ;
+    poke:baseDefense 145 ;
+    poke:baseExp 360 ;
+    poke:baseHP 92 ;
+    poke:baseSpAtk 80 ;
+    poke:baseSpDef 145 ;
+    poke:baseSpeed 128 ;
+    poke:colour "red" ;
+    poke:species "zamazenta" ;
+    poke:type ex:type_fighting,
+        ex:type_steel ;
+    poke:weight 7850 .
+
+ex:card_zapdos a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zapdos" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 357 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "pressure",
+        "static" ;
+    poke:baseAttack 90 ;
+    poke:baseDefense 85 ;
+    poke:baseExp 290 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 125 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 100 ;
+    poke:colour "yellow" ;
+    poke:species "zapdos" ;
+    poke:type ex:type_electric,
+        ex:type_flying ;
+    poke:weight 526 .
+
+ex:card_zapdos-galar a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zapdos-galar" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 351 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10170.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "defiant" ;
+    poke:baseAttack 125 ;
+    poke:baseDefense 90 ;
+    poke:baseExp 290 ;
+    poke:baseHP 90 ;
+    poke:baseSpAtk 85 ;
+    poke:baseSpDef 90 ;
+    poke:baseSpeed 100 ;
+    poke:colour "yellow" ;
+    poke:species "zapdos" ;
+    poke:type ex:type_fighting,
+        ex:type_flying ;
+    poke:weight 582 .
+
+ex:card_zekrom a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zekrom" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 584 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/644.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 29 ;
+    poke:ability "teravolt" ;
+    poke:baseAttack 150 ;
+    poke:baseDefense 120 ;
+    poke:baseExp 340 ;
+    poke:baseHP 100 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 100 ;
+    poke:baseSpeed 90 ;
+    poke:colour "black" ;
+    poke:species "zekrom" ;
+    poke:type ex:type_dragon,
+        ex:type_electric ;
+    poke:weight 3450 .
+
+ex:card_zeraora a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zeraora" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 361 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/807.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 15 ;
+    poke:ability "volt-absorb" ;
+    poke:baseAttack 112 ;
+    poke:baseDefense 75 ;
+    poke:baseExp 300 ;
+    poke:baseHP 88 ;
+    poke:baseSpAtk 102 ;
+    poke:baseSpDef 80 ;
+    poke:baseSpeed 143 ;
+    poke:colour "yellow" ;
+    poke:species "zeraora" ;
+    poke:type ex:type_electric ;
+    poke:weight 445 .
+
+ex:card_zoroark a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zoroark" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 323 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/571.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "illusion" ;
+    poke:baseAttack 105 ;
+    poke:baseDefense 60 ;
+    poke:baseExp 179 ;
+    poke:baseHP 60 ;
+    poke:baseSpAtk 120 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 105 ;
+    poke:colour "gray" ;
+    poke:species "zoroark" ;
+    poke:type ex:type_dark ;
+    poke:weight 811 .
+
+ex:card_zoroark-hisui a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "zoroark-hisui" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 255 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10239.png> ;
+    foaf:member ex:univ_Pokemon ;
+    sdo:height 16 ;
+    poke:ability "illusion" ;
+    poke:baseAttack 100 ;
+    poke:baseDefense 60 ;
+    poke:baseHP 55 ;
+    poke:baseSpAtk 125 ;
+    poke:baseSpDef 60 ;
+    poke:baseSpeed 110 ;
+    poke:colour "gray" ;
+    poke:species "zoroark" ;
+    poke:type ex:type_ghost,
+        ex:type_normal ;
+    poke:weight 730 .
+
+ex:type_teleport dbo:defeat ex:type_dragon,
+        ex:type_fighting,
+        ex:type_flying,
+        ex:type_psychic .
+
+ex:type_dark a poke:Type ;
+    rdfs:label "dark" ;
+    dbo:defeat ex:type_ghost,
+        ex:type_psychic ;
+    rdfs:subClassOf dbr:Evil .
+
+ex:type_fairy a poke:Type ;
+    rdfs:label "fairy" ;
+    dbo:defeat ex:type_dark,
+        ex:type_dragon,
+        ex:type_fighting,
+        ex:type_teleport ;
+    rdfs:subClassOf dbr:Fairy .
+
+ex:type_fighting a poke:Type ;
+    rdfs:label "fighting" ;
+    dbo:defeat ex:type_dark,
+        ex:type_ice,
+        ex:type_normal,
+        ex:type_rock,
+        ex:type_steel ;
+    rdfs:subClassOf dbr:Combat .
+
+ex:type_fire a poke:Type ;
+    rdfs:label "fire" ;
+    dbo:defeat ex:type_bug,
+        ex:type_grass,
+        ex:type_ice,
+        ex:type_steel ;
+    rdfs:subClassOf dbr:Fire .
+
+ex:type_ground a poke:Type ;
+    rdfs:label "ground" ;
+    dbo:defeat ex:type_electric,
+        ex:type_fire,
+        ex:type_poison,
+        ex:type_rock,
+        ex:type_steel ;
+    rdfs:subClassOf dbr:Dirt .
+
+ex:type_bug a poke:Type ;
+    rdfs:label "bug" ;
+    dbo:defeat ex:type_dark,
+        ex:type_grass,
+        ex:type_psychic ;
+    rdfs:subClassOf dbr:Insect .
+
+ex:type_ice a poke:Type ;
+    rdfs:label "ice" ;
+    dbo:defeat ex:type_dragon,
+        ex:type_flying,
+        ex:type_grass,
+        ex:type_ground ;
+    rdfs:subClassOf dbr:Ice .
+
+ex:type_ghost a poke:Type ;
+    rdfs:label "ghost" ;
+    dbo:defeat ex:type_psychic,
+        ex:type_teleport ;
+    rdfs:subClassOf dbr:Ghost .
+
+ex:type_poison a poke:Type ;
+    rdfs:label "poison" ;
+    dbo:defeat ex:type_fairy,
+        ex:type_grass,
+        ex:type_teleport ;
+    rdfs:subClassOf dbr:Poison .
+
+ex:type_electric a poke:Type ;
+    rdfs:label "electric" ;
+    dbo:defeat ex:type_flying,
+        ex:type_teleport,
+        ex:type_water ;
+    rdfs:subClassOf dbr:Electricity .
+
+ex:type_dragon a poke:Type ;
+    rdfs:label "dragon" ;
+    dbo:defeat ex:type_flying ;
+    rdfs:subClassOf dbr:Dragon .
+
+ex:type_normal a poke:Type ;
+    rdfs:label "normal" .
+
+ex:type_rock a poke:Type ;
+    rdfs:label "rock" ;
+    dbo:defeat ex:type_bug,
+        ex:type_fire,
+        ex:type_flying,
+        ex:type_ice ;
+    rdfs:subClassOf dbr:Rock_\(geology\) .
+
+ex:type_psychic a poke:Type ;
+    rdfs:label "psychic" ;
+    dbo:defeat ex:type_fighting,
+        ex:type_poison ;
+    rdfs:subClassOf dbr:Psychic .
+
+ex:type_water a poke:Type ;
+    rdfs:label "water" ;
+    dbo:defeat ex:type_fire,
+        ex:type_ground,
+        ex:type_rock ;
+    rdfs:subClassOf dbr:Water .
+
+ex:type_flying a poke:Type ;
+    rdfs:label "flying" ;
+    dbo:defeat ex:type_bug,
+        ex:type_fighting,
+        ex:type_grass ;
+    rdfs:subClassOf dbr:Flight .
+
+ex:type_grass a poke:Type ;
+    rdfs:label "grass" ;
+    dbo:defeat ex:type_ground,
+        ex:type_rock,
+        ex:type_water ;
+    rdfs:subClassOf dbr:Vegetation .
+
+ex:type_steel a poke:Type ;
+    rdfs:label "steel" ;
+    dbo:defeat ex:type_fairy,
+        ex:type_ice,
+        ex:type_rock ;
+    rdfs:subClassOf dbr:Steel .
+
+ex:univ_Pokemon rdfs:label "Pokemon" ;
+    owl:sameAs dbr:Pokémon .
+

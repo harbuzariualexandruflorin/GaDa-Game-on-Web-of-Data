@@ -1,7 +1,5 @@
-from pprint import pprint
-
-from data_scrapers import *
-from tools import *
+from gada_api.cards_api import start_api
+from tools.api_macros import SERVER_PORT
 
 if __name__ == '__main__':
-    print("Hello World")
+    start_api(SERVER_PORT)

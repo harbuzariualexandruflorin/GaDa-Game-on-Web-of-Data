@@ -78,9 +78,9 @@ def pokemon_build_ontology(g, limit=None):
         if pokemon.get("experience", None) is not None:
             g.add((entity, POKE.baseExp, Literal(pokemon["experience"])))
         if pokemon.get("height", None) is not None:
-            g.add((entity, SDO.height, Literal(pokemon["height"])))
+            g.add((entity, SDO.height, Literal(str(pokemon["height"]))))
         if pokemon.get("weight", None) is not None:
-            g.add((entity, POKE.weight, Literal(pokemon["weight"])))
+            g.add((entity, POKE.weight, Literal(str(pokemon["weight"]))))
         if pokemon.get("species", None) is not None:
             g.add((entity, POKE.species, Literal(pokemon["species"])))
 

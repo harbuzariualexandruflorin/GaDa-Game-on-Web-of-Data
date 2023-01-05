@@ -46,9 +46,9 @@ def marvel_build_ontology(g, limit=None):
         g.add((entity, OWL.hasValue, Literal(int(character["score"]))))
 
         if character.get("height", None) is not None:
-            g.add((entity, SDO.height, Literal(character["height"])))
+            g.add((entity, SDO.height, Literal(str(character["height"]))))
         if character.get("weight", None) is not None:
-            g.add((entity, SDO.weight, Literal(character["weight"])))
+            g.add((entity, SDO.weight, Literal(str(character["weight"]))))
         if character.get("gender", None) is not None:
             g.add((entity, SDO.gender, Literal(character["gender"])))
         if character.get("place_of_birth", None) is not None:

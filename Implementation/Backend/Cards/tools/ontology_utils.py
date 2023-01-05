@@ -30,17 +30,19 @@ def query_dbpedia_by_keyword(text, target, return_url=False):
         if len(t) > 1:
             words += ["'" + t + "'"]
 
-    sparql.setQuery('''
-        define input:ifp "IFP_OFF" select ?s1 as ?c1, (bif:search_excerpt (bif:vector (%s), ?o1)) as ?c2, ?sc, ?rank, ?g where {{{
-            select ?s1, (?sc * 3e-1) as ?sc, ?o1, (sql:rnk_scale (<LONG::IRI_RANK> (?s1))) as ?rank, ?g where {
-                quad map virtrdf:DefaultQuadMap {
-                    graph ?g {
-                        ?s1 ?s1textp ?o1 . ?o1 bif:contains "(%s)" option (score ?sc) .
+    sparql.setQuery(
+        '''
+            define input:ifp "IFP_OFF" select ?s1 as ?c1, (bif:search_excerpt (bif:vector (%s), ?o1)) as ?c2, ?sc, ?rank, ?g where {{{
+                select ?s1, (?sc * 3e-1) as ?sc, ?o1, (sql:rnk_scale (<LONG::IRI_RANK> (?s1))) as ?rank, ?g where {
+                    quad map virtrdf:DefaultQuadMap {
+                        graph ?g {
+                            ?s1 ?s1textp ?o1 . ?o1 bif:contains "(%s)" option (score ?sc) .
+                        }
                     }
                 }
-            }
-            order by desc (?sc * 3e-1 + sql:rnk_scale (<LONG::IRI_RANK> (?s1))) limit 500 offset 0
-        }}}''' % (", ".join(words), " AND ".join(words)))
+                order by desc (?sc * 3e-1 + sql:rnk_scale (<LONG::IRI_RANK> (?s1))) limit 500 offset 0
+            }}}
+        ''' % (", ".join(words), " AND ".join(words)))
 
     try:
         ret = sparql.queryAndConvert()
@@ -73,10 +75,10 @@ def cards_type_build_ontology(g):
 
 def cards_build_ontology():
     g = cards_type_build_ontology(Graph())
-    # g = star_trek_build_ontology(g)
-    # g = star_wars_build_ontology(g)
-    # g = pokemon_build_ontology(g)
-    # g = marvel_build_ontology(g)
+    g = star_trek_build_ontology(g)
+    g = star_wars_build_ontology(g)
+    g = pokemon_build_ontology(g)
+    g = marvel_build_ontology(g)
 
     g.serialize(destination="data/ontology/final.ttl")
     return g
@@ -85,7 +87,12 @@ def cards_build_ontology():
 def cards_get_names(g):
     try:
         return [str(x[0]) for x in list(g.query(
-            "select ?name where { ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . }"
+            '''
+                prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                prefix dbr: <http://dbpedia.org/resource/>
+                select ?name where { ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . }
+            '''
         ))]
     except Exception as ex:
         print("EXCEPTION CARD GET NAMES ", ex)
@@ -116,7 +123,12 @@ def id_to_json_ld(g, entity_id, context):
 def card_name_to_id(g, card_name):
     try:
         return list(g.query(
-            "select ?card where { ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . }",
+            '''
+                prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                prefix dbr: <http://dbpedia.org/resource/>
+                select ?card where { ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . }
+            ''',
             initBindings=dict(name=Literal(card_name))
         ))[0][0]
     except:
@@ -127,6 +139,11 @@ def card_name_to_universe(g, card_name):
     try:
         return list(g.query(
             '''
+                prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                prefix dbr: <http://dbpedia.org/resource/>
+                prefix foaf: <http://xmlns.com/foaf/0.1/>
+                prefix owl: <http://www.w3.org/2002/07/owl#>
                 select ?univ_id where { 
                     ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . 
                     ?card foaf:member ?univ . ?univ owl:sameAs ?univ_id 
@@ -209,6 +226,9 @@ def get_card_deck(deck_size, deck_offset=0, randomize=False, g=None):
     try:
         return [str(x[0]) for x in list(g.query(
             '''
+                prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                prefix dbr: <http://dbpedia.org/resource/>
                 select ?name where { 
                     ?card rdf:type dbr:Playing_card .
                     ?card rdfs:label ?name . 

@@ -50,9 +50,9 @@ def star_wars_build_ontology(g, limit=None):
         if person.get("gender", None) is not None:
             g.add((entity, SWAPI.gender, Literal(person["gender"])))
         if person.get("mass", None) is not None:
-            g.add((entity, SWAPI.mass, Literal(person["mass"])))
+            g.add((entity, SWAPI.mass, Literal(str(person["mass"]))))
         if person.get("height", None) is not None:
-            g.add((entity, SWAPI.height, Literal(person["height"])))
+            g.add((entity, SWAPI.height, Literal(str(person["height"]))))
 
         for color in person.get("eye_color", []):
             g.add((entity, SWAPI.eyeColor, Literal(color)))

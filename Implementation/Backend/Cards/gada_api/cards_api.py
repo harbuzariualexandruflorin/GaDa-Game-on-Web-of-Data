@@ -9,7 +9,7 @@ from gada_api.info_controller import GADACardsInfoController
 
 def set_api_resources():
     api = Api(app)
-    api.add_resource(GADACardsBuildController, '/gada_card_deck/build')
+    api.add_resource(GADACardsBuildController, '/gada_card_deck/generate')
     api.add_resource(GADACardsInfoController, '/gada_card_deck/info')
     api.add_resource(GADAHighScoresController, '/high_scores')
 
@@ -19,16 +19,16 @@ def start_api(use_port):
 
     try:
         print("Endpoints available:")
-        print("\tPOST METHOD: http://localhost:" + use_port + '/gada_card_deck/build')
-        print("\t\tExpecting raw json: ", '''
+        print("\tGET METHOD: http://localhost:" + use_port + '/gada_card_deck/generate?deck_offset=A&deck_size=B&randomize=C')
+        print("\t\tExpecting url parameters: ", '''
             {
                 "deck_offset": int (optional, default zero, >= 0),
                 "deck_size": int (necessary, > 0),
                 "randomize": bool (optional, default false)
             }''')
         print("================================================================")
-        print("\tPOST METHOD: http://localhost:" + use_port + '/gada_card_deck/info')
-        print("\t\tExpecting raw json: ", '''
+        print("\tGET METHOD: http://localhost:" + use_port + '/gada_card_deck/info?jsonld=A')
+        print("\t\tExpecting raw json (cards) & url parameter (jsonld): ", '''
             {
                 "cards": list of strings (necessary, no empty list, no empty strings),
                 "jsonld": bool (optional, default false)

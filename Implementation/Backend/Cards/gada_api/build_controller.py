@@ -14,21 +14,19 @@ class GADACardsBuildController(Resource):
     def __init__(self):
         pass
 
-    def post(self):
+    def get(self):
         try:
-            request_json = json.loads(request.data.decode())
             params = {
-                "deck_offset": request_json.get("deck_offset", 0),
-                "deck_size": request_json.get("deck_size", None),
-                "randomize": request_json.get("randomize", False)
+                "deck_offset": int(request.args.get("deck_offset", 0)),
+                "deck_size": int(request.args.get("deck_size", None)),
+                "randomize": request.args.get("randomize", "false").lower() == "true"
             }
 
-            assert (type(params["deck_size"]) is int and params["deck_size"] > 0)
-            assert (type(params["deck_offset"]) is int and params["deck_offset"] >= 0)
-            assert (type(params["randomize"]) is bool)
+            assert (params["deck_size"] > 0)
+            assert (params["deck_offset"] >= 0)
             params["g"] = GADA_ONTOLOGY
         except:
-            return "Invalid json data", 400
+            return "Invalid url parameters", 400
 
         cards = []
         for card_name in get_card_deck(**params):

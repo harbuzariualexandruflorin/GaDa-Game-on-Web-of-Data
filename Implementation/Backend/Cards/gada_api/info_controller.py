@@ -14,19 +14,18 @@ class GADACardsInfoController(Resource):
     def __init__(self):
         pass
 
-    def post(self):
+    def get(self):
         try:
             request_json = json.loads(request.data.decode())
-            jsonld = request_json.get("jsonld", False)
+            jsonld = request.args.get("jsonld", "false").lower() == "true"
             params = {"cards_names": request_json.get("cards", None)}
 
-            assert (type(jsonld) is bool)
             assert (type(params["cards_names"]) is list and len(params["cards_names"]) > 0)
             for card in params["cards_names"]:
                 assert (type(card) is str and len(card) > 0)
             params["g"] = GADA_ONTOLOGY
         except:
-            return "Invalid json data", 400
+            return "Invalid json data / Invalid url parameter", 400
 
         return app.response_class(response=json.dumps({
             "cards": cards_get_json(**params) if not jsonld else cards_get_json_ld(**params)

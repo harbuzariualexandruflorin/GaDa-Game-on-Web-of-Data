@@ -14,7 +14,7 @@ class GADACardsInfoController(Resource):
     def __init__(self):
         pass
 
-    def get(self):
+    def post(self):
         try:
             request_json = json.loads(request.data.decode())
             jsonld = request.args.get("jsonld", "false").lower() == "true"

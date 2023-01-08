@@ -8,7 +8,7 @@ from tools.ontology_utils import query_dbpedia_by_keyword, format_name, poke_typ
 
 def star_trek_build_ontology(g, limit=None):
     g.bind("dbr", DBR)
-    g.bind("ex", EX)
+    g.bind(PREFIX_EX, EX)
     g.bind("foaf", FOAF)
     g.bind("geo", GEO)
     g.bind("owl", OWL)
@@ -134,6 +134,7 @@ def star_trek_get_json(json_ld):
         "quadrant": get_first_element_list(
             [b["rdfs:label"] for b in json_ld.get("sdo:birthPlace", []) if "trek_quad_" in b["@id"]]
         ),
+        "species": [s["rdfs:label"] for s in json_ld.get("ssn:hasProperty", [])],
         "types": [{
             "name": b["rdfs:label"],
             "defeats": [d["@id"].replace(API_NAMESPACE + "type_", "") for d in b.get("dbo:defeat", [])]

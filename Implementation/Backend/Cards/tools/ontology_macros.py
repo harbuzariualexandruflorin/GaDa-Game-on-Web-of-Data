@@ -4,6 +4,7 @@ from tools.scraper_macros import CARD_TYPES
 
 API_NAMESPACE = 'https://gada.cards.game.namespace.com/'
 EX = Namespace(API_NAMESPACE)
+PREFIX_EX = "gada"
 POKE = Namespace('https://triplydb.com/academy/pokemon/vocab/')
 DBO = Namespace("http://dbpedia.org/ontology/")
 DBR = Namespace("http://dbpedia.org/resource/")

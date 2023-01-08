@@ -1,7 +1,7 @@
 @prefix dbo: <http://dbpedia.org/ontology/> .
 @prefix dbr: <http://dbpedia.org/resource/> .
-@prefix ex: <https://gada.cards.game.namespace.com/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
@@ -10,2344 +10,2344 @@
 @prefix ssn: <http://www.w3.org/ns/ssn/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:card_Abronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Abronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Abronian" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Abronian_homeworld ;
-    poke:type ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Abronian_homeworld ;
+    poke:type gada:type_psychic .
 
-ex:card_Acamarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Acamarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Acamarian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/a/aa/Marouk.jpg/revision/latest?cb=20060309121858> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Acamar_III,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Acamar_III,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Aenar a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Aenar a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Aenar" ;
     rdfs:seeAlso dbr:The_Aenar ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <http://www.letswatchstartrek.com/wp-content/uploads/2015/03/58.png> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Andoria,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Andoria,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Akritirian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Akritirian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Akritirian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/7a674153c63cff1ad7f0e261c369ab2c.jpg?itok=_CaEXnaI> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Akritiri,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Akritiri,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Allasomorph a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Allasomorph a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Allasomorph" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/6b8b8e3bd6ad94b985c1b1f1b7a94cb2.jpg?itok=6x0UZ39-> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Daled_IV ;
-    poke:type ex:type_fairy,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Daled_IV ;
+    poke:type gada:type_fairy,
+        gada:type_normal .
 
-ex:card_Anabaj a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Anabaj a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Anabaj" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/766d856ef1a6b02f93d894415e6bfa0e.jpg?itok=poxQ8dDu> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Ancient_insectoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ancient_insectoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ancient insectoid" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/ancient-insectoid-star-trek-the-animated-series-30.9.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_teleport .
 
-ex:card_Andorian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Andorian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Andorian" ;
     rdfs:seeAlso dbr:Andorian ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/dd/17/65/dd1765270572d024b7bbef2d00f27f06--live-long-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Andoria,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Andoria,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Angosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Angosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Angosian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/a8/93/f0/a893f0aad9f36010625e22d8ee5d372d--star-trek-alien.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Angosia_III ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Angosia_III ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Antedian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Antedian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Antedian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette4.wikia.nocookie.net/startrek/images/c/c2/Antedeans.jpg/revision/latest?cb=20070216004844> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Antede_III ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Antede_III ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Antos_native a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Antos_native a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Antos native" ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/ad3019b856147c17e82a5bead782d2a8.jpg?itok=8nug9HMU> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_fairy .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_fairy .
 
-ex:card_Ardanan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ardanan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ardanan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/4/4e/Plasus.jpg/revision/latest?cb=20171029235804> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Ardana,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Ardana,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Areore a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Areore a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Areore" ;
     owl:hasValue 133 ;
-    ssn:hasProperty ex:trek_prop_avianSpecies ;
+    ssn:hasProperty gada:trek_prop_avianSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/images/2019-08/9-kradin.jpeg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Areolus ;
-    poke:type ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Areolus ;
+    poke:type gada:type_flying .
 
-ex:card_Argelian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Argelian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Argelian" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/79a49b3e3762632813f9e35f4ba53d6c.jpg?itok=lRRZHgmI> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Argelius_II,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Argelius_II,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Bajoran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Bajoran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Bajoran" ;
     rdfs:seeAlso dbr:Bajoran ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette1.wikia.nocookie.net/startrek/images/3/36/Shakaar_Edon.jpg/revision/latest?cb=20070821233343> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Bajor,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Bajor,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Bandi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Bandi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Bandi" ;
     rdfs:seeAlso dbr:Bandi_\(Star_Trek\) ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/images/2019-01/28a543c2a9eee8c0d6fbfaff7ca7e224.jpeg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Deneb_IV,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Deneb_IV,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Benzite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Benzite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Benzite" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/d/d4/Hoya.jpg/revision/latest?cb=20070908224737> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Benzar,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Benzar,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Beta_XII-A_entity a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Beta_XII-A_entity a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Beta XII-A entity" ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_spaceborneSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/c/cb/Datalore.jpg/revision/latest?cb=20061027213811> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Beta_XII-A,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_dark,
-        ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Beta_XII-A,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_dark,
+        gada:type_flying .
 
-ex:card_Betazoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Betazoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Betazoid" ;
     rdfs:seeAlso dbr:Betazoid ;
     owl:hasValue 633 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/f/f9/ReittanGrax.jpg/revision/latest?cb=20170930024116> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Betazed,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Betazed,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic,
+        gada:type_teleport .
 
-ex:card_Bolian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Bolian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Bolian" ;
     rdfs:seeAlso dbr:Bolian_\(Star_Trek\) ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/b8/16/a6/b816a655770fd3df25a02d6b81ad8421--skin-colors-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Bolarus_IX,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Bolarus_IX,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Breen a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Breen a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Breen" ;
     rdfs:seeAlso dbr:Breen_\(Star_Trek\) ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette2.wikia.nocookie.net/startrek/images/8/8e/Gor.jpg/revision/latest?cb=20121102153245> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Breen_system,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Breen_system,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Caatati a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Caatati a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Caatati" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/8f/e4/39/8fe4398e94be2916f7bd86963a675c48--star-trek-ships-a-crush.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Caatati_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Caatati_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Caldonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Caldonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Caldonian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://static1.srcdn.com/wordpress/wp-content/uploads/2020/12/jemhadar-gorn-hirogen-star-trek-species.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Caldonia ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Caldonia ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Cardassian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Cardassian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Cardassian" ;
     rdfs:seeAlso dbr:Cardassian ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://www.treknews.net/wp-content/uploads/2015/04/star-trek-cardassian1-750x480.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Cardassia_Prime,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Cardassia_Prime,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Catullan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Catullan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Catullan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://www.film.it/fileadmin/mediafiles/film/generici/201511/images/2892x2208/e6594760-f8d5-11e3-8f86-9fd7e2b0c80e_whopi-goldberg-guinan-star-trek-the-next-ge.jpg?n=0.1821454861201346> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Catulla ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Catulla ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Chalnoth a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Chalnoth a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Chalnoth" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/05a4459d3d5c309f5ab86521d1d2bb69.jpg?itok=B2F83cpT> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Chalna ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Chalna ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Cheron_native a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Cheron_native a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Cheron native" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette3.wikia.nocookie.net/startrek/images/c/c5/Chelons.jpg/revision/latest?cb=20061130123128> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Cheron ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Cheron ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Deltan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Deltan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Deltan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette2.wikia.nocookie.net/startrek/images/6/67/Ilia_probe.jpg/revision/latest/scale-to-width-down/350?cb=20170213042437> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Delta_IV,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Delta_IV,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Denobulan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Denobulan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Denobulan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/3/3c/Phlox2154.jpg/revision/latest?cb=20150213201206> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Denobula,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Denobula,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Devidian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Devidian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Devidian" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/c/ce/Devidians.jpg/revision/latest?cb=20181028213319> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Devidia_II ;
-    poke:type ex:type_fairy,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Devidia_II ;
+    poke:type gada:type_fairy,
+        gada:type_normal .
 
-ex:card_Dream_Alien a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Dream_Alien a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Dream Alien" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://i.pinimg.com/736x/9a/15/5f/9a155f857946bed4c859a865c018a55b--star-trek-alien.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Dream_Aliens_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Dream_Aliens_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Enaran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Enaran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Enaran" ;
     owl:hasValue 633 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/bc19986e5c658d4135bd559a0b37c0bc.jpg?itok=b6b8QsoW> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Enara_Prime,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Enara_Prime,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic,
+        gada:type_teleport .
 
-ex:card_Entharan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Entharan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Entharan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/f3/cd/cc/f3cdcc4c267057559eaf224acb624bf4--star-trek-armour.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Evora a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Evora a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Evora" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/56/70/03/567003670ff07dd697f54b27fb3ed35c--star-trek-aliens.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Evora_homeworld ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Evora_homeworld ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Excalbian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Excalbian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Excalbian" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/b/b7/Excalbian1.jpg/revision/latest?cb=20171026163258> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Excalbia ;
-    poke:type ex:type_fairy,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Excalbia ;
+    poke:type gada:type_fairy,
+        gada:type_normal .
 
-ex:card_FGC_47_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_FGC_47_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "FGC 47 lifeform" ;
     owl:hasValue 433 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://www.startrekdb.se/astronomi/bilder/akritiri.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_FGC-47 ;
-    poke:type ex:type_fairy,
-        ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_FGC-47 ;
+    poke:type gada:type_fairy,
+        gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Ferengi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ferengi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ferengi" ;
     rdfs:seeAlso dbr:Ferengi ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/0/02/Quark_Profit_and_Lace.jpg/revision/latest?cb=20141115225030> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Ferenginar,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Ferenginar,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Galardonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Galardonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Galardonian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/577fd60255d4bb0f466464849ffe6d8e.jpg?itok=2P3TymZp> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Galardon ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Galardon ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Gems_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Gems_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Gem's species" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <http://img1.wikia.nocookie.net/__cb20100823151041/startrek/images/7/79/8472_behemoth.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Gems_planet ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Gems_planet ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Greek_god a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Greek_god a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Greek god" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/8/81/ApolloCorgi.jpg/revision/latest?cb=20160807174047> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Pollux_IV,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Pollux_IV,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal .
 
-ex:card_Human a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Human a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Human" ;
     rdfs:seeAlso dbr:Humanx_Commonwealth ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.extremetech.com/wp-content/uploads/2016/08/star-trek-2.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Earth,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Earth,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Kaelon a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Kaelon a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Kaelon" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/55acf8539596d25624059980986aaa78.jpg?itok=STYBYrX5> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kaelon_II ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kaelon_II ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Karemma a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Karemma a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Karemma" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/d/d8/Hanoi.jpg/revision/latest?cb=20170916162029> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Karemma_system,
-        ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Karemma_system,
+        gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Kelvan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Kelvan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Kelvan" ;
     owl:hasValue 866 ;
-    ssn:hasProperty ex:trek_prop_extraGalacticSpecies,
-        ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_extraGalacticSpecies,
+        gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette3.wikia.nocookie.net/startrek/images/1/18/Rojan.jpg/revision/latest?cb=20150706170442> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kelva ;
-    poke:type ex:type_fairy,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kelva ;
+    poke:type gada:type_fairy,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Klaestron a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Klaestron a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Klaestron" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/9/97/Klaestron_4.jpeg/revision/latest?cb=20180318192609> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Klaestron_IV,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Klaestron_IV,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Klingon a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Klingon a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Klingon" ;
     rdfs:seeAlso dbr:Klingon ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/7940ab47468396569a906f75ff3f20ef.jpg?itok=fS1_FW0y> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_QonoS,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_QonoS,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Koinonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Koinonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Koinonian" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/6b8b8e3bd6ad94b985c1b1f1b7a94cb2.jpg?itok=6x0UZ39-> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Koinonian_homeworld,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Koinonian_homeworld,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Kreetassan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Kreetassan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Kreetassan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/c/c2/Kreetassan.jpg/revision/latest?cb=20171026140415> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kreetassa,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kreetassa,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Kyrian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Kyrian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Kyrian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/1f/ea/48/1fea48022d60a28231947ea3d7586212--languages-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kyrian_and_Vaskan_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kyrian_and_Vaskan_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Kzinti a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Kzinti a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Kzinti" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <http://www.startrekanimated.com/tas_kzinti_art.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kzin,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kzin,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Lactran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Lactran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Lactran" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/2c8ed8587468aec2462a3914f154e570.jpg?itok=qblyqahy> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Lactra_VII,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Lactra_VII,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Ledosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ledosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ledosian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/9b8b50fb590c590ffbf1295ce92258dc.jpg?itok=n4atddTL> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Ledos,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Ledos,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Lizard_man a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Lizard_man a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Lizard man" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_reptilianSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_reptilianSpecies ;
     foaf:img <https://www.wired.com/wp-content/uploads/archive/images/slideshow/2007/11/gallery_star_trek_monsters/tmgorn.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Rat-lizard_homeworld,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_fighting,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Rat-lizard_homeworld,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_fighting,
+        gada:type_normal .
 
-ex:card_Lumerian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Lumerian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Lumerian" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://i.pinimg.com/736x/7b/af/b1/7bafb11b41f68312a741773959a0d512--star-trek-costumes-alien.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Lumerian_homeworld ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Lumerian_homeworld ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Malurian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Malurian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Malurian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/5c936263f3428a40227908d5a3847c0b.jpg?itok=tJKITb2o> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Malurian_system,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Malurian_system,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Mari a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Mari a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Mari" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://i.pinimg.com/736x/66/fb/0f/66fb0f91d477ebe172612f89892923a5--languages-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Mari_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Mari_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Marijne_VII_subspace_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Marijne_VII_subspace_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Marijne VII subspace being" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/6fd86e0ad726b778e37cf270fa0247d7.jpg?itok=kaNvNurt> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Marijne_VII,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Marijne_VII,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Medusan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Medusan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Medusan" ;
     owl:hasValue 466 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.cultofwhatever.com/wp-content/uploads/2021/12/star-trek-prodigy-dream-catcher-medusa-zero.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Medusan_homeworld ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Medusan_homeworld ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_psychic .
 
-ex:card_Melkot a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Melkot a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Melkot" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/55acf8539596d25624059980986aaa78.jpg?itok=STYBYrX5> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Melkotian_planet ;
-    poke:type ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Melkotian_planet ;
+    poke:type gada:type_psychic .
 
-ex:card_Mislenite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Mislenite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Mislenite" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/ef67f7c2d86352c2c42e19d20f881f53.jpg?itok=8G2jc24c> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Mislen,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Mislen,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Mizarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Mizarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Mizarian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/236x/f3/cd/cc/f3cdcc4c267057559eaf224acb624bf4--star-trek-armour.jpg?nii=t> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Mizar_II,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Mizar_II,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Norcadian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Norcadian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Norcadian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/9adeb82fffb5444e81fa0ce8ad8afe7a.jpg?itok=7YhxUzFV> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Norcadia_Prime,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Norcadia_Prime,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Organian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Organian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Organian" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/6/64/Organian.jpg/revision/latest?cb=20080418155712> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Organia,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Organia,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal .
 
-ex:card_Pahvan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Pahvan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Pahvan" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/images/2019-01/785ca71d2c85e3f3774baaf438c5c6eb.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Pahvo,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Pahvo,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Pandronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Pandronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Pandronian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/236x/d8/34/98/d834983c6d9f15d380eb6c19060c68af--star-trek-fandom.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Pandro ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Pandro ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Paxan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Paxan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Paxan" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/766d856ef1a6b02f93d894415e6bfa0e.jpg?itok=poxQ8dDu> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Paxan_homeworld ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Paxan_homeworld ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Phylosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Phylosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Phylosian" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette1.wikia.nocookie.net/startrek/images/a/ac/Phylosian.jpg/revision/latest?cb=20100419042555> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Phylos,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Phylos,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_teleport .
 
-ex:card_Q a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Q a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Q" ;
     owl:hasValue 999 ;
-    ssn:hasProperty ex:trek_prop_extraGalacticSpecies,
-        ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_extraGalacticSpecies,
+        gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_spaceborneSpecies ;
     foaf:img <https://w3ask.com/img/q-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_dark,
-        ex:type_fairy,
-        ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_dark,
+        gada:type_fairy,
+        gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Quantum_singularity_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Quantum_singularity_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Quantum singularity lifeform" ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_spaceborneSpecies ;
     foaf:img <http://www.sabrizain.org/startrek/Astrometrics/Quantum_singularity.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_dark,
-        ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_dark,
+        gada:type_flying .
 
-ex:card_Quarren a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Quarren a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Quarren" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/max_512_width/public/images/2019-07/7ef605fc8dba5425d6965fbd4c8fbe1f.jpg?itok=3bthN6tl> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Quarra,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Quarra,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Rakosan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Rakosan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Rakosan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/92977ae4d2ba21425a59afb269c2a14e.jpg?itok=MkNd8_J1> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Rakosa_V,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Rakosa_V,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Ramuran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ramuran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ramuran" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/23/f4/1c/23f41cbc8b335c4a5c826d354b43650a--star-trek-alien.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Ramura,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Ramura,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Reman a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Reman a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Reman" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <http://vignette4.wikia.nocookie.net/startrek/images/3/35/Vkruk.jpg/revision/latest?cb=20060514080610> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Remus,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Remus,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Reptohumanoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Reptohumanoid a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Reptohumanoid" ;
     owl:hasValue 533 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_reptilianSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_reptilianSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-01/76cf99d3614e23eabab16fb27e944bf9.jpg?itok=RA_RackN> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_fighting,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_fighting,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Rigelian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Rigelian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Rigelian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrekonline/images/f/fb/Rigelian.jpg/revision/latest?cb=20100910104721> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Rigel_system ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Rigel_system ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Romulan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Romulan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Romulan" ;
     rdfs:seeAlso dbr:Romulan ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://img2.wikia.nocookie.net/__cb20080218021323/startrek/images/0/0f/Romulan_Commander.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Romulus ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Romulus ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Salt_vampire a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Salt_vampire a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Salt vampire" ;
     owl:hasValue 533 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <http://img4.wikia.nocookie.net/__cb20070226124601/startrek/images/d/d6/Salt_Vampire.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_M-113,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_fairy,
-        ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_M-113,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_fairy,
+        gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Saltahna a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Saltahna a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Saltah'na" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
     foaf:img <http://www.startreklives.de/artifacts/images/saltahna.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_psychic .
 
-ex:card_Selay a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Selay a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Selay" ;
     owl:hasValue 533 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_reptilianSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_reptilianSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/3/3e/Selay.jpg/revision/latest?cb=20150717012327> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Beta_Renner_system ;
-    poke:type ex:type_fighting,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Beta_Renner_system ;
+    poke:type gada:type_fighting,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Seltin_Rakals_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Seltin_Rakals_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Seltin Rakal's species" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/images/2019-08/9-kradin.jpeg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Meridian,
-        ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Meridian,
+        gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal .
 
-ex:card_Serosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Serosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Serosian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://www.shipschematics.net/startrek/images/others/serosian_cruiser.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Seros,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Seros,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Sheliak a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Sheliak a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Sheliak" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/1/18/Sheliak.jpg/revision/latest?cb=20121025110359> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Sheliak_homeworld ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Sheliak_homeworld ;
+    poke:type gada:type_teleport .
 
-ex:card_Shepherd a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Shepherd a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Shepherd" ;
     rdfs:seeAlso dbr:Mark_Allen_Shepherd ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://s-media-cache-ak0.pinimg.com/736x/6a/a0/e6/6aa0e65c23631cb7c2a3ddc74f06e0f5--scotty-star-trek-deep-space-.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Sikarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Sikarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Sikarian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/8/82/Prime_Factors.jpg/revision/latest?cb=20060803031819> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Sikaris,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Sikaris,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Silver_Blood a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Silver_Blood a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Silver Blood" ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://cdn.cinematerial.com/p/297x/b2gopbf7/star-trek-generations-movie-poster-md.jpg?v=1504476637> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Silver_Blood_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_fairy .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Silver_Blood_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_fairy .
 
-ex:card_Skagaran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Skagaran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Skagaran" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/9/92/Skagaran_colony.jpg/revision/latest?cb=20170506172723> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Skorr a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Skorr a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Skorr" ;
     owl:hasValue 133 ;
-    ssn:hasProperty ex:trek_prop_avianSpecies ;
+    ssn:hasProperty gada:trek_prop_avianSpecies ;
     foaf:img <http://startrekanimated.com/tas_art_skorr-trrevak.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_flying .
 
-ex:card_Space-dwelling_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Space-dwelling_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Space-dwelling lifeform" ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_spaceborneSpecies ;
     foaf:img <http://vignette2.wikia.nocookie.net/startrek/images/b/b2/Voyager_fluidic_space.jpg/revision/latest?cb=20080510142039> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_dark,
-        ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_dark,
+        gada:type_flying .
 
-ex:card_Space_vessel_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Space_vessel_lifeform a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Space vessel lifeform" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_spaceborneSpecies ;
     foaf:img <http://vignette3.wikia.nocookie.net/startrek/images/1/1b/Xindi-Reptilian_ship.jpg/revision/latest?cb=20140719192811> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_dark,
-        ex:type_fairy,
-        ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_dark,
+        gada:type_fairy,
+        gada:type_flying .
 
-ex:card_Species_5973 a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Species_5973 a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Species 5973" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://static1.srcdn.com/wordpress/wp-content/uploads/2020/12/jemhadar-gorn-hirogen-star-trek-species.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Species_8472 a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Species_8472 a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Species 8472" ;
     rdfs:seeAlso dbr:Species_8472 ;
     owl:hasValue 999 ;
-    ssn:hasProperty ex:trek_prop_extraGalacticSpecies,
-        ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_spaceborneSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_extraGalacticSpecies,
+        gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_spaceborneSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/766d856ef1a6b02f93d894415e6bfa0e.jpg?itok=poxQ8dDu> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Fluidic_space,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_dark,
-        ex:type_fairy,
-        ex:type_flying,
-        ex:type_normal,
-        ex:type_psychic,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Fluidic_space,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_dark,
+        gada:type_fairy,
+        gada:type_flying,
+        gada:type_normal,
+        gada:type_psychic,
+        gada:type_teleport .
 
-ex:card_Sphere-Builder a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Sphere-Builder a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Sphere-Builder" ;
     owl:hasValue 366 ;
-    ssn:hasProperty ex:trek_prop_extraGalacticSpecies,
-        ex:trek_prop_humanoidSpecies ;
+    ssn:hasProperty gada:trek_prop_extraGalacticSpecies,
+        gada:trek_prop_humanoidSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/2/26/Spherebuilder.jpg/revision/latest?cb=20151110223947> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Stilph a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Stilph a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Stilph" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/766d856ef1a6b02f93d894415e6bfa0e.jpg?itok=poxQ8dDu> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_teleport .
 
-ex:card_Suliban a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Suliban a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Suliban" ;
     owl:hasValue 600 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/48ab2f9b45957ab574cf005eb8a76760.jpg?itok=U5YQMXbH> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Suliban_homeworld ;
-    poke:type ex:type_fairy,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Suliban_homeworld ;
+    poke:type gada:type_fairy,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_T-Rogoran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_T-Rogoran a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "T-Rogoran" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-01/0937fb5864ed06ffb59ae5f9b5ed67a9.jpg?itok=XxZBM1zG> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Takret a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Takret a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Takret" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek-hd.de/wp-content/uploads/2013/08/takret-commander-enterprise.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Takret_homeworld,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Takret_homeworld,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Talarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Talarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Talarian" ;
     rdfs:seeAlso dbr:Talarian_\(Star_Trek\) ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/1/1e/Talarian_hook_spider_Decipher.jpg/revision/latest?cb=20130512002427> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Talarian_homeworld,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Talarian_homeworld,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Talaxian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Talaxian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Talaxian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/9/93/Neelix%2C_2377.jpg/revision/latest?cb=20141102220106> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Talax,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Talax,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Talosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Talosian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Talosian" ;
     owl:hasValue 833 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_telepathicSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_telepathicSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://d.newsweek.com/en/full/1355890/talosians-talos-iv-star-trek-discovery.jpg?w=790&f=f5096a2e4acc266d2ad0a81c79a88df7> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Talos_IV,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_fairy,
-        ex:type_normal,
-        ex:type_psychic,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Talos_IV,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_fairy,
+        gada:type_normal,
+        gada:type_psychic,
+        gada:type_teleport .
 
-ex:card_Tarahongian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tarahongian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tarahongian" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/55743cc0393b1cb4b8b37d09ae48d097.jpg?itok=0y5T_gLE> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_teleport .
 
-ex:card_Tarellian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tarellian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tarellian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/f2/30/65/f23065ea047ee3a93735068bd8a5d545--star-trek-episodes-starship-enterprise.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Tarella ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Tarella ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Telepathic_pitcher_plant a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Telepathic_pitcher_plant a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Telepathic pitcher plant" ;
     owl:hasValue 433 ;
-    ssn:hasProperty ex:trek_prop_spaceborneSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_spaceborneSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://treknews.net/wp-content/uploads/2018/08/stlv-star-trek-best-space-animals-750x480.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_dark,
-        ex:type_flying,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_dark,
+        gada:type_flying,
+        gada:type_psychic .
 
-ex:card_Tellarite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tellarite a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tellarite" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://startreksansfrontiere.org/images/aides-jeu/peuples-races/quadrant-alpha/tellarite.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Tellar_Prime,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Tellar_Prime,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Thasian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Thasian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Thasian" ;
     owl:hasValue 466 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/9b8b50fb590c590ffbf1295ce92258dc.jpg?itok=n4atddTL> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Thasus ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Thasus ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_psychic .
 
-ex:card_The_Children_of_Tama a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_The_Children_of_Tama a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "The Children of Tama" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/830xx/public/images/2020-05/darmok-hd-071.jpg?itok=dCF5pGbX> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Sigma_Tama_IV ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Sigma_Tama_IV ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_The_Travelers_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_The_Travelers_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "The Traveler's species" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1200x628/public/images/2019-07/325eaeac5bef34937cfdc1bd73034d17.jpg?itok=PJmvVlS0> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Tau_Alpha_C ;
-    poke:type ex:type_fairy,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Tau_Alpha_C ;
+    poke:type gada:type_fairy,
+        gada:type_normal .
 
-ex:card_Tiburonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tiburonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tiburonian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/4/49/Tiburon_male.jpg/revision/latest?cb=20120514134314> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Tiburon,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Tiburon,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Tosk a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tosk a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tosk" ;
     rdfs:seeAlso dbr:Tosk_\(Star_Trek\) ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_reptilianSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_reptilianSpecies ;
     foaf:img <https://i.pinimg.com/236x/88/9e/2f/889e2fe5a94b12cddc6839014b6e9c5c--star-trek-scenery.jpg?nii=t> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Hunters_homeworld,
-        ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_fighting,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Hunters_homeworld,
+        gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_fighting,
+        gada:type_normal .
 
-ex:card_Trelanes_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Trelanes_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Trelane's species" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://vignette2.wikia.nocookie.net/startrek/images/6/65/Trelane.jpg/revision/latest?cb=20080228172720> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Trianic-based_energy_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Trianic-based_energy_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Trianic-based energy being" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Trill a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Trill a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Trill" ;
     rdfs:seeAlso dbr:Trill_\(Star_Trek\) ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette3.wikia.nocookie.net/startrek/images/5/51/Jadzia.jpg/revision/latest?cb=20060127052228> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Two-dimensional_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Two-dimensional_being a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Two-dimensional being" ;
     rdfs:seeAlso dbr:Three-dimensional_chess ;
     owl:hasValue 200 ;
-    ssn:hasProperty ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_spaceborneSpecies ;
     foaf:img <https://i.pinimg.com/474x/b6/a7/15/b6a7158e5f49c8fcedf2915158f95c2c--star-trek-voyager-humanoid.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_dark,
-        ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_dark,
+        gada:type_flying .
 
-ex:card_Tzenkethi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Tzenkethi a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Tzenkethi" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://vignette1.wikia.nocookie.net/startrek/images/a/a4/Tzenkethi_ST_online.jpg/revision/latest/scale-to-width-down/2000?cb=20170113162448> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_teleport .
 
-ex:card_Ullian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Ullian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Ullian" ;
     owl:hasValue 333 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://i.pinimg.com/236x/ca/d4/fc/cad4fc7abde83b57915cb999c57eef15--star-trek-alien.jpg?nii=t> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Ullian_homeworld ;
-    poke:type ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Ullian_homeworld ;
+    poke:type gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Varro a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Varro a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Varro" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <http://mail.shipschematics.net/startrek/images/others/species6339_vessel.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Vaskan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Vaskan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Vaskan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/9b8b50fb590c590ffbf1295ce92258dc.jpg?itok=n4atddTL> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Kyrian_and_Vaskan_homeworld,
-        ex:trek_quad_Delta_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Kyrian_and_Vaskan_homeworld,
+        gada:trek_quad_Delta_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Vendorian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Vendorian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Vendorian" ;
     owl:hasValue 300 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/a/a1/Vendorian.jpg/revision/latest?cb=20070203040411> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Vendor,
-        ex:trek_quad_Beta_Quadrant ;
-    poke:type ex:type_fairy,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Vendor,
+        gada:trek_quad_Beta_Quadrant ;
+    poke:type gada:type_fairy,
+        gada:type_normal .
 
-ex:card_Vissian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Vissian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Vissian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/c/c5/Vissian_Engineer.jpg/revision/latest?cb=20090101181833> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Vissia ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Vissia ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Vulcan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Vulcan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Vulcan" ;
     rdfs:seeAlso dbr:Vulcan_\(Star_Trek\) ;
     owl:hasValue 633 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_telepathicSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_telepathicSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://static.wikia.nocookie.net/crypticstartrekonline/images/9/98/Vulcan_Male_from_STO.jpg/revision/latest?cb=20100504002305> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Vulcan_system,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_psychic,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Vulcan_system,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_psychic,
+        gada:type_teleport .
 
-ex:card_Wisp a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Wisp a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Wisp" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_nonCorporealSpecies ;
+    ssn:hasProperty gada:trek_prop_nonCorporealSpecies ;
     foaf:img <https://tv-fanatic-res.cloudinary.com/iu/s--wo_TXhjx--/t_full/cs_srgb,f_auto,fl_strip_profile.lossy,q_auto:420/v1623691911/star-trek-prodigy-first-look.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_flying,
-        ex:type_ghost .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_flying,
+        gada:type_ghost .
 
-ex:card_Wraith a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Wraith a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Wraith" ;
     owl:hasValue 533 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_shapeshiftingSpecies,
-        ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_shapeshiftingSpecies,
+        gada:trek_prop_telepathicSpecies ;
     foaf:img <https://vignette.wikia.nocookie.net/startrek/images/9/91/Dukat_releasing_pah-wraith.jpg/revision/latest/scale-to-width-down/180?cb=20120506150945> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Dakala ;
-    poke:type ex:type_fairy,
-        ex:type_normal,
-        ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Dakala ;
+    poke:type gada:type_fairy,
+        gada:type_normal,
+        gada:type_psychic .
 
-ex:card_Xindi-Avian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Xindi-Avian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Xindi-Avian" ;
     owl:hasValue 133 ;
-    ssn:hasProperty ex:trek_prop_avianSpecies ;
+    ssn:hasProperty gada:trek_prop_avianSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/31c23973a376c90940f5f5ff2118b5d2.jpg?itok=QkoMFFBA> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Xindus ;
-    poke:type ex:type_flying .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Xindus ;
+    poke:type gada:type_flying .
 
-ex:card_Xindi-Reptilian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Xindi-Reptilian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Xindi-Reptilian" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_reptilianSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_reptilianSpecies ;
     foaf:img <https://i.pinimg.com/236x/d2/d1/e7/d2d1e7aa4ae1afb8044b8b9716416faa--ent-star-trek.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Xindus ;
-    poke:type ex:type_fighting,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Xindus ;
+    poke:type gada:type_fighting,
+        gada:type_normal .
 
-ex:card_Xyrillian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Xyrillian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Xyrillian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/736x/4d/03/9e/4d039ef3ae6b7d80692f252214e6abd3--star-trek-the-one.jpg> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Xyrillian_homeworld ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Xyrillian_homeworld ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Yaderan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Yaderan a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Yaderan" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://i.pinimg.com/236x/e8/27/91/e827916396ef3f6a4a2db02d13476b24--star-trek-alien.jpg?nii=t> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Yadera_Prime,
-        ex:trek_quad_Gamma_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Yadera_Prime,
+        gada:trek_quad_Gamma_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Yattho a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Yattho a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Yattho" ;
     owl:hasValue 233 ;
-    ssn:hasProperty ex:trek_prop_telepathicSpecies ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
-    foaf:member ex:univ_Star_Trek ;
-    poke:type ex:type_psychic .
+    foaf:member gada:univ_Star_Trek ;
+    poke:type gada:type_psychic .
 
-ex:card_Yridian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Yridian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Yridian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette1.wikia.nocookie.net/startrek/images/f/f9/Yerdrin_Lek.jpg/revision/latest?cb=20140414183939> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Yridian_homeworld ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Yridian_homeworld ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Zalkonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Zalkonian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Zalkonian" ;
     owl:hasValue 633 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/6b8b8e3bd6ad94b985c1b1f1b7a94cb2.jpg?itok=6x0UZ39-> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Zalkon ;
-    poke:type ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Zalkon ;
+    poke:type gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Zetarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Zetarian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Zetarian" ;
     owl:hasValue 533 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_nonCorporealSpecies,
-        ex:trek_prop_spaceborneSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_nonCorporealSpecies,
+        gada:trek_prop_spaceborneSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Zetar ;
-    poke:type ex:type_dark,
-        ex:type_flying,
-        ex:type_ghost,
-        ex:type_normal .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Zetar ;
+    poke:type gada:type_dark,
+        gada:type_flying,
+        gada:type_ghost,
+        gada:type_normal .
 
-ex:card_Zibalian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Zibalian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Zibalian" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-07/6b8b8e3bd6ad94b985c1b1f1b7a94cb2.jpg?itok=6x0UZ39-> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Theta_Zibal_III ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Theta_Zibal_III ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:card_Zobrals_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+gada:card_Zobrals_species a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
         <http://dbpedia.org/resource/Category:Star_Trek_species>,
         dbr:Playing_card ;
     rdfs:label "Zobral's species" ;
     owl:hasValue 400 ;
-    ssn:hasProperty ex:trek_prop_humanoidSpecies,
-        ex:trek_prop_warpCapableSpecies ;
+    ssn:hasProperty gada:trek_prop_humanoidSpecies,
+        gada:trek_prop_warpCapableSpecies ;
     foaf:img <https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415> ;
-    foaf:member ex:univ_Star_Trek ;
-    sdo:birthPlace ex:trek_plan_Torothan_homeworld,
-        ex:trek_quad_Alpha_Quadrant ;
-    poke:type ex:type_normal,
-        ex:type_teleport .
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Torothan_homeworld,
+        gada:trek_quad_Alpha_Quadrant ;
+    poke:type gada:type_normal,
+        gada:type_teleport .
 
-ex:trek_plan_Abronian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Abronian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Abronian homeworld" .
 
-ex:trek_plan_Angosia_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Angosia_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Angosia III" .
 
-ex:trek_plan_Antede_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Antede_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Antede III" .
 
-ex:trek_plan_Areolus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Areolus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Areolus" .
 
-ex:trek_plan_Beta_Renner_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Beta_Renner_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Beta Renner system" .
 
-ex:trek_plan_Caldonia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Caldonia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Caldonia" .
 
-ex:trek_plan_Catulla a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Catulla a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Catulla" .
 
-ex:trek_plan_Chalna a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Chalna a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Chalna" .
 
-ex:trek_plan_Cheron a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Cheron a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Cheron" .
 
-ex:trek_plan_Dakala a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Dakala a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Dakala" .
 
-ex:trek_plan_Daled_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Daled_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Daled IV" .
 
-ex:trek_plan_Devidia_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Devidia_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Devidia II" .
 
-ex:trek_plan_Evora_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Evora_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Evora homeworld" .
 
-ex:trek_plan_Excalbia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Excalbia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Excalbia" .
 
-ex:trek_plan_FGC-47 a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_FGC-47 a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "FGC-47" .
 
-ex:trek_plan_Galardon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Galardon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Galardon" .
 
-ex:trek_plan_Gems_planet a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Gems_planet a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Gem's planet" .
 
-ex:trek_plan_Kaelon_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Kaelon_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Kaelon II" .
 
-ex:trek_plan_Kelva a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Kelva a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Kelva" .
 
-ex:trek_plan_Lumerian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Lumerian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Lumerian homeworld" .
 
-ex:trek_plan_Medusan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Medusan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Medusan homeworld" .
 
-ex:trek_plan_Melkotian_planet a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Melkotian_planet a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Melkotian planet" .
 
-ex:trek_plan_Pandro a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Pandro a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Pandro" .
 
-ex:trek_plan_Paxan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Paxan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Paxan homeworld" .
 
-ex:trek_plan_Rigel_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Rigel_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Rigel system" .
 
-ex:trek_plan_Romulus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Romulus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Romulus" .
 
-ex:trek_plan_Sheliak_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Sheliak_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Sheliak homeworld" .
 
-ex:trek_plan_Sigma_Tama_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Sigma_Tama_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Sigma Tama IV" .
 
-ex:trek_plan_Suliban_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Suliban_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Suliban homeworld" .
 
-ex:trek_plan_Tarella a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Tarella a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Tarella" .
 
-ex:trek_plan_Tau_Alpha_C a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Tau_Alpha_C a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Tau Alpha C" .
 
-ex:trek_plan_Thasus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Thasus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Thasus" .
 
-ex:trek_plan_Theta_Zibal_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Theta_Zibal_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Theta Zibal III" .
 
-ex:trek_plan_Ullian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Ullian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Ullian homeworld" .
 
-ex:trek_plan_Vissia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Vissia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Vissia" .
 
-ex:trek_plan_Xyrillian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Xyrillian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Xyrillian homeworld" .
 
-ex:trek_plan_Yridian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Yridian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Yridian homeworld" .
 
-ex:trek_plan_Zalkon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Zalkon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Zalkon" .
 
-ex:trek_plan_Zetar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Zetar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Zetar" .
 
-ex:type_electric dbo:defeat ex:type_flying,
-        ex:type_teleport,
-        ex:type_water .
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
 
-ex:trek_plan_Acamar_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Acamar_III a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Acamar III" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Akritiri a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Akritiri a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Akritiri" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Ardana a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Ardana a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Ardana" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Argelius_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Argelius_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Argelius II" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Bajor a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Bajor a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Bajor" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Benzar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Benzar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Benzar" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Beta_XII-A a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Beta_XII-A a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Beta XII-A" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Betazed a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Betazed a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Betazed" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Bolarus_IX a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Bolarus_IX a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Bolarus IX" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Breen_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Breen_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Breen system" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Caatati_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Caatati_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Caatati homeworld" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Cardassia_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Cardassia_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Cardassia Prime" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Delta_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Delta_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Delta IV" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Deneb_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Deneb_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Deneb IV" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Denobula a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Denobula a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Denobula" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Dream_Aliens_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Dream_Aliens_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Dream Alien's homeworld" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Earth a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Earth a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Earth" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Enara_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Enara_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Enara Prime" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Ferenginar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Ferenginar a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Ferenginar" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Fluidic_space a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Fluidic_space a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Fluidic space" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Hunters_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Hunters_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Hunters' homeworld" ;
-    geo:ehInside ex:trek_quad_Gamma_Quadrant .
+    geo:ehInside gada:trek_quad_Gamma_Quadrant .
 
-ex:trek_plan_Karemma_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Karemma_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Karemma system" ;
-    geo:ehInside ex:trek_quad_Gamma_Quadrant .
+    geo:ehInside gada:trek_quad_Gamma_Quadrant .
 
-ex:trek_plan_Klaestron_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Klaestron_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Klaestron IV" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Koinonian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Koinonian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Koinonian homeworld" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Kreetassa a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Kreetassa a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Kreetassa" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Kzin a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Kzin a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Kzin" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Lactra_VII a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Lactra_VII a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Lactra VII" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Ledos a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Ledos a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Ledos" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_M-113 a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_M-113 a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "M-113" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Malurian_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Malurian_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Malurian system" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Mari_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Mari_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Mari homeworld" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Marijne_VII a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Marijne_VII a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Marijne VII" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Meridian a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Meridian a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Meridian" ;
-    geo:ehInside ex:trek_quad_Gamma_Quadrant .
+    geo:ehInside gada:trek_quad_Gamma_Quadrant .
 
-ex:trek_plan_Mislen a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Mislen a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Mislen" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Mizar_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Mizar_II a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Mizar II" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Norcadia_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Norcadia_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Norcadia Prime" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Organia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Organia a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Organia" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Pahvo a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Pahvo a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Pahvo" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Phylos a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Phylos a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Phylos" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Pollux_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Pollux_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Pollux IV" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_QonoS a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_QonoS a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Qo'noS" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Quarra a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Quarra a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Quarra" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Rakosa_V a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Rakosa_V a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Rakosa V" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Ramura a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Ramura a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Ramura" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Rat-lizard_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Rat-lizard_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Rat-lizard homeworld" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Remus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Remus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Remus" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Seros a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Seros a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Seros" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Sikaris a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Sikaris a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Sikaris" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Silver_Blood_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Silver_Blood_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Silver Blood homeworld" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Takret_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Takret_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Takret homeworld" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Talarian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Talarian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Talarian homeworld" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Talax a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Talax a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Talax" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_plan_Talos_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Talos_IV a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Talos IV" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Tellar_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Tellar_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Tellar Prime" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Tiburon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Tiburon a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Tiburon" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Torothan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Torothan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Torothan homeworld" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Vendor a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Vendor a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Vendor" ;
-    geo:ehInside ex:trek_quad_Beta_Quadrant .
+    geo:ehInside gada:trek_quad_Beta_Quadrant .
 
-ex:trek_plan_Vulcan_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Vulcan_system a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Vulcan system" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Xindus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Xindus a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Xindus" .
 
-ex:trek_plan_Yadera_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Yadera_Prime a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Yadera Prime" ;
-    geo:ehInside ex:trek_quad_Gamma_Quadrant .
+    geo:ehInside gada:trek_quad_Gamma_Quadrant .
 
-ex:type_poison dbo:defeat ex:type_fairy,
-        ex:type_grass,
-        ex:type_teleport .
+gada:type_poison dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport .
 
-ex:type_water dbo:defeat ex:type_fire,
-        ex:type_ground,
-        ex:type_rock .
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
 
-ex:trek_plan_Andoria a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Andoria a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Andoria" ;
-    geo:ehInside ex:trek_quad_Alpha_Quadrant .
+    geo:ehInside gada:trek_quad_Alpha_Quadrant .
 
-ex:trek_plan_Kyrian_and_Vaskan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+gada:trek_plan_Kyrian_and_Vaskan_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
     rdfs:label "Kyrian and Vaskan homeworld" ;
-    geo:ehInside ex:trek_quad_Delta_Quadrant .
+    geo:ehInside gada:trek_quad_Delta_Quadrant .
 
-ex:trek_prop_avianSpecies rdfs:label "avianSpecies" ;
+gada:trek_prop_avianSpecies rdfs:label "avianSpecies" ;
     owl:sameAs dbr:Avian .
 
-ex:type_bug dbo:defeat ex:type_dark,
-        ex:type_grass,
-        ex:type_psychic .
+gada:type_bug dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic .
 
-ex:type_dragon dbo:defeat ex:type_flying .
+gada:type_dragon dbo:defeat gada:type_flying .
 
-ex:type_fire dbo:defeat ex:type_bug,
-        ex:type_grass,
-        ex:type_ice,
-        ex:type_steel .
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
 
-ex:type_ground dbo:defeat ex:type_electric,
-        ex:type_fire,
-        ex:type_poison,
-        ex:type_rock,
-        ex:type_steel .
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
 
-ex:type_steel dbo:defeat ex:type_fairy,
-        ex:type_ice,
-        ex:type_rock .
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
 
-ex:trek_prop_extraGalacticSpecies rdfs:label "extraGalacticSpecies" .
+gada:trek_prop_extraGalacticSpecies rdfs:label "extraGalacticSpecies" .
 
-ex:type_ice dbo:defeat ex:type_dragon,
-        ex:type_flying,
-        ex:type_grass,
-        ex:type_ground .
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
 
-ex:trek_prop_reptilianSpecies rdfs:label "reptilianSpecies" ;
+gada:trek_prop_reptilianSpecies rdfs:label "reptilianSpecies" ;
     owl:sameAs dbr:Reptilian .
 
-ex:type_grass dbo:defeat ex:type_ground,
-        ex:type_rock,
-        ex:type_water .
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
 
-ex:type_rock dbo:defeat ex:type_bug,
-        ex:type_fire,
-        ex:type_flying,
-        ex:type_ice .
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
 
-ex:trek_prop_spaceborneSpecies rdfs:label "spaceborneSpecies" ;
+gada:trek_prop_spaceborneSpecies rdfs:label "spaceborneSpecies" ;
     owl:sameAs dbr:Outer_space .
 
-ex:type_fighting a poke:Type ;
+gada:type_fighting a poke:Type ;
     rdfs:label "fighting" ;
-    dbo:defeat ex:type_dark,
-        ex:type_ice,
-        ex:type_normal,
-        ex:type_rock,
-        ex:type_steel ;
+    dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel ;
     rdfs:subClassOf dbr:Combat .
 
-ex:trek_quad_Gamma_Quadrant a dbr:Galactic_quadrant ;
+gada:trek_quad_Gamma_Quadrant a dbr:Galactic_quadrant ;
     rdfs:label "Gamma Quadrant" ;
-    geo:ehContains ex:trek_plan_Hunters_homeworld,
-        ex:trek_plan_Karemma_system,
-        ex:trek_plan_Meridian,
-        ex:trek_plan_Yadera_Prime .
+    geo:ehContains gada:trek_plan_Hunters_homeworld,
+        gada:trek_plan_Karemma_system,
+        gada:trek_plan_Meridian,
+        gada:trek_plan_Yadera_Prime .
 
-ex:type_dark a poke:Type ;
+gada:type_dark a poke:Type ;
     rdfs:label "dark" ;
-    dbo:defeat ex:type_ghost,
-        ex:type_psychic ;
+    dbo:defeat gada:type_ghost,
+        gada:type_psychic ;
     rdfs:subClassOf dbr:Evil .
 
-ex:trek_prop_shapeshiftingSpecies rdfs:label "shapeshiftingSpecies" ;
+gada:trek_prop_shapeshiftingSpecies rdfs:label "shapeshiftingSpecies" ;
     owl:sameAs dbr:Shapeshifting .
 
-ex:trek_prop_nonCorporealSpecies rdfs:label "nonCorporealSpecies" .
+gada:trek_prop_nonCorporealSpecies rdfs:label "nonCorporealSpecies" .
 
-ex:trek_quad_Beta_Quadrant a dbr:Galactic_quadrant ;
+gada:trek_quad_Beta_Quadrant a dbr:Galactic_quadrant ;
     rdfs:label "Beta Quadrant" ;
-    geo:ehContains ex:trek_plan_Acamar_III,
-        ex:trek_plan_Ardana,
-        ex:trek_plan_Argelius_II,
-        ex:trek_plan_Malurian_system,
-        ex:trek_plan_Pahvo,
-        ex:trek_plan_QonoS,
-        ex:trek_plan_Remus,
-        ex:trek_plan_Tiburon,
-        ex:trek_plan_Vendor .
+    geo:ehContains gada:trek_plan_Acamar_III,
+        gada:trek_plan_Ardana,
+        gada:trek_plan_Argelius_II,
+        gada:trek_plan_Malurian_system,
+        gada:trek_plan_Pahvo,
+        gada:trek_plan_QonoS,
+        gada:trek_plan_Remus,
+        gada:trek_plan_Tiburon,
+        gada:trek_plan_Vendor .
 
-ex:type_fairy a poke:Type ;
+gada:type_fairy a poke:Type ;
     rdfs:label "fairy" ;
-    dbo:defeat ex:type_dark,
-        ex:type_dragon,
-        ex:type_fighting,
-        ex:type_teleport ;
+    dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport ;
     rdfs:subClassOf dbr:Fairy .
 
-ex:type_ghost a poke:Type ;
+gada:type_ghost a poke:Type ;
     rdfs:label "ghost" ;
-    dbo:defeat ex:type_psychic,
-        ex:type_teleport ;
+    dbo:defeat gada:type_psychic,
+        gada:type_teleport ;
     rdfs:subClassOf dbr:Ghost .
 
-ex:trek_prop_telepathicSpecies rdfs:label "telepathicSpecies" ;
+gada:trek_prop_telepathicSpecies rdfs:label "telepathicSpecies" ;
     owl:sameAs dbr:Telepathy .
 
-ex:type_psychic a poke:Type ;
+gada:type_psychic a poke:Type ;
     rdfs:label "psychic" ;
-    dbo:defeat ex:type_fighting,
-        ex:type_poison ;
+    dbo:defeat gada:type_fighting,
+        gada:type_poison ;
     rdfs:subClassOf dbr:Psychic .
 
-ex:type_flying a poke:Type ;
+gada:type_flying a poke:Type ;
     rdfs:label "flying" ;
-    dbo:defeat ex:type_bug,
-        ex:type_fighting,
-        ex:type_grass ;
+    dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass ;
     rdfs:subClassOf dbr:Flight .
 
-ex:trek_quad_Delta_Quadrant a dbr:Galactic_quadrant ;
+gada:trek_quad_Delta_Quadrant a dbr:Galactic_quadrant ;
     rdfs:label "Delta Quadrant" ;
-    geo:ehContains ex:trek_plan_Akritiri,
-        ex:trek_plan_Caatati_homeworld,
-        ex:trek_plan_Dream_Aliens_homeworld,
-        ex:trek_plan_Enara_Prime,
-        ex:trek_plan_Fluidic_space,
-        ex:trek_plan_Kyrian_and_Vaskan_homeworld,
-        ex:trek_plan_Ledos,
-        ex:trek_plan_Mari_homeworld,
-        ex:trek_plan_Mislen,
-        ex:trek_plan_Norcadia_Prime,
-        ex:trek_plan_Quarra,
-        ex:trek_plan_Rakosa_V,
-        ex:trek_plan_Ramura,
-        ex:trek_plan_Seros,
-        ex:trek_plan_Sikaris,
-        ex:trek_plan_Silver_Blood_homeworld,
-        ex:trek_plan_Talax .
+    geo:ehContains gada:trek_plan_Akritiri,
+        gada:trek_plan_Caatati_homeworld,
+        gada:trek_plan_Dream_Aliens_homeworld,
+        gada:trek_plan_Enara_Prime,
+        gada:trek_plan_Fluidic_space,
+        gada:trek_plan_Kyrian_and_Vaskan_homeworld,
+        gada:trek_plan_Ledos,
+        gada:trek_plan_Mari_homeworld,
+        gada:trek_plan_Mislen,
+        gada:trek_plan_Norcadia_Prime,
+        gada:trek_plan_Quarra,
+        gada:trek_plan_Rakosa_V,
+        gada:trek_plan_Ramura,
+        gada:trek_plan_Seros,
+        gada:trek_plan_Sikaris,
+        gada:trek_plan_Silver_Blood_homeworld,
+        gada:trek_plan_Talax .
 
-ex:trek_quad_Alpha_Quadrant a dbr:Galactic_quadrant ;
+gada:trek_quad_Alpha_Quadrant a dbr:Galactic_quadrant ;
     rdfs:label "Alpha Quadrant" ;
-    geo:ehContains ex:trek_plan_Andoria,
-        ex:trek_plan_Bajor,
-        ex:trek_plan_Benzar,
-        ex:trek_plan_Beta_XII-A,
-        ex:trek_plan_Betazed,
-        ex:trek_plan_Bolarus_IX,
-        ex:trek_plan_Breen_system,
-        ex:trek_plan_Cardassia_Prime,
-        ex:trek_plan_Delta_IV,
-        ex:trek_plan_Deneb_IV,
-        ex:trek_plan_Denobula,
-        ex:trek_plan_Earth,
-        ex:trek_plan_Ferenginar,
-        ex:trek_plan_Klaestron_IV,
-        ex:trek_plan_Koinonian_homeworld,
-        ex:trek_plan_Kreetassa,
-        ex:trek_plan_Kzin,
-        ex:trek_plan_Lactra_VII,
-        ex:trek_plan_M-113,
-        ex:trek_plan_Marijne_VII,
-        ex:trek_plan_Mizar_II,
-        ex:trek_plan_Organia,
-        ex:trek_plan_Phylos,
-        ex:trek_plan_Pollux_IV,
-        ex:trek_plan_Rat-lizard_homeworld,
-        ex:trek_plan_Takret_homeworld,
-        ex:trek_plan_Talarian_homeworld,
-        ex:trek_plan_Talos_IV,
-        ex:trek_plan_Tellar_Prime,
-        ex:trek_plan_Torothan_homeworld,
-        ex:trek_plan_Vulcan_system .
+    geo:ehContains gada:trek_plan_Andoria,
+        gada:trek_plan_Bajor,
+        gada:trek_plan_Benzar,
+        gada:trek_plan_Beta_XII-A,
+        gada:trek_plan_Betazed,
+        gada:trek_plan_Bolarus_IX,
+        gada:trek_plan_Breen_system,
+        gada:trek_plan_Cardassia_Prime,
+        gada:trek_plan_Delta_IV,
+        gada:trek_plan_Deneb_IV,
+        gada:trek_plan_Denobula,
+        gada:trek_plan_Earth,
+        gada:trek_plan_Ferenginar,
+        gada:trek_plan_Klaestron_IV,
+        gada:trek_plan_Koinonian_homeworld,
+        gada:trek_plan_Kreetassa,
+        gada:trek_plan_Kzin,
+        gada:trek_plan_Lactra_VII,
+        gada:trek_plan_M-113,
+        gada:trek_plan_Marijne_VII,
+        gada:trek_plan_Mizar_II,
+        gada:trek_plan_Organia,
+        gada:trek_plan_Phylos,
+        gada:trek_plan_Pollux_IV,
+        gada:trek_plan_Rat-lizard_homeworld,
+        gada:trek_plan_Takret_homeworld,
+        gada:trek_plan_Talarian_homeworld,
+        gada:trek_plan_Talos_IV,
+        gada:trek_plan_Tellar_Prime,
+        gada:trek_plan_Torothan_homeworld,
+        gada:trek_plan_Vulcan_system .
 
-ex:trek_prop_warpCapableSpecies rdfs:label "warpCapableSpecies" ;
+gada:trek_prop_warpCapableSpecies rdfs:label "warpCapableSpecies" ;
     owl:sameAs dbr:Warp .
 
-ex:type_teleport a poke:Type ;
+gada:type_teleport a poke:Type ;
     rdfs:label "teleport" ;
-    dbo:defeat ex:type_dragon,
-        ex:type_fighting,
-        ex:type_flying,
-        ex:type_psychic .
+    dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
 
-ex:trek_prop_humanoidSpecies rdfs:label "humanoidSpecies" ;
+gada:trek_prop_humanoidSpecies rdfs:label "humanoidSpecies" ;
     owl:sameAs dbr:Humanoid .
 
-ex:type_normal a poke:Type ;
+gada:type_normal a poke:Type ;
     rdfs:label "normal" .
 
-ex:univ_Star_Trek rdfs:label "Star Trek" ;
+gada:univ_Star_Trek rdfs:label "Star Trek" ;
     owl:sameAs dbr:Star_Trek .
 

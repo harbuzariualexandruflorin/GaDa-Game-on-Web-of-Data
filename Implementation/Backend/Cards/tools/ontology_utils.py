@@ -49,7 +49,7 @@ def query_dbpedia_by_keyword(text, target, return_url=False):
 
         for binding in ret["results"]["bindings"]:
             for w in target:
-                if w in binding["c1"]["value"]:
+                if w.lower() in binding["c1"]["value"].lower():
                     if return_url:
                         return binding["c1"]["value"]
                     return binding["c1"]["value"].split("/")[-1]
@@ -62,7 +62,7 @@ from ontologies import *
 
 
 def cards_type_build_ontology(g):
-    g.bind("ex", EX)
+    g.bind(PREFIX_EX, EX)
     g.bind("dbo", DBO)
 
     for t in CARD_TYPES_CHART.keys():
@@ -80,7 +80,7 @@ def cards_build_ontology():
     g = pokemon_build_ontology(g)
     g = marvel_build_ontology(g)
 
-    g.serialize(destination="data/ontology/final.ttl")
+    # g.serialize(destination="data/ontology/final.ttl")
     return g
 
 

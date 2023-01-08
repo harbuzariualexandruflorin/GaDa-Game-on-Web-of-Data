@@ -5,7 +5,7 @@ from rdflib.namespace import FOAF, RDF, XSD
 
 from tools.common_utils import *
 from tools.ontology_macros import *
-from tools.ontology_utils import format_name, poke_types_ontology
+from tools.ontology_utils import format_name, poke_types_ontology, query_dbpedia_by_keyword
 
 
 def randomise_pokemon(all_pokemon, n_chunks, target_nr):
@@ -43,7 +43,7 @@ def pokemon_build_ontology(g, limit=None):
     all_pokemon["pokemon"] = sorted(all_pokemon["pokemon"], key=lambda p: p["score"])
 
     g.bind("dbr", DBR)
-    g.bind("ex", EX)
+    g.bind(PREFIX_EX, EX)
     g.bind("foaf", FOAF)
     g.bind("owl", OWL)
     g.bind("poke", POKE)
@@ -63,6 +63,10 @@ def pokemon_build_ontology(g, limit=None):
 
         entity = EX["card_" + format_name(pokemon["name"])]
         g.add((entity, FOAF.member, universe))
+        dbr = query_dbpedia_by_keyword("pokémon " + pokemon["species"], pokemon["species"])
+        if dbr is not None:
+            print(dbr)
+            g.add((entity, RDFS.seeAlso, DBR[dbr]))
 
         g.add((entity, RDF.type, DBR.Playing_card))
         g.add((entity, RDF.type, POKE.Pokémon))

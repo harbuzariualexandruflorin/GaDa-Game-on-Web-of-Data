@@ -27,7 +27,7 @@ def start_api(use_port):
                 "randomize": bool (optional, default false)
             }''')
         print("================================================================")
-        print("\tGET METHOD: http://localhost:" + use_port + '/gada_card_deck/info?jsonld=A')
+        print("\tPOST METHOD: http://localhost:" + use_port + '/gada_card_deck/info?jsonld=A')
         print("\t\tExpecting raw json (cards) & url parameter (jsonld): ", '''
             {
                 "cards": list of strings (necessary, no empty list, no empty strings),

@@ -9,7 +9,7 @@ from tools.ontology_utils import format_name, query_dbpedia_by_keyword, poke_typ
 def marvel_build_ontology(g, limit=None):
     g.bind("dbo", DBO)
     g.bind("dbr", DBR)
-    g.bind("ex", EX)
+    g.bind(PREFIX_EX, EX)
     g.bind("foaf", FOAF)
     g.bind("geo", GEO)
     g.bind("owl", OWL)

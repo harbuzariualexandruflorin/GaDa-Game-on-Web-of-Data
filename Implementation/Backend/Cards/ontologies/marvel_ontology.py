@@ -100,7 +100,7 @@ def marvel_get_json_ld(g, card_id, id_to_ld):
     marvel_ld["foaf:member"] = {**id_to_ld(g, marvel_ld["foaf:member"]["@id"], context)}
     marvel_ld["foaf:member"].pop("@context")
 
-    for f in ["dbo:eyeColor", "dbo:hairColor", "dbo:participatingIn", "sdo:hasOccupation", "foaf:nick"]:
+    for f in ["dbo:eyeColor", "dbo:hairColor", "dbo:participatingIn", "sdo:hasOccupation", "foaf:nick", "rdfs:seeAlso"]:
         if marvel_ld.get(f, None) is not None:
             marvel_ld[f] = to_list(marvel_ld[f])
     for p in ["poke:type"]:

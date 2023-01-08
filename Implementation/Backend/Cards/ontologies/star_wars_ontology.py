@@ -144,7 +144,7 @@ def star_wars_get_json_ld(g, card_id, id_to_ld):
                 star_wars_ld['swapi:homeworld'][p] = to_list(star_wars_ld['swapi:homeworld'][p])
         star_wars_ld['swapi:homeworld'].pop("@context")
 
-    for p in ["swapi:eyeColor", "swapi:hairColor", "swapi:skinColor"]:
+    for p in ["swapi:eyeColor", "swapi:hairColor", "swapi:skinColor", "rdfs:seeAlso"]:
         if star_wars_ld.get(p, None) is not None:
             star_wars_ld[p] = to_list(star_wars_ld[p])
 
@@ -156,10 +156,9 @@ def star_wars_get_json_ld(g, card_id, id_to_ld):
                 star_wars_ld[p][i] = {**id_to_ld(g, star_wars_ld[p][i]["@id"], context)}
                 star_wars_ld[p][i].pop("@context")
 
-                if star_wars_ld[p][i].get('swapi:producer', None) is not None:
-                    star_wars_ld[p][i]['swapi:producer'] = to_list(star_wars_ld[p][i]['swapi:producer'])
-                if star_wars_ld[p][i].get("dbo:defeat", None) is not None:
-                    star_wars_ld[p][i]["dbo:defeat"] = to_list(star_wars_ld[p][i]["dbo:defeat"])
+                for k in ["swapi:producer", "dbo:defeat", "rdfs:seeAlso"]:
+                    if star_wars_ld[p][i].get(k, None) is not None:
+                        star_wars_ld[p][i][k] = to_list(star_wars_ld[p][i][k])
 
     for i in range(len(star_wars_ld.get("@type", []))):
         if API_NAMESPACE in star_wars_ld["@type"][i]:

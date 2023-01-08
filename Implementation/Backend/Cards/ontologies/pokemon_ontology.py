@@ -123,8 +123,9 @@ def pokemon_get_json_ld(g, card_id, id_to_ld):
     pokemon_ld["foaf:member"] = {**id_to_ld(g, pokemon_ld["foaf:member"]["@id"], context)}
     pokemon_ld["foaf:member"].pop("@context")
 
-    if pokemon_ld.get('poke:ability', None) is not None:
-        pokemon_ld['poke:ability'] = to_list(pokemon_ld['poke:ability'])
+    for p in ["rdfs:seeAlso", "poke:ability"]:
+        if pokemon_ld.get(p, None) is not None:
+            pokemon_ld[p] = to_list(pokemon_ld[p])
     for p in ["poke:type"]:
         if pokemon_ld.get(p, None) is not None:
             pokemon_ld[p] = to_list(pokemon_ld[p])

@@ -105,6 +105,9 @@ def star_trek_get_json_ld(g, card_id, id_to_ld):
             star_trek_ld['sdo:birthPlace'][i].pop('geo:ehInside', None)
             star_trek_ld['sdo:birthPlace'][i].pop('geo:ehContains', None)
 
+    for p in ["rdfs:seeAlso"]:
+        if star_trek_ld.get(p, None) is not None:
+            star_trek_ld[p] = to_list(star_trek_ld[p])
     for p in ["poke:type", "ssn:hasProperty"]:
         if star_trek_ld.get(p, None) is not None:
             star_trek_ld[p] = to_list(star_trek_ld[p])

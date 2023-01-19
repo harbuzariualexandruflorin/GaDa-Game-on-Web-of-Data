@@ -11,7 +11,5 @@
         public string QuestionType { get; set; }
 
         public string Query { get; set; }
-
-        public string CorrectAnswer { get; set; }   
     }
 }

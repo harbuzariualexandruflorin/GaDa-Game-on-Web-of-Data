@@ -7,8 +7,8 @@ namespace QuizAPI.Services
     {
         string GetQueryOfQuestion(string question);
 
-        List<string> GetQueryAnswer(string querry);
+        List<string> GetQueryAnswer(string querry, string character);
 
-        string GetRandomQuestion(List<string> characters);
+        QuestionToReturn GetRandomQuestion(List<string> characters);
     }
 }

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using QuizAPI.Core;
 using QuizAPI.Services;
 
@@ -21,12 +23,13 @@ namespace QuizAPI.Controllers
         {
             var query = quizService.GetQueryOfQuestion(question);
 
-            var queryResult = quizService.GetQueryAnswer(query);
+            //var queryResult = quizService.GetQueryAnswer(query);
 
-            return Ok(queryResult);
+            return Ok();
         }
 
         [HttpPost("getQuestion")]
+        [Produces("application/json")]
         public IActionResult GetQuestion([FromBody] Data data)
         {
             //var question = quizService.GetRandomQuestion(topic);

@@ -10,5 +10,7 @@ namespace QuizAPI.Services
         List<string> GetQueryAnswer(string querry, string character);
 
         QuestionToReturn GetRandomQuestion(List<string> characters);
+
+        bool CheckAnswer(Answer answer);
     }
 }

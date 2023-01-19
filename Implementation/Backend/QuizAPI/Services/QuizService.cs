@@ -1,9 +1,6 @@
 ﻿using QuizAPI.Core;
 using VDS.RDF.Query;
 using VDS.RDF.Parsing;
-using System.Text.RegularExpressions;
-using AngleSharp.Common;
-using VDS.RDF.Writing.Formatting;
 
 namespace QuizAPI.Services
 {
@@ -48,9 +45,10 @@ namespace QuizAPI.Services
             SparqlResultSet results = endpoint.QueryWithResultSet(query.ToString());
           
             
+            //WHEN ONLY A COLUMN IS RETURNED
             foreach (SparqlResult result in results)
             {
-                resultsList.Add(result.ToString());
+                resultsList.Add(result[0].ToString());
                 Console.WriteLine(result.ToString());
             }
             return resultsList;
@@ -66,9 +64,6 @@ namespace QuizAPI.Services
             SparqlParameterizedString queryString = new SparqlParameterizedString();
             queryString.Namespaces.AddNamespace("foaf", new Uri("http://xmlns.com/foaf/0.1/"));
             queryString.Namespaces.AddNamespace("rdfs", new Uri("http://www.w3.org/2000/01/rdf-schema#"));
-
-            //queryString.CommandText = "SELECT ?universeName WHERE {  " +
-            //    "?character foaf:member ?universe;  rdfs:label \"" + characterName + "\". ?universe rdfs:label ?universeName.}";
 
             queryString.CommandText = "SELECT ?universeName WHERE {  " +
                 "?character foaf:member ?universe;  rdfs:label @value. ?universe rdfs:label ?universeName.}";
@@ -105,6 +100,8 @@ namespace QuizAPI.Services
 
             QuestionToReturn questionToReturn = new QuestionToReturn();
             questionToReturn.Question = quizQuestion;
+            questionToReturn.QuestionType = characterUniverse;
+            questionToReturn.Subject = selectedCharacter;
 
 
             if(characterUniverse.ToLower().Equals("pokemon")) //DELETE IF IN THE FUTURE
@@ -153,29 +150,36 @@ namespace QuizAPI.Services
             return characterList;
         }
 
-        /*
-        public string GetRandomQuestion(string topic)
+
+        //FOR NOW, for questions with only one answer option
+        public bool CheckAnswer(Answer answer)
         {
-            SparqlParameterizedString queryString = new SparqlParameterizedString();
+            string questionTemplate="";
+            string questionAnswer = answer.QuestionAnswer.First();
 
-            queryString.Namespaces.AddNamespace("foaf", new Uri("http://xmlns.com/foaf/0.1/"));
-            queryString.Namespaces.AddNamespace("gada", new Uri("https://gada.cards.game.namespace.com/"));
-            queryString.Namespaces.AddNamespace("rdfs", new Uri("http://www.w3.org/2000/01/rdf-schema#"));
+            var allQuestionsTemplates = quiz.Questions.Select(x => x.QuizQuestion).ToList();
 
-            queryString.CommandText = "SELECT ?pokemonName WHERE { " +
-                "?pokemon foaf:member gada:univ_Pokemon; rdfs:label ?pokemonName.}";
+            foreach (var template in allQuestionsTemplates)
+            {
+                var formattedQuestion = string.Format(template, answer.Subject);
+                if (formattedQuestion.ToLower().Equals(answer.Question.ToLower()))
+                {
+                    questionTemplate = template;
+                    break;
+                }
+            }
+            if (!string.IsNullOrEmpty(questionTemplate))
+            {
+                var query = GetQueryOfQuestion(questionTemplate);
 
-            SparqlQueryParser parser = new SparqlQueryParser();
-            SparqlQuery query = parser.ParseFromString(queryString);
+                var queryResult = GetQueryAnswer(query, answer.Subject).FirstOrDefault();
 
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://localhost:3030/gada_set2/query"));
-            SparqlResultSet results = endpoint.QueryWithResultSet(query.ToString());
+                if (questionAnswer.Equals(queryResult))
+                    return true;
+            }
 
-            int index = random.Next(results.Count);
-            string characterName = results.GetItemByIndex(index).ToString();
-
-            return characterName;
+            return false;
         }
-        */
+
     }
 }

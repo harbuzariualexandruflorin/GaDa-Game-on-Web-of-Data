@@ -18,14 +18,13 @@ namespace QuizAPI.Controllers
             this.quizService = quizService;
         }
 
-        [HttpGet("answer")]
-        public IActionResult Answer(string question)
+        [HttpPost("answer")]
+        public IActionResult CheckAnswer([FromBody] Answer answer)
         {
-            var query = quizService.GetQueryOfQuestion(question);
 
-            //var queryResult = quizService.GetQueryAnswer(query);
+            var response = quizService.CheckAnswer(answer);
 
-            return Ok();
+            return Ok(response);
         }
 
         [HttpPost("getQuestion")]

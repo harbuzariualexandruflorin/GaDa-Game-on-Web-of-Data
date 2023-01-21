@@ -83,10 +83,11 @@ namespace QuizAPI.Services
 
         public QuestionToReturn GetRandomQuestion(List<string> characters)
         {
-
+            int index;
             int optionIndex = 1;
-            int index = random.Next(characters.Count);
-            var selectedCharacter = characters[index];
+            var queryAnswer = new List<string>();
+
+            var selectedCharacter = GetRandomCharacter(characters);
 
             var characterUniverse = GetCharacterUniverse(selectedCharacter);
 
@@ -96,33 +97,101 @@ namespace QuizAPI.Services
             Question question = questions[index];
             var quizQuestion = String.Format(question.QuizQuestion, selectedCharacter);
 
-            //var templateParts = Regex.Split("What colour is {0}?", 
-
             QuestionToReturn questionToReturn = new QuestionToReturn();
             questionToReturn.Question = quizQuestion;
             questionToReturn.QuestionType = characterUniverse;
             questionToReturn.Subject = selectedCharacter;
 
+            var characterList = GetCharacters(characterUniverse);
 
-            if(characterUniverse.ToLower().Equals("pokemon")) //DELETE IF IN THE FUTURE
+            queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
+            while (queryAnswer.Count == 0)
             {
-                var queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
-                questionToReturn.Options = new Dictionary<string, List<string>>();
+                selectedCharacter = GetRandomCharacter(characters.Where(c => characterList.Contains(c)).ToList());
+                queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
+                questionToReturn.Subject = selectedCharacter;
+            }
+
+            questionToReturn.Options = new Dictionary<string, List<string>>();
+
+            if (!question.MultipleChoice)
+            {
                 questionToReturn.Options.Add("option" + (optionIndex++).ToString(), queryAnswer);
 
-                var characterList = GetCharacters(characterUniverse);
-                var character1 = characterList[random.Next(characters.Count)];
-                queryAnswer = GetQueryAnswer(question.Query, character1);
+                var character = GetRandomCharacter(characterList);
+                characterList.Remove(character);
+                queryAnswer = GetQueryAnswer(question.Query, character);
+                while (queryAnswer.Count == 0)
+                {
+                    character = GetRandomCharacter(characterList);
+                    queryAnswer = GetQueryAnswer(question.Query, character);
+                    characterList.Remove(character);
+                }
                 questionToReturn.Options.Add("option" + (optionIndex++).ToString(), queryAnswer);
 
-                characterList.Remove(character1);
-                var character2 = characterList[random.Next(characters.Count)];
-                queryAnswer = GetQueryAnswer(question.Query, character2);
+                character = GetRandomCharacter(characterList);
+                queryAnswer = GetQueryAnswer(question.Query, character);
+                while (queryAnswer.Count == 0)
+                {
+                    character = GetRandomCharacter(characterList);
+                    queryAnswer = GetQueryAnswer(question.Query, character);
+                    characterList.Remove(character);
+                }
                 questionToReturn.Options.Add("option" + optionIndex.ToString(), queryAnswer);
+            }
+            else
+            {
+                var count = queryAnswer.Count;
+                string character;
 
+                index = random.Next(queryAnswer.Count);
+                var option = queryAnswer[index];
+                questionToReturn.Options.Add("option" + (optionIndex++).ToString(), new List<string> { option });
+                queryAnswer.Remove(option);
+
+                if (count >= 2)
+                {
+                    index = random.Next(queryAnswer.Count);
+                    option = queryAnswer[index];
+                    questionToReturn.Options.Add("option" + (optionIndex++).ToString(), new List<string> { option });
+                }
+                else
+                {   
+                    character = GetRandomCharacter(characterList);
+                    queryAnswer = GetQueryAnswer(question.Query, character);
+                    while (queryAnswer.Count == 0)
+                    {
+                        character = GetRandomCharacter(characterList);
+                        queryAnswer = GetQueryAnswer(question.Query, character);
+                        characterList.Remove(character);
+                    }
+                    index = random.Next(queryAnswer.Count);
+                    option = queryAnswer[index];
+                    questionToReturn.Options.Add("option" + (optionIndex++).ToString(), new List<string> { option });
+                    characterList.Remove(character);
+                }
+                character = GetRandomCharacter(characterList);
+                queryAnswer = GetQueryAnswer(question.Query, character);
+                while(queryAnswer.Count == 0)
+                {
+                    character = GetRandomCharacter(characterList);
+                    queryAnswer = GetQueryAnswer(question.Query, character);
+                    characterList.Remove(character);
+                }
+                index = random.Next(queryAnswer.Count);
+                option = queryAnswer[index];
+                questionToReturn.Options.Add("option" + (optionIndex++).ToString(), new List<string> { option });
             }
 
             return questionToReturn;
+        }
+
+        private string GetRandomCharacter(List<string> characterList)
+        {
+            int index = random.Next(characterList.Count);
+            var character = characterList[index];
+
+            return character;
         }
 
         private List<String> GetCharacters(string universe)

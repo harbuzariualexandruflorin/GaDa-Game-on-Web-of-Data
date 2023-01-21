@@ -10,6 +10,8 @@
 
         public string QuestionType { get; set; }
 
+        public bool MultipleChoice { get; set; }
+
         public string Query { get; set; }
     }
 }

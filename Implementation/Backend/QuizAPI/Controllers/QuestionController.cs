@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using QuizAPI.Core;
 using QuizAPI.Services;
 
@@ -31,9 +28,8 @@ namespace QuizAPI.Controllers
         [Produces("application/json")]
         public IActionResult GetQuestion([FromBody] Data data)
         {
-            //var question = quizService.GetRandomQuestion(topic);
 
-            if (data.characters == null || data.characters.Count == 0)
+            if (data.characters == null || data.characters.Count == 0 || data.characters.Contains(""))
             {
                 return BadRequest();
             }

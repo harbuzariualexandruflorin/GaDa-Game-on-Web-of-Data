@@ -11,6 +11,6 @@ namespace QuizAPI.Services
 
         QuestionToReturn GetRandomQuestion(List<string> characters);
 
-        bool CheckAnswer(Answer answer);
+        Answer CheckAnswer(Answer answer);
     }
 }

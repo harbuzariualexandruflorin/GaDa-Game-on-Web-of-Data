@@ -7,6 +7,14 @@ from gada_api.high_scores_controller import GADAHighScoresController
 from gada_api.info_controller import GADACardsInfoController
 
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    return response
+
+
 def set_api_resources():
     api = Api(app)
     api.add_resource(GADACardsBuildController, '/gada_card_deck/generate')

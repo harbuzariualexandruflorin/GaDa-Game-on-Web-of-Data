@@ -1,0 +1,79 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7069"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/Question/answer",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Question/answer",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7214
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Question/getQuestion",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Question/getQuestion",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7214
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/gada_card_deck/generate?deck_offset={offset}&deck_size={size}&randomize={randomize}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/gada_card_deck/generate?deck_offset={offset}&deck_size={size}&randomize={randomize}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/gada_card_deck/info?jsonld={A}",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/gada_card_deck/info?jsonld={A}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/high_scores",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/high_scores",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/high_scores?page_size={A}&page_offset={B}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/high_scores?page_size={A}&page_offset={B}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5053
+        }
+      ]
+    }
+  ]
+}

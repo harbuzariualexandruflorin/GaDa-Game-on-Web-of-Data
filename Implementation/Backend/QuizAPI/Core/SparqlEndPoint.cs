@@ -3,6 +3,6 @@
     public static class SparqlEndPoint
     {
         public static readonly string DBPedia = "https://dbpedia.org/sparql/";
-        public static readonly string TripleStore = "http://localhost:3030/gada_set2/query";
+        public static readonly string TripleStore = "http://localhost:3030/gada_set/query";
     }
 }

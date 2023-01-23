@@ -162,6 +162,7 @@ def star_wars_get_json_ld(g, card_id, id_to_ld):
 
     for i in range(len(star_wars_ld.get("@type", []))):
         if API_NAMESPACE in star_wars_ld["@type"][i]:
+            continue
             star_wars_ld["@type"][i] = {**id_to_ld(g, star_wars_ld["@type"][i], context)}
             star_wars_ld["@type"][i].pop("@context")
     return star_wars_ld

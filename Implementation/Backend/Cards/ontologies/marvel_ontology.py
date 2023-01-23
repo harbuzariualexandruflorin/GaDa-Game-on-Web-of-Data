@@ -116,6 +116,7 @@ def marvel_get_json_ld(g, card_id, id_to_ld):
 
     for i in range(len(marvel_ld.get("@type", []))):
         if API_NAMESPACE in marvel_ld["@type"][i]:
+            continue
             marvel_ld["@type"][i] = {**id_to_ld(g, marvel_ld["@type"][i], context)}
             marvel_ld["@type"][i].pop("@context")
     return marvel_ld

@@ -9,7 +9,6 @@ Week 6(31st of October-6th of November)
 
   
 Week 7(7th of November-13th of November)
-
  - Describe the main modules. (Stefan)
  - [UML Diagrams](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Software%20Architecture/uml/ClassDiagram.jpg). (Florin)
  - [Use-case Diagrams](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Software%20Architecture/uml/Use_case_diagram.png). (Andrei)

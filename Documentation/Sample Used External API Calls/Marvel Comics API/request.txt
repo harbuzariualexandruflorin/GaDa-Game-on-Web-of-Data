@@ -1,0 +1,1 @@
+https://gateway.marvel.com/v1/public/characters?apikey=secret&hash=1b8a7649b1f72efa7f7e5067756f7bb3&ts=1674941268&offset=0&limit=1

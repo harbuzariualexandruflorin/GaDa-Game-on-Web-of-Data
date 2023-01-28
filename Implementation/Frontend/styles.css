@@ -1,0 +1,36 @@
+#opponent-deck {
+  height: 150px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 20%;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.card p {
+  margin: 0;
+  padding: 0;
+}
+
+#card-pile {
+  height: 300px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#player-deck {
+  height: 150px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}

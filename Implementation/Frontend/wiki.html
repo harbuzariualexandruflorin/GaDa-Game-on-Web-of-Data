@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      const module = {};
+    </script>
+    <script type="module">
+      import { checkPageContext } from "./gameJS/utils.js";
+      import { loadWiki } from "./wikiJS/wiki.js";
+      checkPageContext("wiki");
+      loadWiki();
+    </script>
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="others.css" />
+  </head>
+  <body>
+    <br />
+    <p id="demo"></p>
+
+    GADA CARDS WIKI
+    <div id="wiki"></div>
+  </body>
+</html>

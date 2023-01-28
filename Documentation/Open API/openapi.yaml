@@ -1,19 +1,19 @@
 openapi: 3.0.3
 info:
-  title: Swagger Petstore - OpenAPI 3.0
+  title: Swagger GADA - OpenAPI 3.0
   description: |-
     OpenAPI specification regarding the REST API used by GADA
   license:
     name: MIT
-    url: 'https://opensource.org/licenses/MIT'
+    url: "https://opensource.org/licenses/MIT"
   version: 1.0.11
 
 servers:
-  - url: 'https://gadaAPI.com/latest'
+  - url: "https://gadaAPI.com/latest"
 tags:
   - name: questions
     description: Questions related to the game quiz
-  - name: cards
+  - name: gada_card_deck
     description: Cards related to the game
 paths:
   /questions:
@@ -23,7 +23,7 @@ paths:
       summary: Get all existing question
       operationId: getQuestions
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
@@ -31,10 +31,10 @@ paths:
                 type: array
                 items:
                   allOf:
-                    - $ref: '#/components/schemas/Question'
-        '204':
+                    - $ref: "#/components/schemas/Question"
+        "204":
           description: No questions
-        '500':
+        "500":
           description: Internal server error
     post:
       tags:
@@ -47,18 +47,18 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Question'
+              $ref: "#/components/schemas/Question"
         required: true
       responses:
-        '201':
+        "201":
           description: Successful operation added question
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Question'          
-        '400':
+                $ref: "#/components/schemas/Question"
+        "400":
           description: Bad request
-          
+
   /questions/{questionId}:
     get:
       tags:
@@ -74,17 +74,17 @@ paths:
             type: integer
             format: int64
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Question'
-        '400':
+                $ref: "#/components/schemas/Question"
+        "400":
           description: Invalid question id given
-        '404':
+        "404":
           description: No question found
-        '500':
+        "500":
           description: Internal server error
     delete:
       tags:
@@ -101,152 +101,211 @@ paths:
             type: integer
             format: int64
       responses:
-        '204':
+        "204":
           description: Successful operation deleted question
-        '400':
+        "400":
           description: Invalid question id
-        '404':
+        "404":
           description: No question found
-  /cards/battle:
-    post:
+  /gada_card_deck/generate:
+    get:
       tags:
-        - cards
-      summary: Battle two cards
-      operationId: battleCards
-      requestBody:
-        description: Create a new card
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Card'
-            example:
-              card1:
-                $ref: '#/components/schemas/Card'
-              card2:
-                $ref: '#/components/schemas/Card'
-        required: true
+        - gada_card_deck
+      summary: Get card deck of specific size
+      operationId: cardDeck
+      parameters:
+        - in: query
+          name: deck_offset
+          required: false
+          schema:
+            type: integer
+            default: 0
+            example: 0
+          description: The offset from which the card deck starts (related to the entire card set available)
+        - in: query
+          name: deck_size
+          required: true
+          schema:
+            type: integer
+            example: 100
+          description: The size of the card deck
+        - in: query
+          name: randomize
+          required: false
+          schema:
+            type: boolean
+            default: false
+            example: false
+          description: Randomized deck or not
       responses:
-        '200':
-          description: Successful operation battle
+        "200":
+          description: Get card deck of specific size
           content:
             application/json:
               schema:
                 type: object
+                required:
+                  - cards
                 properties:
-                  score:
-                    type: integer
-                    description: The difference score
-                    example: 299
-        '400':
+                  cards:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - name
+                        - score
+                      properties:
+                        name:
+                          type: string
+                          example: Hulk
+                        score:
+                          type: integer
+                          example: 250
+        "400":
           description: Bad request
-      
-  /cards:
-    get:
+        "500":
+          description: Internal server error
+
+  /gada_card_deck/info:
+    post:
       tags:
-        - cards
-      summary: Get all existing cards
+        - gada_card_deck
+      summary: Get information about specific cards
       operationId: getCards
       parameters:
         - in: query
-          name: page
+          name: jsonld
+          required: false
           schema:
-            type: integer
-          description: The index of the page
-        - in: query
-          name: size
-          schema:
-            type: integer
-          description: The size of page
-      responses:
-        '200':
-          description: Successful operation
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  allOf:
-                    - $ref: '#/components/schemas/Card'
-        '204':
-          description: No cards
-        '500':
-          description: Internal server error
-    post:
-      tags:
-        - cards
-      summary: Add a new card
-      description: Add a new card
-      operationId: addCard
+            type: boolean
+            default: false
+            example: false
+
+          description: JSON-LD format or not
+
       requestBody:
-        description: Create a new card
+        description: List of card names
+        required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Card'
-        required: true
+              type: object
+              required:
+                - cards
+              properties:
+                cards:
+                  type: array
+                  items:
+                    type: string
+                  example: [Hulk, Spider-Man]
       responses:
-        '201':
-          description: Successful operation added card
+        "200":
+          description: If jsonld parameter is set to true then only jsonld will be returned in the response according to each card's universe.If jsonld is set to false then only json will be returned in the response.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Card'          
-        '400':
-          description: Bad request
-  /cards/{cardId}:
+                type: object
+                required:
+                  - cards
+                properties:
+                  cards:
+                    type: array
+                    items:
+                      oneOf:
+                        - $ref: "#/components/schemas/MarvelJson"
+                        - $ref: "#/components/schemas/MarvelJsonLd"
+                        - $ref: "#/components/schemas/PokemonJson"
+                        - $ref: "#/components/schemas/PokemonJsonLd"
+                        - $ref: "#/components/schemas/StarWarsJson"
+                        - $ref: "#/components/schemas/StarWarsJsonLd"
+                        - $ref: "#/components/schemas/StarTrekJson"
+                        - $ref: "#/components/schemas/StarTrekJsonLd"
+        "204":
+          description: No cards
+        "500":
+          description: Internal server error
+  /high_scores:
     get:
       tags:
-        - cards
-      summary: Get a specific card
-      operationId: getCardById
+        - gada_card_deck
+      summary: Get current high scores
+      operationId: getScores
       parameters:
-        - name: cardId
-          in: path
-          description: ID of card to return
+        - in: query
+          name: page_offset
+          required: false
+          schema:
+            type: integer
+            default: 0
+            example: 0
+          description: The offset from which the high score page starts
+        - in: query
+          name: page_size
           required: true
           schema:
             type: integer
-            format: int64
+            example: 100
+          description: The size of the high score page
       responses:
-        '200':
-          description: Successful operation
+        "200":
+          description: Get current high scores
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Card'
-        '400':
-          description: Invalid card id given
-        '404':
-          description: No card found
-        '500':
-          description: Internal server error
-    delete:
+                type: object
+                required:
+                  - scores
+                properties:
+                  scores:
+                    type: array
+                    items:
+                      type: object
+                      required:
+                        - user_name
+                        - score
+                      properties:
+                        user_name:
+                          type: string
+                          example: John
+                        score:
+                          type: integer
+                          example: 50
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error  
+    post:
       tags:
-        - cards
-      summary: Deletes a card
-      description: Delete a card
-      operationId: deleteCard
-      parameters:
-        - name: cardId
-          in: path
-          description: ID of card
-          required: true
-          schema:
-            type: integer
-            format: int64
+        - gada_card_deck
+      summary: Add a new highscore
+      operationId: addScore
+      
+      requestBody:
+        description: User information
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - user_name
+                - score
+              properties:
+                user_name:
+                  type: string
+                  example: John
+                score:
+                  type: integer
+                  example: 50
       responses:
-        '204':
-          description: Successful operation deleted card
-        '400':
-          description: Invalid card id
-        '404':
-          description: No card found
+        "200":
+          description: Score added
+        "400":
+          description: Bad request. User may already exist or the request body is not valid.
+        "500":
+          description: Internal server error
+
 components:
-  securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: header
-      name: X-API-KEY
   schemas:
     Question:
       type: object
@@ -260,67 +319,992 @@ components:
           example: Is Hulk from MCU?
         answer:
           type: string
-          example: 'Yes'
-    Card:
+          example: "Yes"
+    MarvelJson:
       type: object
+      required:
+        - name
+        - score
+        - universe
+        - avatar
       properties:
-        id:
-          type: integer
-          format: int64
-          example: 11
-        character:
+        name:
           type: string
-          example: Hulk
-        universe:
-          type: string
-          example: Marvel
+          example: "X-Man"
         score:
           type: integer
-          format: int64
           example: 100
-        info:
-          type: object
-          additionalProperties:
+        avatar:
+          type: string
+          example: "http://i.annihil.us/u/prod/marvel/i/mg/d/10/535febd73f84f.jpg"
+        types:
+          type: array
+          items:
+            type: object
+            required:
+              - name
+              - defeats
+            properties:
+              name:
+                type: string
+                example: "fighting"
+              defeats:
+                type: array
+                items:
+                  type: string
+                example: ["dark", "ice", "normal", "rock", "steel"]
+        universe:
+          type: string
+          example: "Marvel"
+        weight:
+          type: string
+          example: "61"
+        height:
+          type: string
+          example: "175"
+        alignment:
+          type: string
+          example: "good"
+        full_name:
+          type: string
+          example: "Nate Grey"
+        gender:
+          type: string
+          example: "Male"
+        place_of_birth:
+          type: string
+          example: "American Northeast of Earth-295"
+        alias:
+          type: array
+          items:
             type: string
-          example:
-            Marvel:
-              comics: "Hulk #01, Hulk #02"
-              description: "Green monster"
-              avatar: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
-              creator: "Stan Lee"
-              power: "Raw Strength"
-              age: "40"
-              powerstats:
-                intelligence: "81"
-                strength: "40"
-                speed: "29"
-                durability: "55"
-                power: "63"
-                combat: "90"
-            StarWars:
-              films: ["A New Hope"]
-              height: "172"
-              name: "Luke Skywalker"
-              mass: "77"
-              skin_color: "Fair"
-              species: "Human"
-            StarTrek:
-              name: "Q"
-              height: "55"
-              weight: "87"
-              mirror: true
-              alternateReality: false
-            Pokemon:
-              avatar: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
-              nr_moves: "1"
-              height: "3"
-              weight: "40"
-              stats:
-                nr_stats: "1"
-                "1":
-                  name: "hp"
-                  base_value: "25"
+          example: ["Nate the Great"]
+        eye_color:
+          type: array
+          items:
+            type: string
+          example: ["Blue"]
+        hair_color:
+          type: array
+          items:
+            type: string
+          example: ["Brown"]
+        occupations:
+          type: array
+          items:
+            type: string
+          example: ["Former shaman", "adventurer", "freedom fighter"]
+        race:
+          type: array
+          items:
+            type: string
+          example: ["Mutant"]
+        stories:
+          type: array
+          items:
+            type: string
+          example: ["CABLE (1993) #30", "CABLE (1993) #31"]
 
-security:
-  - ApiKeyAuth: []
-  
+    MarvelJsonLd:
+      type: object
+      required:
+        - "@id"
+        - owl:hasValue
+        - rdfs:label
+        - foaf:img
+        - foaf:member
+      properties:
+        "@context":
+          type: object
+          example:
+            {
+              "dbo": "http://dbpedia.org/ontology/",
+              "dbr": "http://dbpedia.org/resource/",
+              "foaf": "http://xmlns.com/foaf/0.1/",
+              "owl": "http://www.w3.org/2002/07/owl#",
+              "poke": "https://triplydb.com/academy/pokemon/vocab/",
+              "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+              "sdo": "https://schema.org/",
+            }
+        "@id":
+          type: string
+          example: "https://gada.cards.game.namespace.com/card_X-Man"
+        owl:hasValue:
+          type: integer
+          example: 635
+        rdfs:label:
+          type: string
+          example: "X-Man"
+        foaf:img:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "http://i.annihil.us/u/prod/marvel/i/mg/d/10/535febd73f84f.jpg"
+        foaf:member:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://gada.cards.game.namespace.com/univ_Marvel"
+            owl:sameAs:
+              type: object
+              properties:
+                "@id":
+                  type: string
+                  example: "dbr:Marvel_Universe"
+            rdfs:label:
+              type: string
+              example: "Marvel"
+        rdfs:seeAlso:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "dbr:Iron_Man"
+        poke:type:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/type_fighting"
+              "@type":
+                type: string
+                example: "poke:Type"
+              rdfs:label:
+                type: string
+                example: "fighting"
+              rdfs:subClassOf:
+                type: object
+                properties:
+                  "@id":
+                    type: string
+                    example: "dbr:Combat"
+              dbo:defeat:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    "@id":
+                      type: string
+                      example: "https://gada.cards.game.namespace.com/type_dark"
+        "@type":
+          type: array
+          items:
+            type: string
+            example: "dbr:Category:Lists_of_Marvel_Comics_characters"
+        dbo:eyeColor:
+          type: array
+          items:
+            type: string
+          example: ["Blue"]
+        dbo:hairColor:
+          type: array
+          items:
+            type: string
+          example: ["Brown"]
+        dbo:participatingIn:
+          type: array
+          items:
+            type: string
+          example: ["CABLE (1993) #30", "CABLE (1993) #31"]
+        foaf:name:
+          type: string
+          example: "Nate Grey"
+        foaf:nick:
+          type: array
+          items:
+            type: string
+          example: ["Nate the Great"]
+        sdo:birthPlace:
+          type: string
+          example: "American Northeast of Earth-295"
+        sdo:gender:
+          type: string
+          example: "Male"
+        sdo:height:
+          type: string
+          example: "175"
+        sdo:weight:
+          type: string
+          example: "61"
+        sdo:hasOccupation:
+          type: array
+          items:
+            type: string
+          example: ["Former shaman", "adventurer", "freedom fighter"]
+
+    PokemonJson:
+      type: object
+      required:
+        - name
+        - score
+        - universe
+        - avatar
+      properties:
+        name:
+          type: string
+          example: "zygarde-50-power-construct"
+        score:
+          type: integer
+          example: 510
+        avatar:
+          type: string
+          example: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10119.png"
+        types:
+          type: array
+          items:
+            type: object
+            required:
+              - name
+              - defeats
+            properties:
+              name:
+                type: string
+                example: "ground"
+              defeats:
+                type: array
+                items:
+                  type: string
+                example: ["electric", "fire", "poison", "rock", "steel"]
+        universe:
+          type: string
+          example: "Pokemon"
+        weight:
+          type: string
+          example: "3050"
+        height:
+          type: string
+          example: "50"
+        experience:
+          type: integer
+          example: 300
+        color:
+          type: string
+          example: "green"
+        species:
+          type: string
+          example: "zygarde"
+        stats:
+          type: object
+          properties:
+            attack:
+              type: integer
+              example: 100
+            defense:
+              type: integer
+              example: 121
+            hp:
+              type: integer
+              example: 108
+            special_attack:
+              type: integer
+              example: 81
+            special_defense:
+              type: integer
+              example: 95
+            speed:
+              type: integer
+              example: 95
+        abilities:
+          type: array
+          items:
+            type: string
+          example: ["power-construct"]
+
+    PokemonJsonLd:
+      type: object
+      required:
+        - "@id"
+        - owl:hasValue
+        - rdfs:label
+        - foaf:img
+        - foaf:member
+      properties:
+        "@context":
+          type: object
+          example:
+            {
+              "dbo": "http://dbpedia.org/ontology/",
+              "dbr": "http://dbpedia.org/resource/",
+              "foaf": "http://xmlns.com/foaf/0.1/",
+              "owl": "http://www.w3.org/2002/07/owl#",
+              "poke": "https://triplydb.com/academy/pokemon/vocab/",
+              "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+              "sdo": "https://schema.org/",
+            }
+        "@id":
+          type: string
+          example: "https://gada.cards.game.namespace.com/card_zygarde-complete"
+        owl:hasValue:
+          type: integer
+          example: 733
+        rdfs:label:
+          type: string
+          example: "zygarde-complete"
+        foaf:img:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10120.png"
+        foaf:member:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://gada.cards.game.namespace.com/univ_Pokemon"
+            owl:sameAs:
+              type: object
+              properties:
+                "@id":
+                  type: string
+                  example: "dbr:Pokémon"
+            rdfs:label:
+              type: string
+              example: "Pokemon"
+        rdfs:seeAlso:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "dbr:Category:Pokémon_species"
+        poke:type:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/type_dragon"
+              "@type":
+                type: string
+                example: "poke:Type"
+              rdfs:label:
+                type: string
+                example: "dragon"
+              rdfs:subClassOf:
+                type: object
+                properties:
+                  "@id":
+                    type: string
+                    example: "dbr:Dragon"
+              dbo:defeat:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    "@id":
+                      type: string
+                      example: "https://gada.cards.game.namespace.com/type_flying"
+        "@type":
+          type: array
+          items:
+            type: string
+            example: "dbr:Category:Lists_of_fictional_characters"
+        poke:baseAttack:
+          type: integer
+          example: 100
+        poke:baseDefense:
+          type: integer
+          example: 121
+        poke:baseExp:
+          type: integer
+          example: 354
+        poke:baseHP:
+          type: integer
+          example: 216
+        poke:baseSpAtk:
+          type: integer
+          example: 91
+        poke:baseSpDef:
+          type: integer
+          example: 95
+        poke:baseSpeed:
+          type: integer
+          example: 85
+        poke:weight:
+          type: string
+          example: "6100"
+        sdo:height:
+          type: string
+          example: "45"
+        poke:colour:
+          type: string
+          example: "green"
+        poke:species:
+          type: string
+          example: "zygarde"
+        poke:ability:
+          type: array
+          items:
+            type: string
+            example: "power-construct"
+
+    StarWarsJson:
+      type: object
+      required:
+        - name
+        - score
+        - universe
+        - avatar
+      properties:
+        name:
+          type: string
+          example: "Zam Wesell"
+        score:
+          type: integer
+          example: 161
+        avatar:
+          type: string
+          example: "https://vignette3.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg/revision/latest?cb=20111001150105"
+        types:
+          type: array
+          items:
+            type: object
+            required:
+              - name
+              - defeats
+            properties:
+              name:
+                type: string
+                example: "fighting"
+              defeats:
+                type: array
+                items:
+                  type: string
+                example: ["dark", "ice", "normal", "rock", "steel"]
+        universe:
+          type: string
+          example: "Star Wars"
+        weight:
+          type: string
+          example: "55"
+        height:
+          type: string
+          example: "168"
+        gender:
+          type: string
+          example: "female"
+        birth_year:
+          type: string
+          example: "896bby"
+        eye_color:
+          type: array
+          items:
+            type: string
+          example: ["yellow"]
+        hair_color:
+          type: array
+          items:
+            type: string
+          example: ["blonde"]
+        skin_color:
+          type: array
+          items:
+            type: string
+          example: ["fair", "green", "yellow"]
+        films:
+          type: array
+          items:
+            type: object
+            properties:
+              director:
+                type: string
+                example: "George Lucas"
+              producers:
+                type: array
+                items:
+                  type: string
+                example: ["Rick McCallum"]
+              release_date:
+                type: string
+                example: "2002-05-16"
+              title:
+                type: string
+                example: "Attack of the Clones"
+        species:
+          type: array
+          items:
+            type: object
+            properties:
+              average_lifespan:
+                type: string
+                example: "70"
+              classification:
+                type: string
+                example: "reptilian"
+              name:
+                type: string
+                example: "Clawdite"
+        homeworld:
+          type: object
+          properties:
+            name:
+              type: string
+              example: "Zolan"
+            surfaceWater:
+              type: string
+              example: "8"
+            climate:
+              type: array
+              items:
+                type: string
+              example: ["polluted"]
+            terrain:
+              type: array
+              items:
+                type: string
+              example: ["cityscape"]
+        starships:
+          type: array
+          items:
+            type: object
+            properties:
+              crew:
+                type: string
+                example: "1"
+              hyperdrive_rating:
+                type: string
+                example: "1.0"
+              length:
+                type: string
+                example: "12.5"
+              max_atmosphering_speed:
+                type: string
+                example: "1050"
+              name:
+                type: string
+                example: "X-wing"
+              passengers:
+                type: string
+                example: "0"
+        vehicles:
+          type: array
+          items:
+            type: object
+            properties:
+              crew:
+                type: string
+                example: "1"
+              length:
+                type: string
+                example: "6.6"
+              max_atmosphering_speed:
+                type: string
+                example: "800"
+              name:
+                type: string
+                example: "Koro-2 Exodrive airspeeder"
+              passengers:
+                type: string
+                example: "1"
+
+    StarWarsJsonLd:
+      type: object
+      required:
+        - "@id"
+        - owl:hasValue
+        - rdfs:label
+        - foaf:img
+        - foaf:member
+      properties:
+        "@context":
+          type: object
+          example:
+            {
+              "dbo": "http://dbpedia.org/ontology/",
+              "dbr": "http://dbpedia.org/resource/",
+              "foaf": "http://xmlns.com/foaf/0.1/",
+              "owl": "http://www.w3.org/2002/07/owl#",
+              "poke": "https://triplydb.com/academy/pokemon/vocab/",
+              "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+              "swapi": "https://swapi.co/vocabulary/",
+            }
+        "@id":
+          type: string
+          example: "https://gada.cards.game.namespace.com/card_Zam_Wesell"
+        owl:hasValue:
+          type: integer
+          example: 161
+        rdfs:label:
+          type: string
+          example: "Zam Wesell"
+        foaf:img:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://vignette3.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg/revision/latest?cb=20111001150105"
+        foaf:member:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://gada.cards.game.namespace.com/univ_Star_Wars"
+            owl:sameAs:
+              type: object
+              properties:
+                "@id":
+                  type: string
+                  example: "dbr:Star_Wars"
+            rdfs:label:
+              type: string
+              example: "Star Wars"
+        rdfs:seeAlso:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "dbr:Yoda"
+        poke:type:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/type_fighting"
+              "@type":
+                type: string
+                example: "poke:Type"
+              rdfs:label:
+                type: string
+                example: "fighting"
+              rdfs:subClassOf:
+                type: object
+                properties:
+                  "@id":
+                    type: string
+                    example: "dbr:Combat"
+              dbo:defeat:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    "@id":
+                      type: string
+                      example: "https://gada.cards.game.namespace.com/type_dark"
+        "@type":
+          type: array
+          items:
+            type: string
+            example: "dbr:Category:List_of_Star_Wars_characters"
+        swapi:birthYear:
+          type: string
+          example: "896bby"
+        swapi:eyeColor:
+          type: array
+          items:
+            type: string
+          example: ["yellow"]
+        swapi:hairColor:
+          type: array
+          items:
+            type: string
+          example: ["blonde"]
+        swapi:gender:
+          type: string
+          example: "female"
+        swapi:height:
+          type: string
+          example: "168"
+        swapi:mass:
+          type: string
+          example: "55"
+        swapi:skinColor:
+          type: array
+          items:
+            type: string
+          example: ["fair", "green", "yellow"]
+        swapi:film:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/wars_film_Attack_of_the_Clones"
+              rdfs:label:
+                type: string
+                example: "Attack of the Clones"
+              rdfs:seeAlso:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    "@id":
+                      type: string
+                      example: "dbr:Star_Wars:_Episode_II_–_Attack_of_the_Clones"
+              swapi:director:
+                type: string
+                example: "George Lucas"
+              swapi:producer:
+                type: array
+                items:
+                  type: string
+                example: ["Rick McCallum"]
+              swapi:releaseDate:
+                type: string
+                example: "2002-05-16"
+        swapi:homeworld:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "dbr:Star_Wars:_Episode_II_–_Attack_of_the_Clones"
+            "@type":
+              type: string
+              example: "swapi:Planet"
+            rdfs:label:
+              type: string
+              example: "Ryloth"
+            swapi:surfaceWater:
+              type: string
+              example: "5"
+            swapi:climate:
+              type: array
+              items:
+                type: string
+              example: ["arid", "subartic", "temperate"]
+            swapi:terrain:
+              type: array
+              items:
+                type: string
+              example: ["deserts", "mountains", "tundra", "valleys"]
+        swapi:starship:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/wars_ship_X-wing"
+              "@type":
+                type: string
+                example: "swapi:Starship"
+              rdfs:label:
+                type: string
+                example: "X-wing"
+              swapi:crew:
+                type: string
+                example: "1"
+              swapi:hyperdriveRating:
+                type: string
+                example: "1.0"
+              swapi:length:
+                type: string
+                example: "12.5"
+              swapi:maxAtmospheringSpeed:
+                type: string
+                example: "1050"
+              swapi:passengers:
+                type: string
+                example: "0"
+        swapi:vehicle:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/wars_auto_Koro-2_Exodrive_airspeeder"
+              "@type":
+                type: string
+                example: "swapi:Vehicle"
+              rdfs:label:
+                type: string
+                example: "Koro-2 Exodrive airspeeder"
+              swapi:crew:
+                type: string
+                example: "1"
+              swapi:length:
+                type: string
+                example: "6.6"
+              swapi:maxAtmospheringSpeed:
+                type: string
+                example: "800"
+              swapi:passengers:
+                type: string
+                example: "1"
+
+    StarTrekJson:
+      type: object
+      required:
+        - name
+        - score
+        - universe
+        - avatar
+      properties:
+        name:
+          type: string
+          example: "Zobral's species"
+        score:
+          type: integer
+          example: 400
+        avatar:
+          type: string
+          example: "https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415"
+        types:
+          type: array
+          items:
+            type: object
+            required:
+              - name
+              - defeats
+            properties:
+              name:
+                type: string
+                example: "teleport"
+              defeats:
+                type: array
+                items:
+                  type: string
+                example: ["dragon", "fighting", "flying", "psychic"]
+        universe:
+          type: string
+          example: "Star Trek"
+        quadrant:
+          type: string
+          example: "Alpha Quadrant"
+        homeworld:
+          type: string
+          example: "Torothan homeworld"
+        species:
+          type: array
+          items:
+            type: string
+          example: ["humanoidSpecies", "warpCapableSpecies"]
+
+    StarTrekJsonLd:
+      type: object
+      required:
+        - "@id"
+        - owl:hasValue
+        - rdfs:label
+        - foaf:img
+        - foaf:member
+      properties:
+        "@context":
+          type: object
+          example:
+            {
+              "dbo": "http://dbpedia.org/ontology/",
+              "dbr": "http://dbpedia.org/resource/",
+              "foaf": "http://xmlns.com/foaf/0.1/",
+              "owl": "http://www.w3.org/2002/07/owl#",
+              "poke": "https://triplydb.com/academy/pokemon/vocab/",
+              "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+              "sdo": "https://schema.org/",
+              "ssn": "http://www.w3.org/ns/ssn/",
+            }
+        "@id":
+          type: string
+          example: "https://gada.cards.game.namespace.com/card_Zobrals_species"
+        owl:hasValue:
+          type: integer
+          example: 400
+        rdfs:label:
+          type: string
+          example: "Zobral's species"
+        foaf:img:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415"
+        foaf:member:
+          type: object
+          properties:
+            "@id":
+              type: string
+              example: "https://gada.cards.game.namespace.com/univ_Star_Trek"
+            owl:sameAs:
+              type: object
+              properties:
+                "@id":
+                  type: string
+                  example: "dbr:Star_Trek"
+            rdfs:label:
+              type: string
+              example: "Star Trek"
+        rdfs:seeAlso:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "dbr:Vulcan_(Star_Trek)"
+        poke:type:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/type_fighting"
+              "@type":
+                type: string
+                example: "poke:Type"
+              rdfs:label:
+                type: string
+                example: "fighting"
+              rdfs:subClassOf:
+                type: object
+                properties:
+                  "@id":
+                    type: string
+                    example: "dbr:Combat"
+              dbo:defeat:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    "@id":
+                      type: string
+                      example: "https://gada.cards.game.namespace.com/type_dark"
+        "@type":
+          type: array
+          items:
+            type: string
+            example: "dbr:Category:Star_Trek_species"
+        sdo:birthPlace:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/trek_quad_Alpha_Quadrant"
+              "@type":
+                type: string
+                example: "dbr:Galactic_quadrant"
+              rdfs:label:
+                type: string
+                example: "Alpha Quadrant"
+        ssn:hasProperty:
+          type: array
+          items:
+            type: object
+            properties:
+              "@id":
+                type: string
+                example: "https://gada.cards.game.namespace.com/trek_prop_humanoidSpecies"
+              owl:sameAs:
+                type: object
+                properties:
+                  "@id":
+                    type: string
+                    example: "dbr:Humanoid"
+              rdfs:label:
+                type: string
+                example: "humanoidSpecies"

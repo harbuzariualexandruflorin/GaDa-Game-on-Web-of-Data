@@ -1,0 +1,3 @@
+https://editor.swagger.io/
+
+source file: openapi.yaml

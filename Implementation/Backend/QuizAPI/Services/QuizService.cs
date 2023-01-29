@@ -75,7 +75,7 @@ namespace QuizAPI.Services
             SparqlQueryParser parser = new SparqlQueryParser();
             SparqlQuery query = parser.ParseFromString(queryString);
 
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://localhost:3030/gada_set2/query"));
+            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://localhost:3030/gada_set/query"));
             SparqlResultSet results = endpoint.QueryWithResultSet(query.ToString());
 
             var result = results.First().ToString();
@@ -84,13 +84,14 @@ namespace QuizAPI.Services
             return universe;
         }
 
-        public QuestionToReturn GetRandomQuestion(List<string> characters)
+        public QuestionToReturn GetRandomQuestion(string characterName)
         {
             int index;
             int optionIndex = 1;
             var queryAnswer = new List<string>();
 
-            var selectedCharacter = GetRandomCharacter(characters);
+            //var selectedCharacter = GetRandomCharacter(characters);
+            var selectedCharacter = characterName;
 
             var characterUniverse = GetCharacterUniverse(selectedCharacter);
 
@@ -109,13 +110,13 @@ namespace QuizAPI.Services
             var characterList = GetCharacters(characterUniverse);
 
             queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
-            while (queryAnswer.Count == 0)
-            {
-                selectedCharacter = GetRandomCharacter(characters.Where(c => characterList.Contains(c)).ToList());
-                queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
-                questionToReturn.Subject = selectedCharacter;
-                questionToReturn.Avatar = GetCharacterAvatar(selectedCharacter, GetCharacterUniverse(selectedCharacter));
-            }
+            //while (queryAnswer.Count == 0)
+            //{
+            //    selectedCharacter = GetRandomCharacter(characters.Where(c => characterList.Contains(c)).ToList());
+            //    queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
+            //    questionToReturn.Subject = selectedCharacter;
+            //    questionToReturn.Avatar = GetCharacterAvatar(selectedCharacter, GetCharacterUniverse(selectedCharacter));
+            //}
 
             questionToReturn.Options = new Dictionary<string, string>();
 
@@ -223,6 +224,20 @@ namespace QuizAPI.Services
             return questionToReturn;
         }
 
+        public List<QuestionToReturn> GetQuestions(List<string> characters, int nrOfQuestions)
+        {
+            List<QuestionToReturn> questionsToReturn = new List<QuestionToReturn>();
+
+            for (int i = 0; i < nrOfQuestions; i++)
+            {
+                var selectedCharacter = GetRandomCharacter(characters);
+                var question = GetRandomQuestion(selectedCharacter);
+                questionsToReturn.Add(question);
+                characters.Remove(selectedCharacter);
+            }
+            return questionsToReturn;
+        }
+
         private string GetCharacterAvatar(string characterName, string characterUniverse)
         {
             SparqlParameterizedString queryString = new SparqlParameterizedString();
@@ -270,7 +285,7 @@ namespace QuizAPI.Services
             SparqlQueryParser parser = new SparqlQueryParser();
             SparqlQuery query = parser.ParseFromString(queryString);
 
-            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://localhost:3030/gada_set2/query"));
+            SparqlRemoteEndpoint endpoint = new SparqlRemoteEndpoint(new Uri("http://localhost:3030/gada_set/query"));
             SparqlResultSet results = endpoint.QueryWithResultSet(query.ToString());
 
             characterList = results.Select(x => x[0].ToString()).ToList();  
@@ -303,7 +318,8 @@ namespace QuizAPI.Services
 
                 foreach(var option in answer.Options)
                 {
-                    if(queryResult.Contains(option.Value) && option.Checked == true)
+                    if ((queryResult.Contains(option.Value) && option.Checked == true) ||
+                            (!queryResult.Contains(option.Value) && option.Checked == false))
                     {
                         var optionIndex = answer.Options.FindIndex(o => o == option);
                         answer.Options[optionIndex].IsCorrect = true;

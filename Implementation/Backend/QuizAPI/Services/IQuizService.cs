@@ -9,8 +9,10 @@ namespace QuizAPI.Services
 
         List<string> GetQueryAnswer(string querry, string character);
 
-        QuestionToReturn GetRandomQuestion(List<string> characters);
+        QuestionToReturn GetRandomQuestion(string character);
 
         Answer CheckAnswer(Answer answer);
+
+        List<QuestionToReturn> GetQuestions(List<string> characters, int nrOfQuestions);
     }
 }

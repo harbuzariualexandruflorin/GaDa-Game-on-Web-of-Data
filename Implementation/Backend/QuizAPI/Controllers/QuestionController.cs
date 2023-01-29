@@ -34,7 +34,9 @@ namespace QuizAPI.Controllers
                 return BadRequest();
             }
 
-            var question = quizService.GetRandomQuestion(data.characters);
+            var nrOfQuestions = (int)Math.Ceiling((float)data.characters.Count / 2);
+
+            var question = quizService.GetQuestions(data.characters, nrOfQuestions);
 
             return Ok(question);
         }

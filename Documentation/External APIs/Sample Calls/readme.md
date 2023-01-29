@@ -1,0 +1,2 @@
+The directory contains multiple sample calls made to the external APIs used by GADA. Each scenario is represented by a pair (request, response).
+Only the endpoints provided in the samples were used during the development of the project.

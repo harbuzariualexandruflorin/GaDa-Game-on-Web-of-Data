@@ -1,0 +1,16 @@
+export function battleCards(cardA, cardB) {
+  if (cardA.types == undefined || cardB.types == undefined) {
+    return 0;
+  }
+
+  var battleScore = 0;
+  var cardTypesB = getCardTypes(cardB);
+  for (var o in cardA.types) {
+    for (var d in cardA.types[o].defeats) {
+      if (cardTypesB.includes(cardA.types[0].defeats[d])) {
+        battleScore += BATTLE_TYPE_BONUS;
+      }
+    }
+  }
+  return battleScore;
+}

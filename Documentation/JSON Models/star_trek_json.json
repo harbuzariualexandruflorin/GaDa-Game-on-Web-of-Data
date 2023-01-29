@@ -1,0 +1,16 @@
+{
+  "avatar": "https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415",
+  "homeworld": "Torothan homeworld",
+  "name": "Zobral's species",
+  "quadrant": "Alpha Quadrant",
+  "score": 400,
+  "species": ["humanoidSpecies", "warpCapableSpecies"],
+  "types": [
+    { "defeats": [], "name": "normal" },
+    {
+      "defeats": ["dragon", "fighting", "flying", "psychic"],
+      "name": "teleport"
+    }
+  ],
+  "universe": "Star Trek"
+}

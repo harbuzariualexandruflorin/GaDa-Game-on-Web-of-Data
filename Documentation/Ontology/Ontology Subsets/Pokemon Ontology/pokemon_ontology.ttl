@@ -1,0 +1,116 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gada:card_blipbug a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "blipbug" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species> ;
+    owl:hasValue 84 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/824.png> ;
+    foaf:member gada:univ_Pokemon ;
+    sdo:height "4" ;
+    poke:ability "compound-eyes",
+        "swarm",
+        "telepathy" ;
+    poke:baseAttack 20 ;
+    poke:baseDefense 20 ;
+    poke:baseExp 36 ;
+    poke:baseHP 25 ;
+    poke:baseSpAtk 25 ;
+    poke:baseSpDef 45 ;
+    poke:baseSpeed 45 ;
+    poke:colour "blue" ;
+    poke:species "blipbug" ;
+    poke:type gada:type_bug ;
+    poke:weight "80" .
+
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
+
+gada:type_ghost dbo:defeat gada:type_psychic,
+        gada:type_teleport .
+
+gada:univ_Pokemon rdfs:label "Pokemon" ;
+    owl:sameAs dbr:Pokémon .
+
+gada:type_fairy dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport .
+
+gada:type_poison dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport .
+
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
+
+gada:type_dark dbo:defeat gada:type_ghost,
+        gada:type_psychic .
+
+gada:type_dragon dbo:defeat gada:type_flying .
+
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
+
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
+
+gada:type_bug a poke:Type ;
+    rdfs:label "bug" ;
+    dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic ;
+    rdfs:subClassOf dbr:Insect .
+
+gada:type_fighting dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
+
+gada:type_psychic dbo:defeat gada:type_fighting,
+        gada:type_poison .
+
+gada:type_teleport dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
+
+gada:type_flying dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass .
+
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
+
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
+

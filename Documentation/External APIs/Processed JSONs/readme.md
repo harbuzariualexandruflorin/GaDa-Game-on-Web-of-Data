@@ -1,0 +1,2 @@
+This directory contains all the processed JSONs from the established external APIs. Each API has been scraped and its relevant data
+were saved in local JSON files. These JSON files were used later for dynamically generating the gada ontology.

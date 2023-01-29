@@ -1,1 +1,0 @@
-https://www.superheroapi.com/api.php/secret/search/Hulk

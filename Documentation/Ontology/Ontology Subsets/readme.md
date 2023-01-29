@@ -1,0 +1,2 @@
+Due to the fact that the final ontology contains too many triples (over 15000), the ontology has been divided in 4 subsets, one for each universe.
+Also, each subset contains only 1 card to simplify the visualisation and show the core concepts of the defined ontology.

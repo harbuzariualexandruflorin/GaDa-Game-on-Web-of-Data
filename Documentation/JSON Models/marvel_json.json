@@ -1,0 +1,27 @@
+{
+  "alias": ["Nate the Great"],
+  "alignment": "good",
+  "avatar": "http://i.annihil.us/u/prod/marvel/i/mg/d/10/535febd73f84f.jpg",
+  "eye_color": ["Blue"],
+  "full_name": "Nate Grey",
+  "gender": "Male",
+  "hair_color": ["Brown"],
+  "height": "175",
+  "name": "X-Man",
+  "occupations": ["Former shaman", "adventurer", "freedom fighter"],
+  "place_of_birth": "American Northeast of Earth-295",
+  "score": 635,
+  "stories": [
+    "CABLE (1993) #30",
+    "CABLE (1993) #31",
+    "ONSLAUGHT: MARVEL UNIVERSE (1996) #1"
+  ],
+  "types": [
+    {
+      "defeats": ["dark", "ice", "normal", "rock", "steel"],
+      "name": "fighting"
+    }
+  ],
+  "universe": "Marvel",
+  "weight": "61"
+}

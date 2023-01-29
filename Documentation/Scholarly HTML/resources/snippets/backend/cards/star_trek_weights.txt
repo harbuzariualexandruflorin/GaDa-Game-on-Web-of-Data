@@ -1,0 +1,14 @@
+STAR_TREK_VARS = {
+    "warpCapableSpecies": 9,
+    "extraGalacticSpecies": 8,
+    "humanoidSpecies": 3,
+    "reptilianSpecies": 4,
+    "avianSpecies": 4,
+    "nonCorporealSpecies": 7,
+    "shapeshiftingSpecies": 6,
+    "spaceborneSpecies": 6,
+    "telepathicSpecies": 7,
+    "transDimensionalSpecies": 8,
+    "alternateReality": 7,
+    "DIV": 0.03
+}

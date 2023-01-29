@@ -1,0 +1,29 @@
+def get_entity_dict_score(variables, entity):
+    if type(entity) is str:
+        return int(variables.get(entity, 0))
+    if type(entity) is not dict:
+        return 0
+
+    score = 0
+    for k in entity.keys():
+        if type(entity[k]) is str:
+            try:
+                score += int((variables.get(k, 0) / variables.get("DIV", 1)) * float(entity[k]))
+                continue
+            except:
+                pass
+            score += get_entity_dict_score(variables, entity[k])
+            continue
+        if type(entity[k]) is dict:
+            score += get_entity_dict_score(variables, entity[k])
+            continue
+        if type(entity[k]) in [int, float]:
+            score += int((variables.get(k, 0) / variables.get("DIV", 1)) * entity[k])
+            continue
+        if type(entity[k]) is bool:
+            score += int((variables.get(k, 0) / variables.get("DIV", 1)) * int(entity[k]))
+            continue
+        if type(entity[k]) is list:
+            for e in entity[k]:
+                score += get_entity_dict_score(variables, e)
+    return score + variables.get("ADJUST", 0)

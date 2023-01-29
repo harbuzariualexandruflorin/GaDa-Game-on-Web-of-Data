@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "dbo": "http://dbpedia.org/ontology/",
+    "dbr": "http://dbpedia.org/resource/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "poke": "https://triplydb.com/academy/pokemon/vocab/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "swapi": "https://swapi.co/vocabulary/"
+  },
+  "@id": "https://gada.cards.game.namespace.com/card_Zam_Wesell",
+  "@type": [
+    "dbr:Category:List_of_Star_Wars_characters",
+    "dbr:Category:Lists_of_fictional_characters",
+    "dbr:Playing_card",
+    "https://gada.cards.game.namespace.com/wars_spec_Clawdite"
+  ],
+  "foaf:img": {
+    "@id": "https://vignette3.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg/revision/latest?cb=20111001150105"
+  },
+  "foaf:member": {
+    "@id": "https://gada.cards.game.namespace.com/univ_Star_Wars",
+    "owl:sameAs": { "@id": "dbr:Star_Wars" },
+    "rdfs:label": "Star Wars"
+  },
+  "owl:hasValue": 161,
+  "poke:type": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_fighting",
+      "@type": "poke:Type",
+      "dbo:defeat": [
+        { "@id": "https://gada.cards.game.namespace.com/type_dark" },
+        { "@id": "https://gada.cards.game.namespace.com/type_ice" },
+        { "@id": "https://gada.cards.game.namespace.com/type_normal" },
+        { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+        { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+      ],
+      "rdfs:label": "fighting",
+      "rdfs:subClassOf": { "@id": "dbr:Combat" }
+    }
+  ],
+  "rdfs:label": "Zam Wesell",
+  "rdfs:seeAlso": [{ "@id": "dbr:Yoda" }],
+  "swapi:birthYear": "896bby",
+  "swapi:eyeColor": ["yellow"],
+  "swapi:film": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/wars_film_Attack_of_the_Clones",
+      "rdfs:label": "Attack of the Clones",
+      "rdfs:seeAlso": [
+        { "@id": "dbr:Star_Wars:_Episode_II_–_Attack_of_the_Clones" }
+      ],
+      "swapi:director": "George Lucas",
+      "swapi:producer": ["Rick McCallum"],
+      "swapi:releaseDate": "2002-05-16"
+    }
+  ],
+  "swapi:gender": "female",
+  "swapi:hairColor": ["blonde"],
+  "swapi:height": "168",
+  "swapi:homeworld": {
+    "@id": "https://gada.cards.game.namespace.com/wars_plan_Zolan",
+    "@type": "swapi:Planet",
+    "rdfs:label": "Zolan"
+  },
+  "swapi:mass": "55",
+  "swapi:skinColor": ["fair", "green", "yellow"],
+  "swapi:starship": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/wars_ship_X-wing",
+      "@type": "swapi:Starship",
+      "rdfs:label": "X-wing",
+      "swapi:crew": "1",
+      "swapi:hyperdriveRating": "1.0",
+      "swapi:length": "12.5",
+      "swapi:maxAtmospheringSpeed": "1050",
+      "swapi:passengers": "0"
+    }
+  ],
+  "swapi:vehicle": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/wars_auto_Koro-2_Exodrive_airspeeder",
+      "@type": "swapi:Vehicle",
+      "rdfs:label": "Koro-2 Exodrive airspeeder",
+      "swapi:crew": "1",
+      "swapi:length": "6.6",
+      "swapi:maxAtmospheringSpeed": "800",
+      "swapi:passengers": "1"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-MARVEL_VARS = {
+{
     "nr_comics": 8,
     "nr_stories": 8,
     "nr_events": 8,

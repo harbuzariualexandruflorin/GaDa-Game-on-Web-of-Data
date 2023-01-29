@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "dbo": "http://dbpedia.org/ontology/",
+    "dbr": "http://dbpedia.org/resource/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "poke": "https://triplydb.com/academy/pokemon/vocab/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "https://schema.org/",
+    "ssn": "http://www.w3.org/ns/ssn/"
+  },
+  "@id": "https://gada.cards.game.namespace.com/card_Zobrals_species",
+  "@type": [
+    "dbr:Category:Lists_of_fictional_species",
+    "dbr:Category:Star_Trek_species",
+    "dbr:Playing_card"
+  ],
+  "foaf:img": {
+    "@id": "https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415"
+  },
+  "foaf:member": {
+    "@id": "https://gada.cards.game.namespace.com/univ_Star_Trek",
+    "owl:sameAs": { "@id": "dbr:Star_Trek" },
+    "rdfs:label": "Star Trek"
+  },
+  "owl:hasValue": 400,
+  "poke:type": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_normal",
+      "@type": "poke:Type",
+      "rdfs:label": "normal"
+    },
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_teleport",
+      "@type": "poke:Type",
+      "dbo:defeat": [
+        { "@id": "https://gada.cards.game.namespace.com/type_dragon" },
+        { "@id": "https://gada.cards.game.namespace.com/type_fighting" },
+        { "@id": "https://gada.cards.game.namespace.com/type_flying" },
+        { "@id": "https://gada.cards.game.namespace.com/type_psychic" }
+      ],
+      "rdfs:label": "teleport"
+    }
+  ],
+  "rdfs:label": "Zobral's species",
+  "rdfs:seeAlso": [{ "@id": "dbr:Vulcan_(Star_Trek)" }],
+  "sdo:birthPlace": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/trek_plan_Torothan_homeworld",
+      "@type": "dbr:Category:Fictional_planets",
+      "rdfs:label": "Torothan homeworld"
+    },
+    {
+      "@id": "https://gada.cards.game.namespace.com/trek_quad_Alpha_Quadrant",
+      "@type": "dbr:Galactic_quadrant",
+      "rdfs:label": "Alpha Quadrant"
+    }
+  ],
+  "ssn:hasProperty": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/trek_prop_humanoidSpecies",
+      "owl:sameAs": { "@id": "dbr:Humanoid" },
+      "rdfs:label": "humanoidSpecies"
+    },
+    {
+      "@id": "https://gada.cards.game.namespace.com/trek_prop_warpCapableSpecies",
+      "owl:sameAs": { "@id": "dbr:Warp" },
+      "rdfs:label": "warpCapableSpecies"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "dbo": "http://dbpedia.org/ontology/",
+    "dbr": "http://dbpedia.org/resource/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "poke": "https://triplydb.com/academy/pokemon/vocab/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "https://schema.org/"
+  },
+  "@id": "https://gada.cards.game.namespace.com/card_zygarde-complete",
+  "@type": [
+    "dbr:Category:Lists_of_fictional_characters",
+    "dbr:Playing_card",
+    "poke:Pokémon"
+  ],
+  "foaf:img": {
+    "@id": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10120.png"
+  },
+  "foaf:member": {
+    "@id": "https://gada.cards.game.namespace.com/univ_Pokemon",
+    "owl:sameAs": { "@id": "dbr:Pokémon" },
+    "rdfs:label": "Pokemon"
+  },
+  "owl:hasValue": 733,
+  "poke:ability": ["power-construct"],
+  "poke:baseAttack": 100,
+  "poke:baseDefense": 121,
+  "poke:baseExp": 354,
+  "poke:baseHP": 216,
+  "poke:baseSpAtk": 91,
+  "poke:baseSpDef": 95,
+  "poke:baseSpeed": 85,
+  "poke:colour": "green",
+  "poke:species": "zygarde",
+  "poke:type": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_dragon",
+      "@type": "poke:Type",
+      "dbo:defeat": [
+        { "@id": "https://gada.cards.game.namespace.com/type_flying" }
+      ],
+      "rdfs:label": "dragon",
+      "rdfs:subClassOf": { "@id": "dbr:Dragon" }
+    },
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_ground",
+      "@type": "poke:Type",
+      "dbo:defeat": [
+        { "@id": "https://gada.cards.game.namespace.com/type_electric" },
+        { "@id": "https://gada.cards.game.namespace.com/type_fire" },
+        { "@id": "https://gada.cards.game.namespace.com/type_poison" },
+        { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+        { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+      ],
+      "rdfs:label": "ground",
+      "rdfs:subClassOf": { "@id": "dbr:Dirt" }
+    }
+  ],
+  "poke:weight": "6100",
+  "rdfs:label": "zygarde-complete",
+  "rdfs:seeAlso": [{ "@id": "dbr:Category:Pokémon_species" }],
+  "sdo:height": "45"
+}

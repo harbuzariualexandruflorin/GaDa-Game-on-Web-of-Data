@@ -1,0 +1,27 @@
+function computerLogic(forceEnd) {
+  checkChainStatus(forceEnd);
+  var chainTopCard = undefined;
+  if (selectedCards.length > 0) {
+    chainTopCard = selectedCards[selectedCards.length - 1];
+  }
+
+  var compChosenCardName = undefined;
+  compCardsArray.sort((a, b) => (a.score > b.score ? 1 : -1));
+  if (chainTopCard == undefined && compCardsArray.length > 0) {
+    compChosenCardName = compCardsArray[0].name;
+  } else {
+    for (let i = 0; i < compCardsArray.length; i++) {
+      if (isCardStrongerThan(compCardsArray[i], chainTopCard)) {
+        compChosenCardName = compCardsArray[i].name;
+        break;
+      }
+    }
+    if (compChosenCardName == undefined && compCardsArray.length > 0) {
+      if (selectedCards.length % 2 == 1) {
+        compChosenCardName = compCardsArray[0].name;
+      }
+    }
+  }
+  updateSelectedCards(compChosenCardName, false);
+  checkChainStatus(compChosenCardName == undefined);
+}

@@ -1,0 +1,110 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gada:card_Abronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+        <http://dbpedia.org/resource/Category:Star_Trek_species>,
+        dbr:Playing_card ;
+    rdfs:label "Abronian" ;
+    owl:hasValue 233 ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
+    foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Abronian_homeworld ;
+    poke:type gada:type_psychic .
+
+gada:trek_plan_Abronian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+    rdfs:label "Abronian homeworld" .
+
+gada:trek_prop_telepathicSpecies rdfs:label "telepathicSpecies" ;
+    owl:sameAs dbr:Telepathy .
+
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
+
+gada:type_ghost dbo:defeat gada:type_psychic,
+        gada:type_teleport .
+
+gada:univ_Star_Trek rdfs:label "Star Trek" ;
+    owl:sameAs dbr:Star_Trek .
+
+gada:type_fairy dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport .
+
+gada:type_poison dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport .
+
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
+
+gada:type_bug dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic .
+
+gada:type_dark dbo:defeat gada:type_ghost,
+        gada:type_psychic .
+
+gada:type_dragon dbo:defeat gada:type_flying .
+
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
+
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
+
+gada:type_fighting dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
+
+gada:type_teleport dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
+
+gada:type_flying dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass .
+
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
+
+gada:type_psychic a poke:Type ;
+    rdfs:label "psychic" ;
+    dbo:defeat gada:type_fighting,
+        gada:type_poison ;
+    rdfs:subClassOf dbr:Psychic .
+
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
+

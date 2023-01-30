@@ -1,0 +1,9 @@
+function build_ontology(graph, json_file):
+	json_object = read(json_file)
+	
+	for entity in json_object["entities"]:
+		entity = GADA_NAMESPACE.create_entity(entity["name"])
+		
+		for predicate in entity.keys():
+			graph.add((entity, predicate, entity[predicate]))
+	graph.serialize("output.ttl")

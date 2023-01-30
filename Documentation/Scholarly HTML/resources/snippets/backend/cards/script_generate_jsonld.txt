@@ -1,0 +1,19 @@
+def id_to_json_ld(g, entity_id, context):
+    if type(entity_id) is str:
+        entity_id = URIRef(entity_id)
+
+    temp_g = Graph()
+    for rdf_tuple in list(g.query(
+            "select ?s ?p ?o where { ?s ?p ?o . }",
+            initBindings=dict(s=entity_id)
+    )):
+        temp_g.add(rdf_tuple)
+
+    try:
+        result = json.loads(temp_g.serialize(format='json-ld', context=context))
+        if type(result) is list:
+            return result[0]
+        return result
+    except Exception as ex:
+        print("ID TO JSON LD EXCEPTION ", str(ex))
+        return None

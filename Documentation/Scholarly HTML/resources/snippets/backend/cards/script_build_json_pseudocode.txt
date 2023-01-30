@@ -1,0 +1,4 @@
+function build_json(external_api):
+    entities = external_api.scrape_data()
+	entities = process_entities(entities)
+    save_to_json_file(entities, "output.json")

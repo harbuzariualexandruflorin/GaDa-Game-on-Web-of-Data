@@ -1,7 +1,0 @@
-CREATE TABLE IF NOT EXISTS "high_scores" (
-	"user_name"	TEXT NOT NULL UNIQUE,
-	"score"	INTEGER NOT NULL,
-	PRIMARY KEY("user_name"),
-	CONSTRAINT "CHECK_SCORE" CHECK(score >= 0),
-	CONSTRAINT "CHECK_NAME" CHECK(LENGTH(user_name) > 0)
-)

@@ -1,0 +1,47 @@
+{
+  "avatar": "https://vignette3.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg/revision/latest?cb=20111001150105",
+  "birth_year": "896bby",
+  "eye_color": ["yellow"],
+  "films": [
+    {
+      "director": "George Lucas",
+      "producers": ["Rick McCallum"],
+      "release_date": "2002-05-16",
+      "title": "Attack of the Clones"
+    }
+  ],
+  "gender": "female",
+  "hair_color": ["blonde"],
+  "height": "168",
+  "homeworld": { "name": "Zolan" },
+  "name": "Zam Wesell",
+  "score": 161,
+  "skin_color": ["fair", "green", "yellow"],
+  "starships": [
+    {
+      "crew": "1",
+      "hyperdrive_rating": "1.0",
+      "length": "12.5",
+      "max_atmosphering_speed": "1050",
+      "name": "X-wing",
+      "passengers": "0"
+    }
+  ],
+  "types": [
+    {
+      "defeats": ["dark", "ice", "normal", "rock", "steel"],
+      "name": "fighting"
+    }
+  ],
+  "universe": "Star Wars",
+  "vehicles": [
+    {
+      "crew": "1",
+      "length": "6.6",
+      "max_atmosphering_speed": "800",
+      "name": "Koro-2 Exodrive airspeeder",
+      "passengers": "1"
+    }
+  ],
+  "weight": "55"
+}

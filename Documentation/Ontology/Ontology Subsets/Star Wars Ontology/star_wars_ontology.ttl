@@ -1,0 +1,177 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swapi: <https://swapi.co/vocabulary/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gada:card_Luke_Skywalker a <http://dbpedia.org/resource/Category:List_of_Star_Wars_characters>,
+        <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card ;
+    rdfs:label "Luke Skywalker" ;
+    rdfs:seeAlso dbr:Luke_Skywalker ;
+    owl:hasValue 534 ;
+    foaf:img <https://vignette.wikia.nocookie.net/starwars/images/4/49/Lukeportrait.jpg/revision/latest?cb=20151221055502&path-prefix=ro> ;
+    foaf:member gada:univ_Star_Wars ;
+    swapi:birthYear "19bby" ;
+    swapi:eyeColor "blue" ;
+    swapi:film gada:wars_film_A_New_Hope,
+        gada:wars_film_Return_of_the_Jedi,
+        gada:wars_film_Revenge_of_the_Sith,
+        gada:wars_film_The_Empire_Strikes_Back ;
+    swapi:gender "male" ;
+    swapi:hairColor "blond" ;
+    swapi:height "172" ;
+    swapi:homeworld gada:wars_plan_Tatooine ;
+    swapi:mass "77" ;
+    swapi:skinColor "fair" ;
+    swapi:starship gada:wars_ship_Imperial_shuttle,
+        gada:wars_ship_X-wing ;
+    swapi:vehicle gada:wars_auto_Imperial_Speeder_Bike,
+        gada:wars_auto_Snowspeeder .
+
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
+
+gada:type_ghost dbo:defeat gada:type_psychic,
+        gada:type_teleport .
+
+gada:univ_Star_Wars rdfs:label "Star Wars" ;
+    owl:sameAs dbr:Star_Wars .
+
+gada:wars_auto_Imperial_Speeder_Bike a swapi:Vehicle ;
+    rdfs:label "Imperial Speeder Bike" ;
+    swapi:crew "1" ;
+    swapi:length "3" ;
+    swapi:maxAtmospheringSpeed "360" ;
+    swapi:passengers "1" .
+
+gada:wars_auto_Snowspeeder a swapi:Vehicle ;
+    rdfs:label "Snowspeeder" ;
+    swapi:crew "2" ;
+    swapi:length "4.5" ;
+    swapi:maxAtmospheringSpeed "650" ;
+    swapi:passengers "0" .
+
+gada:wars_film_A_New_Hope rdfs:label "A New Hope" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Star_Wars_Episode_IV:_A_New_Hope> ;
+    swapi:director "George Lucas" ;
+    swapi:producer "Gary Kurtz",
+        "Rick McCallum" ;
+    swapi:releaseDate "1977-05-25" .
+
+gada:wars_film_Return_of_the_Jedi rdfs:label "Return of the Jedi" ;
+    rdfs:seeAlso dbr:Return_of_the_Jedi ;
+    swapi:director "Richard Marquand" ;
+    swapi:producer "George Lucas",
+        "Howard G. Kazanjian",
+        "Rick McCallum" ;
+    swapi:releaseDate "1983-05-25" .
+
+gada:wars_film_Revenge_of_the_Sith rdfs:label "Revenge of the Sith" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Star_Wars:_Episode_III_–_Revenge_of_the_Sith> ;
+    swapi:director "George Lucas" ;
+    swapi:producer "Rick McCallum" ;
+    swapi:releaseDate "2005-05-19" .
+
+gada:wars_film_The_Empire_Strikes_Back rdfs:label "The Empire Strikes Back" ;
+    rdfs:seeAlso dbr:The_Empire_Strikes_Back ;
+    swapi:director "Irvin Kershner" ;
+    swapi:producer "Gary Kurtz",
+        "Rick McCallum" ;
+    swapi:releaseDate "1980-05-17" .
+
+gada:wars_plan_Tatooine a swapi:Planet ;
+    rdfs:label "Tatooine" ;
+    swapi:climate "arid" ;
+    swapi:surfaceWater "1" ;
+    swapi:terrain "desert" .
+
+gada:wars_ship_Imperial_shuttle a swapi:Starship ;
+    rdfs:label "Imperial shuttle" ;
+    swapi:crew "6" ;
+    swapi:hyperdriveRating "1.0" ;
+    swapi:length "20" ;
+    swapi:maxAtmospheringSpeed "850" ;
+    swapi:passengers "20" .
+
+gada:wars_ship_X-wing a swapi:Starship ;
+    rdfs:label "X-wing" ;
+    swapi:crew "1" ;
+    swapi:hyperdriveRating "1.0" ;
+    swapi:length "12.5" ;
+    swapi:maxAtmospheringSpeed "1050" ;
+    swapi:passengers "0" .
+
+gada:type_fairy dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport .
+
+gada:type_poison dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport .
+
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
+
+gada:type_bug dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic .
+
+gada:type_dark dbo:defeat gada:type_ghost,
+        gada:type_psychic .
+
+gada:type_dragon dbo:defeat gada:type_flying .
+
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
+
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
+
+gada:type_fighting dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
+
+gada:type_psychic dbo:defeat gada:type_fighting,
+        gada:type_poison .
+
+gada:type_teleport dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
+
+gada:type_flying dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass .
+
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
+
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
+

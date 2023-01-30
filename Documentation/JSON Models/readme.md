@@ -1,0 +1,2 @@
+Each universe has a model in both json and json-ld format. All the possible properties are present in each specific model. This was done to understand
+how the ontology was built and because some properties can be missing if the card entity doesn't have them.

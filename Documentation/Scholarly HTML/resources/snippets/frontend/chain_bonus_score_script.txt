@@ -1,0 +1,10 @@
+export function getChainScore(chain) {
+  var totalScore = 0;
+  for (var index in chain) {
+    totalScore += chain[index].score;
+  }
+  var averageScore = totalScore / chain.length;
+  var chainScore =
+    averageScore * CHAIN_AVG_MULTIPLIER + chain.length * CHAIN_LEN_MULTIPLIER;
+  return Math.floor(chainScore);
+}

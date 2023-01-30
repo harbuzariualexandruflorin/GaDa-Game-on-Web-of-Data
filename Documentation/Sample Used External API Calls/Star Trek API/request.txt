@@ -1,1 +1,0 @@
-http://stapi.co/api/v2/rest/species/search?pageSize=1&pageNumber=0

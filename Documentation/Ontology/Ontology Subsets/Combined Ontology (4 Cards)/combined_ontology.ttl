@@ -1,0 +1,284 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix swapi: <https://swapi.co/vocabulary/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gada:card_Abronian a <http://dbpedia.org/resource/Category:Lists_of_fictional_species>,
+        <http://dbpedia.org/resource/Category:Star_Trek_species>,
+        dbr:Playing_card ;
+    rdfs:label "Abronian" ;
+    owl:hasValue 233 ;
+    ssn:hasProperty gada:trek_prop_telepathicSpecies ;
+    foaf:img <https://www.startrek.com/sites/default/files/styles/1080x1080/public/images/2019-07/3d8e28caf901313a554cebc7d32e67e5.jpg?itok=S8SUy3al> ;
+    foaf:member gada:univ_Star_Trek ;
+    sdo:birthPlace gada:trek_plan_Abronian_homeworld ;
+    poke:type gada:type_psychic .
+
+gada:card_Absorbing_Man a <http://dbpedia.org/resource/Category:Lists_of_Marvel_Comics_characters>,
+        <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        dbr:Villain,
+        gada:marv_race_Human ;
+    rdfs:label "Absorbing Man" ;
+    dbo:eyeColor "Blue" ;
+    dbo:participatingIn "Avengers (1963) #183",
+        "Avengers (1963) #184",
+        "Avengers (1963) #270",
+        "Fantastic Four (1961) #330",
+        "Journey Into Mystery (1952) #114",
+        "Journey Into Mystery (1952) #115",
+        "Journey Into Mystery (1952) #120",
+        "Journey Into Mystery (1952) #121",
+        "Journey Into Mystery (1952) #122",
+        "Journey Into Mystery (1952) #123",
+        "Punisher War Journal (2006) #4",
+        "Thor (1966) #206" ;
+    rdfs:seeAlso dbr:Absorbing_Man ;
+    owl:hasValue 734 ;
+    foaf:img <http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7.jpg> ;
+    foaf:member gada:univ_Marvel ;
+    foaf:name "Carl Creel" ;
+    foaf:nick "\"Crusher\" Creel",
+        "Dynamite Davis",
+        "Greithoth",
+        "Lightningbolt",
+        "Prisoner #24957",
+        "Rocky Davis" ;
+    sdo:birthPlace "New York City, New York" ;
+    sdo:gender "Male" ;
+    sdo:hasOccupation "Professional criminal",
+        "former professional boxer" ;
+    sdo:height "193" ;
+    sdo:weight "122" ;
+    poke:type gada:type_fighting .
+
+gada:card_Luke_Skywalker a <http://dbpedia.org/resource/Category:List_of_Star_Wars_characters>,
+        <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card ;
+    rdfs:label "Luke Skywalker" ;
+    rdfs:seeAlso dbr:Luke_Skywalker ;
+    owl:hasValue 534 ;
+    foaf:img <https://vignette.wikia.nocookie.net/starwars/images/4/49/Lukeportrait.jpg/revision/latest?cb=20151221055502&path-prefix=ro> ;
+    foaf:member gada:univ_Star_Wars ;
+    swapi:birthYear "19bby" ;
+    swapi:eyeColor "blue" ;
+    swapi:film gada:wars_film_A_New_Hope,
+        gada:wars_film_Return_of_the_Jedi,
+        gada:wars_film_Revenge_of_the_Sith,
+        gada:wars_film_The_Empire_Strikes_Back ;
+    swapi:gender "male" ;
+    swapi:hairColor "blond" ;
+    swapi:height "172" ;
+    swapi:homeworld gada:wars_plan_Tatooine ;
+    swapi:mass "77" ;
+    swapi:skinColor "fair" ;
+    swapi:starship gada:wars_ship_Imperial_shuttle,
+        gada:wars_ship_X-wing ;
+    swapi:vehicle gada:wars_auto_Imperial_Speeder_Bike,
+        gada:wars_auto_Snowspeeder .
+
+gada:card_kakuna a <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        poke:Pokémon ;
+    rdfs:label "kakuna" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Category:Pokémon_species>,
+        dbr:Kakuna_\(Pokémon\) ;
+    owl:hasValue 101 ;
+    foaf:img <https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/14.png> ;
+    foaf:member gada:univ_Pokemon ;
+    sdo:height "6" ;
+    poke:ability "shed-skin" ;
+    poke:baseAttack 25 ;
+    poke:baseDefense 50 ;
+    poke:baseExp 72 ;
+    poke:baseHP 45 ;
+    poke:baseSpAtk 25 ;
+    poke:baseSpDef 25 ;
+    poke:baseSpeed 35 ;
+    poke:colour "yellow" ;
+    poke:species "kakuna" ;
+    poke:type gada:type_bug,
+        gada:type_poison ;
+    poke:weight "100" .
+
+gada:marv_race_Human a dbr:Human ;
+    rdfs:label "Human" ;
+    rdfs:subClassOf dbr:Race_\(biology\) .
+
+gada:trek_plan_Abronian_homeworld a <http://dbpedia.org/resource/Category:Fictional_planets> ;
+    rdfs:label "Abronian homeworld" .
+
+gada:trek_prop_telepathicSpecies rdfs:label "telepathicSpecies" ;
+    owl:sameAs dbr:Telepathy .
+
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
+
+gada:type_ghost dbo:defeat gada:type_psychic,
+        gada:type_teleport .
+
+gada:univ_Marvel rdfs:label "Marvel" ;
+    owl:sameAs dbr:Marvel_Universe .
+
+gada:univ_Pokemon rdfs:label "Pokemon" ;
+    owl:sameAs dbr:Pokémon .
+
+gada:univ_Star_Trek rdfs:label "Star Trek" ;
+    owl:sameAs dbr:Star_Trek .
+
+gada:univ_Star_Wars rdfs:label "Star Wars" ;
+    owl:sameAs dbr:Star_Wars .
+
+gada:wars_auto_Imperial_Speeder_Bike a swapi:Vehicle ;
+    rdfs:label "Imperial Speeder Bike" ;
+    swapi:crew "1" ;
+    swapi:length "3" ;
+    swapi:maxAtmospheringSpeed "360" ;
+    swapi:passengers "1" .
+
+gada:wars_auto_Snowspeeder a swapi:Vehicle ;
+    rdfs:label "Snowspeeder" ;
+    swapi:crew "2" ;
+    swapi:length "4.5" ;
+    swapi:maxAtmospheringSpeed "650" ;
+    swapi:passengers "0" .
+
+gada:wars_film_A_New_Hope rdfs:label "A New Hope" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Star_Wars_Episode_IV:_A_New_Hope> ;
+    swapi:director "George Lucas" ;
+    swapi:producer "Gary Kurtz",
+        "Rick McCallum" ;
+    swapi:releaseDate "1977-05-25" .
+
+gada:wars_film_Return_of_the_Jedi rdfs:label "Return of the Jedi" ;
+    rdfs:seeAlso dbr:Return_of_the_Jedi ;
+    swapi:director "Richard Marquand" ;
+    swapi:producer "George Lucas",
+        "Howard G. Kazanjian",
+        "Rick McCallum" ;
+    swapi:releaseDate "1983-05-25" .
+
+gada:wars_film_Revenge_of_the_Sith rdfs:label "Revenge of the Sith" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Star_Wars:_Episode_III_–_Revenge_of_the_Sith> ;
+    swapi:director "George Lucas" ;
+    swapi:producer "Rick McCallum" ;
+    swapi:releaseDate "2005-05-19" .
+
+gada:wars_film_The_Empire_Strikes_Back rdfs:label "The Empire Strikes Back" ;
+    rdfs:seeAlso dbr:The_Empire_Strikes_Back ;
+    swapi:director "Irvin Kershner" ;
+    swapi:producer "Gary Kurtz",
+        "Rick McCallum" ;
+    swapi:releaseDate "1980-05-17" .
+
+gada:wars_plan_Tatooine a swapi:Planet ;
+    rdfs:label "Tatooine" ;
+    swapi:climate "arid" ;
+    swapi:surfaceWater "1" ;
+    swapi:terrain "desert" .
+
+gada:wars_ship_Imperial_shuttle a swapi:Starship ;
+    rdfs:label "Imperial shuttle" ;
+    swapi:crew "6" ;
+    swapi:hyperdriveRating "1.0" ;
+    swapi:length "20" ;
+    swapi:maxAtmospheringSpeed "850" ;
+    swapi:passengers "20" .
+
+gada:wars_ship_X-wing a swapi:Starship ;
+    rdfs:label "X-wing" ;
+    swapi:crew "1" ;
+    swapi:hyperdriveRating "1.0" ;
+    swapi:length "12.5" ;
+    swapi:maxAtmospheringSpeed "1050" ;
+    swapi:passengers "0" .
+
+gada:type_fairy dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport .
+
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
+
+gada:type_dark dbo:defeat gada:type_ghost,
+        gada:type_psychic .
+
+gada:type_dragon dbo:defeat gada:type_flying .
+
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
+
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_poison a poke:Type ;
+    rdfs:label "poison" ;
+    dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport ;
+    rdfs:subClassOf dbr:Poison .
+
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
+
+gada:type_bug a poke:Type ;
+    rdfs:label "bug" ;
+    dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic ;
+    rdfs:subClassOf dbr:Insect .
+
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
+
+gada:type_teleport dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
+
+gada:type_fighting a poke:Type ;
+    rdfs:label "fighting" ;
+    dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel ;
+    rdfs:subClassOf dbr:Combat .
+
+gada:type_flying dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass .
+
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
+
+gada:type_psychic a poke:Type ;
+    rdfs:label "psychic" ;
+    dbo:defeat gada:type_fighting,
+        gada:type_poison ;
+    rdfs:subClassOf dbr:Psychic .
+
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
+

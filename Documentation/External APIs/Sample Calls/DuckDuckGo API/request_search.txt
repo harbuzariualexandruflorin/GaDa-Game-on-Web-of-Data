@@ -1,0 +1,2 @@
+https://duckduckgo.com/i.js?l=us-en&o=json&q=dog&vqd=3-257133823851705775377953904334097317136-242350963439846067066712875941788129769&f=%2C%2C%2C&p=1&v7exp=a
+Referer: https://duckduckgo.com/

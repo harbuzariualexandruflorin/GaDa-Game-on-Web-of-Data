@@ -1,0 +1,20 @@
+export async function dealCards(gameCards, handSize, quizWon) {
+  if (quizWon == false) {
+    var currentHand = popRandoms(gameCards, handSize);
+    return currentHand;
+  }
+
+  gameCards.sort((a, b) => (a.score > b.score ? 1 : -1));
+  var middleIndex = Math.ceil(gameCards.length / 2);
+  var smallHalf = shuffleArray(gameCards.splice(0, middleIndex));
+  var bigHalf = shuffleArray(gameCards.splice(-middleIndex));
+
+  var currentHand = popRandoms(bigHalf, Math.floor(handSize / 2));
+  if (currentHand.length < handSize) {
+    currentHand = currentHand.concat(
+      popRandoms(smallHalf, handSize - currentHand.length)
+    );
+  }
+  gameCards.push(...smallHalf.concat(bigHalf));
+  return currentHand;
+}

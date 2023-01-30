@@ -1,0 +1,15 @@
+{
+    "nr_abilities": 1,
+    "experience": 4,
+    "nr_forms": 2,
+    "height": 2,
+    "nr_moves": 5,
+    "attack": 8,
+    "defense": 7,
+    "hp": 6,
+    "special_attack": 9,
+    "special_defense": 8,
+    "speed": 6,
+    "weight": 1,
+    "DIV": 17.6
+}

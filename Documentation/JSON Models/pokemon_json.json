@@ -1,0 +1,27 @@
+{
+  "abilities": ["power-construct"],
+  "avatar": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10120.png",
+  "color": "green",
+  "experience": 354,
+  "height": "45",
+  "name": "zygarde-complete",
+  "score": 733,
+  "species": "zygarde",
+  "stats": {
+    "attack": 100,
+    "defense": 121,
+    "hp": 216,
+    "special_attack": 91,
+    "special_defense": 95,
+    "speed": 85
+  },
+  "types": [
+    { "defeats": ["flying"], "name": "dragon" },
+    {
+      "defeats": ["electric", "fire", "poison", "rock", "steel"],
+      "name": "ground"
+    }
+  ],
+  "universe": "Pokemon",
+  "weight": "6100"
+}

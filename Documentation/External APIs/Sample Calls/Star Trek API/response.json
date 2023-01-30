@@ -1,0 +1,38 @@
+{
+    "page": {
+        "pageNumber": 0,
+        "pageSize": 1,
+        "numberOfElements": 1,
+        "totalElements": 755,
+        "totalPages": 755,
+        "firstPage": true,
+        "lastPage": false
+    },
+    "sort": {
+        "clauses": []
+    },
+    "species": [
+        {
+            "uid": "SPMA0000041310",
+            "name": "892-IV native",
+            "homeworld": {
+                "uid": "ASMA0000015188",
+                "name": "892-IV"
+            },
+            "quadrant": null,
+            "extinctSpecies": false,
+            "warpCapableSpecies": false,
+            "extraGalacticSpecies": false,
+            "humanoidSpecies": true,
+            "reptilianSpecies": false,
+            "avianSpecies": false,
+            "nonCorporealSpecies": false,
+            "shapeshiftingSpecies": false,
+            "spaceborneSpecies": false,
+            "telepathicSpecies": false,
+            "transDimensionalSpecies": false,
+            "unnamedSpecies": true,
+            "alternateReality": false
+        }
+    ]
+}

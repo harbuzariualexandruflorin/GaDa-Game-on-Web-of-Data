@@ -1,0 +1,16 @@
+http {
+	server {
+		listen 8071;
+		server_name localhost;
+
+		location ^~ /frontend {
+			rewrite ^/frontend/(.*)$ /$1 break;
+			proxy_pass http://127.0.0.1:5500;
+		}
+		
+		location ^~ /triplestore {
+			rewrite ^/triplestore/(.*)$ /$1 break;
+			proxy_pass http://127.0.0.1:3030;
+		}
+	}
+}

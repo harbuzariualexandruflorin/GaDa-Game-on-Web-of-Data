@@ -1,0 +1,58 @@
+{
+  "@context": {
+    "dbo": "http://dbpedia.org/ontology/",
+    "dbr": "http://dbpedia.org/resource/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "poke": "https://triplydb.com/academy/pokemon/vocab/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sdo": "https://schema.org/"
+  },
+  "@id": "https://gada.cards.game.namespace.com/card_X-Man",
+  "@type": [
+    "dbr:Category:Lists_of_Marvel_Comics_characters",
+    "dbr:Category:Lists_of_fictional_characters",
+    "dbr:Hero",
+    "dbr:Playing_card"
+  ],
+  "dbo:eyeColor": ["Blue"],
+  "dbo:hairColor": ["Brown"],
+  "dbo:participatingIn": [
+    "CABLE (1993) #30",
+    "CABLE (1993) #31",
+    "ONSLAUGHT: MARVEL UNIVERSE (1996) #1"
+  ],
+  "foaf:img": {
+    "@id": "http://i.annihil.us/u/prod/marvel/i/mg/d/10/535febd73f84f.jpg"
+  },
+  "foaf:member": {
+    "@id": "https://gada.cards.game.namespace.com/univ_Marvel",
+    "owl:sameAs": { "@id": "dbr:Marvel_Universe" },
+    "rdfs:label": "Marvel"
+  },
+  "foaf:name": "Nate Grey",
+  "foaf:nick": ["Nate the Great"],
+  "owl:hasValue": 635,
+  "poke:type": [
+    {
+      "@id": "https://gada.cards.game.namespace.com/type_fighting",
+      "@type": "poke:Type",
+      "dbo:defeat": [
+        { "@id": "https://gada.cards.game.namespace.com/type_dark" },
+        { "@id": "https://gada.cards.game.namespace.com/type_ice" },
+        { "@id": "https://gada.cards.game.namespace.com/type_normal" },
+        { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+        { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+      ],
+      "rdfs:label": "fighting",
+      "rdfs:subClassOf": { "@id": "dbr:Combat" }
+    }
+  ],
+  "rdfs:label": "X-Man",
+  "rdfs:seeAlso": [{ "@id": "dbr:Iron_Man" }],
+  "sdo:birthPlace": "American Northeast of Earth-295",
+  "sdo:gender": "Male",
+  "sdo:hasOccupation": ["Former shaman", "adventurer", "freedom fighter"],
+  "sdo:height": "175",
+  "sdo:weight": "61"
+}

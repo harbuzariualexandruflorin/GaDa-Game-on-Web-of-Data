@@ -1,0 +1,134 @@
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gada: <https://gada.cards.game.namespace.com/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix poke: <https://triplydb.com/academy/pokemon/vocab/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gada:card_Absorbing_Man a <http://dbpedia.org/resource/Category:Lists_of_Marvel_Comics_characters>,
+        <http://dbpedia.org/resource/Category:Lists_of_fictional_characters>,
+        dbr:Playing_card,
+        dbr:Villain,
+        gada:marv_race_Human ;
+    rdfs:label "Absorbing Man" ;
+    dbo:eyeColor "Blue" ;
+    dbo:participatingIn "Avengers (1963) #183",
+        "Avengers (1963) #184",
+        "Avengers (1963) #270",
+        "Fantastic Four (1961) #330",
+        "Journey Into Mystery (1952) #114",
+        "Journey Into Mystery (1952) #115",
+        "Journey Into Mystery (1952) #120",
+        "Journey Into Mystery (1952) #121",
+        "Journey Into Mystery (1952) #122",
+        "Journey Into Mystery (1952) #123",
+        "Punisher War Journal (2006) #4",
+        "Thor (1966) #206" ;
+    rdfs:seeAlso dbr:Absorbing_Man ;
+    owl:hasValue 734 ;
+    foaf:img <http://i.annihil.us/u/prod/marvel/i/mg/1/b0/5269678709fb7.jpg> ;
+    foaf:member gada:univ_Marvel ;
+    foaf:name "Carl Creel" ;
+    foaf:nick "\"Crusher\" Creel",
+        "Dynamite Davis",
+        "Greithoth",
+        "Lightningbolt",
+        "Prisoner #24957",
+        "Rocky Davis" ;
+    sdo:birthPlace "New York City, New York" ;
+    sdo:gender "Male" ;
+    sdo:hasOccupation "Professional criminal",
+        "former professional boxer" ;
+    sdo:height "193" ;
+    sdo:weight "122" ;
+    poke:type gada:type_fighting .
+
+gada:marv_race_Human a dbr:Human ;
+    rdfs:label "Human" ;
+    rdfs:subClassOf dbr:Race_\(biology\) .
+
+gada:type_electric dbo:defeat gada:type_flying,
+        gada:type_teleport,
+        gada:type_water .
+
+gada:type_ghost dbo:defeat gada:type_psychic,
+        gada:type_teleport .
+
+gada:univ_Marvel rdfs:label "Marvel" ;
+    owl:sameAs dbr:Marvel_Universe .
+
+gada:type_fairy dbo:defeat gada:type_dark,
+        gada:type_dragon,
+        gada:type_fighting,
+        gada:type_teleport .
+
+gada:type_poison dbo:defeat gada:type_fairy,
+        gada:type_grass,
+        gada:type_teleport .
+
+gada:type_water dbo:defeat gada:type_fire,
+        gada:type_ground,
+        gada:type_rock .
+
+gada:type_bug dbo:defeat gada:type_dark,
+        gada:type_grass,
+        gada:type_psychic .
+
+gada:type_dark dbo:defeat gada:type_ghost,
+        gada:type_psychic .
+
+gada:type_dragon dbo:defeat gada:type_flying .
+
+gada:type_fire dbo:defeat gada:type_bug,
+        gada:type_grass,
+        gada:type_ice,
+        gada:type_steel .
+
+gada:type_ground dbo:defeat gada:type_electric,
+        gada:type_fire,
+        gada:type_poison,
+        gada:type_rock,
+        gada:type_steel .
+
+gada:type_steel dbo:defeat gada:type_fairy,
+        gada:type_ice,
+        gada:type_rock .
+
+gada:type_ice dbo:defeat gada:type_dragon,
+        gada:type_flying,
+        gada:type_grass,
+        gada:type_ground .
+
+gada:type_psychic dbo:defeat gada:type_fighting,
+        gada:type_poison .
+
+gada:type_teleport dbo:defeat gada:type_dragon,
+        gada:type_fighting,
+        gada:type_flying,
+        gada:type_psychic .
+
+gada:type_fighting a poke:Type ;
+    rdfs:label "fighting" ;
+    dbo:defeat gada:type_dark,
+        gada:type_ice,
+        gada:type_normal,
+        gada:type_rock,
+        gada:type_steel ;
+    rdfs:subClassOf dbr:Combat .
+
+gada:type_flying dbo:defeat gada:type_bug,
+        gada:type_fighting,
+        gada:type_grass .
+
+gada:type_grass dbo:defeat gada:type_ground,
+        gada:type_rock,
+        gada:type_water .
+
+gada:type_rock dbo:defeat gada:type_bug,
+        gada:type_fire,
+        gada:type_flying,
+        gada:type_ice .
+

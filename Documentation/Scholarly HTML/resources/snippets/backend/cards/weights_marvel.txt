@@ -1,0 +1,20 @@
+{
+    "nr_comics": 8,
+    "nr_stories": 8,
+    "nr_events": 8,
+    "intelligence": 6,
+    "strength": 8,
+    "speed": 5,
+    "durability": 6,
+    "power": 9,
+    "combat": 7,
+    "nr_aliases": 5,
+    "good": 100,
+    "bad": 200,
+    "neutral": 150,
+    "Male": 100,
+    "Female": 50,
+    "height": 4,
+    "weight": 3,
+    "DIV": 10
+}

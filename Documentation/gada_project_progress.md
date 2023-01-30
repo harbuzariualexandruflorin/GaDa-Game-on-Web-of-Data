@@ -29,11 +29,11 @@ Week 9(21st of November-29th of November)
  - [Project progress document](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/blob/main/Documentation/Project_Progress.md). (Stefan)
 
 Week 10(30th of November - 6th of December)
-	-Studying external API structure.(Florin)
+- Studying external API structure.(Florin)
 
 Week 11(7th of December - 13th of December)
 
--Extract necessary information from the APIs marvel, pokemon, star trek, star wars(Florin)
+- Extract necessary information from the APIs marvel, pokemon, star trek, star wars(Florin)
 
 Week 12(14th of December- 20th of December)
 
@@ -41,31 +41,31 @@ Week 12(14th of December- 20th of December)
 
 Winter vacation (20th of December- 8th of January)
 
--Constructing the onthology(Florin)
--Populate triplestore(Florin)
--Research how to implement the frontend architecture(Stefan)
+- Constructing the onthology(Florin)
+- Populate triplestore(Florin)
+- Research how to implement the frontend architecture(Stefan)
 
 
 Week 13(9nd of January- 15th of January)
 
--JsonLD generation + parsing to convert to normal Json(Florin)
--user management for Highscores(Florin)
--main page and card phase in HTML and CSS(Stefan)
+- JsonLD generation + parsing to convert to normal Json(Florin)
+- user management for Highscores(Florin)
+- main page and card phase in HTML and CSS(Stefan)
 	
 Week 14(16th of January- 22nd of January)
 
--finalize GADA card API(Florin)
--deploy final application on ngrok,nginx(Florin)
--help with fetching data from APIs and using them in Frontend(Florin)
--game logic for the card game(Stefan)
--main flow for the frontend application(Stefan)
+- finalize GADA card API(Florin)
+- deploy final application on ngrok,nginx(Florin)
+- help with fetching data from APIs and using them in Frontend(Florin)
+- game logic for the card game(Stefan)
+- main flow for the frontend application(Stefan)
 
 
 Week 15/16(23rd of January -1st of February)
--endscreen for the frontend application(Stefan)
--[ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML)Updated the Introduction, Proposed Solution, Card Game Logic, UI, References sections(Stefan)
--[ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML) zzzzzzzzzzz sections (Florin)
--[UserGuide](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/User%20Guide%20HTML)(Stefan)
+- endscreen for the frontend application(Stefan)
+- [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML)Updated the Introduction, Proposed Solution, Card Game Logic, UI, References sections(Stefan)
+- [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML) zzzzzzzzzzz sections (Florin)
+- [UserGuide](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/User%20Guide%20HTML)(Stefan)
 
 
 #project #infoiasi #wade #web

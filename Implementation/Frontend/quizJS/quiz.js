@@ -3,9 +3,9 @@ import { API_URL, QUIZ_API_URL } from "../index.js";
 
 var userCardsNames = [];
 var questions = [];
+var quizScore = 0;
 
 const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
 const checkButton = document.getElementById('check');
 
 var slides = [];
@@ -47,7 +47,7 @@ function buildQuiz(){
 
 function showSlide(n) {
 
-  if(currentSlide === questions.length - 1) {
+  if(n === questions.length) {
     endQuiz();
   } else {
     slides[currentSlide].classList.remove('active-slide');
@@ -58,10 +58,6 @@ function showSlide(n) {
 
 function showNextSlide() {
   showSlide(currentSlide + 1);
-}
-
-function showPreviousSlide() {
-  showSlide(currentSlide - 1);
 }
 
 export function initQuiz() {
@@ -91,7 +87,7 @@ export function initQuiz() {
 
 export function checkAnswer() {
 
-  var nrOfCorrectChecks = 0;
+  var correctAnswers = 0, wrongAnswers = 0;
 
   const answerToSend = new Object();
 
@@ -132,47 +128,72 @@ export function checkAnswer() {
         if (currentQuestion.options[q_option] === data.options[a_option].value) {
           if (data.options[a_option].checked && data.options[a_option].isCorrect) {
             answerContainer.querySelector(`input[name=${q_option}]`).parentElement.style.color = 'green';
-            // nrOfCorrectChecks++;
+            correctAnswers++;
           } 
           else if (data.options[a_option].checked && !data.options[a_option].isCorrect) {
             answerContainer.querySelector(`input[name=${q_option}]`).parentElement.style.color = 'red';
-            // nrOfCorrectChecks++;
+            wrongAnswers++;
+          }
+          else if (!data.options[a_option].checked && data.options[a_option].isCorrect) {
+            correctAnswers++;
+          }
+          else if (!data.options[a_option].checked && !data.options[a_option].isCorrect) {
+            wrongAnswers++;
           }
         }
       }
     }
-    const myTimeout = setTimeout(showNextSlide, 3000);
+    computeQuestionScore(correctAnswers, wrongAnswers);
+    const myTimeout = setTimeout(showNextSlide, 2000);
   });
 }
 
-
 export function endQuiz() {
-  var nrCorrect = parseInt(document.getElementById("nrCorrect").value);
-  var QUESTIONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var pointsToReceive = 0;
+  var quizPassed =  quizScore >= Math.round(0.5 * questions.length * QUESTION_BONUS);
+  localStorage.setItem("quizStatus", quizPassed);
 
-  var quizScore = 0;
-  if (nrCorrect >= QUESTIONS.length / 2) {
-    quizScore = nrCorrect * QUESTION_BONUS;
-    alert("You won the quiz! Points received: ".concat(quizScore));
-  } else {
-    quizScore = -QUESTION_FAIL;
-    alert("You lost the quiz! Points lost: ".concat(QUESTION_FAIL));
+  if(!quizPassed) {
     localStorage.setItem(
       "compScore",
       parseInt(localStorage.getItem("compScore")) + QUESTION_FAIL
     );
+    pointsToReceive = -QUESTION_FAIL;
+    alert("You lost the quiz! Points lost: ".concat(pointsToReceive));
+  } else {
+    alert("You won the quiz! Points received: ".concat(quizScore));
+    pointsToReceive = quizScore;
+    console.log("POINTS TO RECEIVE: " + pointsToReceive);
   }
 
-  localStorage.setItem("quizStatus", nrCorrect >= QUESTIONS.length / 2);
-  quizScore = parseInt(localStorage.getItem("userScore")) + quizScore;
-  if (quizScore < 0) {
-    quizScore = 0;
+  var userScore = parseInt(localStorage.getItem("userScore")) + pointsToReceive;
+  if (userScore < 0) {
+    userScore = 0;
   }
-  localStorage.setItem("userScore", quizScore);
+  localStorage.setItem("userScore", userScore);
   localStorage.removeItem("inQuestions");
   localStorage.removeItem("inQuiz");
 
   window.location.replace("game.html");
 }
 
-checkButton.addEventListener("click", checkAnswer);
+// score computed for a scingle question
+function computeQuestionScore(correctChecks, wrongChecks) {
+  console.log("WRONG CHECKS: " + wrongChecks);
+  console.log("CORECT CHECKS: " + correctChecks);
+
+  if(wrongChecks === 0) {
+    quizScore += QUESTION_BONUS;
+  }
+  else if(correctChecks === 0) {
+    quizScore -= QUESTION_FAIL;
+  }
+  else if(wrongChecks - correctChecks > 0){
+    quizScore -= Math.round(QUESTION_FAIL / 3);
+
+  } else {
+    quizScore += Math.round(QUESTION_BONUS / 2);
+  }
+}
+
+// checkButton.addEventListener("click", checkAnswer);

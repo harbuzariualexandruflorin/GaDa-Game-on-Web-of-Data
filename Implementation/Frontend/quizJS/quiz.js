@@ -195,5 +195,3 @@ function computeQuestionScore(correctChecks, wrongChecks) {
     quizScore += Math.round(QUESTION_BONUS / 2);
   }
 }
-
-// checkButton.addEventListener("click", checkAnswer);

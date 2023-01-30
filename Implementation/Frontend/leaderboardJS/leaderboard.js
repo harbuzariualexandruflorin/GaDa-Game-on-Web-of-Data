@@ -1,6 +1,6 @@
 import { API_URL } from "../index.js";
 
-let pageSize = 2;
+let pageSize = 1;
 let currentPage = 1;
 var data, table;
 let rowIndex = 0;
@@ -33,9 +33,10 @@ export function loadLeaderboard() {
       </tr>`
       table.innerHTML = result;
     });
+
     var nextPageResultSize = await getResultSize(currentPage + 1);
-    console.log("Next page result size: " + nextPageResultSize);
-    if(data.scores.length < pageSize) {
+    
+    if(data.scores.length < pageSize || nextPageResultSize == 0) {
       document.getElementById("nextButton").style.visibility = "hidden";
     } else {
       document.getElementById("nextButton").style.visibility = "visible";
@@ -61,14 +62,13 @@ async function getResultSize(page) {
 
   var pageOffset = (page-1)*pageSize;
 
-  fetch(`${API_URL}high_scores?` + new URLSearchParams({
+  
+  return(fetch(`${API_URL}high_scores?` + new URLSearchParams({
     page_size: pageSize,
     page_offset: pageOffset,
   }))
   .then((response) => response.json())
   .then((responseData) => {
-    console.log("FUNCTION RESULT: " + responseData.scores.length);
     return responseData.scores.length;
-  });
-  return 0;
+  }));
 }

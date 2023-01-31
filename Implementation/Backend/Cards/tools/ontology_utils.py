@@ -99,6 +99,26 @@ def cards_get_names(g):
         return list()
 
 
+def cards_get_universes(g):
+    try:
+        return [str(x[0]) for x in list(g.query(
+            '''
+                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                prefix dbr: <http://dbpedia.org/resource/>
+                prefix foaf: <http://xmlns.com/foaf/0.1/>
+                prefix gada: <https://gada.cards.game.namespace.com/>
+                
+                select distinct ?universe where {
+                    ?card rdf:type dbr:Playing_card .
+                    ?card foaf:member ?universe . 
+                }
+            '''
+        ))]
+    except Exception as ex:
+        print("EXCEPTION CARD GET NAMES ", ex)
+        return list()
+
+
 def id_to_json_ld(g, entity_id, context):
     if type(entity_id) is str:
         entity_id = URIRef(entity_id)
@@ -144,6 +164,7 @@ def card_name_to_universe(g, card_name):
                 prefix dbr: <http://dbpedia.org/resource/>
                 prefix foaf: <http://xmlns.com/foaf/0.1/>
                 prefix owl: <http://www.w3.org/2002/07/owl#>
+
                 select ?univ_id where { 
                     ?card rdf:type dbr:Playing_card . ?card rdfs:label ?name . 
                     ?card foaf:member ?univ . ?univ owl:sameAs ?univ_id 
@@ -226,17 +247,20 @@ def get_card_deck(deck_size, deck_offset=0, randomize=False, g=None):
     try:
         if randomize:
             cards = []
-            for univ in ["gada:univ_Marvel", "gada:univ_Pokemon", "gada:univ_Star_Wars", "gada:univ_Star_Trek"]:
-                batch_size = deck_size // 4 + 1
+            extra_add = 0
 
-                cards += [str(x[0]) for x in list(g.query(
+            universes = cards_get_universes(g)
+            for univ in universes:
+                batch_size = deck_size // len(universes) + 1 + extra_add
+
+                current_cards = [str(x[0]) for x in list(g.query(
                     '''
                         prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                         prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
                         prefix dbr: <http://dbpedia.org/resource/>
                         prefix foaf: <http://xmlns.com/foaf/0.1/>
                         prefix gada: <https://gada.cards.game.namespace.com/>
-                        
+
                         select ?name where { 
                             ?card rdf:type dbr:Playing_card .
                             ?card rdfs:label ?name . 
@@ -244,8 +268,13 @@ def get_card_deck(deck_size, deck_offset=0, randomize=False, g=None):
                             bind(sha512(concat(str(rand()), str(?name))) as ?random) 
                         } order by ?random
                         limit %s
-                    ''' % (univ, batch_size)
+                    ''' % ("gada:" + univ.split("/")[-1], batch_size)
                 ))]
+
+                cards += current_cards
+                if len(current_cards) <= batch_size:
+                    extra_add = batch_size - len(current_cards)
+
             random.shuffle(cards)
             return cards[0:deck_size]
         else:

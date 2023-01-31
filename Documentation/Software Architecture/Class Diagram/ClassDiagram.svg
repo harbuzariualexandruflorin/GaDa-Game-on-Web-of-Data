@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="1648" version="1.1" width="2344" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="143" stroke="#ffffff" stroke-width="1" width="143" x="542" y="758"/>
+<rect fill="none" height="143" stroke="#000000" stroke-width="1" width="143" x="542" y="758"/>
+<text font-family="Dialog" font-size="12" x="600" y="772">
+User</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="143" x="542" y="782"/>
+<text font-family="Dialog" font-size="12" x="546" y="797">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="546" y="814">
+score : Integer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="143" x="542" y="824"/>
+<text font-family="Dialog" font-size="12" x="546" y="839">
+getName() : String</text>
+<text font-family="Dialog" font-size="12" x="546" y="856">
+setName(name : String)</text>
+<text font-family="Dialog" font-size="12" x="546" y="873">
+getScore() : Integer</text>
+<text font-family="Dialog" font-size="12" x="546" y="890">
+setScore(score : Integer)</text>
+<rect fill="#ffffff" height="156" stroke="#ffffff" stroke-width="1" width="548" x="102" y="550"/>
+<rect fill="none" height="156" stroke="#000000" stroke-width="1" width="548" x="102" y="550"/>
+<text font-family="Dialog" font-size="12" x="354" y="564">
+MainAPI</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="548" x="102" y="574"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="548" x="102" y="595"/>
+<text font-family="Dialog" font-size="12" x="106" y="610">
+getQuestions(data : Data) : Question</text>
+<text font-family="Dialog" font-size="12" x="106" y="627">
+checkAnswer(answer : Answer) : Question</text>
+<text font-family="Dialog" font-size="12" x="106" y="644">
+generateCardDeck(deckOffset : Integer = 0,deckSize : Integer,randomize : Boolean = False) : Object</text>
+<text font-family="Dialog" font-size="12" x="106" y="661">
+getCardDeckInfo(cardNames : List&lt;String&gt;,jsonld : Boolean = False) : Object</text>
+<text font-family="Dialog" font-size="12" x="106" y="678">
+addHighScore(user : User)</text>
+<text font-family="Dialog" font-size="12" x="106" y="695">
+getHighScores(pageSize : Integer,pageOffset : Integer = 0) : Object</text>
+<rect fill="#ffffff" height="88" stroke="#ffffff" stroke-width="1" width="320" x="118" y="342"/>
+<rect fill="none" height="88" stroke="#000000" stroke-width="1" width="320" x="118" y="342"/>
+<text font-family="Dialog" font-size="12" x="257" y="356">
+QuizAPI</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="118" y="366"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="320" x="118" y="387"/>
+<text font-family="Dialog" font-size="12" x="122" y="402">
+getQuestions(data : Data) : Question</text>
+<text font-family="Dialog" font-size="12" x="122" y="419">
+checkAnswer(answer : Answer)</text>
+<rect fill="#ffffff" height="173" stroke="#ffffff" stroke-width="1" width="617" x="942" y="454"/>
+<rect fill="none" height="173" stroke="#000000" stroke-width="1" width="617" x="942" y="454"/>
+<text font-family="Dialog" font-size="12" x="1224" y="468">
+CardsAPI</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="617" x="942" y="478"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="617" x="942" y="507"/>
+<text font-family="Dialog" font-size="12" x="946" y="522">
+generateCardDeck(deckOffset : Integer = 0,deckSize : Integer,randomize : Boolean = False) : List&lt;CardPreview&gt;</text>
+<text font-family="Dialog" font-size="12" x="946" y="539">
+getCardDeckInfo(cardNames : List&lt;String&gt;,jsonld : Boolean = False) : List&lt;Card&gt;</text>
+<text font-family="Dialog" font-size="12" x="946" y="556">
+addHighScore(user : User)</text>
+<text font-family="Dialog" font-size="12" x="946" y="573">
+getHighScores(pageSize : Integer,pageOffset : Integer = 0) : List&lt;User&gt;</text>
+<text font-family="Dialog" font-size="12" x="946" y="590">
+scrapeExternalAPIsData()</text>
+<text font-family="Dialog" font-size="12" x="946" y="607">
+processExternalAPIsData()</text>
+<rect fill="#ffffff" height="143" stroke="#ffffff" stroke-width="1" width="168" x="1214" y="750"/>
+<rect fill="none" height="143" stroke="#000000" stroke-width="1" width="168" x="1214" y="750"/>
+<text font-family="Dialog" font-size="12" x="1284" y="764">
+Card</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="1214" y="774"/>
+<text font-family="Dialog" font-size="12" x="1218" y="789">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="1218" y="806">
+universe : String</text>
+<text font-family="Dialog" font-size="12" x="1218" y="823">
+avatar : String</text>
+<text font-family="Dialog" font-size="12" x="1218" y="840">
+score : Integer</text>
+<text font-family="Dialog" font-size="12" x="1218" y="857">
+types : List&lt;CardPowerType&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="168" x="1214" y="867"/>
+<text font-family="Dialog" font-size="12" x="1218" y="882">
+convertToJSONLD() : Object</text>
+<rect fill="#ffffff" height="168" stroke="#ffffff" stroke-width="1" width="472" x="214" y="14"/>
+<rect fill="none" height="168" stroke="#000000" stroke-width="1" width="472" x="214" y="14"/>
+<text font-family="Dialog" font-size="12" x="418" y="28">
+QuizService</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="472" x="214" y="38"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="472" x="214" y="73"/>
+<text font-family="Dialog" font-size="12" x="218" y="88">
+getQueryOfQuestion(question : String) : String</text>
+<text font-family="Dialog" font-size="12" x="218" y="105">
+getQueryAnswer(query : String,character : String) : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="218" y="122">
+getRandomQuestion(character : String) : QuestionToReturn</text>
+<text font-family="Dialog" font-size="12" x="218" y="139">
+checkAnswer(answer : Answer)</text>
+<text font-family="Dialog" font-size="12" x="218" y="156">
+getQuestions(characters : List&lt;String&gt;,nrOfQuestions : int) : List&lt;QuestionToReturn&gt;</text>
+<rect fill="#ffffff" height="173" stroke="#ffffff" stroke-width="1" width="160" x="758" y="222"/>
+<rect fill="none" height="173" stroke="#000000" stroke-width="1" width="160" x="758" y="222"/>
+<text font-family="Dialog" font-size="12" x="813" y="236">
+Question</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="758" y="246"/>
+<text font-family="Dialog" font-size="12" x="762" y="261">
+quizQuestion : String</text>
+<text font-family="Dialog" font-size="12" x="762" y="278">
+questionType : String</text>
+<text font-family="Dialog" font-size="12" x="762" y="295">
+sparqlEndpoint : String</text>
+<text font-family="Dialog" font-size="12" x="762" y="312">
+multipleChoice : bool</text>
+<text font-family="Dialog" font-size="12" x="762" y="329">
+query : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="160" x="758" y="356"/>
+<polyline fill="none" points="649,597 942,597" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="942,597 930,604 930,590" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="942,597 930,604 930,590" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1294,750 1294,626" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1294,626 1301,638 1287,638" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1294,626 1301,638 1287,638" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="684,758 942,626" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="942,626 934,637 928,625" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="942,626 934,637 928,625" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="143" stroke="#ffffff" stroke-width="1" width="143" x="942" y="742"/>
+<rect fill="none" height="143" stroke="#000000" stroke-width="1" width="143" x="942" y="742"/>
+<text font-family="Dialog" font-size="12" x="978" y="756">
+CardPreview</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="143" x="942" y="766"/>
+<text font-family="Dialog" font-size="12" x="946" y="781">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="946" y="798">
+score : Integer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="143" x="942" y="808"/>
+<text font-family="Dialog" font-size="12" x="946" y="823">
+getName() : String</text>
+<text font-family="Dialog" font-size="12" x="946" y="840">
+setName(name : String)</text>
+<text font-family="Dialog" font-size="12" x="946" y="857">
+getScore() : Integer</text>
+<text font-family="Dialog" font-size="12" x="946" y="874">
+setScore(score : Integer)</text>
+<polyline fill="none" points="1053,742 1053,626" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1053,626 1060,638 1046,638" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1053,626 1060,638 1046,638" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="75" stroke="#ffffff" stroke-width="1" width="288" x="1982" y="638"/>
+<rect fill="none" height="75" stroke="#000000" stroke-width="1" width="288" x="1982" y="638"/>
+<text font-family="Dialog" font-size="12" x="2078" y="652">
+MarvelAPIScraper</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1982" y="662"/>
+<text font-family="Dialog" font-size="12" x="1986" y="677">
+API_KEY : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1982" y="687"/>
+<text font-family="Dialog" font-size="12" x="1986" y="702">
+scrapeData(marvelEndpoint : String,apiKey : String)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="181" x="2110" y="406"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="181" x="2110" y="406"/>
+<text font-family="Dialog" font-size="12" x="2132" y="420">
+MarvelAPIDataProcessor</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="2110" y="430"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="2110" y="451"/>
+<text font-family="Dialog" font-size="12" x="2114" y="466">
+processData(jsonData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="220" x="2110" y="246"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="220" x="2110" y="246"/>
+<text font-family="Dialog" font-size="12" x="2159" y="260">
+MarvelOntologyBuilder</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="2110" y="270"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="2110" y="291"/>
+<text font-family="Dialog" font-size="12" x="2114" y="306">
+buildOntology(processedData : Object)</text>
+<rect fill="#ffffff" height="75" stroke="#ffffff" stroke-width="1" width="288" x="1974" y="726"/>
+<rect fill="none" height="75" stroke="#000000" stroke-width="1" width="288" x="1974" y="726"/>
+<text font-family="Dialog" font-size="12" x="2061" y="740">
+PokemonAPIScraper</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1974" y="750"/>
+<text font-family="Dialog" font-size="12" x="1978" y="765">
+API_KEY : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1974" y="775"/>
+<text font-family="Dialog" font-size="12" x="1978" y="790">
+scrapeData(marvelEndpoint : String,apiKey : String)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="181" x="1662" y="502"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="181" x="1662" y="502"/>
+<text font-family="Dialog" font-size="12" x="1675" y="516">
+PokemonAPIDataProcessor</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="1662" y="526"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="1662" y="547"/>
+<text font-family="Dialog" font-size="12" x="1666" y="562">
+processData(jsonData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="220" x="1390" y="134"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="220" x="1390" y="134"/>
+<text font-family="Dialog" font-size="12" x="1430" y="148">
+PokemonOntologyBuilder</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="1390" y="158"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="1390" y="179"/>
+<text font-family="Dialog" font-size="12" x="1394" y="194">
+buildOntology(processedData : Object)</text>
+<rect fill="#ffffff" height="75" stroke="#ffffff" stroke-width="1" width="288" x="1974" y="822"/>
+<rect fill="none" height="75" stroke="#000000" stroke-width="1" width="288" x="1974" y="822"/>
+<text font-family="Dialog" font-size="12" x="2062" y="836">
+StarWarsAPIScraper</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1974" y="846"/>
+<text font-family="Dialog" font-size="12" x="1978" y="861">
+API_KEY : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1974" y="871"/>
+<text font-family="Dialog" font-size="12" x="1978" y="886">
+scrapeData(marvelEndpoint : String,apiKey : String)</text>
+<rect fill="#ffffff" height="72" stroke="#ffffff" stroke-width="1" width="184" x="2118" y="502"/>
+<rect fill="none" height="72" stroke="#000000" stroke-width="1" width="184" x="2118" y="502"/>
+<text font-family="Dialog" font-size="12" x="2134" y="516">
+StarWarsAPIDataProcessor</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="184" x="2118" y="526"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="184" x="2118" y="547"/>
+<text font-family="Dialog" font-size="12" x="2122" y="562">
+processData(jsonData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="220" x="2030" y="94"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="220" x="2030" y="94"/>
+<text font-family="Dialog" font-size="12" x="2071" y="108">
+StarWarsOntologyBuilder</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="2030" y="118"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="2030" y="139"/>
+<text font-family="Dialog" font-size="12" x="2034" y="154">
+buildOntology(processedData : Object)</text>
+<rect fill="#ffffff" height="75" stroke="#ffffff" stroke-width="1" width="288" x="1878" y="918"/>
+<rect fill="none" height="75" stroke="#000000" stroke-width="1" width="288" x="1878" y="918"/>
+<text font-family="Dialog" font-size="12" x="1968" y="932">
+StarTrekAPIScraper</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1878" y="942"/>
+<text font-family="Dialog" font-size="12" x="1882" y="957">
+API_KEY : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="288" x="1878" y="967"/>
+<text font-family="Dialog" font-size="12" x="1882" y="982">
+scrapeData(marvelEndpoint : String,apiKey : String)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="181" x="1894" y="518"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="181" x="1894" y="518"/>
+<text font-family="Dialog" font-size="12" x="1911" y="532">
+StarTrekAPIDataProcessor</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="1894" y="542"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="181" x="1894" y="563"/>
+<text font-family="Dialog" font-size="12" x="1898" y="578">
+processData(jsonData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="220" x="1710" y="70"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="220" x="1710" y="70"/>
+<text font-family="Dialog" font-size="12" x="1753" y="84">
+StarTrekOntologyBuilder</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="1710" y="94"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="220" x="1710" y="115"/>
+<text font-family="Dialog" font-size="12" x="1714" y="130">
+buildOntology(processedData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="172" x="1694" y="638"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="172" x="1694" y="638"/>
+<text font-family="Dialog" font-size="12" x="1749" y="652">
+APIScraper</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="172" x="1694" y="662"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="172" x="1694" y="683"/>
+<text font-family="Dialog" font-size="12" x="1698" y="698">
+scrapeData(apiName : String)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="276" x="1758" y="406"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="276" x="1758" y="406"/>
+<text font-family="Dialog" font-size="12" x="1845" y="420">
+APIDataProcessor</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="276" x="1758" y="430"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="276" x="1758" y="451"/>
+<text font-family="Dialog" font-size="12" x="1762" y="466">
+processData(apiName : String,jsonData : Object)</text>
+<rect fill="#ffffff" height="71" stroke="#ffffff" stroke-width="1" width="312" x="1710" y="318"/>
+<rect fill="none" height="71" stroke="#000000" stroke-width="1" width="312" x="1710" y="318"/>
+<text font-family="Dialog" font-size="12" x="1822" y="332">
+OntologyBuilder</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="312" x="1710" y="342"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="312" x="1710" y="363"/>
+<text font-family="Dialog" font-size="12" x="1714" y="378">
+buildOntoogy(apiName : String,processedData : Object)</text>
+<polyline fill="none" points="1982,653 1865,653" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1865,653 1877,646 1877,660" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1865,653 1877,646 1877,660" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1974,726 1865,708" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1865,708 1877,703 1875,716" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1865,708 1877,703 1875,716" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1694,638 1558,626" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1558,626 1570,620 1569,634" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1558,626 1570,620 1569,634" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="2110,461 2033,461" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="2033,461 2045,454 2045,468" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="2033,461 2045,454 2045,468" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1806,502 1806,476" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1806,476 1813,488 1799,488" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1806,476 1813,488 1799,488" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="2110,316 2021,318" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="2021,318 2032,310 2033,324" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="2021,318 2032,310 2033,324" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1609,204 1710,318" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1710,318 1696,313 1707,304" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1710,318 1696,313 1707,304" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="262" stroke="#ffffff" stroke-width="1" width="161" x="718" y="974"/>
+<rect fill="none" height="262" stroke="#000000" stroke-width="1" width="161" x="718" y="974"/>
+<text font-family="Dialog" font-size="12" x="767" y="988">
+MarvelCard</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="718" y="998"/>
+<text font-family="Dialog" font-size="12" x="722" y="1013">
+weight : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1030">
+height : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1047">
+alignment : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1064">
+fullName : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1081">
+gender : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1098">
+placeOfBirth : String</text>
+<text font-family="Dialog" font-size="12" x="722" y="1115">
+alias : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="722" y="1132">
+eyeColor : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="722" y="1149">
+hairColor : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="722" y="1166">
+occupations : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="722" y="1183">
+race : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="722" y="1200">
+stories : List&lt;String&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="718" y="1210"/>
+<text font-family="Dialog" font-size="12" x="722" y="1225">
+convertToJSONLD() : Object</text>
+<rect fill="#ffffff" height="177" stroke="#ffffff" stroke-width="1" width="161" x="1022" y="1022"/>
+<rect fill="none" height="177" stroke="#000000" stroke-width="1" width="161" x="1022" y="1022"/>
+<text font-family="Dialog" font-size="12" x="1062" y="1036">
+PokemonCard</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="1022" y="1046"/>
+<text font-family="Dialog" font-size="12" x="1026" y="1061">
+weight : String</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1078">
+height : String</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1095">
+experience : Integer</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1112">
+species : String</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1129">
+color : String</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1146">
+abilities : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1026" y="1163">
+stats : PokemonStats</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="1022" y="1173"/>
+<text font-family="Dialog" font-size="12" x="1026" y="1188">
+convertToJSONLD() : Object</text>
+<rect fill="#ffffff" height="262" stroke="#ffffff" stroke-width="1" width="200" x="1294" y="1070"/>
+<rect fill="none" height="262" stroke="#000000" stroke-width="1" width="200" x="1294" y="1070"/>
+<text font-family="Dialog" font-size="12" x="1355" y="1084">
+StarWarsCard</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="1294" y="1094"/>
+<text font-family="Dialog" font-size="12" x="1298" y="1109">
+weight : String</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1126">
+height : String</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1143">
+gender : String</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1160">
+birthYear : String</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1177">
+eyeColor : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1194">
+hairColor : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1211">
+skinColor : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1228">
+films : List&lt;StarWarsFilm&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1245">
+species : List&lt;StarWarsSpecies&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1262">
+homeworld : StarWarsPlanet</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1279">
+starships : List&lt;StarWarsStarship&gt;</text>
+<text font-family="Dialog" font-size="12" x="1298" y="1296">
+vehicles : List&lt;StarWarsVehicle&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="200" x="1294" y="1306"/>
+<text font-family="Dialog" font-size="12" x="1298" y="1321">
+convertToJSONLD() : Object</text>
+<rect fill="#ffffff" height="109" stroke="#ffffff" stroke-width="1" width="161" x="1598" y="1014"/>
+<rect fill="none" height="109" stroke="#000000" stroke-width="1" width="161" x="1598" y="1014"/>
+<text font-family="Dialog" font-size="12" x="1642" y="1028">
+StarTrekCard</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="1598" y="1038"/>
+<text font-family="Dialog" font-size="12" x="1602" y="1053">
+quadrant : String</text>
+<text font-family="Dialog" font-size="12" x="1602" y="1070">
+homeworld : String</text>
+<text font-family="Dialog" font-size="12" x="1602" y="1087">
+species : List&lt;String&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="1598" y="1097"/>
+<text font-family="Dialog" font-size="12" x="1602" y="1112">
+convertToJSONLD() : Object</text>
+<polyline fill="none" points="878,974 1214,892" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1214,892 1204,901 1200,888" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1214,892 1204,901 1200,888" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1182,1022 1214,892" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1214,892 1217,905 1204,901" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1214,892 1217,905 1204,901" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1379,1070 1379,892" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1379,892 1386,904 1372,904" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1379,892 1386,904 1372,904" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1598,1014 1381,892" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1381,892 1394,891 1388,903" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1381,892 1394,891 1388,903" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="88" stroke="#ffffff" stroke-width="1" width="144" x="1550" y="766"/>
+<rect fill="none" height="88" stroke="#000000" stroke-width="1" width="144" x="1550" y="766"/>
+<text font-family="Dialog" font-size="12" x="1578" y="780">
+CardPowerType</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="144" x="1550" y="790"/>
+<text font-family="Dialog" font-size="12" x="1554" y="805">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="1554" y="822">
+defeats : List&lt;String&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="144" x="1550" y="832"/>
+<polyline fill="none" points="1550,846 1381,846" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1381,846 1393,839 1393,853" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1381,846 1393,839 1393,853" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1733,140 1733,318" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1733,318 1726,306 1740,306" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1733,318 1726,306 1740,306" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="2030,164 2021,318" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="2021,318 2014,305 2028,306" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="2021,318 2014,305 2028,306" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1974,822 1865,708" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1865,708 1878,711 1868,721" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1865,708 1878,711 1868,721" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1878,918 1865,708" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1865,708 1872,719 1858,720" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1865,708 1872,719 1858,720" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1926,518 1926,476" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1926,476 1933,488 1919,488" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1926,476 1933,488 1919,488" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="2118,502 2033,476" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="2033,476 2046,472 2042,486" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="2033,476 2046,472 2042,486" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1758,474 1558,474" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1558,474 1570,467 1570,481" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1558,474 1570,467 1570,481" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="156" stroke="#ffffff" stroke-width="1" width="142" x="1054" y="1286"/>
+<rect fill="none" height="156" stroke="#000000" stroke-width="1" width="142" x="1054" y="1286"/>
+<text font-family="Dialog" font-size="12" x="1084" y="1300">
+PokemonStats</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="142" x="1054" y="1310"/>
+<text font-family="Dialog" font-size="12" x="1058" y="1325">
+attack : Integer</text>
+<text font-family="Dialog" font-size="12" x="1058" y="1342">
+defense : Integer</text>
+<text font-family="Dialog" font-size="12" x="1058" y="1359">
+hp : Integer</text>
+<text font-family="Dialog" font-size="12" x="1058" y="1376">
+specialAttack : Integer</text>
+<text font-family="Dialog" font-size="12" x="1058" y="1393">
+specialDefense : Integer</text>
+<text font-family="Dialog" font-size="12" x="1058" y="1410">
+speed : Integer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="142" x="1054" y="1420"/>
+<polyline fill="none" points="1102,1286 1102,1198" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1102,1198 1109,1210 1095,1210" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1102,1198 1109,1210 1095,1210" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="122" stroke="#ffffff" stroke-width="1" width="139" x="1174" y="1470"/>
+<rect fill="none" height="122" stroke="#000000" stroke-width="1" width="139" x="1174" y="1470"/>
+<text font-family="Dialog" font-size="12" x="1206" y="1484">
+StarWarsFilm</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="139" x="1174" y="1494"/>
+<text font-family="Dialog" font-size="12" x="1178" y="1509">
+director : String</text>
+<text font-family="Dialog" font-size="12" x="1178" y="1526">
+producers : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1178" y="1543">
+releaseDate : String</text>
+<text font-family="Dialog" font-size="12" x="1178" y="1560">
+title : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="139" x="1174" y="1570"/>
+<polyline fill="none" points="1308,1470 1308,1331" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1308,1331 1315,1343 1301,1343" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1308,1331 1315,1343 1301,1343" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="105" stroke="#ffffff" stroke-width="1" width="141" x="1334" y="1494"/>
+<rect fill="none" height="105" stroke="#000000" stroke-width="1" width="141" x="1334" y="1494"/>
+<text font-family="Dialog" font-size="12" x="1356" y="1508">
+StarWarsSpecies</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="141" x="1334" y="1518"/>
+<text font-family="Dialog" font-size="12" x="1338" y="1533">
+averageLifespan : String</text>
+<text font-family="Dialog" font-size="12" x="1338" y="1550">
+classification : String</text>
+<text font-family="Dialog" font-size="12" x="1338" y="1567">
+name : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="141" x="1334" y="1577"/>
+<polyline fill="none" points="1414,1494 1414,1331" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1414,1331 1421,1343 1407,1343" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1414,1331 1421,1343 1407,1343" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="156" stroke="#ffffff" stroke-width="1" width="185" x="1494" y="1478"/>
+<rect fill="none" height="156" stroke="#000000" stroke-width="1" width="185" x="1494" y="1478"/>
+<text font-family="Dialog" font-size="12" x="1538" y="1492">
+StarWarsStarship</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="185" x="1494" y="1502"/>
+<text font-family="Dialog" font-size="12" x="1498" y="1517">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="1498" y="1534">
+crew : String</text>
+<text font-family="Dialog" font-size="12" x="1498" y="1551">
+hyperdriveRating : String</text>
+<text font-family="Dialog" font-size="12" x="1498" y="1568">
+length : String</text>
+<text font-family="Dialog" font-size="12" x="1498" y="1585">
+maxAtmospheringSpeed : String</text>
+<text font-family="Dialog" font-size="12" x="1498" y="1602">
+passengers : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="185" x="1494" y="1612"/>
+<rect fill="#ffffff" height="139" stroke="#ffffff" stroke-width="1" width="185" x="1710" y="1462"/>
+<rect fill="none" height="139" stroke="#000000" stroke-width="1" width="185" x="1710" y="1462"/>
+<text font-family="Dialog" font-size="12" x="1757" y="1476">
+StarWarsVehicle</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="185" x="1710" y="1486"/>
+<text font-family="Dialog" font-size="12" x="1714" y="1501">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="1714" y="1518">
+crew : String</text>
+<text font-family="Dialog" font-size="12" x="1714" y="1535">
+length : String</text>
+<text font-family="Dialog" font-size="12" x="1714" y="1552">
+maxAtmospheringSpeed : String</text>
+<text font-family="Dialog" font-size="12" x="1714" y="1569">
+passengers : String</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="185" x="1710" y="1579"/>
+<rect fill="#ffffff" height="122" stroke="#ffffff" stroke-width="1" width="123" x="1590" y="1214"/>
+<rect fill="none" height="122" stroke="#000000" stroke-width="1" width="123" x="1590" y="1214"/>
+<text font-family="Dialog" font-size="12" x="1608" y="1228">
+StarWarsPlanet</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="123" x="1590" y="1238"/>
+<text font-family="Dialog" font-size="12" x="1594" y="1253">
+name : String</text>
+<text font-family="Dialog" font-size="12" x="1594" y="1270">
+surfaceWater : String</text>
+<text font-family="Dialog" font-size="12" x="1594" y="1287">
+climate : List&lt;String&gt;</text>
+<text font-family="Dialog" font-size="12" x="1594" y="1304">
+terrain : List&lt;String&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="123" x="1590" y="1314"/>
+<polyline fill="none" points="1710,1462 1493,1331" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1493,1331 1506,1331 1499,1343" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1493,1331 1506,1331 1499,1343" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1590,1294 1493,1294" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1493,1294 1505,1287 1505,1301" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1493,1294 1505,1287 1505,1301" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1494,1478 1470,1366 1470,1331" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1470,1331 1477,1343 1463,1343" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1470,1331 1477,1343 1463,1343" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="112" stroke="#ffffff" stroke-width="1" width="387" x="1070" y="310"/>
+<rect fill="none" height="112" stroke="#000000" stroke-width="1" width="387" x="1070" y="310"/>
+<text font-family="Dialog" font-size="12" x="1227" y="324">
+OntologyUtils</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="387" x="1070" y="334"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="387" x="1070" y="358"/>
+<text font-family="Dialog" font-size="12" x="1074" y="373">
+entityIdToJSONLD(entityId : String,triplestoreEndpoint : String) : Object</text>
+<text font-family="Dialog" font-size="12" x="1074" y="390">
+entityIdToUniverse(entityId : String,triplestoreEndpoint : String) : String</text>
+<text font-family="Dialog" font-size="12" x="1074" y="407">
+buildOntology()</text>
+<polyline fill="none" points="1182,421 1182,454" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1182,454 1175,442 1189,442" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1182,454 1175,442 1189,442" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="1710,358 1456,358" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1456,358 1468,351 1468,365" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1456,358 1468,351 1468,365" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="254,550 254,429" stroke="#333399" stroke-width="1"/>
+<polygon fill="#ffffff" points="254,429 261,441 247,441" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="254,429 261,441 247,441" stroke="#333399" stroke-width="1"/>
+<rect fill="#ffffff" height="88" stroke="#ffffff" stroke-width="1" width="184" x="486" y="366"/>
+<rect fill="none" height="88" stroke="#000000" stroke-width="1" width="184" x="486" y="366"/>
+<text font-family="Dialog" font-size="12" x="566" y="380">
+Quiz</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="184" x="486" y="390"/>
+<text font-family="Dialog" font-size="12" x="490" y="405">
+questions : List&lt;Question&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="184" x="486" y="421"/>
+<text font-family="Dialog" font-size="12" x="490" y="436">
+getQuestions() : List&lt;Question&gt;</text>
+<polyline fill="none" points="758,382 669,382" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="669,382 681,375 681,389" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="669,382 681,375 681,389" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="550,181 550,366" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="550,366 543,354 557,354" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="550,366 543,354 557,354" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="390,181 390,342" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="390,342 383,330 397,330" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="390,342 383,330 397,330" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="168" stroke="#ffffff" stroke-width="1" width="152" x="758" y="14"/>
+<rect fill="none" height="168" stroke="#000000" stroke-width="1" width="152" x="758" y="14"/>
+<text font-family="Dialog" font-size="12" x="813" y="28">
+Answer</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="152" x="758" y="38"/>
+<text font-family="Dialog" font-size="12" x="762" y="53">
+question : String</text>
+<text font-family="Dialog" font-size="12" x="762" y="70">
+subject : String</text>
+<text font-family="Dialog" font-size="12" x="762" y="87">
+options : List&lt;Options&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="152" x="758" y="128"/>
+<polyline fill="none" points="758,110 685,110" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="685,110 697,103 697,117" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="685,110 697,103 697,117" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="128" stroke="#ffffff" stroke-width="1" width="126" x="14" y="22"/>
+<rect fill="none" height="128" stroke="#000000" stroke-width="1" width="126" x="14" y="22"/>
+<text font-family="Dialog" font-size="12" x="26" y="36">
+QuestionToReturn</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="126" x="14" y="46"/>
+<text font-family="Dialog" font-size="12" x="18" y="61">
+question : String</text>
+<text font-family="Dialog" font-size="12" x="18" y="78">
+subject : String</text>
+<text font-family="Dialog" font-size="12" x="18" y="95">
+avatar : String</text>
+<text font-family="Dialog" font-size="12" x="18" y="112">
+options : Dictionary&lt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="126" x="14" y="125"/>
+<polyline fill="none" points="139,118 214,118" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="214,118 202,125 202,111" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="214,118 202,125 202,111" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="128" stroke="#ffffff" stroke-width="1" width="128" x="1006" y="54"/>
+<rect fill="none" height="128" stroke="#000000" stroke-width="1" width="128" x="1006" y="54"/>
+<text font-family="Dialog" font-size="12" x="1052" y="68">
+Option</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="1006" y="78"/>
+<text font-family="Dialog" font-size="12" x="1010" y="93">
+value : String</text>
+<text font-family="Dialog" font-size="12" x="1010" y="110">
+checked : bool</text>
+<text font-family="Dialog" font-size="12" x="1010" y="127">
+isCorrect : bool</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="128" x="1006" y="148"/>
+<polyline fill="none" points="909,118 1006,118" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1006,118 994,125 994,111" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1006,118 994,125 994,111" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="96" stroke="#ffffff" stroke-width="1" width="141" x="46" y="190"/>
+<rect fill="none" height="96" stroke="#000000" stroke-width="1" width="141" x="46" y="190"/>
+<text font-family="Dialog" font-size="12" x="103" y="204">
+Data</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="141" x="46" y="214"/>
+<text font-family="Dialog" font-size="12" x="50" y="229">
+characters : List&lt;String&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="141" x="46" y="251"/>
+<polyline fill="none" points="118,285 118,342" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="118,342 111,330 125,330" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="118,342 111,330 125,330" stroke="#000000" stroke-width="1"/>
+</svg>

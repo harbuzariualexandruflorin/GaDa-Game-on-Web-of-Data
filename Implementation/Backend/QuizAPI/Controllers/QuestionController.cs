@@ -36,9 +36,9 @@ namespace QuizAPI.Controllers
 
             var nrOfQuestions = (int)Math.Ceiling((float)data.characters.Count / 2);
 
-            var question = quizService.GetQuestions(data.characters, nrOfQuestions);
+            var questions = quizService.GetQuestions(data.characters, nrOfQuestions);
 
-            return Ok(question);
+            return Ok(questions);
         }
     }
 }

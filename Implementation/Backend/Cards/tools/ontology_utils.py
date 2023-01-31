@@ -224,20 +224,44 @@ def get_card_deck(deck_size, deck_offset=0, randomize=False, g=None):
         deck_offset = 0
 
     try:
-        return [str(x[0]) for x in list(g.query(
-            '''
-                prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                prefix dbr: <http://dbpedia.org/resource/>
-                select ?name where { 
-                    ?card rdf:type dbr:Playing_card .
-                    ?card rdfs:label ?name . 
-                }
-                %s
-                limit %s
-                offset %s
-            ''' % ("" if not randomize else "order by rand()", deck_size, deck_offset),
-        ))]
+        if randomize:
+            cards = []
+            for univ in ["gada:univ_Marvel", "gada:univ_Pokemon", "gada:univ_Star_Wars", "gada:univ_Star_Trek"]:
+                batch_size = deck_size // 4 + 1
+
+                cards += [str(x[0]) for x in list(g.query(
+                    '''
+                        prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                        prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                        prefix dbr: <http://dbpedia.org/resource/>
+                        prefix foaf: <http://xmlns.com/foaf/0.1/>
+                        prefix gada: <https://gada.cards.game.namespace.com/>
+                        
+                        select ?name where { 
+                            ?card rdf:type dbr:Playing_card .
+                            ?card rdfs:label ?name . 
+                            ?card foaf:member %s .
+                            bind(sha512(concat(str(rand()), str(?name))) as ?random) 
+                        } order by ?random
+                        limit %s
+                    ''' % (univ, batch_size)
+                ))]
+            random.shuffle(cards)
+            return cards[0:deck_size]
+        else:
+            return [str(x[0]) for x in list(g.query(
+                '''
+                    prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                    prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                    prefix dbr: <http://dbpedia.org/resource/>
+                    select ?name where { 
+                        ?card rdf:type dbr:Playing_card .
+                        ?card rdfs:label ?name . 
+                    }
+                    limit %s
+                    offset %s
+                ''' % (deck_size, deck_offset)
+            ))]
     except Exception as ex:
         print("EXCEPTION CARD GET NAMES ", ex)
         return list()

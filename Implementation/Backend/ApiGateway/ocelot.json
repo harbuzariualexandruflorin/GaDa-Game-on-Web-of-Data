@@ -4,9 +4,9 @@
   },
   "Routes": [
     {
-      "UpstreamPathTemplate": "/gateway/Question/answer",
+      "UpstreamPathTemplate": "/gateway/api/question/answer",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/api/Question/answer",
+      "DownstreamPathTemplate": "/api/question/answer",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "UpstreamPathTemplate": "/gateway/Question/getQuestion",
+      "UpstreamPathTemplate": "/gateway/api/question/getQuestion",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/api/Question/getQuestion",
+      "DownstreamPathTemplate": "/api/question/getQuestion",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {

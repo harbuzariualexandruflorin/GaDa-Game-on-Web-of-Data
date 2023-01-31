@@ -5,6 +5,13 @@ namespace QuizAPI.Core
     public class Quiz
     {
         public List<Question> Questions = new List<Question> {
+            new Question
+            {
+                 QuizQuestion = "From which universe is {0}?",
+                 Query = "SELECT ?universeName WHERE {?subject foaf:member ?universe; rdfs:label @value. ?universe rdfs:label ?universeName }",
+                 MultipleChoice = false,
+                 SparqlEndpointType = SparqlEndPoint.TripleStore
+            },
             new Question {
                 QuizQuestion = "What colour is {0}?",
                 Query = "SELECT ?colour " +

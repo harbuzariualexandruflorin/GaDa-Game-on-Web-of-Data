@@ -24,9 +24,9 @@ namespace QuizAPI.Controllers
             return Ok(response);
         }
 
-        [HttpPost("getQuestion")]
+        [HttpPost("getQuestions")]
         [Produces("application/json")]
-        public IActionResult GetQuestion([FromBody] Data data)
+        public IActionResult GetQuestions([FromBody] Data data)
         {
 
             if (data.characters == null || data.characters.Count == 0 || data.characters.Contains(""))

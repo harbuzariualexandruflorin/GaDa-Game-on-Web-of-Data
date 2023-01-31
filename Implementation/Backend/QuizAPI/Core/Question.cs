@@ -4,7 +4,7 @@
     {
         public string QuizQuestion { get; set; }
 
-        public string QuestionType { get; set; }
+        public string? QuestionType { get; set; }
 
         public string SparqlEndpointType { get; set; }  
 

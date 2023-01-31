@@ -95,7 +95,7 @@ namespace QuizAPI.Services
 
             var characterUniverse = GetCharacterUniverse(selectedCharacter);
 
-            var questions = quiz.Questions.Where(q => q.QuestionType.ToLower().Equals(characterUniverse.ToLower())).ToList();
+            var questions = quiz.Questions.Where(q => q.QuestionType!= null && q.QuestionType.ToLower().Equals(characterUniverse.ToLower())).ToList();
 
             index = random.Next(questions.Count);
             Question question = questions[index];
@@ -107,7 +107,7 @@ namespace QuizAPI.Services
             questionToReturn.Subject = selectedCharacter;
             questionToReturn.Avatar = GetCharacterAvatar(selectedCharacter, characterUniverse);
 
-            var characterList = GetCharacters(characterUniverse);
+            var characterList = GetCharacters(characterUniverse, true);
 
             queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
             //while (queryAnswer.Count == 0)
@@ -117,6 +117,14 @@ namespace QuizAPI.Services
             //    questionToReturn.Subject = selectedCharacter;
             //    questionToReturn.Avatar = GetCharacterAvatar(selectedCharacter, GetCharacterUniverse(selectedCharacter));
             //}
+            if(queryAnswer.Count == 0)
+            {
+                question = quiz.Questions.First();
+                quizQuestion = String.Format(question.QuizQuestion, selectedCharacter);
+                questionToReturn.Question = quizQuestion;
+                queryAnswer = GetQueryAnswer(question.Query, selectedCharacter);
+                characterList = GetCharacters(characterUniverse, false);
+            }
 
             questionToReturn.Options = new Dictionary<string, string>();
 
@@ -268,7 +276,7 @@ namespace QuizAPI.Services
             return character;
         }
 
-        private List<String> GetCharacters(string universe)
+        private List<String> GetCharacters(string universe, bool fromUniverse)
         {
 
             var characterList = new List<string>(); 
@@ -278,8 +286,17 @@ namespace QuizAPI.Services
             queryString.Namespaces.AddNamespace("foaf", new Uri("http://xmlns.com/foaf/0.1/"));
             queryString.Namespaces.AddNamespace("rdfs", new Uri("http://www.w3.org/2000/01/rdf-schema#"));
 
-            queryString.CommandText = "SELECT ?characterName " +
-                "WHERE { ?pokemon foaf:member ?universe; rdfs:label ?characterName. ?universe rdfs:label @value.}";
+            if(fromUniverse)
+            {
+                queryString.CommandText = "SELECT ?characterName " +
+                    "WHERE { ?pokemon foaf:member ?universe; rdfs:label ?characterName. ?universe rdfs:label @value.}";
+            }
+            else
+            {
+                queryString.CommandText = "SELECT ?characterName " +
+                    "WHERE { ?pokemon foaf:member ?universe; rdfs:label ?characterName. ?universe rdfs:label ?universeName. " +
+                    "FILTER (?universeName != @value)}";
+            }
             queryString.SetLiteral("value", universe);
 
             SparqlQueryParser parser = new SparqlQueryParser();

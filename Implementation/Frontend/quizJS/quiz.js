@@ -66,7 +66,7 @@ export function initQuiz() {
   userCardsNames = JSON.parse(localStorage.getItem("userCardsNames"));
   console.log(userCardsNames);
 
-  fetch(`${QUIZ_API_URL}/api/Question/getQuestion`, {
+  fetch(`${QUIZ_API_URL}/api/question/getQuestions`, {
     method: "POST",
     body: JSON.stringify({
       characters: userCardsNames
@@ -112,7 +112,7 @@ export function checkAnswer() {
   }
   console.log(answerToSend);
 
-  fetch(`${QUIZ_API_URL}/api/Question/answer`, {
+  fetch(`${QUIZ_API_URL}/api/question/answer`, {
     method: "POST",
     body: JSON.stringify(answerToSend),
     headers: {

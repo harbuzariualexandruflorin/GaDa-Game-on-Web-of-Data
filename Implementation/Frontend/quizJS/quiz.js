@@ -136,9 +136,9 @@ export function checkAnswer() {
             answerContainer.querySelector(`input[name=${q_option}]`).parentElement.style.color = 'red';
             wrongAnswers++;
           }
-          else if (!data.options[a_option].checked && data.options[a_option].isCorrect) {
-            correctAnswers++;
-          }
+          // else if (!data.options[a_option].checked && data.options[a_option].isCorrect) {
+          //   correctAnswers++;
+          // }
           else if (!data.options[a_option].checked && !data.options[a_option].isCorrect) {
             wrongAnswers++;
           }
@@ -181,6 +181,9 @@ export function endQuiz() {
 
 // score computed for a scingle question
 function computeQuestionScore(correctChecks, wrongChecks) {
+  console.log("CORRECT CHECKS: " + correctChecks);
+  console.log("WRONG CHECKS: " + wrongChecks);
+
   if(wrongChecks === 0) {
     quizScore += QUESTION_BONUS;
   }

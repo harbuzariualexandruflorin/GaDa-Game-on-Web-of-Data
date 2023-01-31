@@ -12,7 +12,6 @@ var slides = [];
 let currentSlide = 0;
 
 function buildQuiz(){
-
   const output = [];
 
   questions.forEach(
@@ -58,6 +57,7 @@ function showSlide(n) {
 
 function showNextSlide() {
   showSlide(currentSlide + 1);
+  checkButton.disabled = false;
 }
 
 export function initQuiz() {
@@ -86,6 +86,8 @@ export function initQuiz() {
 }
 
 export function checkAnswer() {
+
+  checkButton.disabled = true;
 
   var correctAnswers = 0, wrongAnswers = 0;
 
@@ -179,9 +181,6 @@ export function endQuiz() {
 
 // score computed for a scingle question
 function computeQuestionScore(correctChecks, wrongChecks) {
-  console.log("WRONG CHECKS: " + wrongChecks);
-  console.log("CORECT CHECKS: " + correctChecks);
-
   if(wrongChecks === 0) {
     quizScore += QUESTION_BONUS;
   }

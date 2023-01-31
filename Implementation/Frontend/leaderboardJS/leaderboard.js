@@ -1,6 +1,6 @@
 import { API_URL } from "../index.js";
 
-let pageSize = 1;
+let pageSize = 10;
 let currentPage = 1;
 var data, table;
 let rowIndex = 0;

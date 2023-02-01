@@ -190,7 +190,7 @@ function computeQuestionScore(correctChecks, wrongChecks) {
   else if(correctChecks === 0) {
     quizScore -= QUESTION_FAIL;
   }
-  else if(wrongChecks - correctChecks > 0){
+  else if(wrongChecks - correctChecks >= 0){
     quizScore -= Math.round(QUESTION_FAIL / 3);
 
   } else {

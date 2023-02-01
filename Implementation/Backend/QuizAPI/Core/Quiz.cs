@@ -46,6 +46,14 @@ namespace QuizAPI.Core
                 MultipleChoice = true,
                 SparqlEndpointType = SparqlEndPoint.TripleStore
             },
+            new Question
+            {
+                QuizQuestion = "In which comic does {0} debut?",
+                Query = "SELECT (STR(?comicBook) AS ?debut) WHERE {{?character a dbo:FictionalCharacter; rdfs:label @value@en; dbp:debut ?comicBook.} UNION { ?character a dbo:FictionalCharacter; dbp:characterName @value@en; dbp:debut ?comicBook.} OPTIONAL {FILTER(LANG(?comicBook)=\"en\").} } LIMIT 1",
+                QuestionType = Universe.Marvel,
+                MultipleChoice = false,
+                SparqlEndpointType = SparqlEndPoint.DBPedia
+            },
             new Question {
                 QuizQuestion = "In which of the following films did {0} appear?",
                 Query = "SELECT DISTINCT ?filmTitle WHERE " +

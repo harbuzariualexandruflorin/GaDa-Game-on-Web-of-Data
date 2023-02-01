@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> GaDa - Game on Web of Data</title>
+    <link rel="stylesheet" href="technical report.css">
+    <link rel="stylesheet"
+        href="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/themes/prism-coy.css">
+    <script src="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/prism.js"
+        defer></script>
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">GaDa</h1>
+            <p role="doc-subtitle" property="schema:alternateName">
+                Game on Web of Data
+            </p>
+        </header>
+        <section typeof="sa:AuthorsList">
+            <h2>Authors</h2>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Andrei">
+                        <meta property="schema:familyName" content="Condurache">
+                        <span property="schema:name">Andrei Condurache</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:andrei.condurache@students.info.uaic.ro"
+                             property="schema:email">andrei.condurache@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Alexandru">
+                        <meta property="schema:additionalName" content="Florin">
+                        <meta property="schema:familyName" content="Harbuzariu">
+                        <span property="schema:name">Alexandru-Florin Harbuzariu</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:alexandru.harbuzariu@students.info.uaic.ro"
+                             property="schema:email">alexandru.harbuzariu@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Stefan">
+                        <meta property="schema:familyName" content="Tiperciuc">
+                        <span property="schema:name">Stefan Tiperciuc</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:stefan.tiperciuc@students.info.uaic.ro"
+                             property="schema:email">stefan.tiperciuc@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contents">
+            <h2>Table of contents</h2>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#solution">Proposed solution</a></li>
+                <li>
+                    <a href="#architecture">Architecture</a>
+                    <ul style="list-style: none;">
+                        <li><span>3.1 </span><a href="#generation">Question and Card Generation</a></li>
+                        <li><span>3.2 </span><a href="#gameLogic">Game Logic</a></li>
+                        <li><span>3.3 </span><a href="#ui">UI</a></li>
+                        <li><span>3.4 </span><a href="#openAPI">OpenAPI</a></li>
+                        <li><span>3.5 </span><a href="#externalAPIs">Used External APIs</a></li>
+                        <li><span>3.6 </span><a href="#uml">UML diagram</a></li>
+                    </ul>
+                </li>
+                <li><a href="#data">Data modelling</a></li>
+                <li><a href="#technologies">Technologies used</a></li>
+                <li><a href="#linked">Linked data principles</a></li>
+                <li><a href="#references">References</a></li>
+            </ol>
+        </section>
+
+        <section role="doc-introduction" id="introduction">
+            <h2><span>1. </span>Introduction</h2>
+            <p>
+                GaDa stands for Game on Web of Data. It is a service-oriented game where the player is matched up
+                against the computer in a game of cards which requires strategic card management and critical thinking.
+                At the start of the game, the player is asked to take a quiz that will determine the strength of the 10
+                cards he will be given. The cards represent various characters ranging from tiny pokemons to
+                well-established superheroes and the goal for the player is to amass more points than the opponent with
+                the cards he is dealt with. Then, both the player and the computer will take turns placing cards that
+                have a higher power level than the one previously placed until they have no card with a higher score in
+                hand
+            </p>
+            <p>
+                Each card will have a power level assigned to it before the game starts. The individual power levels of
+                the cards are stored in a database and are calculated based on the metadata received from various
+                superhero APIs available, such as Pokemon, Star Wars and Marvel. The quiz given at the start of the game
+                will also be based on the character’s metadata and will reward the user with better cards, provided he
+                answers correctly to the questions.
+            </p>
+        </section>
+        <section id="solution">
+            <h2><span>2. </span>Proposed solution</h2>
+            <p>GaDa will incorporate the following main functionalities:</p>
+            <ul>
+                <li>generation of the initial deck according to certain selected preferences</li>
+                <li>the possibility of playing one or more card-based games, 10 rounds each</li>
+                <li>answering the quiz questions to get better cards</li>
+                <li>recalculating the score of a card according to the characteristics of the opponent's current card
+                </li>
+            </ul>
+            <p>
+                On top of providing useful functionality to end users, GaDa will align itself to the latest software
+                engineering best practices and approaches by incorporating the following principles:
+            </p>
+            <ul>
+                <li>modular architecture based on services</li>
+                <li>performance and scalability</li>
+                <li>well-documented, developer-friendly API</li>
+                <li>respecting the open linked data principle in multiple formats</li>
+            </ul>
+        </section>
+
+        <section id="architecture">
+            <h2><span>3. </span>Architecture</h2>
+            <figure typeof="sa:Image">
+                <img src="images/architecture.jpg">
+                <figcaption>The general architecture for GaDa</figcaption>
+            </figure>
+            <p>
+                The project will have a modular architecture based on microservices. New microservices can be added in
+                the future and the only component responsible for managing this change is the API Gateway. The client is
+                not required to know such details.
+            </p>
+            <p>The project was carried out in 3 main steps:</p>
+            <ul>
+                <li>Step 1: generate the quiz questions and cards based on the given APIs.</li>
+                <li>Step 2: develop the quiz microservice and card service by creating the game logic using the
+                    previously generated elements</li>
+                <li>Step 3: create a user-friendly interface.</li>
+            </ul>
+            <p>Next, we explain each service:</p>
+            <ul>
+                <li>
+                    <code>Quiz Service</code> is responsible for managing the quiz part of the game. The microservice
+                    generates a
+                    question based on card data and checks the given answer by querying DBpedia.
+                </li>
+                <li>
+                    <code>Cards Service</code>: is responsible for the card game’s logic. The system admin will have the
+                    possibility
+                    to initialise the database or update it by querying data from the 4 established APIs (Marvel,
+                    Pokemon, Star Trek and Star Wars). The microservice will manage the battle between 2 selected cards
+                    to
+                    decide the winner and the resulting score.
+                </li>
+            </ul>
+
+            <section id="generation">
+                <h3><span>3.1 </span>Question and Card Generation</h3>
+                <p>Before making the game itself, we needed to create a power system based on the metadata given by
+                    various APIs. To achieve our goal, we acquired various metadata by calling the Marvel
+                    Comics, Star Wars, Star Trek and Pokemon APIs. Afterward, we used that data to determine each
+                    character’s power level and to create connections in the ontology so we can later
+                    formulate the quiz questions. These questions will be made using various templates.The answer is
+                    verified by making SPARQL queries to retrieve information about various characters and thus, the
+                    user’s knowledge of the in-game universe is tested. The result of this quiz will determine what type
+                    of cards the user will obtain for the current round. If the result is good, then the average score
+                    of the given cards will be higher.
+                </p>
+                <p>The second part of this step required storing these items into a relational database and making a way
+                    to retrieve such data. For that, some of the endpoints provided are:
+                </p>
+                <ul>
+                    <li>An endpoint that returns a set of random cards with their corresponding character name, picture
+                        and power score.</li>
+                    <li>An endpoint that returns a set of random questions.</li>
+                </ul>
+            </section>
+
+            <section id="gameLogic">
+                <h3><span>3.2 </span>Game logic</h3>
+                <p>
+                    As previously stated, at the start of the game the player will receive various quiz questions that
+                    will determine the average power of the cards he will receive. After the player has given his answer
+                    to the question, the program will make a SPARQL query to verify if the answers were correct and
+                    afterward head to the card game phase.
+                </p>
+                <p>
+                    In the card game phase, both the player and the computer will receive a hand of 10 cards. While the
+                    cards given to the computer are random, the ones the player received are based on the results from
+                    the quiz phase. A random dice will decide who goes first. Whenever it is their turn, the
+                    computer/player will have to place down a card. If the card has a higher power than the previous
+                    one, the chain continues, but if it has a lower power level, the opposite side gains points equal to
+                    a proportion based on the chain length and the total score of the chain. To spice things
+                    up, the power of the cards will sometimes be dynamically modified based on the card currently placed
+                    on the table and its interactions with your cards in hand( for example: water card beats the fire
+                    card, so the water card will have a slightly higher power level). The game ends when the last round
+                    is
+                    finished and both players have run out of cards.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="images/use case diagram.png">
+                    <figcaption>Use case diagram for GaDa</figcaption>
+                </figure>
+            </section>
+
+            <section id="ui">
+                <h3><span>3.3 </span>UI</h3>
+                <p>
+                    The game contains 4 main UI components: the start menu, the questions menu, the card game menu and
+                    the end screen.
+                </p>
+                <p>
+                    Once the player starts the game, he will be greeted with the start menu. The start menu allows the
+                    player to set the username, the number of cards, which has to be a multiple of 10, as well as a play
+                    button, which redirects him to the quiz section. Once the play button is pressed, the game itself will start.
+                </p>
+                <p>
+                    Every game will consist of multiple rounds which start with the quiz phase followed by the card
+                    phase. As previously stated, the strength of the cards for the current round will be determined
+                    based on how well the player answers the question. The quiz view will contain the question box
+                    located at the centre of the screen, as well as 4 possible answers to the questions, out of which
+                    only one is correct. After an answer is selected, the “Submit” button will be available at the
+                    bottom right side of the screen. A “Back” button will also be available at the top left side of the
+                    screen, which will let the player return to the main menu, should he choose to do so.
+                </p>
+                <p>
+                    After pressing the “Submit” button, the player is redirected to the card game phase. The view will
+                    consist of two rows(one at the bottom, one at the top), representing the hand of cards each
+                    contestant has. In the middle of the screen there will be a stack of cards representing the
+                    previously placed cards, with the last one used being placed on top and the visible one. The cards
+                    themselves will include the name of the character, an image of the character, as well as its power
+                    stat. Under certain conditions, the cards will also be bordered with a green/red glow, representing
+                    whether the power of the card has been increased/ lowered based on the card currently placed down.
+                    Just like the questions menu, a “Back” button placed on the top left will return the player to the
+                    main menu.
+                </p>
+                <p>
+                    After the required number of rounds have been finished, the player will be redirected to the end
+                    screen. The end screen will show whether the player has won or lost, the number of points he has
+                    acquired, as well as a leaderboard for the user to see how well he played compared to other players.
+                </p>
+            </section>
+
+            <section id="openAPI">
+                <h3><span>3.4 </span>OpenAPI</h3>
+                <figure typeof="sa:Image">
+                    <img src="images/openAPI.png">
+                </figure>
+                <figure typeof="sa:Image">
+                    <img src="images/openAPI_2.png">
+                </figure>
+            </section>
+
+            <section id="externalAPIs">
+                <h3><span>3.5 </span>Used External APIs</h3>
+                <p>
+                    The project uses 4 main APIs and an additional one used for obtaining power stats for marvel super
+                    heroes. Each API has a multitude of endpoints. Some may be relevant for our game and some may not
+                    be. Therefore, it will be explained in this chapter which endpoints will be used in the development
+                    of this project.
+                </p>
+                <ul>
+                    <li>
+                        <p><code>Marvel Comics API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/marvel API.png">
+                            <figcaption>Data received after making a call to Marvel API about a character</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p><code>Star Trek API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/star trek API.png">
+                            <figcaption>Data received after making a call to Star Trek API</figcaption>
+                        </figure>
+                        <p>For this API, a client will be used that will deal with the requests.</p>
+                    </li>
+                    <li>
+                        <p><code>Star Wars API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/star wars API.png" width="600" height="550">
+                            <figcaption>Data received after making a call to Star Wars API</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p><code>Pokemon API</code></p>
+                        <figure typeof="sa:Image">
+                            <img src="images/pokemon API.png">
+                            <figcaption>Data received after making a call to Pokemon API about a pokemon</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <p>
+                    For each one of these four main APIs, the endpoints that were of interest to us were the endpoints
+                    that expose data for a specific character. Our application will generate a card for each character
+                    that will be used in the card game. A problem that arises for the Marvel API is that we couldn’t map
+                    a certain score to a superhero. The solution was to use an additional API, called SuperHero API.
+                    This API offers power stats for any marvel superhero.
+                <figure typeof="sa:Image">
+                    <img src="images/superhero API.png">
+                    <figcaption>Data received after making a call to SuperHero API</figcaption>
+                </figure>
+                </p>
+            </section>
+
+            <section id="uml">
+                <h3><span>3.6 </span>UML Diagram</h3>
+                <figure typeof="sa:Image">
+                    <img src="images/ClassDiagram.jpg">
+                    <figcaption>Class diagram</figcaption>
+                </figure>
+            </section>
+
+        </section>
+        <section id="data">
+            <h2><span>4. </span>Data modelling</h2>
+            <p>An example of the description of cards (for a Marvel character and a Pokemon) in JSON-LD format can be
+                seen below, including the information of interest that will be taken from the Marvel, Pokemon, Star Trek
+                and Star Wars APIs.</p>
+            <figure typeof="schema:SoftwareSourceCode">
+                <pre>
+                    <code>
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "sameAs": "schema:sameAs",
+        "name": "schema:name",
+        "givenName": "schema:givenName",
+        "familyName": "schema:familyName",
+        "gender": "schema:gender"
+    },
+    "@id": "spiderman",
+    "@type": "schema:Person",
+    "sameAs": "https://dbpedia.org/page/Spider-Man",
+    "name": "Spider-Man",
+    "givenName": "Peter",
+    "familyName": "Parker",
+    "gender": {
+        "@id": "schema:Male"
+    },
+    "schema:height": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 178,
+        "schema:unitCode": "CMT"
+    },
+    "schema:weight": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 74,
+        "schema:unitCode": "KGM"
+    },
+    "schema:characterAttribute": [
+        { "@type": "schema:PropertyValue", "name": "intelligence", "schema:value": 90},
+        { "@type": "schema:PropertyValue", "name": "strength", "schema:value": 55},
+        { "@type": "schema:PropertyValue", "name": "speed", "schema:value": 67},
+        { "@type": "schema:PropertyValue", "name": "durability", "schema:value": 75},
+        { "@type": "schema:PropertyValue", "name": "power", "schema:value": 74},
+        { "@type": "schema:PropertyValue", "name": "combat", "schema:value": 85}
+    ],
+    "schema:publisher": {
+        "@type": "schema:Organization",
+        "schema:name": "Marvel Comics"
+    }
+}
+                    </code>
+                </pre>
+                <figcaption>RDF model of a Marvel character expressed in JSON-LD</figcaption>
+            </figure>
+
+            <figure typeof="schema:SoftwareSourceCode">
+                <pre>
+                <code>
+{
+    "@context": {
+        "schema": "http://schema.org/",
+        "pokemon": "https://triplydb.com/academy/pokemon/vocab/",
+        "name": "pokemon:name",
+        "sameAs": "schema:sameAs",
+        "weight": "pokemon:weight",
+        "height": "schema:height",
+        "baseAttack": "pokemon:baseAttack",
+        "baseDefense": "pokemon:baseDefense",
+        "baseHP": "pokemon:baseHP",
+        "baseSpeed": "pokemon:baseSpeed",
+        "baseSpecialAttack": "pokemon:baseSpAtk",
+        "baseSpecialDefense": "pokemon:baseSpDef"
+    },
+    "@id": "pikachu",
+    "@type": "pokemon:Pokémon",
+    "name": {
+        "@language": "en",
+        "@value": "Pikachu"
+    },
+    "sameAs": "http://dbpedia.org/resource/Pikachu",
+    "weight": 60,
+    "height": {
+        "@type": "schema:QuantitativeValue",
+        "schema:value": 4,
+        "schema:unitCode": "DMT"
+    },
+    "baseHP": 35,
+    "baseAttack": 55,
+    "baseDefense": 40,
+    "baseSpecialAttack": 50,
+    "baseSpecialDefense": 40,
+    "baseSpeed": 90
+}
+                </code>
+                </pre>
+                <figcaption>RDF model of a pokemon expressed in JSON-LD</figcaption>
+            </figure>
+        </section>
+        <section id="technologies">
+            <h2><span>5. </span>Technologies used</h2>
+            <h3>Front-end</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            <h3>Back-end</h3>
+            <dl>
+                <dt><a href="https://dotnet.microsoft.com/en-us/">.NET</a></dt>
+                <dd>For the quiz service</dd>
+                <dd>
+                    Libries: <a href="https://dotnetrdf.org/">dotNetRDF</a>
+                </dd>
+
+                <dt><a href="https://www.python.org/">Python</a></dt>
+                <dd>For the cards service</dd>
+                <dd>
+                    Libries: 
+                    <ul>
+                        <li><a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a></li>
+                        <li><a href="https://rdflib.readthedocs.io/en/stable/">RDFLib</a></li>
+                    </ul>
+                </dd>
+            </dl>
+
+        </section>
+        <section id="linked">
+            <h2><span>6. </span>Linked data principles</h2>
+            <blockquote>
+                <p>
+                    The term <em>Linked Data</em> refers to a set of best practices for publishing and interlinking
+                    structured data
+                    on the Web. In order to contribute to an environment where information is easily accessible, data
+                    should
+                    first be made available in a standard format that can be reached and processed by Semantic Web
+                    tools.
+                    This is achieved by respecting the four principles of Linked Data:
+                </p>
+                <ol>
+                    <li>Use URIs as names for things.</li>
+                    <li>Use HTTP URIs so that people can look up those names.</li>
+                    <li>When someone looks up a URI, provide useful information, using the standards (RDF*, SPARQL).
+                    </li>
+                    <li>Include links to other URIs. so that they can discover more things.</li>
+                </ol>
+            </blockquote>
+            <p>
+                The project tries to conform to these principles through approaches such as:
+            </p>
+            <ul>
+                <li>Each card will be identified by a URI.</li>
+                <li>The data about de cards will be described using RDF. An early example can be observed in the
+                    previous chapter.</li>
+                <li>The entities will contain links to other data of interest or to other entities (e.g. card X is
+                    duelling with card Y)
+                </li>
+            </ul>
+        </section>
+        <section role="doc-bibliography" id="references">
+            <h2><span>7. </span>References</h2>
+            <ol>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.superheroapi.com/index.html" id="superheroapi">
+                    <cite property="schema:name">
+                    <a href="https://www.superheroapi.com/index.html">The SuperHero API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://developer.marvel.com/" id="marvelapi">
+                    <cite property="schema:name">
+                        <a href="https://developer.marvel.com/">The Marvel Comics API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://swapi.dev/documentation" id="swapi">
+                    <cite property="schema:name">
+                        <a href="https://swapi.dev/documentation">The Star Wars API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://pokeapi.co/" id="pokeapi">
+                    <cite property="schema:name">
+                        <a href="https://pokeapi.co/">The Pokemon API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="http://stapi.co/" id="stapi">
+                    <cite property="schema:name">
+                        <a href="http://stapi.co/">Star Trek API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://triplydb.com/academy/pokemon/vocab/" id="pokeVocab">
+                    <cite property="schema:name">
+                        <a href="https://triplydb.com/academy/pokemon/vocab/">Pokemon vocabulary</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://schema.org/" id="schemaVocab">
+                    <cite property="schema:name">
+                        <a href="https://schema.org/">The schema.org vocabulary</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.w3.org/wiki/LinkedData" id="linkedData">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/wiki/LinkedData">Linked data</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.openapis.org/" id="openAPI">
+                    <cite property="schema:name">
+                        <a href="https://www.openapis.org/">OpenAPI Initiative</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://editor.swagger.io/" id="swagger">
+                    <cite property="schema:name">
+                        <a href="https://editor.swagger.io/">Swagger Editor</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.w3.org/TR/rdf-sparql-query/" id="sparql">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/TR/rdf-sparql-query/">SPARQL Query Language for RDF</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.w3.org/TR/rdf-schema/" id="rdfs">
+                    <cite property="schema:name">
+                        <a href="https://www.w3.org/TR/rdf-schema/">RDF Schema 1.1</a>
+                    </cite>
+                </li>
+            </ol>
+        </section>
+    </article>
+</body>
+
+</html>

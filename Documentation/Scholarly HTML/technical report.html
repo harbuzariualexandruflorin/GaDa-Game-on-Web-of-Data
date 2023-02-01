@@ -120,7 +120,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><span>4.4 </span><a href="#gameCardsManagement">Game Cards Management</a></li>
                     </ul>
                 </li>
                 <li><a href="#externalDataAndKnowledge">Use of External Data / Knowledge Sources</a></li>
@@ -129,7 +128,7 @@
                         <li><span>6.1 </span><a href="#generatingCardDeck">Generating a Card Deck</a></li>
                         <li><span>6.2 </span><a href="#searchUsingKeywords">Searching DBpedia Resource Using
                                 Keywords</a></li>
-                        <li><span>6.3 </span><a href="#generatingCardDeck">Query 3</a></li>
+                        <li><span>6.3 </span><a href="#">Query 3</a></li>
                     </ul>
                 </li>
                 <li><a href="#technologies">Technologies Used</a></li>
@@ -625,19 +624,1268 @@ export function getChainScore(chain) {
                     exposed with ngrok. The proxy server that was used is <a href="https://www.nginx.com/">nginx</a>.
                 </p>
                 <figure typeof="sa:Image">
-                    <img src="resources/images/architecture/nginx.png">
+                    <img src="resources/images/architecture/nginx.jpg">
                     <figcaption>Basic architecture of nginx used as a proxy server</figcaption>
                 </figure>
-                <!-- <figure typeof="sa:Image">
-                    <img src="resources/images/architecture/nginx.png">
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+http {
+    server {
+        listen 8071;
+        server_name localhost;
+
+        location ^~ /frontend {
+            rewrite ^/frontend/(.*)$ /$1 break;
+            proxy_pass http://127.0.0.1:5500;
+        }
+        
+        location ^~ /triplestore {
+            rewrite ^/triplestore/(.*)$ /$1 break;
+            proxy_pass http://127.0.0.1:3030;
+        }
+    }
+}                            
+                        </code>
+                    </pre>
                     <figcaption>Simple configuration file used to start nginx</figcaption>
-                </figure> -->
+                </figure>
+                <p>
+                    Using the basic configuration file above, nginx was started and from a single port it could redirect
+                    to a multitude of services by using specific endpoint paths. That port was later exposed using
+                    ngrok.
+                </p>
+            </section>
+        </section>
+
+        <section id="dataManagement">
+            <h2><span>4. </span>Data Management</h2>
+            <p>The data management inside the GaDa services ecosystem is split into three main parts:</p>
+            <ul>
+                <li>User Management</li>
+                <li>Game Cards Management</li>
+                <li>Game Quiz Management</li>
+            </ul>
+
+            <section id="userManagement">
+                <h3><span>4.1 </span>User Management</h3>
+                <p>
+                    Any user can play the card game without any sort of account verification mechanism. At the end of
+                    the game, the user is provided with the chance to submit his score by writing a unique name. The
+                    request is processed and the user information is stored on a table from a relational database. If
+                    the user already exists, the service will respond with an appropriate error.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/apis/internal/cards_api_scores_1.png">
+                    <figcaption>HTTP request when submitting a new score</figcaption>
+                </figure>
+                <p>
+                    The game cards service is the service that manages the users. The scores table can also be queried
+                    and its information will be shown in the user interface.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/apis/internal/cards_api_scores_2.png">
+                    <figcaption>HTTP request when viewing all scores</figcaption>
+                </figure>
+                <p>
+                    A relational database was used instead of a non-relational one because the table schema was fixed
+                    since only one table was needed to store information about users and their scores. SQLite was chosen
+                    as a relational database management system because of its advantages:
+                </p>
+                <ul>
+                    <li>Portability
+                        <ol>
+                            <li>can be used with all programming languages</li>
+                            <li>is portable across all 32-bit and 64-bit operating systems</li>
+                        </ol>
+                    </li>
+                    <li>Reduced cost and complexity
+                        <ol>
+                            <li>reduced application cost because content can be accessed and updated using concise SQL
+                                queries instead of lengthy and error-prone procedural queries</li>
+                        </ol>
+                    </li>
+                </ul>
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+CREATE TABLE IF NOT EXISTS "high_scores" (
+    "user_name"	TEXT NOT NULL UNIQUE,
+    "score"	INTEGER NOT NULL,
+    PRIMARY KEY("user_name"),
+    CONSTRAINT "CHECK_SCORE" CHECK(score >= 0),
+    CONSTRAINT "CHECK_NAME" CHECK(LENGTH(user_name) > 0)
+)                       
+                        </code>
+                    </pre>
+                    <figcaption>Script used for creating the scores table</figcaption>
+                </figure>
             </section>
 
+            <section id="gameCardsManagement">
+                <h3><span>4.2 </span>Game Cards Management</h3>
+
+                <section id="ontology">
+                    <h4><span>4.2.1 </span>Ontology </h4>
+                    <p>
+                        The information on the game cards is stored in the GaDa ontology. To build the ontology, the
+                        following steps were followed
+                    </p>
+                    <ul>
+                        <li>Extraction of relevant data from the established external APIs, processing that information,
+                            and storing it in JSON files</li>
+                        <li>Reading the previously created JSON files, and iterating over their keys to add RDF triples
+                            in the resulting ontology</li>
+                    </ul>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+function build_json(external_api):
+    entities = external_api.scrape_data()
+        entities = process_entities(entities)
+save_to_json_file(entities, "output.json")    
+                            </code>
+                        </pre>
+                        <figcaption>Pseudocode for creating the JSON files</figcaption>
+                    </figure>
+                    <p>
+                        During the processing stage, all cards will have a score assigned to them. The score is computed
+                        using weights for some properties. Each universe has a specific set of weights assigned to them.
+                        The weights are divided into 2 categories: scalable and non-scalable. The scalable categories
+                        are the ones that have numeric properties (for example height, and weight). The non-scalable
+                        categories are the ones that have non-numeric properties (climate conditions of a planet).
+                    </p>
+                    <p>
+                        All weights are summed and in the end, the sum is divided by a magic number to limit the score
+                        to a specific interval and it is adjusted with another number by adding it to fix any eventual
+                        adjustment problems. Those magic values are determined through trial and error for each specific
+                        universe. The score (without any applied bonuses) will be in the interval [1; 1000].
+                    </p>
+
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                        <code>
+def get_entity_dict_score(variables, entity):
+if type(entity) is str:
+    return int(variables.get(entity, 0))
+if type(entity) is not dict:
+    return 0
+
+score = 0
+for k in entity.keys():
+    if type(entity[k]) is str:
+        try:
+            score += int((variables.get(k, 0) / variables.get("DIV", 1)) * float(entity[k]))
+            continue
+        except:
+            pass
+        score += get_entity_dict_score(variables, entity[k])
+        continue
+    if type(entity[k]) is dict:
+        score += get_entity_dict_score(variables, entity[k])
+        continue
+    if type(entity[k]) in [int, float]:
+        score += int((variables.get(k, 0) / variables.get("DIV", 1)) * entity[k])
+        continue
+    if type(entity[k]) is bool:
+        score += int((variables.get(k, 0) / variables.get("DIV", 1)) * int(entity[k]))
+        continue
+    if type(entity[k]) is list:
+        for e in entity[k]:
+            score += get_entity_dict_score(variables, e)
+return score + variables.get("ADJUST", 0)                        
+                        </code>
+                    </pre>
+                        <figcaption>The code for computing the score of an entity based on its weights</figcaption>
+                    </figure>
+                    <p>
+                        After the processing is finished, the JSON files are saved and the ontology is built using these
+                        files. This is done to reduce the number of dependencies on external APIs. The problem is that
+                        certain external APIs use private and public keys. As a consequence, they also impose a limit on
+                        the
+                        number of requests done per day. If the application catches some popularity, the number of
+                        requests
+                        will drastically increase. Therefore, it may be unable to call some external APIs if the limit
+                        is
+                        reached. The solution is to call the APIs only once. The ontology will contain all the relevant
+                        data
+                        extracted from the APIs and whenever a user requests a card, only the ontology will be queried.
+                        The
+                        other external APIs will be called again only when a system administrator wishes to update the
+                        ontology to new information.
+                    </p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+function build_ontology(graph, json_file):
+    json_object = read(json_file)
+    
+    for entity in json_object["entities"]:
+        entity = GADA_NAMESPACE.create_entity(entity["name"])
+        
+        for predicate in entity.keys():
+            graph.add((entity, predicate, entity[predicate]))
+    graph.serialize("output.ttl")               
+                            </code>
+                        </pre>
+                        <figcaption>Pseudocode for reading the JSON files and building the ontology</figcaption>
+                    </figure>
+                </section>
+
+                <section id="jsonld">
+                    <h4><span>4.2.2 </span>JSON-LD</h4>
+                    <p>
+                        After the ontology is built, it is uploaded to the triplestore Fuseki using its interface. All
+                        the JSON-LD data that is provided by the game cards service is obtained by querying the
+                        ontology. If an entity is requested, a subgraph is created using only the triples that the
+                        entity has in the ontology. Afterward, that subgraph is serialized to JSON-LD format using
+                        RDFLIB.
+                    </p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+def id_to_json_ld(g, entity_id, context):
+if type(entity_id) is str:
+    entity_id = URIRef(entity_id)
+
+temp_g = Graph()
+for rdf_tuple in list(g.query(
+        "select ?s ?p ?o where { ?s ?p ?o . }",
+        initBindings=dict(s=entity_id)
+)):
+    temp_g.add(rdf_tuple)
+
+try:
+    result = json.loads(temp_g.serialize(format='json-ld', context=context))
+    if type(result) is list:
+        return result[0]
+    return result
+except Exception as ex:
+    print("ID TO JSON LD EXCEPTION ", str(ex))
+    return None
+                            </code>
+                        </pre>
+                        <figcaption>The code for generating the JSON-LD of an entity</figcaption>
+                    </figure>
+                    <p>
+                        A problem that was encountered was that the output JSON-LD lacked description. For example, a
+                        JSON-LD might have some inner structures that only had “@id” as a field and thus, lacked
+                        descriptive information. The solution was to generate JSON-LD again for those inner structures
+                        that had only the field “@id”.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/ontology/addon_jsonld.png">
+                        <figcaption>JSON-LD viewed in the add-on</figcaption>
+                    </figure>
+                    <p>
+                        The resulting JSON-LD (for all cards) was verified to see if its syntax was correct with the
+                        help of a browser add-on that displays the JSON-LD of a webpage. Some errors were detected and
+                        the JSON-LD has been adjusted.
+                    </p>
+                    <p>
+                        The game cards service offers a method for building a card deck. The service will return a list
+                        of previews of cards (only tuples containing the card name and its score). The preview list is
+                        enough information to be able to deal with the cards based on some conditions according to their
+                        score. This is optimal because in the case of the user playing 10 rounds (each round having 10
+                        cards in total), then it is not efficient to store all the JSON data of 100 cards. Especially if
+                        part of that information will only be relevant in the final rounds. In the case of JSON-LD
+                        format, the response size even reached a couple of MB. In conclusion, the preview list approach
+                        is much better.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/internal/cards_api_deck.png">
+                        <figcaption> HTTP request when building a deck</figcaption>
+                    </figure>
+                    <p>
+                        The obtained card deck is randomized and the number of cards from each universe is constant.
+                        Considering there are U universes and the card deck size requested is N, each universe from the
+                        resulting card deck will contain N / U cards.
+                    </p>
+                    <p>
+                        Afterward, during each game round, the frontend will request the JSON and JSON-LD information of
+                        a specific subset of cards by using their names. The received information will be displayed on
+                        the frontend. This was done in two separate requests to avoid parsing the received JSON-LD
+                        information on the frontend side. By querying the ontology, only JSON-LD is received and the
+                        conversion is done separately in JSON by the cards service. The received JSON-LD is simply
+                        loaded in the HTML code dynamically.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/internal/cards_api_info_1.png">
+                        <figcaption>HTTP request when requesting JSON-LD information</figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/internal/cards_api_info_2.png">
+                        <figcaption>HTTP request when requesting JSON information</figcaption>
+                    </figure>
+                    <p>
+                        JSON-LD was chosen instead of RDFa (or even Microdata) because it was easier to implement and
+                        design. RDFa depends on the HTML code while JSON-LD can directly be injected into HTML. If the
+                        entities are changed in the ontology then the HTML code must also be changed, while if JSON-LD
+                        is used then there is no such problem.
+                    </p>
+                </section>
+
+                <section id="problemsAndSolutions">
+                    <h4><span>4.2.3 </span>General Problems and Solutions</h4>
+                    <p>
+                        All the game cards will have assigned specific power types (fighting, fire, water, etc.). The
+                        Pokémon cards already have types assigned thanks to the used external API. The other cards
+                        however do not. To solve this problem, specific types have been assigned based on criteria (for
+                        example a hero with the occupation mercenary will have the power type assigned as
+                        <i>fighting</i>)
+                    </p>
+                    <p>
+                        The next problem encountered was that not all external APIs returned a representative avatar of
+                        the entity. The solution was to use DuckDuckGo to search images based on search keywords. From
+                        the results, only the first link which contained in its name the universe of interest was
+                        selected. (example: searching hulk and picking the first link that had marvel in its name). This
+                        was done in two steps:
+                    </p>
+                    <ul>
+                        <li>Obtaining the DuckDuckGo token for a specific search</li>
+                        <li>Using that token to obtain a JSON list of links</li>
+                    </ul>
+                    <p>
+                        To obtain the token, a request is made and the token is extracted from the obtained HTML using a
+                        trivial regex expression.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/duckduckgo_api_token.png">
+                        <figcaption>HTTP request when requesting a DuckDuckGo token</figcaption>
+                    </figure>
+                    <p>Using that token, a list of search results is now obtained and the links can be used. Thus, an
+                        avatar can be obtained for any game card. The disadvantage is that sometimes a picked avatar may
+                        not truly represent the game card. However, the advantages far outweigh the disadvantages.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/duckduckgo_api_search.png">
+                        <figcaption>HTTP request when requesting image links</figcaption>
+                    </figure>
+                    <p>
+                        The next problem encountered was that there were a lot of cards, but no resources were linked to
+                        existing ones (for example DBpedia). The solution was to query DBpedia using a SPARQL query and
+                        certain keywords (for example the card hulk can be queried on DBpedia and the result is
+                        <a href="https://dbpedia.org/page/Hulk">https://dbpedia.org/page/Hulk</a>). Using this result, a
+                        new RDF triple is added using the predicate
+                        <code>sameAs</code>. For specific GaDa ontology entities, the linked DBpedia resource added was
+                        hardcoded
+                        (for example the fire power type may link to <a
+                            href="https://dbpedia.org/page/Fire">https://dbpedia.org/page/Fire</a> using the predicate
+                        <code>seeAlso</code>). Next, it will be discussed how each universe was integrated.
+                    </p>
+                </section>
+
+                <section id="marvelUniverse">
+                    <h4><span>4.2.4 </span>Marvel Universe</h4>
+                    <p>
+                        To obtain information about the Marvel universe, two APIs were used: <i>Marvel Comics API</i>
+                        and
+                        <i>SuperHero API</i>. The Marvel Comics API is limited to 3000 calls per day. Each call made to
+                        the
+                        Marvel Comics API requires the following parameters: private API key, hash, and timestamp. The
+                        hash is initialized using the following formula:
+                    </p>
+                    <p><code>md5(timestamp + PRIVATE_KEY + PUBLIC_KEY)</code></p>
+                    <p>
+                        To simplify calls made to the API, a python wrapper library was used: marvel (version 0.1.0).
+                        Using the following request, a list of Marvel characters is obtained.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/marvel_api.png">
+                        <figcaption>HTTP request when requesting Marvel characters</figcaption>
+                    </figure>
+                    <p>
+                        Because the list above doesn’t contain enough properties to properly calculate a power score, a
+                        second API was needed (SuperHero API). The API uses an access token and gives power stats for a
+                        Marvel character.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/superhero_api.png">
+                        <figcaption>HTTP request when requesting power stats for a Marvel character</figcaption>
+                    </figure>
+                    <p>
+                        Using these 2 APIs together, a score can be calculated using specific property weights and the
+                        ontology can be built for the Marvel universe
+                    </p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "nr_comics": 8,
+    "nr_stories": 8,
+    "nr_events": 8,
+    "intelligence": 6,
+    "strength": 8,
+    "speed": 5,
+    "durability": 6,
+    "power": 9,
+    "combat": 7,
+    "nr_aliases": 5,
+    "good": 100,
+    "bad": 200,
+    "neutral": 150,
+    "Male": 100,
+    "Female": 50,
+    "height": 4,
+    "weight": 3,
+    "DIV": 10
+}
+                            </code>
+                        </pre>
+                        <figcaption>Weights used for Marvel</figcaption>
+                    </figure>
+                    <p>
+                        The average score for 200 cards is around 567. The minimum score is 148 which belongs to the
+                        Marvel character Clea and the maximum score is 994 which belongs to Galactus. Galactus is a
+                        cosmic entity that consumes planets and Clea is a mere mortal. Considering the lore information
+                        it can be safely assumed that the computed scores reflect their true power scale.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/ontology/marvel_graph.svg">
+                        <figcaption>The Marvel ontology graph (for 1 card)</figcaption>
+                    </figure>
+                    <p>Using the previously shown ontology, JSON-LD can be generated for any Marvel card</p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "@context": {
+        "dbo": "http://dbpedia.org/ontology/",
+        "dbr": "http://dbpedia.org/resource/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "poke": "https://triplydb.com/academy/pokemon/vocab/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sdo": "https://schema.org/"
+    },
+    "@id": "https://gada.cards.game.namespace.com/card_X-Man",
+    "@type": [
+        "dbr:Category:Lists_of_Marvel_Comics_characters",
+        "dbr:Category:Lists_of_fictional_characters",
+        "dbr:Hero",
+        "dbr:Playing_card"
+    ],
+    "dbo:eyeColor": ["Blue"],
+    "dbo:hairColor": ["Brown"],
+    "dbo:participatingIn": [
+        "CABLE (1993) #30",
+        "CABLE (1993) #31",
+        "ONSLAUGHT: MARVEL UNIVERSE (1996) #1"
+    ],
+    "foaf:img": {
+        "@id": "http://i.annihil.us/u/prod/marvel/i/mg/d/10/535febd73f84f.jpg"
+    },
+    "foaf:member": {
+        "@id": "https://gada.cards.game.namespace.com/univ_Marvel",
+        "owl:sameAs": { "@id": "dbr:Marvel_Universe" },
+        "rdfs:label": "Marvel"
+    },
+    "foaf:name": "Nate Grey",
+    "foaf:nick": ["Nate the Great"],
+    "owl:hasValue": 635,
+    "poke:type": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_fighting",
+        "@type": "poke:Type",
+        "dbo:defeat": [
+            { "@id": "https://gada.cards.game.namespace.com/type_dark" },
+            { "@id": "https://gada.cards.game.namespace.com/type_ice" },
+            { "@id": "https://gada.cards.game.namespace.com/type_normal" },
+            { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+            { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+        ],
+        "rdfs:label": "fighting",
+        "rdfs:subClassOf": { "@id": "dbr:Combat" }
+        }
+    ],
+    "rdfs:label": "X-Man",
+    "rdfs:seeAlso": [{ "@id": "dbr:Iron_Man" }],
+    "sdo:birthPlace": "American Northeast of Earth-295",
+    "sdo:gender": "Male",
+    "sdo:hasOccupation": ["Former shaman", "adventurer", "freedom fighter"],
+    "sdo:height": "175",
+    "sdo:weight": "61"
+}                                  
+                            </code>
+                        </pre>
+                        <figcaption>JSON-LD for a Marvel card</figcaption>
+                    </figure>
+                </section>
+
+                <section id="pokemonUniverse">
+                    <h4><span>4.2.5 </span>Pokémon Universe</h4>
+                    <p>To obtain information about the Pokémon universe, PokéAPI was used. Using the following request,
+                        a list of pokemon was obtained.</p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/pokemon_api_pokemons.png">
+                        <figcaption>HTTP request when requesting a list of Pokémon</figcaption>
+                    </figure>
+                    <p>
+                        The list contains for each entity an URL pointing to the endpoint that returns information for a
+                        specific Pokémon. That link was used to obtain information relevant to a specific entity.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/pokemon_api_pokemon.png">
+                        <figcaption>HTTP request when requesting a specific Pokémon</figcaption>
+                    </figure>
+                    <p>The JSON returned contained another link for the species property. That endpoint was used to
+                        obtain additional information (for example the color of the Pokémon).
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/pokemon_api_species.png">
+                        <figcaption>HTTP request when requesting a Pokémon species</figcaption>
+                    </figure>
+                    <p>With all this information obtained, the score can be calculated using the following weights.</p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "nr_abilities": 1,
+    "experience": 4,
+    "nr_forms": 2,
+    "height": 2,
+    "nr_moves": 5,
+    "attack": 8,
+    "defense": 7,
+    "hp": 6,
+    "special_attack": 9,
+    "special_defense": 8,
+    "speed": 6,
+    "weight": 1,
+    "DIV": 17.6
+}
+                            </code>
+                        </pre>
+                        <figcaption>Weights used for Pokémon</figcaption>
+                    </figure>
+                    <p>
+                        The number of entities obtained was over 1000. That means the game will have 1000 cards only for
+                        one universe (with the others being around 100-200). To solve this problem and make the subsets
+                        similar in size, only 242 cards were chosen. The 1000 cards were ordered by their score and the
+                        set got split into 10 chunks. From each chunk, cards were randomly extracted until 242 were
+                        picked
+                    </p>
+                    <p>
+                        The average score for the selected cards is around 387. The minimum score is 84 which belongs to
+                        the Pokémon <i>Blipbug</i> and the maximum score is 994 which belongs to <i>Groudon Primal</i>.
+                        Groudon is a
+                        legendary Pokémon and Blipbug is a mere insect. Considering the lore information it can be
+                        safely assumed that the computed scores reflect their true power scale.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/ontology/pokemon_graph.svg">
+                        <figcaption>The Pokémon ontology graph (for 1 card)</figcaption>
+                    </figure>
+                    <p>The ontology uses an existing vocabulary specially made for the Pokémon
+                        universe: <a
+                            href="https://triplydb.com/academy/pokemon">https://triplydb.com/academy/pokemon</a>. Using
+                        the previously shown ontology, JSON-LD can
+                        be generated for any Pokémon card.
+                    </p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "@context": {
+        "dbo": "http://dbpedia.org/ontology/",
+        "dbr": "http://dbpedia.org/resource/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "poke": "https://triplydb.com/academy/pokemon/vocab/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sdo": "https://schema.org/"
+    },
+    "@id": "https://gada.cards.game.namespace.com/card_zygarde-complete",
+    "@type": [
+        "dbr:Category:Lists_of_fictional_characters",
+        "dbr:Playing_card",
+        "poke:Pokémon"
+    ],
+    "foaf:img": {
+        "@id": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10120.png"
+    },
+    "foaf:member": {
+        "@id": "https://gada.cards.game.namespace.com/univ_Pokemon",
+        "owl:sameAs": { "@id": "dbr:Pokémon" },
+        "rdfs:label": "Pokemon"
+    },
+    "owl:hasValue": 733,
+    "poke:ability": ["power-construct"],
+    "poke:baseAttack": 100,
+    "poke:baseDefense": 121,
+    "poke:baseExp": 354,
+    "poke:baseHP": 216,
+    "poke:baseSpAtk": 91,
+    "poke:baseSpDef": 95,
+    "poke:baseSpeed": 85,
+    "poke:colour": "green",
+    "poke:species": "zygarde",
+    "poke:type": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_dragon",
+        "@type": "poke:Type",
+        "dbo:defeat": [
+            { "@id": "https://gada.cards.game.namespace.com/type_flying" }
+        ],
+        "rdfs:label": "dragon",
+        "rdfs:subClassOf": { "@id": "dbr:Dragon" }
+        },
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_ground",
+        "@type": "poke:Type",
+        "dbo:defeat": [
+            { "@id": "https://gada.cards.game.namespace.com/type_electric" },
+            { "@id": "https://gada.cards.game.namespace.com/type_fire" },
+            { "@id": "https://gada.cards.game.namespace.com/type_poison" },
+            { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+            { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+        ],
+        "rdfs:label": "ground",
+        "rdfs:subClassOf": { "@id": "dbr:Dirt" }
+        }
+    ],
+    "poke:weight": "6100",
+    "rdfs:label": "zygarde-complete",
+    "rdfs:seeAlso": [{ "@id": "dbr:Category:Pokémon_species" }],
+    "sdo:height": "45"
+}                                  
+                            </code>
+                        </pre>
+                        <figcaption>JSON-LD for a Pokémon card</figcaption>
+                    </figure>
+
+                </section>
+
+                <section id="starWarsUniverse">
+                    <h4><span>4.2.6 </span>Star Wars Universe</h4>
+                    <p>To obtain information about the Star Wars universe, SWAPI was used. Using the following request,
+                        a list of characters was obtained.</p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_people.png">
+                        <figcaption>HTTP request when requesting a list of Star Wars characters</figcaption>
+                    </figure>
+                    <p>
+                        Each character in the list has a set of properties. Some properties have an URL pointing to the
+                        endpoint that returns additional information for that specific property. Those properties are
+                        <i>“planet”</i>, <i>“species”</i>, <i>“films”</i>, <i>“starships”</i>, and <i>“vehicles”</i>.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_planets.png">
+                        <figcaption>HTTP request when requesting a specific Star Wars planet</figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_species.png">
+                        <figcaption>HTTP request when requesting a specific Star Wars species</figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_films.png">
+                        <figcaption>HTTP request when requesting a specific Star Wars film</figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_starships.png">
+                        <figcaption>HTTP request when requesting a specific Star Wars starship</figcaption>
+                    </figure>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_wars_api_vehicles.png">
+                        <figcaption>HTTP request when requesting a specific Star Wars vehicle</figcaption>
+                    </figure>
+                    <p>With all this information obtained, the score can be calculated using the following weights.</p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "male": 300,
+    "female": 50,
+    "hermaphrodite": 100,
+    "height": 4,
+    "mass": 2,
+    "surface_water": 4,
+    "arid": 200,
+    "polluted": 100,
+    "superheated": 200,
+    "subartic": 100,
+    "artic": 200,
+    "frigid": 100,
+    "nr_films": 6,
+    "nr_starships": 8,
+    "nr_vehicles": 7,
+    "crew": 5,
+    "passengers": 4,
+    "length": 3,
+    "max_atmosphering_speed": 6,
+    "hyperdrive_rating": 6,
+    "average_lifespan": 9,
+    "indefinite": 90,
+    "artificial": 100,
+    "mammal": 50,
+    "gastropod": 50,
+    "amphibian": 150,
+    "reptile": 100,
+    "mammals": 50,
+    "insectoid": 100,
+    "reptilian": 100,
+    "sentient": 600,
+    "DIV": 500
+}
+                            </code>
+                        </pre>
+                        <figcaption>Weights used for Star Wars</figcaption>
+                    </figure>
+                    <p>The average score for 82 cards is around 359. The minimum score is 50 which belongs to the Star
+                        Wars character <i>R4-P17</i> and the maximum score is 953 which belongs to <i>Anakin
+                            Skywalker</i>. Anakin
+                        Skywalker is a powerful Jedi who will later become Darth Vader and R4-P17 is a mere small droid.
+                        Considering the lore information it can be safely assumed that the computed scores reflect their
+                        true power scale.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/ontology/star_wars_graph.svg">
+                        <figcaption>The Star Wars ontology graph (for 1 card)</figcaption>
+                    </figure>
+                    <p>The ontology uses an existing vocabulary specially made for the Star Wars
+                        Universe: <a href="https://swapi.co/vocabulary">https://swapi.co/vocabulary</a>. Using the
+                        previously shown ontology, JSON-LD can be generated for any Star Wars card.
+                    </p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "@context": {
+        "dbo": "http://dbpedia.org/ontology/",
+        "dbr": "http://dbpedia.org/resource/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "poke": "https://triplydb.com/academy/pokemon/vocab/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "swapi": "https://swapi.co/vocabulary/"
+    },
+    "@id": "https://gada.cards.game.namespace.com/card_Zam_Wesell",
+    "@type": [
+        "dbr:Category:List_of_Star_Wars_characters",
+        "dbr:Category:Lists_of_fictional_characters",
+        "dbr:Playing_card",
+        "https://gada.cards.game.namespace.com/wars_spec_Clawdite"
+    ],
+    "foaf:img": {
+        "@id": "https://vignette3.wikia.nocookie.net/starwars/images/7/7d/Clawdite.jpg/revision/latest?cb=20111001150105"
+    },
+    "foaf:member": {
+        "@id": "https://gada.cards.game.namespace.com/univ_Star_Wars",
+        "owl:sameAs": { "@id": "dbr:Star_Wars" },
+        "rdfs:label": "Star Wars"
+    },
+    "owl:hasValue": 161,
+    "poke:type": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_fighting",
+        "@type": "poke:Type",
+        "dbo:defeat": [
+            { "@id": "https://gada.cards.game.namespace.com/type_dark" },
+            { "@id": "https://gada.cards.game.namespace.com/type_ice" },
+            { "@id": "https://gada.cards.game.namespace.com/type_normal" },
+            { "@id": "https://gada.cards.game.namespace.com/type_rock" },
+            { "@id": "https://gada.cards.game.namespace.com/type_steel" }
+        ],
+        "rdfs:label": "fighting",
+        "rdfs:subClassOf": { "@id": "dbr:Combat" }
+        }
+    ],
+    "rdfs:label": "Zam Wesell",
+    "rdfs:seeAlso": [{ "@id": "dbr:Yoda" }],
+    "swapi:birthYear": "896bby",
+    "swapi:eyeColor": ["yellow"],
+    "swapi:film": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/wars_film_Attack_of_the_Clones",
+        "rdfs:label": "Attack of the Clones",
+        "rdfs:seeAlso": [
+            { "@id": "dbr:Star_Wars:_Episode_II_–_Attack_of_the_Clones" }
+        ],
+        "swapi:director": "George Lucas",
+        "swapi:producer": ["Rick McCallum"],
+        "swapi:releaseDate": "2002-05-16"
+        }
+    ],
+    "swapi:gender": "female",
+    "swapi:hairColor": ["blonde"],
+    "swapi:height": "168",
+    "swapi:homeworld": {
+        "@id": "https://gada.cards.game.namespace.com/wars_plan_Zolan",
+        "@type": "swapi:Planet",
+        "rdfs:label": "Zolan"
+    },
+    "swapi:mass": "55",
+    "swapi:skinColor": ["fair", "green", "yellow"],
+    "swapi:starship": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/wars_ship_X-wing",
+        "@type": "swapi:Starship",
+        "rdfs:label": "X-wing",
+        "swapi:crew": "1",
+        "swapi:hyperdriveRating": "1.0",
+        "swapi:length": "12.5",
+        "swapi:maxAtmospheringSpeed": "1050",
+        "swapi:passengers": "0"
+        }
+    ],
+    "swapi:vehicle": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/wars_auto_Koro-2_Exodrive_airspeeder",
+        "@type": "swapi:Vehicle",
+        "rdfs:label": "Koro-2 Exodrive airspeeder",
+        "swapi:crew": "1",
+        "swapi:length": "6.6",
+        "swapi:maxAtmospheringSpeed": "800",
+        "swapi:passengers": "1"
+        }
+    ]
+}
+                            </code>
+                        </pre>
+                        <figcaption>JSON-LD for a Star Wars card</figcaption>
+                    </figure>
+                </section>
+
+                <section id="starTrekUniverse">
+                    <h4><span>4.2.7 </span>Star Trek Universe</h4>
+                    <p>To obtain information about the Star Trek universe, STAPI was used. Using the following request,
+                        a list of species was obtained.</p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/external/star_trek_api.png">
+                        <figcaption>HTTP request when requesting a list of Star Trek species</figcaption>
+                    </figure>
+                    <p>With all this information obtained, the score can be calculated using the following weights.</p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "warpCapableSpecies": 9,
+    "extraGalacticSpecies": 8,
+    "humanoidSpecies": 3,
+    "reptilianSpecies": 4,
+    "avianSpecies": 4,
+    "nonCorporealSpecies": 7,
+    "shapeshiftingSpecies": 6,
+    "spaceborneSpecies": 6,
+    "telepathicSpecies": 7,
+    "transDimensionalSpecies": 8,
+    "alternateReality": 7,
+    "DIV": 0.03
+}
+                            </code>
+                        </pre>
+                        <figcaption>Weights used for Star Trek</figcaption>
+                    </figure>
+                    <p>The average score for the selected cards is around 380. The minimum score is 133 which belongs to
+                        the species <i>Xindi Avian</i> and the maximum score is 999 which belongs to <i>Q</i>. Q is a
+                        super-race able
+                        to change matter to energy and to suspend time and Xindi Avian is an extinct species of flying
+                        creatures. Considering the lore information it can be safely assumed that the computed scores
+                        reflect their true power scale.
+                    </p>
+                    <p>
+                        Because the API provided only non-numeric information about specific features of the species
+                        (for example avianSpecies, spaceborneSpecies), the set of scores is not as distributed as the
+                        other universes. However, Star Trek can still be integrated into the game.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/ontology/star_trek_graph.svg">
+                        <figcaption>The Star Trek ontology graph (for 1 card)</figcaption>
+                    </figure>
+                    <p>Using the previously shown ontology, JSON-LD can be generated for any Star Trek card.</p>
+                    <figure typeof="schema:SoftwareSourceCode">
+                        <pre>
+                            <code>
+{
+    "@context": {
+        "dbo": "http://dbpedia.org/ontology/",
+        "dbr": "http://dbpedia.org/resource/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "poke": "https://triplydb.com/academy/pokemon/vocab/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sdo": "https://schema.org/",
+        "ssn": "http://www.w3.org/ns/ssn/"
+    },
+    "@id": "https://gada.cards.game.namespace.com/card_Zobrals_species",
+    "@type": [
+        "dbr:Category:Lists_of_fictional_species",
+        "dbr:Category:Star_Trek_species",
+        "dbr:Playing_card"
+    ],
+    "foaf:img": {
+        "@id": "https://vignette1.wikia.nocookie.net/startrek/images/d/de/Saurian.jpg/revision/latest?cb=20100213132415"
+    },
+    "foaf:member": {
+        "@id": "https://gada.cards.game.namespace.com/univ_Star_Trek",
+        "owl:sameAs": { "@id": "dbr:Star_Trek" },
+        "rdfs:label": "Star Trek"
+    },
+    "owl:hasValue": 400,
+    "poke:type": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_normal",
+        "@type": "poke:Type",
+        "rdfs:label": "normal"
+        },
+        {
+        "@id": "https://gada.cards.game.namespace.com/type_teleport",
+        "@type": "poke:Type",
+        "dbo:defeat": [
+            { "@id": "https://gada.cards.game.namespace.com/type_dragon" },
+            { "@id": "https://gada.cards.game.namespace.com/type_fighting" },
+            { "@id": "https://gada.cards.game.namespace.com/type_flying" },
+            { "@id": "https://gada.cards.game.namespace.com/type_psychic" }
+        ],
+        "rdfs:label": "teleport"
+        }
+    ],
+    "rdfs:label": "Zobral's species",
+    "rdfs:seeAlso": [{ "@id": "dbr:Vulcan_(Star_Trek)" }],
+    "sdo:birthPlace": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/trek_plan_Torothan_homeworld",
+        "@type": "dbr:Category:Fictional_planets",
+        "rdfs:label": "Torothan homeworld"
+        },
+        {
+        "@id": "https://gada.cards.game.namespace.com/trek_quad_Alpha_Quadrant",
+        "@type": "dbr:Galactic_quadrant",
+        "rdfs:label": "Alpha Quadrant"
+        }
+    ],
+    "ssn:hasProperty": [
+        {
+        "@id": "https://gada.cards.game.namespace.com/trek_prop_humanoidSpecies",
+        "owl:sameAs": { "@id": "dbr:Humanoid" },
+        "rdfs:label": "humanoidSpecies"
+        },
+        {
+        "@id": "https://gada.cards.game.namespace.com/trek_prop_warpCapableSpecies",
+        "owl:sameAs": { "@id": "dbr:Warp" },
+        "rdfs:label": "warpCapableSpecies"
+        }
+    ]
+}
+                                  
+                            </code>
+                        </pre>
+                        <figcaption>JSON-LD for a Star Trek card</figcaption>
+                    </figure>
+                </section>
+            </section>
+
+            <section id="gameQuizManagement">
+                <h3><span>4.3 </span>Game Quiz Management</h3>
+                <p>Before making the game itself, a power system was needed that was based on the metadata given by
+                    various APIs. To achieve this, various metadata were acquired by calling the Marvel Comics, Star
+                    Wars, Star Trek, and Pokemon APIs. Afterward, that data was used to determine each character’s power
+                    level and to create connections in the ontology so that later the quiz questions can be formulated.
+                    These questions will be made using various templates. The answer is verified by making SPARQL
+                    queries to retrieve information about various characters and thus, the user’s knowledge of the
+                    in-game universe is tested. The result of this quiz will determine what type of cards the user will
+                    obtain for the current round. If the result is good, then the average score of the given cards will
+                    be higher.
+                </p>
+
+                <section id="quizQuestionsGeneration">
+                    <h4><span>4.3.1 </span>Quiz Questions Generation</h4>
+                    <p>A question for the quiz service was modeled in form of an object with the following properties:
+                    </p>
+                    <ul>
+                        <li><code>QuizQuestion</code>: represents the question (in words) in the form of a template.
+                        </li>
+                        <li><code>Query</code>: represents a template for the SPARQL query associated with the property
+                            above.</li>
+                        <li><code>QuestionType</code>: represents the universe(Marvel/Pokemon/Star Wars/Star Trek) to
+                            which the
+                            question corresponds.</li>
+                        <li><code>MultipleChoice</code> a boolean value that specifies whether or not the question has
+                            multiple
+                            answers. The questions were categorized as multiple choice or not because some Sparql
+                            queries can return more than one result.</li>
+                        <li><code>SparqlEndpointType</code>: represents the SPARQL endpoint to which the query is made.
+                            In the
+                            present case, it can be made to DBPedia or the triple store</li>
+                    </ul>
+                    <p>A list of questions with this structure is stored on the server.</p>
+                    <p>As can be seen in chapter 3.3, the quiz service exposes 2 endpoints: one for sending questions to
+                        the client and one for checking the answer given to a question.
+                    </p>
+
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/quiz/characters_list.png">
+                        <figcaption>HTTP Request when requesting the generation of quiz questions</figcaption>
+                    </figure>
+                    <p>It is worth mentioning that the number of generated questions will be equal to half of the length
+                        of this list.</p>
+                    <p>To generate a question, a character is randomly chosen from the received list and a question will
+                        be randomly chosen from the collection of questions whose template is made for the universe of
+                        which the chosen character is a part. Next comes the construction of the answer options(3 more
+                        precisely) for the respective question and two cases are considered:
+                    </p>
+                    <ul>
+                        <li>If it is a question with a single answer, one of the 3 answer options (the correct one) will
+                            be the result of the SPARQL query(made to DBPedia or our triple store) associated with the
+                            question for the character chosen from the list. The other 2 answer options will be built by
+                            making the same SPARQL query but for 2 other randomly chosen characters that are part of the
+                            same universe as the main character
+                        </li>
+                        <li>
+                            If it is a question with multiple answers, the construction procedure of the answer options
+                            is similar but with a small difference.
+                            <ul>
+                                <li>If the query for the character that is the subject of the question has 2 or more
+                                    results, then 2 of them will be randomly extracted and put in the list with answer
+                                    options. After that, another character from the same universe will be randomly
+                                    chosen and one of the query results will be added to the list of options.</li>
+                                <li>If the result of the query is only one, then it is added to the list of answer
+                                    options, and then another character from the same universe is randomly chosen, the
+                                    query is performed, and if it contains at least 2 results then it will be chosen
+                                    randomly 2 of these and added in the list of answer options, and if there is only
+                                    one result, another character is randomly chosen and one of the answers (if there
+                                    are more) to the query is added.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>The endpoint responsible for generating the questions will send the client an array containing
+                        the questions together with the answer options built according to the method specified above. An
+                        example can be seen in the following figure.
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/quiz/questions_returned.png">
+                        <figcaption>List of questions returned by the Quiz API</figcaption>
+                    </figure>
+                    <p>A question-type object returned to the client contains as a structure:
+                    <ul>
+                        <li>the question itself</li>
+                        <li>the subject</li>
+                        <li>a link to an image associated with the character</li>
+                        <li>the answer options</li>
+                    </ul>
+                    </p>
+                </section>
+
+                <section id="checkingAnswer">
+                    <h4><span>4.3.2 </span>Checking the Answer to a Question</h4>
+                    <p>The endpoint responsible for checking the answer to a question receives a JSON from the client
+                        that has the following structure.</p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/quiz/check_question_answer.png">
+                        <figcaption>HTTP Request for checking the answer given to a questions</figcaption>
+                    </figure>
+                    <p>As can be observed the API receives the question, the character for which the question is asked,
+                        and the answer options. The "checked" property indicates whether or not the respective option
+                        was chosen by the user as a correct answer to the question.</p>
+                    <p>The API uses the character name and the question to find the SPARQL query template associated
+                        with the question and checks the correctness of the answers by running the query and comparing
+                        the results. The client will know whether or not he has chosen the correct answer to the
+                        question by interpreting the checked answer from the API, which is in the following form:
+                    </p>
+                    <figure typeof="sa:Image">
+                        <img src="resources/images/apis/quiz/checked_answer.png">
+                        <figcaption>JSON sent to the client after the answer to the question is checked</figcaption>
+                    </figure>
+                    <p>The "isCorrect" key indicates whether the user's decision to choose the respective answer option
+                        is correct or not.</p>
+                </section>
+            </section>
+        </section>
+
+        <section id="externalDataAndKnowledge">
+            <h2><span>5. </span>Use of External Data / Knowledge Sources </h2>
+            <p>DBpedia has been used in two scenarios:</p>
+            <ol>
+                <li>During the creation of the GaDa ontology. Entities have been linked to existing DBpedia resources
+                    using a SPARQL query.</li>
+                <li>During the game quiz stage. Certain questions are created using information about DBpedia entities.
+                </li>
+            </ol>
+            <p>Multiple external vocabularies were used:</p>
+            <ol>
+                <li>The Star Wars ontology entities use the SWAPI vocabulary (<a
+                        href="https://swapi.co/vocabulary">https://swapi.co/vocabulary</a>)</li>
+                <li>The Pokémon ontology entities use the Pokémon vocabulary (<a
+                        href="https://triplydb.com/academy/pokemon">https://triplydb.com/academy/pokemon</a>)</li>
+            </ol>
+            <p>In addition to those, predicates from multiple vocabulary namespaces have been used.</p>
+            <p>Example: <code>foaf</code> and the predicate <code>member</code> (<a
+                    href="http://xmlns.com/foaf/0.1">http://xmlns.com/foaf/0.1</a>).</p>
+        </section>
+
+        <section id="sparqlQueriesOfInterest">
+            <h2><span>6. </span>SPARQL Queries of Interest</h2>
+            <p>Several non-trivial SPARQL queries will be presented.</p>
+
+            <section id="generatingCardDeck">
+                <h3><span>6.1 </span>Generating a Card Deck</h3>
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dbr: <http://dbpedia.org/resource/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+prefix gada: <https://gada.cards.game.namespace.com/>
+
+select ?name where { 
+    ?card rdf:type dbr:Playing_card .
+    ?card rdfs:label ?name . 
+    ?card foaf:member %s .
+    bind(sha512(concat(str(rand()), str(?name))) as ?random) 
+} order by ?random
+limit %s
+                        </code>
+                    </pre>
+                    <figcaption>The query for generating a card deck</figcaption>
+                </figure>
+                <p>This query is used in 2 scenarios:</p>
+                <ol>
+                    <li>To give the user a deck of cards at the beginning of the first round</li>
+                    <li>To give the contents of a wiki page</li>
+                </ol>
+                <p>The query is parametrized and has 3 parameters: the offset, the size, and if it’s randomized or not.
+                    The query selects the name of all the ontology entities that are of type <i>DBR:Playing_card</i>.
+                    Creating
+                    a randomized deck proved to be a problem because just using the RAND() SPARQL function was not
+                    enough. SPARQL engines are smart and are trying to statically evaluate the SPARQL instructions.
+                </p>
+                <p>Another approach is to use hash functions, however, the hashes are entirely based on the result data.
+                    Therefore, a combination of those two functions is the implemented solution. A string is obtained by
+                    concatenating the card name and the value returned by <code>rand()</code>. The hash <i>SHA512</i> is
+                    applied to that
+                    string and thus, a random card deck is obtained.
+                </p>
+            </section>
+
+            <section id="searchUsingKeywords">
+                <h3><span>6.2 </span>Searching DBpedia Resource Using Keywords</h3>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/ontology/sparql_dbpedia_search.png">
+                    <figcaption>The query for obtaining a DBpedia resource using some keywords</figcaption>
+                </figure>
+                <p>This query is only used during the building of the game ontology to obtain DBpedia resources using
+                    keywords. Since there are over 500 cards in the game, manually linking entities to DBpedia resources
+                    is not a good approach. The query was generated using the DBpedia <i>Faceted Browser</i>.
+                </p>
+                <p>Explanation:</p>
+                <ol>
+                    <li>The query is designed for the Virtuoso RDBMS</li>
+                    <li><code>input:ifp</code> is a pragma that adds the IFP keyword in OPTION (QUIETCAST, ...) clause
+                        in the generated SQL</li>
+                    <li>The text input is split into words and is added as a parameter in the query using %s.</li>
+                    <li>For the input <i>“test1 test2”</i>, <code>bif:vector (%s)</code> becomes
+                        <code>bif:vector (“test1, test2”)</code>. Similarly,
+                        <code>bif:contains "(%s)"</code> becomes bif:contains <code>"(test1 AND test2)"</code>.
+                    </li>
+                    <li><code>virtrdf:DefaultQuadMap</code> is the pre-defined storage that is used by default by all
+                        SPARQL queries.
+                        The storage contains no RDF Views. The quad map provides triples for various graphs. The storage
+                        is used to store the <code>graph g</code> that was created.
+                    </li>
+                    <li>
+                        <code>Graph g</code> is created and contains all the triples where the DBpedia entity’s title
+                        contains the
+                        input keywords. Additionally, the graph also contains a score to calculate the result rank.
+                    </li>
+                    <li>From the resulting quad map the following are selected, the DBpedia entity, the score multiplied
+                        by 0.3, the entity title, the rank calculated according to the DBpedia entity, and the graph g.
+                        The selected columns are sorted in descending order by using the addition of the score column
+                        and the rank column. The rank of the entity is computed by using <code>sql:rnk_scale (&lt;LONG::IRI_RANK&gt;)</code>.
+                        
+                    </li>
+                    <li>The <code>search_excerpt</code> function takes an array of the words to highlight and the text of the search
+                        hit. From the previous selection, the columns that are now selected are the DBpedia entity, the
+                        highlighted text, the score, the rank, and the graph g. The column that is used for obtaining
+                        the link to the DBpedia resource is the first column with the DBpedia entity. The rows are
+                        checked later to see if the resource link contains all the input keywords. Considering that the
+                        results are already sorted in descending order, the first row that matches the condition is the
+                        needed result to obtain the best possible match.</li>
+                </ol>
+            </section>
+
+            <section id="">
+                <h3><span>6.3 </span>Query 3</h3>
+            </section>
+        </section>
+
+        <section id="technologies">
+            <h2><span>7. </span>Technologies Used</h2>
+            <h3>Front-end</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>BOOSTRAP</li>
+                <li>Addons: Live Server
+                    <ul>
+                        <li>It helped with accessing the frontend from a localhost port. This greatly made the
+                            deployment a lot easier</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Quiz Service and API Gateway</h3>
+            <ul>
+                <li>
+                    .NET
+                    <ul>
+                        <li>
+                            libraries
+                            <ol>
+                                <li>dotNetRDF - for making Sparql queries to DBPedia and the triple store.</li>
+                                <li>Ocelot - for the Gateway.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>For the cards service</h3>
+            <ul>
+                <li>
+                    Python
+                    <ul>
+                        <li>
+                            libraries
+                            <ol>
+                                <li>Flask: Library used for hosting an API.</li>
+                                <li>RDFLib: Library used when working with ontologies.</li>
+                                <li>Marvel: Wrapper for the Marvel Comics API.</li>
+                                <li>SPARQLWrapper: A wrapper used for querying DBpedia.</li>
+                                <li>Waitress: A library that helps with securing the exposed API when it comes to DoS
+                                    attacks.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Deployment</h3>
+            <ol>
+                <li>Ngrok: Service used for exposing a local port.</li>
+                <li>Nginx: A proxy server used for exposing multiple local ports through a single local port.</li>
+            </ol>
+        </section>
+
+        <section id="linkedData">
+            <h2><span>8. </span>Linked Data Principles</h2>
+            <p>The term Linked Data refers to a set of best practices for publishing and interlinking structured data on
+                the Web. To contribute to an environment where information is easily accessible, data should first be
+                made available in a standard format that can be reached and processed by Semantic Web tools.
+            </p>
+            <p>The GaDa project conforms to the principles of Linked Data through approaches such as:</p>
+            <ol>
+                <li>Each card is identified by a URI in the game ontology using the GaDa namespace.</li>
+                <li>The data about the cards is described using RDF.</li>
+                <li>The entities contain links to other data of interest or other entities. Example: the card Hulk links
+                    to the DBpedia resource Hulk.</li>
+                <li>The ontology reuses predicates from multiple namespaces and reuses vocabularies. Example: Star Wars
+                    and Pokémon vocabularies.</li>
+            </ol>
         </section>
 
         <section role="doc-bibliography" id="references">
-            <h2><span>7. </span>References</h2>
+            <h2><span>9. </span>References</h2>
             <ol>
                 <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
                     resource="https://www.superheroapi.com/index.html" id="superheroapi">

@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:5053/";
+export const API_URL = "http://localhost:5053";
 // export const API_URL = "https://34ee-194-176-167-54.eu.ngrok.io/cards/";
 export const QUIZ_API_URL = "https://localhost:7214"
 

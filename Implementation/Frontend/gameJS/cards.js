@@ -12,7 +12,7 @@ export async function getInfoCards(cardsData, jsonld) {
     names.push(card.name);
   });
 
-  return fetch(`${API_URL}gada_card_deck/info?jsonld=${jsonld}`, {
+  return fetch(`${API_URL}/gada_card_deck/info?jsonld=${jsonld}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -31,7 +31,7 @@ export async function getInfoCards(cardsData, jsonld) {
 
 export async function getCards(deck_size) {
   return fetch(
-    `${API_URL}gada_card_deck/generate?deck_offset=0&deck_size=${deck_size}&randomize=True`
+    `${API_URL}/gada_card_deck/generate?deck_offset=0&deck_size=${deck_size}&randomize=True`
   )
     .then((resp) => {
       return resp.json();

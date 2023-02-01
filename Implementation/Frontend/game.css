@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/arcade-classic");
+
 * {
   box-sizing: border-box;
 }
@@ -23,6 +25,8 @@
   border: 1px solid black;
   table-layout: fixed;
   word-wrap: break-word;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .selectCardTable tr td,
@@ -36,4 +40,49 @@
 
 .forceShow {
   display: block !important;
+}
+.cardTable,
+.columnTable {
+  background: #012b39;
+  border-collapse: collapse;
+}
+.cardTable th,
+.columnTable th {
+  border-bottom: 1px solid #364043;
+  color: #e2b842;
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+.cardTable td,
+.columnTable td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+.cardTable .disabled td,
+.columnTable .disabled td {
+  color: #4f5f64;
+}
+.cardTable tbody tr,
+.columnTable tbody tr {
+  transition: background 0.25s ease;
+}
+.cardTable tbody tr:hover,
+.columnTable tbody tr:hover {
+  background: #014055;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.styleLabel {
+  border: 5px solid #364043;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #364043;
+  text-align: center;
+  background-color: #ebebeb;
 }

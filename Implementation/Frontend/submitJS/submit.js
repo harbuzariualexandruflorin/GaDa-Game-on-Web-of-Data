@@ -9,7 +9,7 @@ function setVisible(id, status) {
 }
 
 export async function postUserScore(userName, userScore) {
-  return fetch(`${API_URL}high_scores`, {
+  return fetch(`${API_URL}/high_scores`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({

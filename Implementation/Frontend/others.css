@@ -43,3 +43,11 @@
   display: flex;
   justify-content: center;
 }
+
+.submitBox {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+  border: 1px solid #666;
+  background-color: #fff;
+}

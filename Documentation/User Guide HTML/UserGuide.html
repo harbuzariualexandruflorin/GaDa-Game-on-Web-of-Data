@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> GaDa - Game on Web of Data</title>
+    <link rel="stylesheet" href="UserGuide.css">
+    <link rel="stylesheet"
+        href="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/themes/prism-coy.css">
+    <script src="https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/node_modules/prismjs/prism.js"
+        defer></script>
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">GaDa user guide</h1>
+            <p role="doc-subtitle" property="schema:alternateName">
+                Game on Web of Data
+            </p>
+        </header>
+        <section typeof="sa:AuthorsList">
+            <h2>Authors</h2>
+            <ul>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Andrei">
+                        <meta property="schema:familyName" content="Condurache">
+                        <span property="schema:name">Andrei Condurache</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:andrei.condurache@students.info.uaic.ro"
+                             property="schema:email">andrei.condurache@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Alexandru">
+                        <meta property="schema:additionalName" content="Florin">
+                        <meta property="schema:familyName" content="Harbuzariu">
+                        <span property="schema:name">Alexandru-Florin Harbuzariu</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:alexandru.harbuzariu@students.info.uaic.ro"
+                             property="schema:email">alexandru.harbuzariu@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li typeof="sa:ContributorRole" property="schema:contributor">
+                    <span typeof="schema:Person" resource="??">
+                        <meta property="schema:givenName" content="Stefan">
+                        <meta property="schema:familyName" content="Tiperciuc">
+                        <span property="schema:name">Stefan Tiperciuc</span>
+                    </span>
+                    <ul>
+                        <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                          <a href="mailto:stefan.tiperciuc@students.info.uaic.ro"
+                             property="schema:email">stefan.tiperciuc@students.info.uaic.ro</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contents">
+            <h2>Table of contents</h2>
+            <ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li>
+                    <a href="#startMenu">Start Menu</a>
+                    <ul style="list-style: none;">
+                        <li><span>2.1 </span><a href="#userHighScoreMenu">User High Score Menu</a></li>
+                        <li><span>2.2 </span><a href="#wiki">GaDa Card Wiki menu</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#cardGameMenu">Card game menu</a>
+                    <ul style="list-style: none;">
+                        <li><span>3.1 </span><a href="#selectCard">Selecting a card</a></li>
+                        <li><span>3.2 </span><a href="#winLoseChain">Winning/Losing a chain</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#quizMenu">Quiz menu</a>
+                    <ul style="list-style: none;">
+                        <li><span>4.1 </span><a href="#coloring">Question answer colouring</a></li>
+                        <li><span>4.2 </span><a href="#multipleChoice">Multiple choice questions</a></li>
+                        <li><span>4.3 </span><a href="#endQuizAlert">End of Quiz alert</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#endMenu">End menu</a>
+                    <ul style="list-style: none;">
+                        <li><span>5.1 </span><a href="#nameAlert">Name exists alert</a></li>
+                    </ul>
+                </li>
+                <li><a href="#references">References</a></li>
+            </ol>
+        </section>
+
+        <section role="doc-introduction" id="introduction">
+            <h2><span>1. </span>Introduction</h2>
+            <p>
+                GaDa stands for Game on Web of Data. It is a service-oriented game designed for both quiz,
+                 and card games and Marvel, Star Trek, Star Wars, and Pokemon lovers alike, where the player
+                  is matched up against the computer in a game of cards that requires strategic card management 
+                  and critical thinking. At the end of each round, the player is asked to take a quiz that will determine 
+                  the strength of the cards that he will be given. The cards represent various characters ranging from tiny 
+                  pokémon to well-established superheroes and the goal for the player is to amass more points than the opponent
+                   with the cards he is dealt with. Then, both the player and the computer will take turns placing cards that have 
+                   a higher power level than the one previously placed until they have no card with a higher score in hand. 
+            </p>
+            <p>
+                Each card will have a power level assigned to it before the game starts. The individual power levels 
+                of the cards are stored in a triplestore and are calculated based on the metadata received from various 
+                established external APIs. The quiz given will also be based on the cards’ metadata and will reward the
+                 user with better cards, provided he answers correctly to the questions.
+            </p>
+        </section>
+        <section id="startMenu">
+            <h2><span>2. </span>Start Menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\main_menu.png">
+                <figcaption>Start Menu</figcaption>
+            </figure>
+            <p>Once the player enters the website, he will be greeted with the main menu, which has the following section:
+            </p>
+            <ul>
+                <li><code>1:</code> used for selecting the number of rounds the user will play</li>
+                <li><code>2:</code> how many cards the user will have in hand each round</li>
+                <li><code>3:</code> button that redirects to the High Scores page</li>
+                <li><code>4:</code> button that redirects to the Wiki page</li>
+                <li><code>5:</code> button that starts the game</li>
+            </ul>
+        </section>
+
+        <section id="userHighScoreMenu">
+            <h2><span>2.1. </span>User High Score Menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\leaderboard.png">
+                <figcaption>User leaderboard</figcaption>
+            </figure>
+            <p>
+                Clicking the “View scores” button from the previous page will redirect 
+                the user to the User High Scores view. Here, the user can see all the scores 
+                other players obtained, including himself.
+            </p>
+        </section>    
+
+        <section id="wiki">
+            <h2><span>2.2. </span>GaDa Card Wiki menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\card_wiki.png">
+                <figcaption>Card wiki</figcaption>
+            </figure>
+            <p>
+                The GADA Card Wiki menu can be accessed by clicking the View Wiki button in 
+                the main menu. The page contains a list of all the cards extracted through 
+                the 4 APIs alongside details about them, including the name, Universe, Score, and
+                 a button with a more detailed view of the cards.
+            </p>
+            <figure typeof="sa:Image">
+                <img src="resources\card_wiki_detail.png" width="40%" height="40%">
+                <figcaption>Card wiki detail</figcaption>
+            </figure>
+            <p>
+                By pressing the “Details” button on the right side of the screen, the user can get more information about that particular card.
+            </p>
+        </section>  
+
+        <section id="cardGameMenu">
+            <h2><span>3. </span>Card game menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\card_game.png">
+                <figcaption>Card game menu</figcaption>
+            </figure>
+            <p>The card game menu has the following sections:
+            </p>
+            <ul>
+                <li><code>1:</code> Exit game button, which returns the player to the main menu</li>
+                <li><code>2:</code> Current round display, so the player can keep track of the number of rounds remaining</li>
+                <li><code>3:</code> Skip turn button, which is only available if the chain has an odd length</li>
+                <li><code>4:</code> Play card button, which is available after a player has selected a card</li>
+                <li><code>5:</code>User cards column, which has all the player cards
+                    <ul>
+                        <li><code>5.1:</code> User score</li>
+                        <li><code>5.2</code> Example of one of the cards, containing various information, such as universe,avatar,score and name</li>
+                    </ul>
+                </li>
+                <li><code>6:</code> Middle column:where the chain of cards is placed
+                    <ul>
+                        <li><code>6.1:</code> Total chain score: containing how many points the user/computer gains if he wins the chain</li>
+                        <li><code>6.2:</code>Selected card: displays what the currently selected card by the player is, as well 
+                            as the dynamic score after the type bonuses are applied</li>
+                        <li><code>6.3 & 6.4:</code> Current Chain Top: the card that is currently at the top of the pile, with the score after type bonuses are applied, as well as name,universe and avatar</li>
+                    </ul>
+                </li>
+                <li><code>7:</code> Computer column: where the cards of the computer are displayed
+                    <ul>
+                        <li><code>7.1:</code> Computer’s score</li>
+                    </ul>
+                </li> 
+
+            </ul>
+            <p><br>After a short delay while the game creates a deck, the card_game view will be presented to the player. Here, the user will take turns with the computer to play the card game. The rules are simple:
+            </p>
+            <ul>
+                <li>You can only add cards with a higher score than the card that is currently on top of the chain.</li>
+                <li>If you place a card with a lower score, the chain ends and the opponent wins the chain score.</li>
+                <li>A chain cannot end unless its length is an even number.</li>
+                <li>Some cards will have higher dynamic score depending on their types.</li>
+                <li>The winner of the chain receives points equal to the number shown at the total chain score section</li>
+            </ul>
+        </section>
+        <section id="selectCard">
+            <h2><span>3.1. </span>Selecting a card</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\card_selected.png" width="40%" height="40%">
+                <figcaption>Selected card being bordered</figcaption>
+            </figure>
+            <p>The player and the computer will then take turns in placing cards on top of the chain until the chain itself ends.
+                 Players select a card first by clicking on it, which will make its border turn green. After the border turns green,
+                  the selected card section in the middle(<code>6.2</code>) will be updated based on its type and, if the card has a higher score than
+                   the Current Chain top(<code>6.3</code>), the play button(<code>4</code>) will become available. Pressing it will remove the card from
+                    your hand and put it on top of the chain. The computer will then make its move and place a card.
+            </p>
+        </section> 
+        <section id="winLoseChain">
+            <h2><span>3.2. </span>Winning/Losing a chain</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\win_lose_chain.png">
+                <figcaption>Winning/Losing a chain</figcaption>
+            </figure>
+            <p>Based on how the user performs, whenever a chain ends, the player will receive a message 
+                on top of the screen letting him know wherever he has won or lost the chain and the number of points he/the computer has won.
+
+            </p>
+        </section>     
+        <section id="quizMenu">
+            <h2><span>4. </span>Quiz menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\round_end.png"width="60%" height="60%">
+                <figcaption>Round end alert</figcaption>
+            </figure>
+            <figure typeof="sa:Image">
+                <img src="resources\quiz_menu.png"width="50%" height="50%">
+                <figcaption>Quiz menu</figcaption>
+            </figure>
+            <p>After finishing each round (except the last one), the user will receive an alert that 
+                lets him know that the round has ended, and then he will be redirected to the quiz game 
+                where questions will appear about the characters from the cards he played in the previous round. 
+                He will, then, have to choose the correct answer(s) based on what he remembered from the last round 
+                by pressing the “Check” button. Depending on the number of cards he has chosen for each round, the user
+                 may have to answer one or more questions.
+
+
+            </p>
+        </section> 
+        <section id="coloring">
+            <h2><span>4.1. </span>Question answer colouring</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\quiz_wrong_answer.png"width="50%" height="50%">
+                <figcaption>Wrong quiz answer</figcaption>
+            </figure>
+            <figure typeof="sa:Image">
+                <img src="resources\quiz_correct_answer.png"width="50%" height="50%">
+                <figcaption>Correct quiz answer</figcaption>
+            </figure>
+            <p>After pressing the “Check” button, the game will verify whether the answer 
+                to the question is correct or not. If the user was right, then the answers 
+                he has chosen will turn green and if was wrong, the answer will turn red.
+                </p>
+        </section>  
+        <section id="multipleChoice">
+            <h2><span>4.2. </span>Multiple choice questions</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\multiple_answer_lose.png"width="50%" height="50%">
+                <figcaption>Wrong multiple choice answer</figcaption>
+            </figure>
+            <figure typeof="sa:Image">
+                <img src="resources\multiple_answer_win.png"width="50%" height="50%">
+                <figcaption>Correct multiple choice answer</figcaption>
+            </figure>
+            <p>Sometimes, the user will have a multiple-answer question, 
+                where he will only win if he chooses all the correct ones. 
+                If he chooses at least one wrong answer or misses choosing a correct one, 
+                he will lose the quiz. Besides getting better cards if he wins the quiz,
+                 the user will also gain a small number of preset points and, conversely,
+                  lose points if he answers the quiz question wrong.
+                </p>
+        </section> 
+        <section id="endQuizAlert">
+            <h2><span>4.3. </span>End of Quiz alert</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\quiz_won.png"width="50%" height="50%">
+                <figcaption>End of quiz alert</figcaption>
+            </figure>
+            <p>Regardless of the outcome, after answering all the questions, 
+                an alert will be displayed on top of the screen letting the user
+                 know whether he has won or lost the quiz, as well as how many points he has won or lost.</p>>
+        </section>
+
+        <section id="endMenu">
+            <h2><span>5. </span>End Menu</h2>
+            <figure typeof="sa:Image">
+                <img src="resources\game_end_alert.png"width="50%" height="50%">
+                <figcaption>Game end alert</figcaption>
+            </figure>
+            <figure typeof="sa:Image">
+                <img src="resources\end_screen.png"width="70%" height="70%">
+                <figcaption>End Menu</figcaption>
+            </figure>
+            <p>After all the cards from the deck have run out, the player will receive 
+                an alert letting him know that the game has ended. Afterward, he will be
+                 redirected to the End Menu which has the following elements:</p>
+            <ul>
+                <li>
+                    <code>1:</code> Submit score section, where the user can enter his Username and submit his score to the leaderboard.
+                    <ul>
+                        <li><code>1.1:</code> Field where the user can insert his username.</li>
+                        <li><code>1.2:</code> Submit button for adding his score to the leaderboard and exit button for 
+                            returning to the main menu</li>
+                    </ul>
+                </li>
+                <li>
+                    <code>2:</code> Final panel, which contains:
+                    <ul>
+                        <li><code>2.1:</code> User’s final score</li>
+                        <li><code>2.2:</code> Game status(win/lose/draw)</li>
+                        <li><code>2.3:</code> Computer’s final score</li>
+                    </ul>
+                </li>
+            </ul>
+                
+            <p>
+                If the user chooses to insert his name into the field and press the submit button, 
+                his score will be saved and will be shown the next time he visits the Leaderboard in the main menu.
+            </p>
+        </section>
+        <section id="references">
+            <h2><span>6. </span>References</h2>
+            <ol>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" id="liveserver">
+                    <cite property="schema:name">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">LiveServer Extension</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://www.superheroapi.com/index.html" id="superheroapi">
+                    <cite property="schema:name">
+                    <a href="https://www.superheroapi.com/index.html">SuperHero API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://developer.marvel.com/" id="marveldeve">
+                    <cite property="schema:name">
+                    <a href="https://developer.marvel.com/">Marvel Developer Portal</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://swapi.dev/documentation" id="starwarsapi">
+                    <cite property="schema:name">
+                    <a href="https://swapi.dev/documentation">LiveServer Extension</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://pokeapi.co/" id="PokeApi">
+                    <cite property="schema:name">
+                    <a href="https://pokeapi.co/">PokeApi</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="http://stapi.co/" id="startrekapi">
+                    <cite property="schema:name">
+                    <a href="http://stapi.co/">Star Trek API</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://scribehow.com/library/end-user-documentation" id="enduser">
+                    <cite property="schema:name">
+                    <a href="https://scribehow.com/library/end-user-documentation">End-User Documentation guide</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://mcmassociates.io/textbook/user_guides.html" id="userguide">
+                    <cite property="schema:name">
+                    <a href="https://mcmassociates.io/textbook/user_guides.html">User Guides website by David McMurrey</a>
+                    </cite>
+                </li>
+            </ol>
+        </section>
+    </article>
+</body>
+
+</html>

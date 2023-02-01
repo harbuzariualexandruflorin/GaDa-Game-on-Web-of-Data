@@ -601,12 +601,37 @@ export function getChainScore(chain) {
                     <figcaption>Fuseki server running and executing SPARQL queries</figcaption>
                 </figure>
                 <p>
-                    After the creation of the GaDa ontology, the resulting turtle file was imported into a newly created Fuseki dataset using its interface.
+                    After the creation of the GaDa ontology, the resulting turtle file was imported into a newly created
+                    Fuseki dataset using its interface.
                 </p>
             </section>
 
             <section id="deployment">
                 <h3><span>3.6 </span>RDF Deployment </h3>
+                <p>
+                    For the deployment of this application, <a href="https://ngrok.com/">ngrok</a> was used. Ngrok is a
+                    cross-platform application that
+                    enables developers to expose a local development server to the Internet with minimal effort.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/ngrok.png">
+                    <figcaption>Basic architecture of ngrok</figcaption>
+                </figure>
+                <p>
+                    Ngrok was used for deployment instead of cloud services because it was simple enough to use and
+                    cloud services were not the focus of this application. One major disadvantage of this approach was
+                    that the ngrok free tier plan was used and this plan allows only one port per machine to be exposed.
+                    The workaround was to use a proxy server that redirects calls to N services and has a single port
+                    exposed with ngrok. The proxy server that was used is <a href="https://www.nginx.com/">nginx</a>.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/nginx.png">
+                    <figcaption>Basic architecture of nginx used as a proxy server</figcaption>
+                </figure>
+                <!-- <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/nginx.png">
+                    <figcaption>Simple configuration file used to start nginx</figcaption>
+                </figure> -->
             </section>
 
         </section>

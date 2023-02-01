@@ -140,6 +140,7 @@ export function checkAnswer() {
           //   correctAnswers++;
           // }
           else if (!data.options[a_option].checked && !data.options[a_option].isCorrect) {
+            answerContainer.querySelector(`input[name=${q_option}]`).parentElement.style.color = 'red';
             wrongAnswers++;
           }
         }

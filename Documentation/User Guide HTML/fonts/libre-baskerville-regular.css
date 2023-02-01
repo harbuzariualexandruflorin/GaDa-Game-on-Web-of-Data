@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/fonts/librebaskerville-regular.eot');
+    src: url('https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/fonts/librebaskerville-regular.eot?') format('embedded-opentype'),
+         url('https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/fonts/librebaskerville-regular.woff2') format('woff2'),
+         url('https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/fonts/librebaskerville-regular.woff') format('woff'),
+         url('https://vivliostyle.github.io/vivliostyle_doc/samples/scholarly/fonts/librebaskerville-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

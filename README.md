@@ -3,4 +3,4 @@
 Project for the Web Aplication Development laboratory.
 
 Team members:  
--Andrei Condurache, Florin Harbuzariu, Stefan Tiperciuc
+-Andrei Condurache, Alexandru-Florin Harbuzariu, Ștefan Tiperciuc

@@ -27,3 +27,19 @@
     transform: rotate(360deg);
   }
 }
+
+.mainBox {
+  top: 10%;
+  left: 10%;
+  width: 75%;
+  height: 80%;
+  border: 1px solid #666;
+  background-color: #fff;
+  position: fixed;
+}
+
+.buttonCentered {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

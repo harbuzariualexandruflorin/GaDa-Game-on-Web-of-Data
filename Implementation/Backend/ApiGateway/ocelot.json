@@ -1,6 +1,6 @@
 {
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:7069"
+    "BaseUrl": "http://localhost:5069"
   },
   "Routes": [
     {
@@ -16,9 +16,9 @@
       ]
     },
     {
-      "UpstreamPathTemplate": "/gateway/api/question/getQuestion",
+      "UpstreamPathTemplate": "/gateway/api/question/getquestion",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/api/question/getQuestion",
+      "DownstreamPathTemplate": "/api/question/getquestions",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -30,36 +30,36 @@
     {
       "UpstreamPathTemplate": "/gateway/gada_card_deck/generate?deck_offset={offset}&deck_size={size}&randomize={randomize}",
       "UpstreamHttpMethod": [ "Get" ],
-      "DownstreamPathTemplate": "/gada_card_deck/generate?deck_offset={offset}&deck_size={size}&randomize={randomize}",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/cards/gada_card_deck/generate?deck_offset={offset}&deck_size={size}&randomize={randomize}",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5053
+          "Host": "4ca3-194-176-167-53.eu.ngrok.io",
+          "Port": 443
         }
       ]
     },
     {
       "UpstreamPathTemplate": "/gateway/gada_card_deck/info?jsonld={A}",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/gada_card_deck/info?jsonld={A}",
+      "DownstreamPathTemplate": "/cards/gada_card_deck/info?jsonld={A}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5053
+          "Host": "4ca3-194-176-167-53.eu.ngrok.io",
+          "Port": 443
         }
       ]
     },
     {
       "UpstreamPathTemplate": "/gateway/high_scores",
       "UpstreamHttpMethod": [ "Post" ],
-      "DownstreamPathTemplate": "/high_scores",
+      "DownstreamPathTemplate": "/cards/high_scores",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5053
+          "Host": "4ca3-194-176-167-53.eu.ngrok.io",
+          "Port": 443
         }
       ]
     },

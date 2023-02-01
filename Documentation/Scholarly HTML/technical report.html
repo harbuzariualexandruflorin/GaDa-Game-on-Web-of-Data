@@ -546,10 +546,13 @@ export function getChainScore(chain) {
 
                 <section id="endGameScreen">
                     <h4><span>3.2.4 </span>End Game Screen</h4>
-                    <p>After the required number of rounds have been finished, the player will be redirected to the end screen. The end screen consists of 2 elements:</p>
+                    <p>After the required number of rounds have been finished, the player will be redirected to the end
+                        screen. The end screen consists of 2 elements:</p>
                     <ul>
-                        <li>The submit score section, where the user can enter his Username and submit his score to the leaderboard.</li>
-                        <li>Final panel with the details containing the user’s final score, the computer’s final score, as well as the game status (win/lose/draw).</li>
+                        <li>The submit score section, where the user can enter his Username and submit his score to the
+                            leaderboard.</li>
+                        <li>Final panel with the details containing the user’s final score, the computer’s final score,
+                            as well as the game status (win/lose/draw).</li>
                     </ul>
                 </section>
             </section>
@@ -569,14 +572,41 @@ export function getChainScore(chain) {
 
             <section id="uml">
                 <h3><span>3.4 </span>UML Diagram </h3>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/class_diagram.svg">
+                    <figcaption>UML Diagram of the GaDa project</figcaption>
+                </figure>
             </section>
 
             <section id="tripleStore">
                 <h3><span>3.5 </span>RDF Triplestore </h3>
+                <p>
+                    All the game cards will be saved in an RDF triplestore. The database used for the storage and
+                    retrieval of RDF triples is <code>Apache Jena Fuseki</code>.
+                </p>
+                <p>
+                    Fuseki provides the SPARQL 1.1 protocols for query and updates as well as the SPARQL Graph Store
+                    protocol. Fuseki is tightly integrated with TDB to provide a robust, transactional persistent
+                    storage layer.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/fuseki_cmd.png">
+                    <figcaption>Fuseki server running and executing SPARQL queries</figcaption>
+                </figure>
+                <p>
+                    After starting the server, the other GaDa services can query the triplestore and use its data.
+                </p>
+                <figure typeof="sa:Image">
+                    <img src="resources/images/architecture/fuseki_browser.png">
+                    <figcaption>Fuseki server running and executing SPARQL queries</figcaption>
+                </figure>
+                <p>
+                    After the creation of the GaDa ontology, the resulting turtle file was imported into a newly created Fuseki dataset using its interface.
+                </p>
             </section>
 
             <section id="deployment">
-                <h3><span>3.5 </span>RDF Deployment  </h3>
+                <h3><span>3.6 </span>RDF Deployment </h3>
             </section>
 
         </section>

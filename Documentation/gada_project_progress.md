@@ -74,7 +74,7 @@ Week 16/17 (23rd of January - 1st of February)
 - Designing the end screen for the frontend application. (Stefan)
 - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML): Updated the Introduction, Proposed Solution, Card Game Logic, UI, References sections. (Stefan)
 - [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML): Updated the Introduction, Proposed Solution, Architecture, SPARQL Queries, Technologies Used, References sections. Created the: User Management, Game Cards Management, Use of External Data sections. (Florin)
-- [[ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML)]: Updated OpenApi, Architecture, UI, Game Quiz Management, UML Diagram, SPARQL Queries, Technologies Used, References sections and finishing formatting the document. (Andrei)
+- [ScholarlyHTML](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/Scholarly%20HTML): Updated OpenApi, Architecture, UI, Game Quiz Management, UML Diagram, SPARQL Queries, Technologies Used, References sections and finishing formatting the document. (Andrei)
 - [UserGuide](https://github.com/harbuzariualexandruflorin/GaDa-Game-on-Web-of-Data/tree/main/Documentation/User%20Guide%20HTML): (Stefan)
 
 

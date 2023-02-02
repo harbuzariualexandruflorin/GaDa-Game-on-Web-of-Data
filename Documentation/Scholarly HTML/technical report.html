@@ -606,7 +606,7 @@ export function getChainScore(chain) {
             </section>
 
             <section id="deployment">
-                <h3><span>3.6 </span>RDF Deployment </h3>
+                <h3><span>3.6 </span>Deployment </h3>
                 <p>
                     For the deployment of this application, <a href="https://ngrok.com/">ngrok</a> was used. Ngrok is a
                     cross-platform application that
@@ -1722,12 +1722,11 @@ except Exception as ex:
                 <figure typeof="schema:SoftwareSourceCode">
                     <pre>
                         <code>
-prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-prefix dbr: <http://dbpedia.org/resource/>
-prefix foaf: <http://xmlns.com/foaf/0.1/>
-prefix gada: <https://gada.cards.game.namespace.com/>
-
+prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+prefix dbr: &lt;http://dbpedia.org/resource/&gt;
+prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+prefix gada: &lt;https://gada.cards.game.namespace.com/&gt;
 select ?name where { 
     ?card rdf:type dbr:Playing_card .
     ?card rdfs:label ?name . 
@@ -1805,7 +1804,99 @@ limit %s
             </section>
 
             <section id="">
-                <h3><span>6.3 </span>Query 3</h3>
+                <h3><span>6.3 </span>Queries in Quiz API</h3>
+                <p>In the following, few examples of Sparql queries that take place in the Quiz API will be presented:</p>
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX sdo: &lt;https://schema.org/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX gada: &lt;https://gada.cards.game.namespace.com/&gt;
+
+SELECT (GROUP_CONCAT(DISTINCT ?birthPlaceName; separator=", ") as ?fullBirthPlace)
+WHERE {
+    ?card foaf:member gada:univ_Star_Trek;
+            sdo:birthPlace ?birthPlace;
+            rdfs:label @value.
+    ?birthPlace rdfs:label ?birthPlaceName.
+} GROUP BY ?card
+                        </code>
+                    </pre>
+                    <figcaption>Sparql Query to Gada triple store about the birthplace of a Star Trek character. <code>@value</code> parameter will be replace with the character name</figcaption>
+                </figure>
+
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+PREFIX dbp: &lt;http://dbpedia.org/property/&gt;
+
+SELECT (STR(?comicBook) AS ?debut)
+WHERE
+{
+    {?character a dbo:FictionalCharacter;
+                rdfs:label @value@en;
+            dbp:debut ?comicBook.}
+        UNION
+        {
+        ?character a dbo:FictionalCharacter;
+                    dbp:characterName @value@en;
+                dbp:debut ?comicBook.}
+    OPTIONAL {FILTER(LANG(?comicBook)="en").}
+} LIMIT 1
+                        </code>
+                    </pre>
+                    <figcaption>Sparql Query to DPpedia about the comic in which a Marvel character made his debut.<code>@value</code> parameter will be replace with the character name</figcaption>
+                </figure>
+
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX dbo: &lt;http://dbpedia.org/ontology/&gt;
+
+SELECT (STR(?relativeName) as ?relatives) 
+WHERE 
+{ 
+    ?character a dbo:FictionalCharacter; 
+            rdfs:label @value@en; 
+            dbo:relative ?relative. 
+    ?relative a dbo:FictionalCharacter; 
+            rdfs:label ?relativeName. 
+    FILTER(LANG(?relativeName)="en")
+} LIMIT 10
+                        </code>
+                    </pre>
+                    <figcaption>Sparql Query to DPpedia about the relatives of a Star Warsk character. <code>@value</code> parameter will be replace with the character name</figcaption>
+                </figure>
+
+                <figure typeof="schema:SoftwareSourceCode">
+                    <pre>
+                        <code>
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX gada: &lt;https://gada.cards.game.namespace.com/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX ssn: &lt;http://www.w3.org/ns/ssn/&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+
+SELECT (STR(?speciesName) AS ?type)
+WHERE
+{
+    ?character foaf:member gada:univ_Star_Trek;
+                rdfs:label @value;
+                ssn:hasProperty ?species.
+        ?species owl:sameAs ?resource.
+    SERVICE<https://dbpedia.org/sparql/> {
+        ?resource rdfs:label ?speciesName.
+    FILTER(LANG(?speciesName)="en")
+    }
+} LIMIT 5
+                        </code>
+                    </pre>
+                    <figcaption>Sparql Query  to Gada triple store about the characteristics (species/abilities) that a character from Star Trek has. <code>@value</code> parameter will be replace with the character name</figcaption>
+                </figure>
             </section>
         </section>
 
@@ -2055,6 +2146,13 @@ limit %s
                     <cite property="schema:name">
                         <a href="https://addons.mozilla.org/en-US/firefox/addon/openlink-structured-data-sniff/">OpenLink
                             Structured Data Sniffer</a>
+                    </cite>
+                </li>
+                <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
+                    resource="https://getbootstrap.com/"
+                    id="bootstrap">
+                    <cite property="schema:name">
+                        <a href="https://getbootstrap.com/">Bootstrap</a>
                     </cite>
                 </li>
             </ol>

@@ -472,6 +472,13 @@ export function battleCards(cardA, cardB) {
 
                 <section id="chainBonus">
                     <h4><span>3.1.4 </span>Chain Bonus Score</h4>
+                    <p>
+                        As the player and the computer keep adding cards to the middle pile, the amount of points the
+                        chain winner will receive keeps increasing, making it more rewarding to continue the chain. The
+                        bonus will take into consideration both the average score of the chain, as well as the length of
+                        it, giving players the option to consider if they want to end the chain early for some quick
+                        points or continue it to get a higher payout.
+                    </p>
                     <figure typeof="schema:SoftwareSourceCode">
                         <pre>
                             <code>
@@ -1796,10 +1803,12 @@ limit %s
                     <li>From the resulting quad map the following are selected, the DBpedia entity, the score multiplied
                         by 0.3, the entity title, the rank calculated according to the DBpedia entity, and the graph g.
                         The selected columns are sorted in descending order by using the addition of the score column
-                        and the rank column. The rank of the entity is computed by using <code>sql:rnk_scale (&lt;LONG::IRI_RANK&gt;)</code>.
-                        
+                        and the rank column. The rank of the entity is computed by using
+                        <code>sql:rnk_scale (&lt;LONG::IRI_RANK&gt;)</code>.
+
                     </li>
-                    <li>The <code>search_excerpt</code> function takes an array of the words to highlight and the text of the search
+                    <li>The <code>search_excerpt</code> function takes an array of the words to highlight and the text
+                        of the search
                         hit. From the previous selection, the columns that are now selected are the DBpedia entity, the
                         highlighted text, the score, the rank, and the graph g. The column that is used for obtaining
                         the link to the DBpedia resource is the first column with the DBpedia entity. The rows are
@@ -1811,7 +1820,8 @@ limit %s
 
             <section id="queriesInQuizApi">
                 <h3><span>6.3 </span>Queries in Quiz API</h3>
-                <p>In the following, a few examples of SPARQL queries that take place in the Quiz API will be presented:</p>
+                <p>In the following, a few examples of SPARQL queries that take place in the Quiz API will be presented:
+                </p>
                 <figure typeof="schema:SoftwareSourceCode">
                     <pre>
                         <code>
@@ -1829,7 +1839,8 @@ WHERE {
 } GROUP BY ?card
                         </code>
                     </pre>
-                    <figcaption>SPARQL Query to Gada triplestore about the birthplace of a Star Trek character. <code>@value</code> parameter will be replaced with the character name</figcaption>
+                    <figcaption>SPARQL Query to Gada triplestore about the birthplace of a Star Trek character.
+                        <code>@value</code> parameter will be replaced with the character name</figcaption>
                 </figure>
 
                 <figure typeof="schema:SoftwareSourceCode">
@@ -1854,7 +1865,8 @@ WHERE
 } LIMIT 1
                         </code>
                     </pre>
-                    <figcaption>SPARQL Query to DPpedia about the comic in which a Marvel character made his debut.<code>@value</code> parameter will be replaced with the character name</figcaption>
+                    <figcaption>SPARQL Query to DPpedia about the comic in which a Marvel character made his
+                        debut.<code>@value</code> parameter will be replaced with the character name</figcaption>
                 </figure>
 
                 <figure typeof="schema:SoftwareSourceCode">
@@ -1875,7 +1887,8 @@ WHERE
 } LIMIT 10
                         </code>
                     </pre>
-                    <figcaption>SPARQL Query to DPpedia about the relatives of a Star Wars character. <code>@value</code> parameter will be replaced with the character name</figcaption>
+                    <figcaption>SPARQL Query to DPpedia about the relatives of a Star Wars character.
+                        <code>@value</code> parameter will be replaced with the character name</figcaption>
                 </figure>
 
                 <figure typeof="schema:SoftwareSourceCode">
@@ -1901,7 +1914,9 @@ WHERE
 } LIMIT 5
                         </code>
                     </pre>
-                    <figcaption>SPARQL Query  to Gada triplestore about the characteristics (species/abilities) that a character from Star Trek has. <code>@value</code> parameter will be replaced with the character name</figcaption>
+                    <figcaption>SPARQL Query to Gada triplestore about the characteristics (species/abilities) that a
+                        character from Star Trek has. <code>@value</code> parameter will be replaced with the character
+                        name</figcaption>
                 </figure>
             </section>
         </section>
@@ -2155,8 +2170,7 @@ WHERE
                     </cite>
                 </li>
                 <li property="schema:citation" typeof="schema:WebPage" role="doc-biblioentry"
-                    resource="https://getbootstrap.com/"
-                    id="bootstrap">
+                    resource="https://getbootstrap.com/" id="bootstrap">
                     <cite property="schema:name">
                         <a href="https://getbootstrap.com/">Bootstrap</a>
                     </cite>
